@@ -16,7 +16,7 @@
 PID_DIR="/home/z/my-project/.vnc-pids"
 LOG_DIR="/home/z/my-project/.vnc-logs"
 NOVNC_DIR="/home/z/my-project/tools/novnc"
-CHROME_BIN="/home/z/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome"
+CHROME_BIN="/home/z/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome"
 XVFB_BIN="/usr/bin/Xvfb"
 X11VNC_BIN="/home/z/my-project/tools/x11vnc/bin/x11vnc"
 X11VNC_LIB="/home/z/my-project/tools/x11vnc/lib"
