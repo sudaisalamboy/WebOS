@@ -119,4 +119,11 @@
   body {
     @apply bg-background text-foreground;
   }
+  /* Ensure iframes can scroll their content (Tailwind 4 preflight + UA defaults
+     sometimes set overflow: clip on iframes, which can block inner scrolling
+     in some browsers). Force overflow: auto and let the inner document scroll. */
+  iframe {
+    overflow: auto !important;
+    overscroll-behavior: contain;
+  }
 }
