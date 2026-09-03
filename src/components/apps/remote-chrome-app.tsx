@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import {
   Monitor, Play, Square, RefreshCw, ExternalLink, Activity,
-  ArrowLeft, ArrowRight, Search, X, Camera, Shield, Terminal, Copy,
+  ArrowLeft, ArrowRight, Search, X, Camera, Shield, Terminal, Copy, ClipboardPaste, CheckCircle2,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -29,6 +29,11 @@ export function RemoteChromeApp() {
   const [navMessage, setNavMessage] = useState<string | null>(null)
   const [contentFocused, setContentFocused] = useState(false)
   const [blurEnabled, setBlurEnabled] = useState(true)
+
+  // Paste feature — reads local clipboard and pushes text into the focused
+  // element of the remote Chrome browser via CDP Input.insertText.
+  const [pasteLoading, setPasteLoading] = useState(false)
+  const [pasteFlash, setPasteFlash] = useState(false)  // brief green check on success
 
   // Camera log panel
   const [showLogPanel, setShowLogPanel] = useState(true)
@@ -186,6 +191,84 @@ export function RemoteChromeApp() {
     finally { setNavLoading(false) }
   }
 
+  /**
+   * Reads the user's local clipboard (navigator.clipboard.readText) and pushes
+   * the text into the currently focused element of the remote Chrome browser
+   * via POST /api/vnc/paste (which uses CDP Input.insertText).
+   *
+   * This bridges the gap left by noVNC — the local clipboard doesn't reach the
+   * remote browser automatically, so we provide an explicit "Paste" button
+   * (and Ctrl+V keyboard shortcut when the iframe isn't focused).
+   */
+  async function pasteFromClipboard() {
+    if (pasteLoading) return
+    setPasteLoading(true)
+    setNavMessage('Reading clipboard…')
+    addLog('info', 'Paste: reading local clipboard')
+    try {
+      let text: string
+      try {
+        text = await navigator.clipboard.readText()
+      } catch (clipErr: any) {
+        // Most common cause: browser denied clipboard permission or context is
+        // not secure (not HTTPS / not localhost). Fall back to a prompt.
+        addLog('warn', `Clipboard API blocked (${clipErr?.message || clipErr}); falling back to prompt`)
+        text = window.prompt('Paste — type or Ctrl+V the text to send to Remote Chrome:') || ''
+      }
+      if (!text) {
+        setNavMessage('Clipboard is empty.')
+        setTimeout(() => setNavMessage(null), 2500)
+        return
+      }
+
+      const preview = text.length > 50 ? text.slice(0, 50) + '…' : text
+      addLog('info', `Paste: sending ${text.length} char(s) to Chrome ("${preview}")`)
+      setNavMessage(`Pasting ${text.length} char(s)…`)
+
+      const r = await fetch('/api/vnc/paste', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text }),
+      })
+      const d = await r.json()
+      if (d.ok) {
+        addLog('success', `Pasted ${d.length} char(s) into Chrome`)
+        setNavMessage(`✓ Pasted ${d.length} char(s)`)
+        setPasteFlash(true)
+        setTimeout(() => setPasteFlash(false), 1200)
+      } else {
+        addLog('error', `Paste failed: ${d.error || r.status}`)
+        setNavMessage(`❌ ${d.error || 'Paste failed'}`)
+      }
+    } catch (err: any) {
+      addLog('error', `Paste exception: ${err?.message || err}`)
+      setNavMessage(`❌ ${err?.message || 'Paste failed'}`)
+    } finally {
+      setPasteLoading(false)
+      setTimeout(() => setNavMessage(null), 4000)
+    }
+  }
+
+  // Global Ctrl+V / Cmd+V handler — only fires when the VNC view is open and
+  // the iframe is NOT capturing the keystroke (i.e. focus is in the WebOS UI,
+  // like the URL bar, quick links, or buttons). When the iframe has focus,
+  // noVNC gets the keypress and this listener won't fire — but the explicit
+  // "Paste" button always works.
+  useEffect(() => {
+    if (!showVnc) return
+    const onKey = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && (e.key === 'v' || e.key === 'V')) {
+        const tgt = e.target as HTMLElement
+        // Let the nav URL <input> paste normally into itself.
+        if (tgt && (tgt.tagName === 'INPUT' || tgt.tagName === 'TEXTAREA' || tgt.isContentEditable)) return
+        e.preventDefault()
+        pasteFromClipboard()
+      }
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [showVnc, pasteLoading])
+
   async function grantCamera() {
     addLog('info', '🔴 Button: Allow Camera pressed')
     setNavMessage('Granting camera permission...')
@@ -265,6 +348,24 @@ export function RemoteChromeApp() {
 
           {/* Allow Camera — always visible */}
           <button onClick={grantCamera} title="Grant camera permission + inject virtual camera" className="flex h-7 items-center gap-1 rounded-md px-2 text-[9px] font-bold transition shrink-0 bg-fuchsia-500 text-white hover:bg-fuchsia-400 ring-1 ring-fuchsia-400/50 animate-pulse"><Camera className="h-3 w-3" /> Allow Camera</button>
+
+          {/* Paste — reads local clipboard and pushes it into the focused element
+              of remote Chrome via CDP Input.insertText. NoVNC's clipboard sync
+              is unreliable, so this is the reliable way to paste into Chrome. */}
+          <button
+            onClick={pasteFromClipboard}
+            disabled={pasteLoading}
+            title="Paste — reads your local clipboard and inserts it into Chrome's focused field (Ctrl+V also works when iframe not focused)"
+            className={cn(
+              'flex h-7 items-center gap-1 rounded-md px-2 text-[9px] font-bold transition shrink-0',
+              pasteFlash
+                ? 'bg-emerald-500 text-white ring-2 ring-emerald-300'
+                : 'bg-cyan-500 text-white hover:bg-cyan-400 ring-1 ring-cyan-400/50'
+            )}
+          >
+            {pasteFlash ? <CheckCircle2 className="h-3 w-3" /> : pasteLoading ? <RefreshCw className="h-3 w-3 animate-spin" /> : <ClipboardPaste className="h-3 w-3" />}
+            {pasteFlash ? 'Pasted!' : 'Paste'}
+          </button>
 
           {/* Log panel toggle */}
           <button onClick={() => setShowLogPanel(!showLogPanel)} className={cn('flex h-7 items-center gap-1 rounded-md px-2 text-[9px] font-bold transition shrink-0', showLogPanel ? 'bg-emerald-500/20 text-emerald-400 ring-1 ring-emerald-500/30' : 'bg-zinc-800 text-zinc-400')}><Terminal className="h-3 w-3" /> Logs</button>
