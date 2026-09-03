@@ -126,3 +126,47 @@ Stage Summary:
   - `email_finder_v2.py` — direct-HTTP email finder + quality scorer
   - `run_email_finder_v2.py` — full pipeline using z-ai web_search + direct HTTP
   - `build_csv.py` + `build_xlsx.py` — CSV/XLSX generators
+
+---
+Task ID: email-campaign
+Agent: main (orchestrator)
+Task: Send pitch emails to all 30 leads via the user's logged-in ProtonMail account (websiteDeveloper007@proton.me) in Remote Chrome. Hindi/Urdu romanized pitch for website development services.
+
+Work Log:
+- Verified ProtonMail was already logged in at https://mail.proton.me/u/1/inbox (account: websiteDeveloper007@proton.me).
+- Created `/api/vnc/keypress` endpoint (CDP Input.dispatchKeyEvent) supporting:
+  - `action: press` — single key press (Tab, Enter, Backspace, Escape, etc.)
+  - `action: combo` — modifier combos (Ctrl+A, Ctrl+Enter, Ctrl+S, etc.)
+  - `action: type` — CDP Input.insertText for typing visible text
+- Wrote `scripts/leads/send_emails.py` with:
+  - Two pitch templates (Hindi/Urdu romanized):
+    - No-website: "Aapka business online nahi hai — leads lose ho rahe hain" → psychological selling: customers search online, you lose them without a website; we'll build your online profile so customers are attracted and you get leads; website is essential.
+    - Low-quality: "Aapki website seriously tooti hui hai — customers bhaag rahe hain" → lists specific issues (no-viewport/no-https/old-copyright/etc.), pitches "pura system bana kar denge — cheap me, fast me, properly working".
+  - Per-lead flow:
+    1. Close any existing compose modal (discard button) — cleanup from previous failure
+    2. Click "New message" button (data-testid="sidebar:compose")
+    3. Get dynamic field IDs (to-composer-NNN, subject-composer-NNN) — ProtonMail generates unique IDs per compose
+    4. Set recipient via React value-tracker trick (Object.getOwnPropertyDescriptor setter + dispatchEvent input) — regular insertText doesn't work with React-controlled chip inputs
+    5. Press Enter to commit recipient as a chip
+    6. Verify recipient committed (scan for email in span/div elements)
+    7. Set subject via same React trick
+    8. Clear body watermark: execCommand('selectAll') + execCommand('delete') inside the same-origin body iframe's contenteditable DIV — removes "Sent with Proton Mail secure email." watermark
+    9. Type body via execCommand('insertText') line-by-line, with `<div><br></div>` for line breaks (Squire editor needs explicit HTML for newlines)
+    10. Click Send button (data-testid="composer:send-button")
+    11. Wait up to 15s for compose modal to close (ProtonMail shows "Message sent" toast for ~5s before closing)
+  - Resume support: sent_log.json tracks sent/failed leads — script skips already-sent ones
+  - 75-second delay between emails (anti-spam protection for the ProtonMail account)
+- Tested on 1 lead (PGA Lawn care → admin@pgalawncare.com) first, verified in Sent folder.
+- Built `start_sender.sh` daemon wrapper: nohup + setsid + disown for reliable background detachment (regular `&` kept dying when bash tool returned).
+- Ran full batch: 30 leads, 42 minutes, **30 sent, 0 failed**.
+
+Stage Summary:
+- ✅ All 30 pitch emails sent successfully from websiteDeveloper007@proton.me.
+- ✅ All bodies had watermark removed before sending (verified via `hasWatermark: false` check).
+- ✅ All emails personalized with business name + category + city.
+- ✅ 20 no-website leads got the "your business is not online — you're losing customers" pitch.
+- ✅ 10 low-quality-website leads got the "your website is broken — we'll fix it cheap" pitch with specific quality issues listed.
+- 📁 Files:
+  - `/home/z/my-project/download/leads/sent_log.json` — full sent log with timestamps
+  - `/home/z/my-project/download/leads/send_log.txt` — complete run log
+- 🔧 Reusable: `scripts/leads/send_emails.py` + `scripts/leads/start_sender.sh` can be re-run for new lead batches (resume support via sent_log.json).
