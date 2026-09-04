@@ -770,13 +770,31 @@ def main():
     low_qual = data.get("has_website", [])
 
     log = load_sent_log()
+    # ALSO load the persistent sent registry — this is cross-campaign dedup
+    # so we never pitch the same email twice even across different lead batches.
+    from registry import load_sent as load_sent_registry, save_sent as save_sent_registry, add_sent_entry, norm_email, is_email_sent
+    sent_registry = load_sent_registry()
     sent_emails = {s.get("recipient") for s in log["sent"]}
+    # Also include the persistent registry in the "already sent" set
+    sent_normalized = set(sent_registry["emails"].keys())
     print(f"Loaded {len(no_site)} no-website + {len(low_qual)} low-quality leads")
-    print(f"Already sent: {len(sent_emails)}")
-    print()
+    print(f"Already sent (this campaign): {len(sent_emails)}")
+    print(f"Already sent (all campaigns): {sent_registry['total_sent']}")
 
     all_leads = [(b, "no-website") for b in no_site] + [(b, "low-quality-website") for b in low_qual]
-    pending = [(b, t) for b, t in all_leads if (b.get("emails") or [""])[0] not in sent_emails]
+    # Filter pending: skip if email is in sent_log OR in persistent sent registry
+    pending = []
+    for lead, t in all_leads:
+        primary = (lead.get("emails") or [""])[0]
+        if not primary:
+            continue
+        ne = norm_email(primary)
+        if primary in sent_emails:
+            continue  # already sent this campaign
+        if ne in sent_normalized:
+            continue  # already sent in a previous campaign
+        pending.append((lead, t))
+
     print(f"Pending: {len(pending)} leads")
     print(f"Delay between emails: {DELAY_BETWEEN_EMAILS}s (total ~{len(pending) * DELAY_BETWEEN_EMAILS / 60:.1f} min)")
     print()
@@ -794,7 +812,11 @@ def main():
                     "type": lead_type,
                     "ts": int(time.time()),
                 })
-                print(f"  ✓ SENT to {result['recipient']}")
+                # ALSO add to the persistent sent registry (cross-campaign dedup)
+                add_sent_entry(sent_registry, result["recipient"],
+                               result["subject"], name, lead_type)
+                save_sent_registry(sent_registry)
+                print(f"  ✓ SENT to {result['recipient']}  (+ added to sent registry)")
             else:
                 log["failed"].append({
                     "lead": name,
@@ -815,8 +837,9 @@ def main():
 
     print()
     print("===== FINAL =====")
-    print(f"Sent:   {len(log['sent'])}")
-    print(f"Failed: {len(log['failed'])}")
+    print(f"Sent this run:   {len(log['sent'])}")
+    print(f"Failed this run: {len(log['failed'])}")
+    print(f"Total in sent registry: {sent_registry['total_sent']}")
     if log["failed"]:
         print("\nFailed leads:")
         for f in log["failed"]:
@@ -824,4 +847,10 @@ def main():
 
 
 if __name__ == "__main__":
+    import argparse
+    p = argparse.ArgumentParser(description="Send pitch emails via ProtonMail in Remote Chrome")
+    p.add_argument("--delay", type=int, default=DELAY_BETWEEN_EMAILS,
+                   help=f"Seconds between emails (default: {DELAY_BETWEEN_EMAILS})")
+    args = p.parse_args()
+    DELAY_BETWEEN_EMAILS = args.delay
     main()

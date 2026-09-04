@@ -18,6 +18,8 @@ import urllib.parse
 
 sys.path.insert(0, "/home/z/my-project/scripts/leads")
 from email_finder_v2 import visit_website_for_email, clean_email, find_emails_in_html
+from registry import (load_master, save_master, add_email_to_master,
+                        load_sent, is_email_sent, norm_email, is_email_in_master)
 
 EMAIL_RE = re.compile(r"[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}")
 
@@ -115,8 +117,31 @@ def main():
     print(f"  no-website: {len(no_site)} (target: {TARGET_NO_SITE})")
     print(f"  has-website: {len(has_site)} (target: {TARGET_LOW_QUALITY})")
 
+    # Load the registries — we use these to skip leads whose emails we've
+    # already discovered (master) or already pitched (sent).
+    master = load_master()
+    sent = load_sent()
+    print(f"Registry: {master['total_discovered']} emails known, {sent['total_sent']} already sent")
+
     results = load_results()
     print(f"Resuming — {len(results['no_website'])} no-website + {len(results['has_website'])} has-website so far")
+
+    def emails_already_known(emails):
+        """Return True if the primary email is already in master or sent registry."""
+        if not emails:
+            return False
+        primary = norm_email(emails[0])
+        if not primary:
+            return False
+        return is_email_in_master(master, primary) or is_email_sent(sent, primary)
+
+    def register_new_emails(lead):
+        """Add a lead's emails to the master registry (persists across campaigns)."""
+        name = lead.get("name", "")
+        query = lead.get("_query", "")
+        for e in lead.get("emails", []):
+            add_email_to_master(master, e, name, query)
+        save_master(master)
 
     # === NO-WEBSITE LEADS ===
     if len(results["no_website"]) < TARGET_NO_SITE:
@@ -141,12 +166,18 @@ def main():
                 emails = visit_r.get("emails", [])
                 print(f"    emails from visit: {emails[:3]}")
             if emails:
+                # Skip if primary email is already known (master) or already pitched (sent)
+                if emails_already_known(emails):
+                    print(f"  ⊘ skipped — email already in registry (master/sent)")
+                    continue
                 b["emails"] = emails[:3]
                 b["facebook_url"] = fb_url
                 b["other_url"] = other_url
                 b["lead_type"] = "no-website"
                 results["no_website"].append(b)
-                print(f"  ✓ ADDED lead #{len(results['no_website'])}")
+                # Register the new emails in the master registry
+                register_new_emails(b)
+                print(f"  ✓ ADDED lead #{len(results['no_website'])}  (+ registered {len(emails[:3])} email(s) in master)")
                 save_results(results)
             else:
                 print(f"  ✗ no email found")
@@ -177,6 +208,10 @@ def main():
                 if search_emails:
                     emails = search_emails
             if emails and score is not None and score < LOW_QUALITY_THRESHOLD:
+                # Skip if primary email is already known or already pitched
+                if emails_already_known(emails):
+                    print(f"  ⊘ skipped — email already in registry (master/sent)")
+                    continue
                 b["emails"] = emails[:3]
                 b["quality_score"] = score
                 b["quality_reasons"] = visit_r.get("quality_reasons", [])
@@ -188,7 +223,9 @@ def main():
                 b["viewport_meta"] = visit_r.get("viewport_meta")
                 b["lead_type"] = "low-quality-website"
                 results["has_website"].append(b)
-                print(f"  ✓ ADDED lead #{len(results['has_website'])} (score={score})")
+                # Register the new emails in the master registry
+                register_new_emails(b)
+                print(f"  ✓ ADDED lead #{len(results['has_website'])} (score={score})  (+ registered {len(emails[:3])} email(s) in master)")
                 save_results(results)
             else:
                 why = "no email" if not emails else f"score {score} too high"

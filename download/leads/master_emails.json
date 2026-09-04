@@ -1,0 +1,286 @@
+{
+  "emails": {
+    "admin@pgalawncare.com": {
+      "original": "admin@pgalawncare.com",
+      "normalized": "admin@pgalawncare.com",
+      "business_name": "PGA Lawn care and Pressure washing",
+      "source_query": "lawn care service Asheville NC",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "blackzululawncare@gmail.com": {
+      "original": "blackzululawncare@gmail.com",
+      "normalized": "blackzululawncare@gmail.com",
+      "business_name": "Black Zulu Lawn Care",
+      "source_query": "lawn care service Asheville NC",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "javiertranquilino828@gmail.com": {
+      "original": "javiertranquilino828@gmail.com",
+      "normalized": "javiertranquilino828@gmail.com",
+      "business_name": "Clear View Lawn Care Services LLC",
+      "source_query": "lawn care service Asheville NC",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "evergreenlawns@mail.com": {
+      "original": "evergreenlawns@mail.com",
+      "normalized": "evergreenlawns@mail.com",
+      "business_name": "Evergreen Lawn Maintenance",
+      "source_query": "landscaping Bozeman MT",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "burvt@ecocleanearth.com": {
+      "original": "burvt@ecocleanearth.com",
+      "normalized": "burvt@ecocleanearth.com",
+      "business_name": "Black eagle cleaning services",
+      "source_query": "house cleaning Burlington VT",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "lizzycleans246@gmail.com": {
+      "original": "lizzycleans246@gmail.com",
+      "normalized": "lizzycleans246@gmail.com",
+      "business_name": "Cleaning With Meaning Vermont",
+      "source_query": "house cleaning Burlington VT",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "admin@mrmikescleaningservicevt.com": {
+      "original": "admin@mrmikescleaningservicevt.com",
+      "normalized": "admin@mrmikescleaningservicevt.com",
+      "business_name": "Mike's Cleaning Services",
+      "source_query": "house cleaning Burlington VT",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "hrtraven@mrmikescleaningservicevt.com": {
+      "original": "hrtraven@mrmikescleaningservicevt.com",
+      "normalized": "hrtraven@mrmikescleaningservicevt.com",
+      "business_name": "Mike's Cleaning Services",
+      "source_query": "house cleaning Burlington VT",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "davidbennett1505@gmail.com": {
+      "original": "davidbennett1505@gmail.com",
+      "normalized": "davidbennett1505@gmail.com",
+      "business_name": "BahamaShine Mobile Detailing",
+      "source_query": "mobile car detailing Bend OR",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "jamesdomings3@gmail.com": {
+      "original": "jamesdomings3@gmail.com",
+      "normalized": "jamesdomings3@gmail.com",
+      "business_name": "Dad's Auto Detailing",
+      "source_query": "mobile car detailing Bend OR",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "dads_detailing@yahoo.com": {
+      "original": "dads_detailing@yahoo.com",
+      "normalized": "dads_detailing@yahoo.com",
+      "business_name": "Dad's Auto Detailing",
+      "source_query": "mobile car detailing Bend OR",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "centraloregonautodetail@gmail.com": {
+      "original": "centraloregonautodetail@gmail.com",
+      "normalized": "centraloregonautodetail@gmail.com",
+      "business_name": "Bend Mobile Detailing",
+      "source_query": "mobile car detailing Bend OR",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "info@drdetailsandiego.com": {
+      "original": "info@drdetailsandiego.com",
+      "normalized": "info@drdetailsandiego.com",
+      "business_name": "Dr Detail",
+      "source_query": "mobile car detailing Bend OR",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "operations@homelandunitedconstruction.com": {
+      "original": "operations@homelandunitedconstruction.com",
+      "normalized": "operations@homelandunitedconstruction.com",
+      "business_name": "Residential Services of Savannah",
+      "source_query": "handyman Savannah GA",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "blake@georgiahandymanexperts.com": {
+      "original": "blake@georgiahandymanexperts.com",
+      "normalized": "blake@georgiahandymanexperts.com",
+      "business_name": "Professional Handyman Services",
+      "source_query": "handyman Savannah GA",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "info@savannahpropertyguardians.com": {
+      "original": "info@savannahpropertyguardians.com",
+      "normalized": "info@savannahpropertyguardians.com",
+      "business_name": "Savannah Handyman",
+      "source_query": "handyman Savannah GA",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "info@hometask.com": {
+      "original": "info@hometask.com",
+      "normalized": "info@hometask.com",
+      "business_name": "Savannah Handyman",
+      "source_query": "handyman Savannah GA",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "info@am-pros.com": {
+      "original": "info@am-pros.com",
+      "normalized": "info@am-pros.com",
+      "business_name": "Anytime Power Wash",
+      "source_query": "pressure washing Flagstaff AZ",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "contact@pressureperfectaz.com": {
+      "original": "contact@pressureperfectaz.com",
+      "normalized": "contact@pressureperfectaz.com",
+      "business_name": "Anytime Power Wash",
+      "source_query": "pressure washing Flagstaff AZ",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "zach@flagsurface.com": {
+      "original": "zach@flagsurface.com",
+      "normalized": "zach@flagsurface.com",
+      "business_name": "Northern Arizona Power Wash",
+      "source_query": "pressure washing Flagstaff AZ",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "hello@flagstaffpressurewash.com": {
+      "original": "hello@flagstaffpressurewash.com",
+      "normalized": "hello@flagstaffpressurewash.com",
+      "business_name": "Flagstaff Powerwash",
+      "source_query": "pressure washing Flagstaff AZ",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "kaidenmbaty@outlook.com": {
+      "original": "kaidenmbaty@outlook.com",
+      "normalized": "kaidenmbaty@outlook.com",
+      "business_name": "Apollo Automotive Detailing",
+      "source_query": "mobile car detailing Bend OR",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "mrfixitsav@gmail.com": {
+      "original": "mrfixitsav@gmail.com",
+      "normalized": "mrfixitsav@gmail.com",
+      "business_name": "MR. FIXIT UPPER",
+      "source_query": "handyman Savannah GA",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "info@ecolawnsultd.com": {
+      "original": "info@ecolawnsultd.com",
+      "normalized": "info@ecolawnsultd.com",
+      "business_name": "EcoLawns Unlimited",
+      "source_query": "lawn care service Asheville NC",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "robin.smith@uslawns.net": {
+      "original": "robin.smith@uslawns.net",
+      "normalized": "robin.smith@uslawns.net",
+      "business_name": "U.S. Lawns - Asheville",
+      "source_query": "lawn care service Asheville NC",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "office@lincslawncare.com": {
+      "original": "office@lincslawncare.com",
+      "normalized": "office@lincslawncare.com",
+      "business_name": "Linc's Lawn Care, LLC",
+      "source_query": "lawn care service Asheville NC",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "ncgreenscapes@gmail.com": {
+      "original": "ncgreenscapes@gmail.com",
+      "normalized": "ncgreenscapes@gmail.com",
+      "business_name": "Greenscapes Landscaping & Retaining Walls",
+      "source_query": "lawn care service Asheville NC",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "office@greatergallatin.com": {
+      "original": "office@greatergallatin.com",
+      "normalized": "office@greatergallatin.com",
+      "business_name": "Greater Gallatin Landscape Contractors Inc.",
+      "source_query": "landscaping Bozeman MT",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "jake@jermanlawncare.com": {
+      "original": "jake@jermanlawncare.com",
+      "normalized": "jake@jermanlawncare.com",
+      "business_name": "Jerman Lawn Care LLC",
+      "source_query": "landscaping Bozeman MT",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "sceniccity@montana.net": {
+      "original": "sceniccity@montana.net",
+      "normalized": "sceniccity@montana.net",
+      "business_name": "Scenic City Trucking & Landscaping Products",
+      "source_query": "landscaping Bozeman MT",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "support@limemaids.com": {
+      "original": "support@limemaids.com",
+      "normalized": "support@limemaids.com",
+      "business_name": "Lime Maids",
+      "source_query": "house cleaning Burlington VT",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "info@solsticelandscape.com": {
+      "original": "info@solsticelandscape.com",
+      "normalized": "info@solsticelandscape.com",
+      "business_name": "Solstice Landscaping",
+      "source_query": "landscaping Bozeman MT",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "higherground406@gmail.com": {
+      "original": "higherground406@gmail.com",
+      "normalized": "higherground406@gmail.com",
+      "business_name": "Higher Ground Landscaping",
+      "source_query": "landscaping Bozeman MT",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "office@highergroundaz.com": {
+      "original": "office@highergroundaz.com",
+      "normalized": "office@highergroundaz.com",
+      "business_name": "Higher Ground Landscaping",
+      "source_query": "landscaping Bozeman MT",
+      "first_seen": 1788493339,
+      "last_seen": 1788493339
+    },
+    "summitelectric@gmail.com": {
+      "original": "summit.electric@gmail.com",
+      "normalized": "summitelectric@gmail.com",
+      "business_name": "Summit Electric",
+      "source_query": "electricians Richmond VA",
+      "first_seen": 1788493593,
+      "last_seen": 1788493593
+    }
+  },
+  "updated_at": 1788493593,
+  "total_discovered": 35
+}
