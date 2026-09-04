@@ -62,89 +62,394 @@ def keypress(action_data: dict, timeout: int = 30):
         return {"ok": False, "error": str(e)[:120]}
 
 
-# ---------- Pitch message templates (romanized Hindi/Urdu, psychological selling) ----------
+# ---------- Country detection ----------
 
-def build_no_website_subject(business_name: str) -> str:
-    return f"Aapka business online nahi hai — leads lose ho rahe hain"
-
-
-def build_no_website_body(business_name: str, category: str, city: str) -> str:
-    return f"""Namaste {business_name} team,
-
-Maine dekha ki aapka business ({category} in {city}) online nahi hai. Aaj kal har customer Google pe search karta hai jab usko koi service chahiye hoti hai. Agar aapka website nahi hai, to aap har din naye customers lose kar rahe hain — aur wo customers aapke competitors ke paas ja rahe hain.
-
-Hum aapke liye ek professional online profile bana kar denge jisse:
-
-- Koi bhi online customer attract hoga jab wo search karega
-- Aapko daily naye leads milenge (calls + WhatsApp + email)
-- Aapka business 2x-3x grow karega within 3-6 months
-
-Iske liye ek website bahut zaruri hai. Hum aapko ek modern, fast, mobile-friendly website bana kar denge — jo aapke customers ko impress kare aur aapko naye leads laaye.
-
-Price bahut reasonable hai. Ek baar baat karke dekhiye — free consultation milega.
-
-Agar interested hain, to is email ka reply karein ya WhatsApp karein. Hum aapke saath 10 minute me detail discuss karenge.
-
-Dhanyavad,
-Web Solutions Team
-websiteDeveloper007@proton.me
-"""
+def country_from_query(query: str) -> str:
+    """Detect country from the lead's source query."""
+    if any(s in query for s in ("NC", "MT", "VT", "OR", "GA", "NY", "AZ", "CO", "NM", "SC")):
+        return "US"
+    if any(s in query for s in ("BC", "ON", "NS", "AB", "QC", "MB", "SK")):
+        return "CA"
+    if "UK" in query or any(s in query for s in ("England", "Scotland", "Wales")):
+        return "UK"
+    if "Ireland" in query:
+        return "IE"
+    if "NZ" in query:
+        return "NZ"
+    if any(s in query for s in ("VIC", "QLD", "TAS", "NSW", "SA", "WA")):
+        return "AU"
+    return "US"  # default
 
 
-def build_low_quality_subject(business_name: str) -> str:
-    return f"Aapki website seriously tooti hui hai — customers bhaag rahe hain"
+# ---------- English cold-outreach pitch templates (country-specific tone) ----------
+#
+# Cold email best practices applied:
+#   - Short (4 short paragraphs max)
+#   - Personalized opener (mentions their business + city + rating)
+#   - Problem stated plainly (no hype)
+#   - One concrete offer
+#   - Single clear CTA (reply or quick call)
+#   - Professional sign-off matching the country
+#
+# Country tone differences:
+#   US    — direct, results-focused, casual-professional, contractions, ROI/growth language
+#   UK    — more formal/polite, British spellings (organisation, favour, programme),
+#            "Kind regards", understated
+#   CA    — polite, friendly, slightly more reserved than US, mentions local market,
+#            "Cheers" or "Best regards"
+#   AU    — casual, mate-y but professional, "Cheers", mentions local competition
 
 
-def build_low_quality_body(business_name: str, website_url: str, reasons: list) -> str:
-    issues_text = ""
-    if reasons:
-        readable = []
-        for r in reasons[:3]:
-            if r == "no-viewport-meta":
-                readable.append("Mobile pe sahi nahi dikhti")
-            elif r == "no-https":
-                readable.append("Security warning dikhta hai (no HTTPS)")
-            elif r == "short-title":
-                readable.append("Google pe sahi se index nahi ho rahi")
-            elif r.startswith("old-copyright"):
-                readable.append("Purani lagti hai (copyright update nahi)")
-            elif r.startswith("generator"):
-                readable.append("Free website builder pe bani hai (unprofessional)")
-            elif r == "small-page":
-                readable.append("Bahut chhoti hai, content kam hai")
-            elif r.startswith("fetch-failed"):
-                readable.append("Properly load nahi ho rahi (broken)")
-            else:
-                readable.append(r)
-        issues_text = "\n".join(f"✗ {x}" for x in readable)
+# ============== NO-WEBSITE LEADS ==============
+
+def build_no_website_subject(business_name: str, country: str = "US") -> str:
+    # Country-specific subject lines (all English, cold-outreach tone)
+    if country == "UK":
+        return f"Quick question about {business_name}"
+    if country == "CA":
+        return f"{business_name} — quick question about your online presence"
+    if country == "AU":
+        return f"Quick question re {business_name}"
+    # US default
+    return f"Quick question about {business_name}"
+
+
+def build_no_website_body(lead: dict) -> str:
+    """English cold-outreach email for a no-website business.
+    Personalized with name, category, city, rating, reviews, phone/FB presence.
+    """
+    name = lead.get("name", "")
+    query = lead.get("_query", "")
+    parts = query.rsplit(" ", 2)
+    city = parts[-2] if len(parts) >= 2 else "your area"
+    state = parts[-1] if len(parts) >= 2 else ""
+    category = parts[0] if len(parts) >= 3 else query
+    rating = lead.get("rating")
+    reviews = lead.get("reviews")
+    phone = lead.get("phone") or ""
+    has_fb = bool(lead.get("facebook_url"))
+    country = country_from_query(query)
+
+    # Build a line that acknowledges what they're doing well
+    praise_bits = []
+    if rating and rating >= 4.5:
+        praise_bits.append(f"a {rating}-star rating")
+    if reviews and reviews >= 20:
+        praise_bits.append(f"{reviews}+ Google reviews")
+    if has_fb:
+        praise_bits.append("an active Facebook presence")
+    if praise_bits:
+        if len(praise_bits) == 1:
+            praise = praise_bits[0]
+        elif len(praise_bits) == 2:
+            praise = f"{praise_bits[0]} and {praise_bits[1]}"
+        else:
+            praise = ", ".join(praise_bits[:-1]) + f", and {praise_bits[-1]}"
     else:
-        issues_text = "✗ Website properly load nahi ho rahi\n✗ Modern features missing"
+        praise = "a solid local reputation"
 
-    return f"""Namaste {business_name} team,
+    # Clean up the category word (e.g. "lawn care service" → "lawn care")
+    # Many queries are "lawn care service Asheville NC" so the first token-group
+    # before the city is the full category phrase. Trim trailing "service".
+    cat_clean = category
+    cat_clean = re.sub(r"\s+service$", "", cat_clean, flags=re.IGNORECASE)
+    cat_clean = re.sub(r"\s+services$", "", cat_clean, flags=re.IGNORECASE)
+    category_phrase = cat_clean or category
 
-Maine aapki website check ki ({website_url}) aur usme kuch serious issues hain:
+    # Build the locality reference (city, state for US; just city elsewhere)
+    if country == "US":
+        locality = f"{city}, {state}" if state else city
+        opener_locality = locality
+    elif country == "UK":
+        locality = city
+        opener_locality = f"{city}"
+    elif country == "CA":
+        # Canadian province code is in the query like "BC", "ON"
+        locality = f"{city}, {state}" if state else city
+        opener_locality = locality
+    elif country == "AU":
+        # Australian state code like "VIC", "QLD"
+        locality = f"{city}, {state}" if state else city
+        opener_locality = locality
+    else:
+        locality = city
+        opener_locality = city
 
-{issues_text}
+    # Country-specific tone + sign-off
+    if country == "UK":
+        greeting = f"Hi {name} team,"
+        closer = "Kind regards,"
+        # British spellings + slightly more formal
+        problem_para = (
+            f"I came across {name} while looking at {category_phrase} services in {opener_locality}, "
+            f"and I noticed you've got {praise} — but no website listed."
+        )
+        value_para = (
+            f"Nowadays, when someone in {locality} searches for {category_phrase} on Google, "
+            f"they tend to go with whichever business has a proper site they can look at first. "
+            f"Without one, you're likely losing enquiries to competitors who do."
+        )
+        offer_para = (
+            f"I build straightforward, modern websites for service businesses like yours — "
+            f"mobile-friendly, fast, and set up to rank well locally. I'd be happy to put one "
+            f"together for {name} at a fair price, and have it live within a week or two."
+        )
+        cta_para = (
+            f"If that sounds worthwhile, just reply to this email and we can arrange a quick "
+            f"10-minute call to go over the details. No obligation."
+        )
+    elif country == "CA":
+        greeting = f"Hi {name} team,"
+        closer = "Best regards,"
+        problem_para = (
+            f"I was looking into {category_phrase} services in {opener_locality} and came across {name}. "
+            f"It looks like you've built {praise} — but I noticed you don't have a website."
+        )
+        value_para = (
+            f"These days, most people in {locality} check online before they pick a {category_phrase} provider. "
+            f"When they can't find you on Google, they usually go with someone who's there."
+        )
+        offer_para = (
+            f"I build clean, fast, mobile-friendly websites for local service businesses across Canada. "
+            f"I'd be glad to put one together for {name} — set up to bring in local enquiries — at a reasonable price."
+        )
+        cta_para = (
+            f"If you'd like to chat about it, just reply here and we can set up a quick 10-minute call. "
+            f"Cheers."
+        )
+    elif country == "AU":
+        greeting = f"Hi {name} team,"
+        closer = "Cheers,"
+        problem_para = (
+            f"I came across {name} while having a look at {category_phrase} services in {opener_locality}. "
+            f"You've clearly got {praise} — but I noticed there's no website listed."
+        )
+        value_para = (
+            f"These days, when someone in {locality} Googles a {category_phrase} business, they tend to go with "
+            f"the ones that have a proper site to look at. Without one, you're likely losing work to "
+            f"the competition."
+        )
+        offer_para = (
+            f"I build simple, modern, mobile-friendly websites for service businesses — set up to show up "
+            f"in local search and turn visitors into enquiries. Happy to put one together for {name} at a fair price."
+        )
+        cta_para = (
+            f"If you're keen, just reply here and we can sort out a quick 10-minute chat to go through the details."
+        )
+    else:  # US default — direct, results-focused
+        greeting = f"Hi {name} team,"
+        closer = "Best,"
+        problem_para = (
+            f"I came across {name} while searching for {category_phrase} services in {opener_locality}, "
+            f"and it looks like you've got {praise} — but no website listed."
+        )
+        value_para = (
+            f"These days, when someone in {locality} searches for {category_phrase} on Google, they usually go "
+            f"with whoever shows up with a real site they can look at. Without one, you're losing those "
+            f"leads to competitors who do."
+        )
+        offer_para = (
+            f"I build clean, modern, mobile-friendly websites for local service businesses — set up to "
+            f"rank well locally and turn visitors into calls. I'd be glad to put one together for {name} "
+            f"at a fair price, and have it live within a week or two."
+        )
+        cta_para = (
+            f"If that sounds worth exploring, just reply to this email and we can set up a quick 10-minute "
+            f"call to go over the details. No pressure."
+        )
 
-Ye sab problems ki wajah se jab bhi koi customer aapki website pe aata hai, wo turant wapas chala jaata hai. Aap roz naye customers lose kar rahe hain bina jaane.
+    return (
+        f"{greeting}\n\n"
+        f"{problem_para}\n\n"
+        f"{value_para}\n\n"
+        f"{offer_para}\n\n"
+        f"{cta_para}\n\n"
+        f"{closer}\n"
+        f"Web Solutions\n"
+        f"websiteDeveloper007@proton.me\n"
+    )
 
-Hum aapka pura system bana kar denge — cheap me, fast me, aur properly working:
 
-✓ Modern design jo customers ko impress kare
-✓ Mobile-friendly (har phone pe sahi dikhegi)
-✓ Fast loading (2 second me khul jayegi)
-✓ SEO-optimized (Google pe top pe aayegi)
-✓ SSL secure (no warnings)
-✓ WhatsApp + call button (direct leads)
+# ============== LOW-QUALITY-WEBSITE LEADS ==============
 
-Ek baar free consultation le lijiye — 10 minute me hum aapko dikhayenge ki kya kya improve ho sakta hai.
+def build_low_quality_subject(business_name: str, country: str = "US") -> str:
+    if country == "UK":
+        return f"Quick note about the {business_name} website"
+    if country == "CA":
+        return f"{business_name} website — quick note"
+    if country == "AU":
+        return f"Quick note about the {business_name} website"
+    return f"Quick note about the {business_name} website"
 
-Reply karein ya WhatsApp karein, hum aapke saath baat karenge.
 
-Dhanyavad,
-Web Solutions Team
-websiteDeveloper007@proton.me
-"""
+def _humanize_reason(reason: str) -> str:
+    """Turn a quality_reason code into a plain-English line for the email."""
+    if reason == "no-viewport-meta":
+        return "doesn't display properly on mobile phones"
+    if reason == "no-https":
+        return "shows a 'not secure' warning in the browser"
+    if reason == "short-title":
+        return "isn't properly indexed by Google"
+    if reason.startswith("old-copyright"):
+        return "looks out of date (copyright hasn't been updated)"
+    if reason.startswith("generator"):
+        gen = reason.split("-", 1)[1] if "-" in reason else ""
+        if "wix" in gen.lower():
+            return "is built on a free Wix template (looks unprofessional)"
+        if "godaddy" in gen.lower():
+            return "is built on a GoDaddy template (looks generic)"
+        if "weebly" in gen.lower():
+            return "is built on a free Weebly template"
+        return "looks like it was built with a free website builder"
+    if reason == "small-page":
+        return "has very little content"
+    if reason.startswith("fetch-failed"):
+        return "isn't loading properly when people visit it"
+    return reason.replace("-", " ")
+
+
+def build_low_quality_body(lead: dict) -> str:
+    """English cold-outreach email for a business with a low-quality website."""
+    name = lead.get("name", "")
+    query = lead.get("_query", "")
+    parts = query.rsplit(" ", 2)
+    city = parts[-2] if len(parts) >= 2 else "your area"
+    state = parts[-1] if len(parts) >= 2 else ""
+    category = parts[0] if len(parts) >= 3 else query
+    website_url = lead.get("websiteUrl") or ""
+    reasons = lead.get("quality_reasons") or []
+    rating = lead.get("rating")
+    reviews = lead.get("reviews")
+    country = country_from_query(query)
+
+    # Clean up the category word (trim trailing "service"/"services")
+    cat_clean = re.sub(r"\s+service$", "", category, flags=re.IGNORECASE)
+    cat_clean = re.sub(r"\s+services$", "", cat_clean, flags=re.IGNORECASE)
+    category_phrase = cat_clean or category
+
+    # Build locality + opener
+    if country == "US":
+        locality = f"{city}, {state}" if state else city
+    elif country == "UK":
+        locality = city
+    elif country == "CA":
+        locality = f"{city}, {state}" if state else city
+    elif country == "AU":
+        locality = f"{city}, {state}" if state else city
+    else:
+        locality = city
+
+    # Acknowledge what they're doing well
+    praise_bits = []
+    if rating and rating >= 4.5:
+        praise_bits.append(f"a {rating}-star rating")
+    if reviews and reviews >= 20:
+        praise_bits.append(f"{reviews}+ Google reviews")
+    praise = ", ".join(praise_bits[:-1]) + (" and " + praise_bits[-1] if len(praise_bits) > 1 else praise_bits[0]) if praise_bits else "a solid reputation locally"
+
+    # Translate quality issues to plain English
+    if reasons:
+        readable = [_humanize_reason(r) for r in reasons[:3]]
+        issues_block = "\n".join(f"  - it {r}" for r in readable)
+    else:
+        issues_block = "  - it isn't loading properly when people visit it\n  - it's missing modern features"
+
+    # Country-specific tone
+    if country == "UK":
+        greeting = f"Hi {name} team,"
+        closer = "Kind regards,"
+        problem_para = (
+            f"I was looking at {category_phrase} services in {locality} and came across {name} — "
+            f"you've clearly built {praise}. Whilst having a look, I noticed your website "
+            f"({website_url}) has a few issues:"
+        )
+        value_para = (
+            f"These sorts of problems tend to put people off — when a site doesn't load properly or "
+            f"looks out of date, visitors usually go back to Google and pick a competitor instead."
+        )
+        offer_para = (
+            f"I build straightforward, modern websites for service businesses — mobile-friendly, fast, "
+            f"secure, and set up to rank well locally. I'd be happy to rebuild {name}'s site properly, "
+            f"at a fair price, and have it live within a week or two."
+        )
+        cta_para = (
+            f"If that sounds useful, just reply to this email and we can arrange a quick 10-minute call "
+            f"to go over what needs sorting. No obligation."
+        )
+    elif country == "CA":
+        greeting = f"Hi {name} team,"
+        closer = "Best regards,"
+        problem_para = (
+            f"I was looking into {category_phrase} services in {locality} and came across {name} — "
+            f"you've built {praise}. While I was checking things out, I noticed your website "
+            f"({website_url}) has a few issues:"
+        )
+        value_para = (
+            f"These kinds of issues tend to turn visitors away — when a site doesn't load well or "
+            f"looks dated, people usually head back to Google and pick a competitor instead."
+        )
+        offer_para = (
+            f"I build clean, modern, mobile-friendly websites for service businesses across Canada — "
+            f"set up to rank well locally and bring in enquiries. I'd be glad to rebuild {name}'s site "
+            f"properly at a reasonable price."
+        )
+        cta_para = (
+            f"If you'd like to chat about it, just reply here and we can set up a quick 10-minute call. "
+            f"Cheers."
+        )
+    elif country == "AU":
+        greeting = f"Hi {name} team,"
+        closer = "Cheers,"
+        problem_para = (
+            f"I came across {name} while looking at {category_phrase} services in {locality} — "
+            f"you've clearly got {praise}. While I was having a look, I noticed your website "
+            f"({website_url}) has a few issues:"
+        )
+        value_para = (
+            f"That sort of thing tends to put people off — when a site doesn't load properly or "
+            f"looks a bit rough, visitors usually head back to Google and go with a competitor instead."
+        )
+        offer_para = (
+            f"I build simple, modern, mobile-friendly websites for service businesses — set up to show "
+            f"up in local search and turn visitors into enquiries. Happy to rebuild {name}'s site properly "
+            f"at a fair price."
+        )
+        cta_para = (
+            f"If you're keen, just reply here and we can sort out a quick 10-minute chat to go through the details."
+        )
+    else:  # US default
+        greeting = f"Hi {name} team,"
+        closer = "Best,"
+        problem_para = (
+            f"I came across {name} while searching for {category_phrase} services in {locality} — "
+            f"you've clearly built {praise}. While checking things out, I noticed your website "
+            f"({website_url}) has a few issues:"
+        )
+        value_para = (
+            f"These kinds of problems tend to drive visitors away — when a site doesn't load properly or "
+            f"looks outdated, people usually head back to Google and pick a competitor instead."
+        )
+        offer_para = (
+            f"I build clean, modern, mobile-friendly websites for local service businesses — set up to "
+            f"rank well locally and turn visitors into calls. I'd be glad to rebuild {name}'s site properly, "
+            f"at a fair price, and have it live within a week or two."
+        )
+        cta_para = (
+            f"If that sounds worth exploring, just reply to this email and we can set up a quick 10-minute "
+            f"call to go over what needs fixing. No pressure."
+        )
+
+    return (
+        f"{greeting}\n\n"
+        f"{problem_para}\n"
+        f"{issues_block}\n\n"
+        f"{value_para}\n\n"
+        f"{offer_para}\n\n"
+        f"{cta_para}\n\n"
+        f"{closer}\n"
+        f"Web Solutions\n"
+        f"websiteDeveloper007@proton.me\n"
+    )
 
 
 # ---------- ProtonMail compose flow ----------
@@ -346,18 +651,15 @@ def send_one_email(lead: dict, lead_type: str) -> dict:
         return {"ok": False, "error": "no email", "lead": name}
     recipient = emails[0]
     query = lead.get("_query", "")
-    parts = query.rsplit(" ", 2)
-    city = parts[-2] if len(parts) >= 2 else ""
-    category = parts[0] if len(parts) >= 3 else query
-    website_url = lead.get("websiteUrl") or ""
-    reasons = lead.get("quality_reasons") or []
+    country = country_from_query(query)
 
+    # Build subject + body using the new English cold-outreach templates
     if lead_type == "no-website":
-        subject = build_no_website_subject(name)
-        body = build_no_website_body(name, category, city)
+        subject = build_no_website_subject(name, country)
+        body = build_no_website_body(lead)
     else:
-        subject = build_low_quality_subject(name)
-        body = build_low_quality_body(name, website_url, reasons)
+        subject = build_low_quality_subject(name, country)
+        body = build_low_quality_body(lead)
 
     print(f"  → To: {recipient}")
     print(f"  → Subject: {subject}")

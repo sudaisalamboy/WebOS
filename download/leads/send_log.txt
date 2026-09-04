@@ -6,234 +6,234 @@ Delay between emails: 75s (total ~36.2 min)
 
 [1/29] Black Zulu Lawn Care (no-website)
   → To: blackzululawncare@gmail.com
-  → Subject: Aapka business online nahi hai — leads lose ho rahe hain
-  → Compose open: to=to-composer-360, subj=subject-composer-312
+  → Subject: Quick question about Black Zulu Lawn Care
+  → Compose open: to=to-composer-738, subj=subject-composer-696
   → Recipient committed: True
-  → Body ready: subject='Aapka business online nahi hai — leads l', bodyLen=1017, watermark=False
+  → Body ready: subject='Quick question about Black Zulu Lawn Car', bodyLen=873, watermark=False
   ✓ SENT to blackzululawncare@gmail.com
   ... waiting 75s before next email
 [2/29] Clear View Lawn Care Services LLC (no-website)
   → To: javiertranquilino828@gmail.com
-  → Subject: Aapka business online nahi hai — leads lose ho rahe hain
-  → Compose open: to=to-composer-776, subj=subject-composer-734
+  → Subject: Quick question about Clear View Lawn Care Services LLC
+  → Compose open: to=to-composer-1090, subj=subject-composer-1048
   → Recipient committed: True
-  → Body ready: subject='Aapka business online nahi hai — leads l', bodyLen=1030, watermark=False
+  → Body ready: subject='Quick question about Clear View Lawn Car', bodyLen=890, watermark=False
   ✓ SENT to javiertranquilino828@gmail.com
   ... waiting 75s before next email
 [3/29] Evergreen Lawn Maintenance (no-website)
   → To: evergreenlawns@mail.com
-  → Subject: Aapka business online nahi hai — leads lose ho rahe hain
-  → Compose open: to=to-composer-1128, subj=subject-composer-1086
+  → Subject: Quick question about Evergreen Lawn Maintenance
+  → Compose open: to=to-composer-1442, subj=subject-composer-1400
   → Recipient committed: True
-  → Body ready: subject='Aapka business online nahi hai — leads l', bodyLen=1015, watermark=False
+  → Body ready: subject='Quick question about Evergreen Lawn Main', bodyLen=869, watermark=False
   ✓ SENT to evergreenlawns@mail.com
   ... waiting 75s before next email
 [4/29] Black eagle cleaning services (no-website)
   → To: burvt@ecocleanearth.com
-  → Subject: Aapka business online nahi hai — leads lose ho rahe hain
-  → Compose open: to=to-composer-1484, subj=subject-composer-1442
+  → Subject: Quick question about Black eagle cleaning services
+  → Compose open: to=to-composer-1769, subj=subject-composer-1727
   → Recipient committed: True
-  → Body ready: subject='Aapka business online nahi hai — leads l', bodyLen=1024, watermark=False
+  → Body ready: subject='Quick question about Black eagle cleanin', bodyLen=878, watermark=False
   ✓ SENT to burvt@ecocleanearth.com
   ... waiting 75s before next email
 [5/29] Cleaning With Meaning Vermont (no-website)
   → To: lizzycleans246@gmail.com
-  → Subject: Aapka business online nahi hai — leads lose ho rahe hain
-  → Compose open: to=to-composer-1836, subj=subject-composer-1794
+  → Subject: Quick question about Cleaning With Meaning Vermont
+  → Compose open: to=to-composer-2115, subj=subject-composer-2073
   → Recipient committed: True
-  → Body ready: subject='Aapka business online nahi hai — leads l', bodyLen=1024, watermark=False
+  → Body ready: subject='Quick question about Cleaning With Meani', bodyLen=912, watermark=False
   ✓ SENT to lizzycleans246@gmail.com
   ... waiting 75s before next email
 [6/29] Mike's Cleaning Services (no-website)
   → To: admin@mrmikescleaningservicevt.com
-  → Subject: Aapka business online nahi hai — leads lose ho rahe hain
-  → Compose open: to=to-composer-2182, subj=subject-composer-2140
+  → Subject: Quick question about Mike's Cleaning Services
+  → Compose open: to=to-composer-2461, subj=subject-composer-2419
   → Recipient committed: True
-  → Body ready: subject='Aapka business online nahi hai — leads l', bodyLen=1019, watermark=False
+  → Body ready: subject="Quick question about Mike's Cleaning Ser", bodyLen=895, watermark=False
   ✓ SENT to admin@mrmikescleaningservicevt.com
   ... waiting 75s before next email
 [7/29] BahamaShine Mobile Detailing (no-website)
   → To: davidbennett1505@gmail.com
-  → Subject: Aapka business online nahi hai — leads lose ho rahe hain
-  → Compose open: to=to-composer-2546, subj=subject-composer-2504
+  → Subject: Quick question about BahamaShine Mobile Detailing
+  → Compose open: to=to-composer-2813, subj=subject-composer-2771
   → Recipient committed: True
-  → Body ready: subject='Aapka business online nahi hai — leads l', bodyLen=1023, watermark=False
+  → Body ready: subject='Quick question about BahamaShine Mobile ', bodyLen=907, watermark=False
   ✓ SENT to davidbennett1505@gmail.com
   ... waiting 75s before next email
 [8/29] Dad's Auto Detailing (no-website)
   → To: jamesdomings3@gmail.com
-  → Subject: Aapka business online nahi hai — leads lose ho rahe hain
-  → Compose open: to=to-composer-2898, subj=subject-composer-2856
+  → Subject: Quick question about Dad's Auto Detailing
+  → Compose open: to=to-composer-3165, subj=subject-composer-3123
   → Recipient committed: True
-  → Body ready: subject='Aapka business online nahi hai — leads l', bodyLen=1015, watermark=False
+  → Body ready: subject="Quick question about Dad's Auto Detailin", bodyLen=906, watermark=False
   ✓ SENT to jamesdomings3@gmail.com
   ... waiting 75s before next email
 [9/29] Bend Mobile Detailing (no-website)
   → To: davidbennett1505@gmail.com
-  → Subject: Aapka business online nahi hai — leads lose ho rahe hain
-  → Compose open: to=to-composer-3250, subj=subject-composer-3208
+  → Subject: Quick question about Bend Mobile Detailing
+  → Compose open: to=to-composer-3517, subj=subject-composer-3475
   → Recipient committed: True
-  → Body ready: subject='Aapka business online nahi hai — leads l', bodyLen=1016, watermark=False
+  → Body ready: subject='Quick question about Bend Mobile Detaili', bodyLen=886, watermark=False
   ✓ SENT to davidbennett1505@gmail.com
   ... waiting 75s before next email
 [10/29] Dr Detail (no-website)
   → To: info@drdetailsandiego.com
-  → Subject: Aapka business online nahi hai — leads lose ho rahe hain
-  → Compose open: to=to-composer-3596, subj=subject-composer-3554
+  → Subject: Quick question about Dr Detail
+  → Compose open: to=to-composer-3863, subj=subject-composer-3821
   → Recipient committed: True
-  → Body ready: subject='Aapka business online nahi hai — leads l', bodyLen=1004, watermark=False
+  → Body ready: subject='Quick question about Dr Detail', bodyLen=852, watermark=False
   ✓ SENT to info@drdetailsandiego.com
   ... waiting 75s before next email
 [11/29] Residential Services of Savannah (no-website)
   → To: operations@homelandunitedconstruction.com
-  → Subject: Aapka business online nahi hai — leads lose ho rahe hain
-  → Compose open: to=to-composer-3899, subj=subject-composer-3857
+  → Subject: Quick question about Residential Services of Savannah
+  → Compose open: to=to-composer-4172, subj=subject-composer-4130
   → Recipient committed: True
-  → Body ready: subject='Aapka business online nahi hai — leads l', bodyLen=1019, watermark=False
+  → Body ready: subject='Quick question about Residential Service', bodyLen=903, watermark=False
   ✓ SENT to operations@homelandunitedconstruction.com
   ... waiting 75s before next email
 [12/29] Professional Handyman Services (no-website)
   → To: blake@georgiahandymanexperts.com
-  → Subject: Aapka business online nahi hai — leads lose ho rahe hain
-  → Compose open: to=to-composer-4167, subj=subject-composer-4125
+  → Subject: Quick question about Professional Handyman Services
+  → Compose open: to=to-composer-4440, subj=subject-composer-4398
   → Recipient committed: False
-  → Body ready: subject='Aapka business online nahi hai — leads l', bodyLen=1017, watermark=False
+  → Body ready: subject='Quick question about Professional Handym', bodyLen=877, watermark=False
   ✓ SENT to blake@georgiahandymanexperts.com
   ... waiting 75s before next email
 [13/29] Savannah Handyman (no-website)
   → To: info@savannahpropertyguardians.com
-  → Subject: Aapka business online nahi hai — leads lose ho rahe hain
-  → Compose open: to=to-composer-4473, subj=subject-composer-4431
+  → Subject: Quick question about Savannah Handyman
+  → Compose open: to=to-composer-4746, subj=subject-composer-4704
   → Recipient committed: False
-  → Body ready: subject='Aapka business online nahi hai — leads l', bodyLen=1004, watermark=False
+  → Body ready: subject='Quick question about Savannah Handyman', bodyLen=838, watermark=False
   ✓ SENT to info@savannahpropertyguardians.com
   ... waiting 75s before next email
 [14/29] Anytime Power Wash (no-website)
   → To: info@am-pros.com
-  → Subject: Aapka business online nahi hai — leads lose ho rahe hain
-  → Compose open: to=to-composer-4779, subj=subject-composer-4737
+  → Subject: Quick question about Anytime Power Wash
+  → Compose open: to=to-composer-5052, subj=subject-composer-5010
   → Recipient committed: False
-  → Body ready: subject='Aapka business online nahi hai — leads l', bodyLen=1014, watermark=False
+  → Body ready: subject='Quick question about Anytime Power Wash', bodyLen=847, watermark=False
   ✓ SENT to info@am-pros.com
   ... waiting 75s before next email
 [15/29] Northern Arizona Power Wash (no-website)
   → To: zach@flagsurface.com
-  → Subject: Aapka business online nahi hai — leads lose ho rahe hain
-  → Compose open: to=to-composer-5085, subj=subject-composer-5043
+  → Subject: Quick question about Northern Arizona Power Wash
+  → Compose open: to=to-composer-5358, subj=subject-composer-5316
   → Recipient committed: False
-  → Body ready: subject='Aapka business online nahi hai — leads l', bodyLen=1023, watermark=False
+  → Body ready: subject='Quick question about Northern Arizona Po', bodyLen=906, watermark=False
   ✓ SENT to zach@flagsurface.com
   ... waiting 75s before next email
 [16/29] Flagstaff Powerwash (no-website)
   → To: hello@flagstaffpressurewash.com
-  → Subject: Aapka business online nahi hai — leads lose ho rahe hain
-  → Compose open: to=to-composer-5385, subj=subject-composer-5343
+  → Subject: Quick question about Flagstaff Powerwash
+  → Compose open: to=to-composer-5658, subj=subject-composer-5616
   → Recipient committed: False
-  → Body ready: subject='Aapka business online nahi hai — leads l', bodyLen=1015, watermark=False
+  → Body ready: subject='Quick question about Flagstaff Powerwash', bodyLen=859, watermark=False
   ✓ SENT to hello@flagstaffpressurewash.com
   ... waiting 75s before next email
 [17/29] Three ladies cleaning (no-website)
   → To: lizzycleans246@gmail.com
-  → Subject: Aapka business online nahi hai — leads lose ho rahe hain
-  → Compose open: to=to-composer-5691, subj=subject-composer-5649
-  → Recipient committed: True
-  → Body ready: subject='Aapka business online nahi hai — leads l', bodyLen=1016, watermark=False
+  → Subject: Quick question about Three ladies cleaning
+  → Compose open: to=to-composer-5971, subj=subject-composer-5922
+  → Recipient committed: False
+  → Body ready: subject='Quick question about Three ladies cleani', bodyLen=866, watermark=False
   ✓ SENT to lizzycleans246@gmail.com
   ... waiting 75s before next email
 [18/29] Apollo Automotive Detailing (no-website)
   → To: kaidenmbaty@outlook.com
-  → Subject: Aapka business online nahi hai — leads lose ho rahe hain
-  → Compose open: to=to-composer-5997, subj=subject-composer-5955
+  → Subject: Quick question about Apollo Automotive Detailing
+  → Compose open: to=to-composer-6270, subj=subject-composer-6228
   → Recipient committed: False
-  → Body ready: subject='Aapka business online nahi hai — leads l', bodyLen=1022, watermark=False
+  → Body ready: subject='Quick question about Apollo Automotive D', bodyLen=927, watermark=False
   ✓ SENT to kaidenmbaty@outlook.com
   ... waiting 75s before next email
 [19/29] MR. FIXIT UPPER (no-website)
   → To: mrfixitsav@gmail.com
-  → Subject: Aapka business online nahi hai — leads lose ho rahe hain
-  → Compose open: to=to-composer-6303, subj=subject-composer-6261
+  → Subject: Quick question about MR. FIXIT UPPER
+  → Compose open: to=to-composer-6576, subj=subject-composer-6534
   → Recipient committed: False
-  → Body ready: subject='Aapka business online nahi hai — leads l', bodyLen=1002, watermark=False
+  → Body ready: subject='Quick question about MR. FIXIT UPPER', bodyLen=852, watermark=False
   ✓ SENT to mrfixitsav@gmail.com
   ... waiting 75s before next email
 [20/29] EcoLawns Unlimited (low-quality-website)
   → To: info@ecolawnsultd.com
-  → Subject: Aapki website seriously tooti hui hai — customers bhaag rahe hain
-  → Compose open: to=to-composer-6609, subj=subject-composer-6567
+  → Subject: Quick note about the EcoLawns Unlimited website
+  → Compose open: to=to-composer-6882, subj=subject-composer-6840
   → Recipient committed: False
-  → Body ready: subject='Aapki website seriously tooti hui hai — ', bodyLen=876, watermark=False
+  → Body ready: subject='Quick note about the EcoLawns Unlimited ', bodyLen=944, watermark=False
   ✓ SENT to info@ecolawnsultd.com
   ... waiting 75s before next email
 [21/29] U.S. Lawns - Asheville (low-quality-website)
   → To: robin.smith@uslawns.net
-  → Subject: Aapki website seriously tooti hui hai — customers bhaag rahe hain
-  → Compose open: to=to-composer-6915, subj=subject-composer-6873
+  → Subject: Quick note about the U.S. Lawns - Asheville website
+  → Compose open: to=to-composer-7188, subj=subject-composer-7146
   → Recipient committed: False
-  → Body ready: subject='Aapki website seriously tooti hui hai — ', bodyLen=898, watermark=False
+  → Body ready: subject='Quick note about the U.S. Lawns - Ashevi', bodyLen=976, watermark=False
   ✓ SENT to robin.smith@uslawns.net
   ... waiting 75s before next email
 [22/29] Linc's Lawn Care, LLC (low-quality-website)
   → To: office@lincslawncare.com
-  → Subject: Aapki website seriously tooti hui hai — customers bhaag rahe hain
-  → Compose open: to=to-composer-7221, subj=subject-composer-7179
+  → Subject: Quick note about the Linc's Lawn Care, LLC website
+  → Compose open: to=to-composer-7494, subj=subject-composer-7452
   → Recipient committed: False
-  → Body ready: subject='Aapki website seriously tooti hui hai — ', bodyLen=875, watermark=False
+  → Body ready: subject="Quick note about the Linc's Lawn Care, L", bodyLen=951, watermark=False
   ✓ SENT to office@lincslawncare.com
   ... waiting 75s before next email
 [23/29] Greenscapes Landscaping & Retaining Walls (low-quality-website)
   → To: ncgreenscapes@gmail.com
-  → Subject: Aapki website seriously tooti hui hai — customers bhaag rahe hain
-  → Compose open: to=to-composer-7527, subj=subject-composer-7485
+  → Subject: Quick note about the Greenscapes Landscaping & Retaining Walls website
+  → Compose open: to=to-composer-7800, subj=subject-composer-7758
   → Recipient committed: False
-  → Body ready: subject='Aapki website seriously tooti hui hai — ', bodyLen=899, watermark=False
+  → Body ready: subject='Quick note about the Greenscapes Landsca', bodyLen=993, watermark=False
   ✓ SENT to ncgreenscapes@gmail.com
   ... waiting 75s before next email
 [24/29] Greater Gallatin Landscape Contractors Inc. (low-quality-website)
   → To: office@greatergallatin.com
-  → Subject: Aapki website seriously tooti hui hai — customers bhaag rahe hain
-  → Compose open: to=to-composer-7833, subj=subject-composer-7791
+  → Subject: Quick note about the Greater Gallatin Landscape Contractors Inc. website
+  → Compose open: to=to-composer-8106, subj=subject-composer-8064
   → Recipient committed: False
-  → Body ready: subject='Aapki website seriously tooti hui hai — ', bodyLen=903, watermark=False
+  → Body ready: subject='Quick note about the Greater Gallatin La', bodyLen=1001, watermark=False
   ✓ SENT to office@greatergallatin.com
   ... waiting 75s before next email
 [25/29] Jerman Lawn Care LLC (low-quality-website)
   → To: jake@jermanlawncare.com
-  → Subject: Aapki website seriously tooti hui hai — customers bhaag rahe hain
-  → Compose open: to=to-composer-8139, subj=subject-composer-8097
+  → Subject: Quick note about the Jerman Lawn Care LLC website
+  → Compose open: to=to-composer-8412, subj=subject-composer-8370
   → Recipient committed: False
-  → Body ready: subject='Aapki website seriously tooti hui hai — ', bodyLen=880, watermark=False
+  → Body ready: subject='Quick note about the Jerman Lawn Care LL', bodyLen=952, watermark=False
   ✓ SENT to jake@jermanlawncare.com
   ... waiting 75s before next email
 [26/29] Scenic City Trucking & Landscaping Products (low-quality-website)
   → To: sceniccity@montana.net
-  → Subject: Aapki website seriously tooti hui hai — customers bhaag rahe hain
-  → Compose open: to=to-composer-8445, subj=subject-composer-8403
+  → Subject: Quick note about the Scenic City Trucking & Landscaping Products website
+  → Compose open: to=to-composer-8718, subj=subject-composer-8676
   → Recipient committed: False
-  → Body ready: subject='Aapki website seriously tooti hui hai — ', bodyLen=919, watermark=False
+  → Body ready: subject='Quick note about the Scenic City Truckin', bodyLen=1039, watermark=False
   ✓ SENT to sceniccity@montana.net
   ... waiting 75s before next email
 [27/29] Lime Maids (low-quality-website)
   → To: support@limemaids.com
-  → Subject: Aapki website seriously tooti hui hai — customers bhaag rahe hain
-  → Compose open: to=to-composer-8751, subj=subject-composer-8709
+  → Subject: Quick note about the Lime Maids website
+  → Compose open: to=to-composer-9024, subj=subject-composer-8982
   → Recipient committed: False
-  → Body ready: subject='Aapki website seriously tooti hui hai — ', bodyLen=865, watermark=False
+  → Body ready: subject='Quick note about the Lime Maids website', bodyLen=926, watermark=False
   ✓ SENT to support@limemaids.com
   ... waiting 75s before next email
 [28/29] Solstice Landscaping (low-quality-website)
   → To: info@solsticelandscape.com
-  → Subject: Aapki website seriously tooti hui hai — customers bhaag rahe hain
-  → Compose open: to=to-composer-9057, subj=subject-composer-9015
+  → Subject: Quick note about the Solstice Landscaping website
+  → Compose open: to=to-composer-9330, subj=subject-composer-9288
   → Recipient committed: False
-  → Body ready: subject='Aapki website seriously tooti hui hai — ', bodyLen=886, watermark=False
+  → Body ready: subject='Quick note about the Solstice Landscapin', bodyLen=960, watermark=False
   ✓ SENT to info@solsticelandscape.com
   ... waiting 75s before next email
 [29/29] Higher Ground Landscaping (low-quality-website)
   → To: higherground406@gmail.com
-  → Subject: Aapki website seriously tooti hui hai — customers bhaag rahe hain
-  → Compose open: to=to-composer-9363, subj=subject-composer-9321
+  → Subject: Quick note about the Higher Ground Landscaping website
+  → Compose open: to=to-composer-9636, subj=subject-composer-9594
   → Recipient committed: False
-  → Body ready: subject='Aapki website seriously tooti hui hai — ', bodyLen=893, watermark=False
+  → Body ready: subject='Quick note about the Higher Ground Lands', bodyLen=977, watermark=False
   ✓ SENT to higherground406@gmail.com
 
 ===== FINAL =====
