@@ -1,241 +1,362 @@
-Loaded 20 no-website + 10 low-quality leads
-Already sent: 1
+Loaded 31 no-website + 13 low-quality leads
+Already sent (this campaign): 0
+Already sent (all campaigns): 28
+Pending: 44 leads
+Delay between emails: 75s (total ~55.0 min)
 
-Pending: 29 leads
-Delay between emails: 75s (total ~36.2 min)
-
-[1/29] Black Zulu Lawn Care (no-website)
-  → To: blackzululawncare@gmail.com
-  → Subject: Quick question about Black Zulu Lawn Care
-  → Compose open: to=to-composer-738, subj=subject-composer-696
+[1/44] Underhill outdoor home care (no-website)
+  → To: underhill.ohc@gmail.com
+  → Subject: Quick question about Underhill outdoor home care
+  → Compose open: to=to-composer-323, subj=subject-composer-275
   → Recipient committed: True
-  → Body ready: subject='Quick question about Black Zulu Lawn Car', bodyLen=873, watermark=False
-  ✓ SENT to blackzululawncare@gmail.com
+  → Body ready: subject='Quick question about Underhill outdoor h', bodyLen=872, watermark=False
+  ✓ SENT to underhill.ohc@gmail.com  (+ added to sent registry)
   ... waiting 75s before next email
-[2/29] Clear View Lawn Care Services LLC (no-website)
-  → To: javiertranquilino828@gmail.com
-  → Subject: Quick question about Clear View Lawn Care Services LLC
-  → Compose open: to=to-composer-1090, subj=subject-composer-1048
-  → Recipient committed: True
-  → Body ready: subject='Quick question about Clear View Lawn Car', bodyLen=890, watermark=False
-  ✓ SENT to javiertranquilino828@gmail.com
-  ... waiting 75s before next email
-[3/29] Evergreen Lawn Maintenance (no-website)
-  → To: evergreenlawns@mail.com
-  → Subject: Quick question about Evergreen Lawn Maintenance
-  → Compose open: to=to-composer-1442, subj=subject-composer-1400
-  → Recipient committed: True
-  → Body ready: subject='Quick question about Evergreen Lawn Main', bodyLen=869, watermark=False
-  ✓ SENT to evergreenlawns@mail.com
-  ... waiting 75s before next email
-[4/29] Black eagle cleaning services (no-website)
-  → To: burvt@ecocleanearth.com
-  → Subject: Quick question about Black eagle cleaning services
-  → Compose open: to=to-composer-1769, subj=subject-composer-1727
-  → Recipient committed: True
-  → Body ready: subject='Quick question about Black eagle cleanin', bodyLen=878, watermark=False
-  ✓ SENT to burvt@ecocleanearth.com
-  ... waiting 75s before next email
-[5/29] Cleaning With Meaning Vermont (no-website)
-  → To: lizzycleans246@gmail.com
+[2/44] Cleaning With Meaning Vermont (no-website)
+  → To: vtbestcleaners@gmail.com
   → Subject: Quick question about Cleaning With Meaning Vermont
-  → Compose open: to=to-composer-2115, subj=subject-composer-2073
+  → Compose open: to=to-composer-741, subj=subject-composer-699
   → Recipient committed: True
-  → Body ready: subject='Quick question about Cleaning With Meani', bodyLen=912, watermark=False
-  ✓ SENT to lizzycleans246@gmail.com
+  → Body ready: subject='Quick question about Cleaning With Meani', bodyLen=880, watermark=False
+  ✓ SENT to vtbestcleaners@gmail.com  (+ added to sent registry)
   ... waiting 75s before next email
-[6/29] Mike's Cleaning Services (no-website)
-  → To: admin@mrmikescleaningservicevt.com
-  → Subject: Quick question about Mike's Cleaning Services
-  → Compose open: to=to-composer-2461, subj=subject-composer-2419
-  → Recipient committed: True
-  → Body ready: subject="Quick question about Mike's Cleaning Ser", bodyLen=895, watermark=False
-  ✓ SENT to admin@mrmikescleaningservicevt.com
-  ... waiting 75s before next email
-[7/29] BahamaShine Mobile Detailing (no-website)
-  → To: davidbennett1505@gmail.com
-  → Subject: Quick question about BahamaShine Mobile Detailing
-  → Compose open: to=to-composer-2813, subj=subject-composer-2771
-  → Recipient committed: True
-  → Body ready: subject='Quick question about BahamaShine Mobile ', bodyLen=907, watermark=False
-  ✓ SENT to davidbennett1505@gmail.com
-  ... waiting 75s before next email
-[8/29] Dad's Auto Detailing (no-website)
-  → To: jamesdomings3@gmail.com
-  → Subject: Quick question about Dad's Auto Detailing
-  → Compose open: to=to-composer-3165, subj=subject-composer-3123
-  → Recipient committed: True
-  → Body ready: subject="Quick question about Dad's Auto Detailin", bodyLen=906, watermark=False
-  ✓ SENT to jamesdomings3@gmail.com
-  ... waiting 75s before next email
-[9/29] Bend Mobile Detailing (no-website)
-  → To: davidbennett1505@gmail.com
-  → Subject: Quick question about Bend Mobile Detailing
-  → Compose open: to=to-composer-3517, subj=subject-composer-3475
-  → Recipient committed: True
-  → Body ready: subject='Quick question about Bend Mobile Detaili', bodyLen=886, watermark=False
-  ✓ SENT to davidbennett1505@gmail.com
-  ... waiting 75s before next email
-[10/29] Dr Detail (no-website)
-  → To: info@drdetailsandiego.com
-  → Subject: Quick question about Dr Detail
-  → Compose open: to=to-composer-3863, subj=subject-composer-3821
-  → Recipient committed: True
-  → Body ready: subject='Quick question about Dr Detail', bodyLen=852, watermark=False
-  ✓ SENT to info@drdetailsandiego.com
-  ... waiting 75s before next email
-[11/29] Residential Services of Savannah (no-website)
-  → To: operations@homelandunitedconstruction.com
-  → Subject: Quick question about Residential Services of Savannah
-  → Compose open: to=to-composer-4172, subj=subject-composer-4130
-  → Recipient committed: True
-  → Body ready: subject='Quick question about Residential Service', bodyLen=903, watermark=False
-  ✓ SENT to operations@homelandunitedconstruction.com
-  ... waiting 75s before next email
-[12/29] Professional Handyman Services (no-website)
-  → To: blake@georgiahandymanexperts.com
-  → Subject: Quick question about Professional Handyman Services
-  → Compose open: to=to-composer-4440, subj=subject-composer-4398
-  → Recipient committed: False
-  → Body ready: subject='Quick question about Professional Handym', bodyLen=877, watermark=False
-  ✓ SENT to blake@georgiahandymanexperts.com
-  ... waiting 75s before next email
-[13/29] Savannah Handyman (no-website)
-  → To: info@savannahpropertyguardians.com
+[3/44] Savannah Handyman (no-website)
+  → To: taen@greatersavannahhandyman.com
   → Subject: Quick question about Savannah Handyman
-  → Compose open: to=to-composer-4746, subj=subject-composer-4704
-  → Recipient committed: False
+  → Compose open: to=to-composer-1088, subj=subject-composer-1046
+  → Recipient committed: True
   → Body ready: subject='Quick question about Savannah Handyman', bodyLen=838, watermark=False
-  ✓ SENT to info@savannahpropertyguardians.com
+  ✓ SENT to taen@greatersavannahhandyman.com  (+ added to sent registry)
   ... waiting 75s before next email
-[14/29] Anytime Power Wash (no-website)
-  → To: info@am-pros.com
-  → Subject: Quick question about Anytime Power Wash
-  → Compose open: to=to-composer-5052, subj=subject-composer-5010
+[4/44] V & C Windows & Construction Cleaning (no-website)
+  → To: scott@integrityfacility.com
+  → Subject: Quick question about V & C Windows & Construction Cleaning
+  → Compose open: to=to-composer-1440, subj=subject-composer-1398
+  → Recipient committed: True
+  → Body ready: subject='Quick question about V & C Windows & Con', bodyLen=938, watermark=False
+  ✓ SENT to scott@integrityfacility.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[5/44] Exotic Pressure Washing LLC (no-website)
+  → To: executivepro.cleaningcompany22@gmail.com
+  → Subject: Quick question about Exotic Pressure Washing LLC
+  → Compose open: to=to-composer-1792, subj=subject-composer-1750
+  → Recipient committed: True
+  → Body ready: subject='Quick question about Exotic Pressure Was', bodyLen=886, watermark=False
+  ✓ SENT to executivepro.cleaningcompany22@gmail.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[6/44] Evergreen Tree & Lawn Services (no-website)
+  → To: shelly@greatermontanare.com
+  → Subject: Quick question about Evergreen Tree & Lawn Services
+  → Compose open: to=to-composer-2203, subj=subject-composer-2161
+  → Recipient committed: True
+  → Body ready: subject='Quick question about Evergreen Tree & La', bodyLen=869, watermark=False
+  ✓ SENT to shelly@greatermontanare.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[7/44] OConnor Tree Works (no-website)
+  → To: info@abletreeservice.com
+  → Subject: Quick question about OConnor Tree Works
+  → Compose open: to=to-composer-2474, subj=subject-composer-2432
   → Recipient committed: False
-  → Body ready: subject='Quick question about Anytime Power Wash', bodyLen=847, watermark=False
-  ✓ SENT to info@am-pros.com
+  → Body ready: subject='Quick question about OConnor Tree Works', bodyLen=853, watermark=False
+  ✓ SENT to info@abletreeservice.com  (+ added to sent registry)
   ... waiting 75s before next email
-[15/29] Northern Arizona Power Wash (no-website)
-  → To: zach@flagsurface.com
-  → Subject: Quick question about Northern Arizona Power Wash
-  → Compose open: to=to-composer-5358, subj=subject-composer-5316
+[8/44] Tall Tree Experts (no-website)
+  → To: support@talltreeexperts.com
+  → Subject: Quick question about Tall Tree Experts
+  → Compose open: to=to-composer-2780, subj=subject-composer-2738
   → Recipient committed: False
-  → Body ready: subject='Quick question about Northern Arizona Po', bodyLen=906, watermark=False
-  ✓ SENT to zach@flagsurface.com
+  → Body ready: subject='Quick question about Tall Tree Experts', bodyLen=830, watermark=False
+  ✓ SENT to support@talltreeexperts.com  (+ added to sent registry)
   ... waiting 75s before next email
-[16/29] Flagstaff Powerwash (no-website)
-  → To: hello@flagstaffpressurewash.com
-  → Subject: Quick question about Flagstaff Powerwash
-  → Compose open: to=to-composer-5658, subj=subject-composer-5616
+[9/44] Jennison Tree Services (no-website)
+  → To: darrenslominski@gmail.com
+  → Subject: Quick question about Jennison Tree Services
+  → Compose open: to=to-composer-3086, subj=subject-composer-3044
   → Recipient committed: False
-  → Body ready: subject='Quick question about Flagstaff Powerwash', bodyLen=859, watermark=False
-  ✓ SENT to hello@flagstaffpressurewash.com
+  → Body ready: subject='Quick question about Jennison Tree Servi', bodyLen=845, watermark=False
+  ✓ SENT to darrenslominski@gmail.com  (+ added to sent registry)
   ... waiting 75s before next email
-[17/29] Three ladies cleaning (no-website)
-  → To: lizzycleans246@gmail.com
-  → Subject: Quick question about Three ladies cleaning
-  → Compose open: to=to-composer-5971, subj=subject-composer-5922
+[10/44] Tolson excavation and contracting (no-website)
+  → To: tolsonex@gmail.com
+  → Subject: Quick question about Tolson excavation and contracting
+  → Compose open: to=to-composer-3392, subj=subject-composer-3350
   → Recipient committed: False
-  → Body ready: subject='Quick question about Three ladies cleani', bodyLen=866, watermark=False
-  ✓ SENT to lizzycleans246@gmail.com
+  → Body ready: subject='Quick question about Tolson excavation a', bodyLen=898, watermark=False
+  ✓ SENT to tolsonex@gmail.com  (+ added to sent registry)
   ... waiting 75s before next email
-[18/29] Apollo Automotive Detailing (no-website)
-  → To: kaidenmbaty@outlook.com
-  → Subject: Quick question about Apollo Automotive Detailing
-  → Compose open: to=to-composer-6270, subj=subject-composer-6228
+[11/44] A Pet Sitter LLC (no-website)
+  → To: support@sittercity.com
+  → Subject: Quick question about A Pet Sitter LLC
+  → Compose open: to=to-composer-3698, subj=subject-composer-3656
   → Recipient committed: False
-  → Body ready: subject='Quick question about Apollo Automotive D', bodyLen=927, watermark=False
-  ✓ SENT to kaidenmbaty@outlook.com
+  → Body ready: subject='Quick question about A Pet Sitter LLC', bodyLen=848, watermark=False
+  ✓ SENT to support@sittercity.com  (+ added to sent registry)
   ... waiting 75s before next email
-[19/29] MR. FIXIT UPPER (no-website)
-  → To: mrfixitsav@gmail.com
-  → Subject: Quick question about MR. FIXIT UPPER
-  → Compose open: to=to-composer-6576, subj=subject-composer-6534
+[12/44] Walk with ME (no-website)
+  → To: whitetwhitney@gmail.com
+  → Subject: Quick question about Walk with ME
+  → Compose open: to=to-composer-4004, subj=subject-composer-3962
   → Recipient committed: False
-  → Body ready: subject='Quick question about MR. FIXIT UPPER', bodyLen=852, watermark=False
-  ✓ SENT to mrfixitsav@gmail.com
+  → Body ready: subject='Quick question about Walk with ME', bodyLen=845, watermark=False
+  ✓ SENT to whitetwhitney@gmail.com  (+ added to sent registry)
   ... waiting 75s before next email
-[20/29] EcoLawns Unlimited (low-quality-website)
-  → To: info@ecolawnsultd.com
-  → Subject: Quick note about the EcoLawns Unlimited website
-  → Compose open: to=to-composer-6882, subj=subject-composer-6840
+[13/44] Weyers Construction LLP (no-website)
+  → To: weyersconstructionllp@gmail.com
+  → Subject: Quick question about Weyers Construction LLP
+  → Compose open: to=to-composer-4310, subj=subject-composer-4268
   → Recipient committed: False
-  → Body ready: subject='Quick note about the EcoLawns Unlimited ', bodyLen=944, watermark=False
-  ✓ SENT to info@ecolawnsultd.com
+  → Body ready: subject='Quick question about Weyers Construction', bodyLen=888, watermark=False
+  ✓ SENT to weyersconstructionllp@gmail.com  (+ added to sent registry)
   ... waiting 75s before next email
-[21/29] U.S. Lawns - Asheville (low-quality-website)
-  → To: robin.smith@uslawns.net
+[14/44] Trusted Fence and Gate LLC (no-website)
+  → To: oregonfence@oregonfence.net
+  → Subject: Quick question about Trusted Fence and Gate LLC
+  → Compose open: to=to-composer-4616, subj=subject-composer-4574
+  → Recipient committed: False
+  → Body ready: subject='Quick question about Trusted Fence and G', bodyLen=918, watermark=False
+  ✓ SENT to oregonfence@oregonfence.net  (+ added to sent registry)
+  ... waiting 75s before next email
+[15/44] Elite Fence Co Inc (no-website)
+  → To: elitefencecoinc@hotmail.com
+  → Subject: Quick question about Elite Fence Co Inc
+  → Compose open: to=to-composer-4922, subj=subject-composer-4880
+  → Recipient committed: False
+  → Body ready: subject='Quick question about Elite Fence Co Inc', bodyLen=853, watermark=False
+  ✓ SENT to elitefencecoinc@hotmail.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[16/44] Eugene Deck and Fence (no-website)
+  → To: rich@willamettevalleygeneral.com
+  → Subject: Quick question about Eugene Deck and Fence
+  → Compose open: to=to-composer-5228, subj=subject-composer-5186
+  → Recipient committed: False
+  → Body ready: subject='Quick question about Eugene Deck and Fen', bodyLen=862, watermark=False
+  ✓ SENT to rich@willamettevalleygeneral.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[17/44] Fencing Rental Pros Eugene (no-website)
+  → To: service@oregonrentafence.com
+  → Subject: Quick question about Fencing Rental Pros Eugene
+  → Compose open: to=to-composer-5534, subj=subject-composer-5492
+  → Recipient committed: False
+  → Body ready: subject='Quick question about Fencing Rental Pros', bodyLen=877, watermark=False
+  ✓ SENT to service@oregonrentafence.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[18/44] Barks & Bubbles (no-website)
+  → To: pawfect@hotmail.com
+  → Subject: Quick question about Barks & Bubbles
+  → Compose open: to=to-composer-5840, subj=subject-composer-5798
+  → Recipient committed: False
+  → Body ready: subject='Quick question about Barks & Bubbles', bodyLen=861, watermark=False
+  ✓ SENT to pawfect@hotmail.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[19/44] Cactus Pet Sitting LLC (no-website)
+  → To: info@petsit.com
+  → Subject: Quick question about Cactus Pet Sitting LLC
+  → Compose open: to=to-composer-6146, subj=subject-composer-6104
+  → Recipient committed: False
+  → Body ready: subject='Quick question about Cactus Pet Sitting ', bodyLen=847, watermark=False
+  ✓ SENT to info@petsit.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[20/44] Santa Fe Pet & Property Angel (no-website)
+  → To: petangelsantafe@gmail.com
+  → Subject: Quick question about Santa Fe Pet & Property Angel
+  → Compose open: to=to-composer-6452, subj=subject-composer-6410
+  → Recipient committed: False
+  → Body ready: subject='Quick question about Santa Fe Pet & Prop', bodyLen=880, watermark=False
+  ✓ SENT to petangelsantafe@gmail.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[21/44] Perfect Electricians (no-website)
+  → To: aaron.hagan@mistersparky.com
+  → Subject: Quick question about Perfect Electricians
+  → Compose open: to=to-composer-6800, subj=subject-composer-6758
+  → Recipient committed: False
+  → Body ready: subject='Quick question about Perfect Electrician', bodyLen=898, watermark=False
+  ✓ SENT to aaron.hagan@mistersparky.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[22/44] Hayes Family Electricians (no-website)
+  → To: profiles@birdeye.com
+  → Subject: Quick question about Hayes Family Electricians
+  → Compose open: to=to-composer-7106, subj=subject-composer-7064
+  → Recipient committed: False
+  → Body ready: subject='Quick question about Hayes Family Electr', bodyLen=913, watermark=False
+  ✓ SENT to profiles@birdeye.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[23/44] A1 Electric Tulsa (no-website)
+  → To: help@serviceagent.ai
+  → Subject: Quick question about A1 Electric Tulsa
+  → Compose open: to=to-composer-7412, subj=subject-composer-7370
+  → Recipient committed: False
+  → Body ready: subject='Quick question about A1 Electric Tulsa', bodyLen=866, watermark=False
+  ✓ SENT to help@serviceagent.ai  (+ added to sent registry)
+  ... waiting 75s before next email
+[24/44] Tallent Electrical Services (no-website)
+  → To: info@tulsahba.com
+  → Subject: Quick question about Tallent Electrical Services
+  → Compose open: to=to-composer-7718, subj=subject-composer-7676
+  → Recipient committed: False
+  → Body ready: subject='Quick question about Tallent Electrical ', bodyLen=917, watermark=False
+  ✓ SENT to info@tulsahba.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[25/44] H T Painting (no-website)
+  → To: randywilsonpainting@yahoo.com
+  → Subject: Quick question about H T Painting
+  → Compose open: to=to-composer-8024, subj=subject-composer-7982
+  → Recipient committed: False
+  → Body ready: subject='Quick question about H T Painting', bodyLen=855, watermark=False
+  ✓ SENT to randywilsonpainting@yahoo.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[26/44] CRITTER GETTERS TERMITE AND PEST CONTROL (no-website)
+  → To: cgetters@yahoo.com
+  → Subject: Quick question about CRITTER GETTERS TERMITE AND PEST CONTROL
+  → Compose open: to=to-composer-8330, subj=subject-composer-8288
+  → Recipient committed: False
+  → Body ready: subject='Quick question about CRITTER GETTERS TER', bodyLen=949, watermark=False
+  ✓ SENT to cgetters@yahoo.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[27/44] Colorclean of the Gulf Coast (no-website)
+  → To: gulfcoastcarpetcleaning@comcast.net
+  → Subject: Quick question about Colorclean of the Gulf Coast
+  → Compose open: to=to-composer-8636, subj=subject-composer-8594
+  → Recipient committed: False
+  → Body ready: subject='Quick question about Colorclean of the G', bodyLen=877, watermark=False
+  ✓ SENT to gulfcoastcarpetcleaning@comcast.net  (+ added to sent registry)
+  ... waiting 75s before next email
+[28/44] COIT Cleaning and Restoration (no-website)
+  → To: info@coit.com
+  → Subject: Quick question about COIT Cleaning and Restoration
+  → Compose open: to=to-composer-8942, subj=subject-composer-8900
+  → Recipient committed: False
+  → Body ready: subject='Quick question about COIT Cleaning and R', bodyLen=887, watermark=False
+  ✓ SENT to info@coit.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[29/44] Port City Carpet Service (no-website)
+  → To: rjrichburg@bellsouth.net
+  → Subject: Quick question about Port City Carpet Service
+  → Compose open: to=to-composer-9248, subj=subject-composer-9206
+  → Recipient committed: False
+  → Body ready: subject='Quick question about Port City Carpet Se', bodyLen=872, watermark=False
+  ✓ SENT to rjrichburg@bellsouth.net  (+ added to sent registry)
+  ... waiting 75s before next email
+[30/44] Gulf Coast Carpet Cleaning/ and water remediation (no-website)
+  → To: eccc.llc@hotmail.com
+  → Subject: Quick question about Gulf Coast Carpet Cleaning/ and water remediation
+  → Compose open: to=to-composer-9554, subj=subject-composer-9512
+  → Recipient committed: False
+  → Body ready: subject='Quick question about Gulf Coast Carpet C', bodyLen=972, watermark=False
+  ✓ SENT to eccc.llc@hotmail.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[31/44] Indigo Loft Salon (no-website)
+  → To: indigo@indigolft.com
+  → Subject: Quick question about Indigo Loft Salon
+  → Compose open: to=to-composer-9860, subj=subject-composer-9818
+  → Recipient committed: False
+  → Body ready: subject='Quick question about Indigo Loft Salon', bodyLen=864, watermark=False
+  ✓ SENT to indigo@indigolft.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[32/44] U.S. Lawns - Asheville (low-quality-website)
+  → To: smith@uslawns.net
   → Subject: Quick note about the U.S. Lawns - Asheville website
-  → Compose open: to=to-composer-7188, subj=subject-composer-7146
+  → Compose open: to=to-composer-10166, subj=subject-composer-10124
   → Recipient committed: False
   → Body ready: subject='Quick note about the U.S. Lawns - Ashevi', bodyLen=976, watermark=False
-  ✓ SENT to robin.smith@uslawns.net
+  ✓ SENT to smith@uslawns.net  (+ added to sent registry)
   ... waiting 75s before next email
-[22/29] Linc's Lawn Care, LLC (low-quality-website)
-  → To: office@lincslawncare.com
-  → Subject: Quick note about the Linc's Lawn Care, LLC website
-  → Compose open: to=to-composer-7494, subj=subject-composer-7452
+[33/44] DEM CLEANING SERVICES LLC ( Burlington,VT) (low-quality-website)
+  → To: bashouvip@gmail.com
+  → Subject: Quick note about the DEM CLEANING SERVICES LLC ( Burlington,VT) website
+  → Compose open: to=to-composer-10472, subj=subject-composer-10430
   → Recipient committed: False
-  → Body ready: subject="Quick note about the Linc's Lawn Care, L", bodyLen=951, watermark=False
-  ✓ SENT to office@lincslawncare.com
+  → Body ready: subject='Quick note about the DEM CLEANING SERVIC', bodyLen=1036, watermark=False
+  ✓ SENT to bashouvip@gmail.com  (+ added to sent registry)
   ... waiting 75s before next email
-[23/29] Greenscapes Landscaping & Retaining Walls (low-quality-website)
-  → To: ncgreenscapes@gmail.com
-  → Subject: Quick note about the Greenscapes Landscaping & Retaining Walls website
-  → Compose open: to=to-composer-7800, subj=subject-composer-7758
+[34/44] All Season’s Carpet & Upholstery Cleaning of Vermont (low-quality-website)
+  → To: peterbreen@comcast.net
+  → Subject: Quick note about the All Season’s Carpet & Upholstery Cleaning of Vermont website
+  → Compose open: to=to-composer-10783, subj=subject-composer-10741
   → Recipient committed: False
-  → Body ready: subject='Quick note about the Greenscapes Landsca', bodyLen=993, watermark=False
-  ✓ SENT to ncgreenscapes@gmail.com
+  → Body ready: subject='Quick note about the All Season’s Carpet', bodyLen=1512, watermark=False
+  ✓ SENT to peterbreen@comcast.net  (+ added to sent registry)
   ... waiting 75s before next email
-[24/29] Greater Gallatin Landscape Contractors Inc. (low-quality-website)
-  → To: office@greatergallatin.com
-  → Subject: Quick note about the Greater Gallatin Landscape Contractors Inc. website
-  → Compose open: to=to-composer-8106, subj=subject-composer-8064
+[35/44] Champlain Valley Cleaning (low-quality-website)
+  → To: champlainvalleycleaning@gmail.com
+  → Subject: Quick note about the Champlain Valley Cleaning website
+  → Compose open: to=to-composer-11093, subj=subject-composer-11051
   → Recipient committed: False
-  → Body ready: subject='Quick note about the Greater Gallatin La', bodyLen=1001, watermark=False
-  ✓ SENT to office@greatergallatin.com
+  → Body ready: subject='Quick note about the Champlain Valley Cl', bodyLen=996, watermark=False
+  ✓ SENT to champlainvalleycleaning@gmail.com  (+ added to sent registry)
   ... waiting 75s before next email
-[25/29] Jerman Lawn Care LLC (low-quality-website)
-  → To: jake@jermanlawncare.com
-  → Subject: Quick note about the Jerman Lawn Care LLC website
-  → Compose open: to=to-composer-8412, subj=subject-composer-8370
+[36/44] Phoenix Surface Cleaning LLC. (low-quality-website)
+  → To: phoenixxcleaning@gmail.com
+  → Subject: Quick note about the Phoenix Surface Cleaning LLC. website
+  → Compose open: to=to-composer-11403, subj=subject-composer-11361
   → Recipient committed: False
-  → Body ready: subject='Quick note about the Jerman Lawn Care LL', bodyLen=952, watermark=False
-  ✓ SENT to jake@jermanlawncare.com
+  → Body ready: subject='Quick note about the Phoenix Surface Cle', bodyLen=976, watermark=False
+  ✓ SENT to phoenixxcleaning@gmail.com  (+ added to sent registry)
   ... waiting 75s before next email
-[26/29] Scenic City Trucking & Landscaping Products (low-quality-website)
-  → To: sceniccity@montana.net
-  → Subject: Quick note about the Scenic City Trucking & Landscaping Products website
-  → Compose open: to=to-composer-8718, subj=subject-composer-8676
+[37/44] Viking Plumbing (low-quality-website)
+  → To: vikingplumbingboise@gmail.com
+  → Subject: Quick note about the Viking Plumbing website
+  → Compose open: to=to-composer-11713, subj=subject-composer-11671
   → Recipient committed: False
-  → Body ready: subject='Quick note about the Scenic City Truckin', bodyLen=1039, watermark=False
-  ✓ SENT to sceniccity@montana.net
+  → Body ready: subject='Quick note about the Viking Plumbing web', bodyLen=919, watermark=False
+  ✓ SENT to vikingplumbingboise@gmail.com  (+ added to sent registry)
   ... waiting 75s before next email
-[27/29] Lime Maids (low-quality-website)
-  → To: support@limemaids.com
-  → Subject: Quick note about the Lime Maids website
-  → Compose open: to=to-composer-9024, subj=subject-composer-8982
+[38/44] Meridian Plumbing, Heating and Air (low-quality-website)
+  → To: customerservice@accessheating.com
+  → Subject: Quick note about the Meridian Plumbing, Heating and Air website
+  → Compose open: to=to-composer-12023, subj=subject-composer-11981
   → Recipient committed: False
-  → Body ready: subject='Quick note about the Lime Maids website', bodyLen=926, watermark=False
-  ✓ SENT to support@limemaids.com
+  → Body ready: subject='Quick note about the Meridian Plumbing, ', bodyLen=1003, watermark=False
+  ✓ SENT to customerservice@accessheating.com  (+ added to sent registry)
   ... waiting 75s before next email
-[28/29] Solstice Landscaping (low-quality-website)
-  → To: info@solsticelandscape.com
-  → Subject: Quick note about the Solstice Landscaping website
-  → Compose open: to=to-composer-9330, subj=subject-composer-9288
+[39/44] Drake Mechanical | HVAC & Plumbing Services (low-quality-website)
+  → To: info@drakemech.com
+  → Subject: Quick note about the Drake Mechanical | HVAC & Plumbing Services website
+  → Compose open: to=to-composer-12333, subj=subject-composer-12291
   → Recipient committed: False
-  → Body ready: subject='Quick note about the Solstice Landscapin', bodyLen=960, watermark=False
-  ✓ SENT to info@solsticelandscape.com
+  → Body ready: subject='Quick note about the Drake Mechanical | ', bodyLen=1021, watermark=False
+  ✓ SENT to info@drakemech.com  (+ added to sent registry)
   ... waiting 75s before next email
-[29/29] Higher Ground Landscaping (low-quality-website)
-  → To: higherground406@gmail.com
-  → Subject: Quick note about the Higher Ground Landscaping website
-  → Compose open: to=to-composer-9636, subj=subject-composer-9594
+[40/44] Watt's Right Electric (low-quality-website)
+  → To: askwattson@callwattsright.com
+  → Subject: Quick note about the Watt's Right Electric website
+  → Compose open: to=to-composer-12643, subj=subject-composer-12601
   → Recipient committed: False
-  → Body ready: subject='Quick note about the Higher Ground Lands', bodyLen=977, watermark=False
-  ✓ SENT to higherground406@gmail.com
+  → Body ready: subject="Quick note about the Watt's Right Electr", bodyLen=1019, watermark=False
+  ✓ SENT to askwattson@callwattsright.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[41/44] Waybright Electric (low-quality-website)
+  → To: info@ecselectricllc.com
+  → Subject: Quick note about the Waybright Electric website
+  → Compose open: to=to-composer-12953, subj=subject-composer-12911
+  → Recipient committed: False
+  → Body ready: subject='Quick note about the Waybright Electric ', bodyLen=948, watermark=False
+  ✓ SENT to info@ecselectricllc.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[42/44] Tulsa Electric LLC (low-quality-website)
+  → To: rdorse@tulsaelectricllc.com
+  → Subject: Quick note about the Tulsa Electric LLC website
+  → Compose open: to=to-composer-13263, subj=subject-composer-13221
+  → Recipient committed: False
+  → Body ready: subject='Quick note about the Tulsa Electric LLC ', bodyLen=950, watermark=False
+  ✓ SENT to rdorse@tulsaelectricllc.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[43/44] Bob Dooley Electric (low-quality-website)
+  → To: jamiemay@bobdooleyelectric.com
+  → Subject: Quick note about the Bob Dooley Electric website
+  → Compose open: to=to-composer-13573, subj=subject-composer-13531
+  → Recipient committed: False
+  → Body ready: subject='Quick note about the Bob Dooley Electric', bodyLen=960, watermark=False
+  ✓ SENT to jamiemay@bobdooleyelectric.com  (+ added to sent registry)
+  ... waiting 75s before next email
+[44/44] Fox Electrical Inc. (low-quality-website)
+  → To: scheduling@foxtulsa.com
+  → Subject: Quick note about the Fox Electrical Inc. website
+  → Compose open: to=to-composer-13883, subj=subject-composer-13841
+  → Recipient committed: False
+  → Body ready: subject='Quick note about the Fox Electrical Inc.', bodyLen=933, watermark=False
+  ✓ SENT to scheduling@foxtulsa.com  (+ added to sent registry)
 
 ===== FINAL =====
-Sent:   30
-Failed: 0
+Sent this run:   44
+Failed this run: 0
+Total in sent registry: 72

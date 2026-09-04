@@ -126,7 +126,7 @@
       "business_name": "Savannah Handyman",
       "source_query": "handyman Savannah GA",
       "first_seen": 1788493339,
-      "last_seen": 1788493339
+      "last_seen": 1788494330
     },
     "info@hometask.com": {
       "original": "info@hometask.com",
@@ -279,8 +279,448 @@
       "source_query": "electricians Richmond VA",
       "first_seen": 1788493593,
       "last_seen": 1788493593
+    },
+    "underhillohc@gmail.com": {
+      "original": "underhill.ohc@gmail.com",
+      "normalized": "underhillohc@gmail.com",
+      "business_name": "Underhill outdoor home care",
+      "source_query": "lawn care service Asheville NC",
+      "first_seen": 1788494284,
+      "last_seen": 1788494284
+    },
+    "vtbestcleaners@gmail.com": {
+      "original": "vtbestcleaners@gmail.com",
+      "normalized": "vtbestcleaners@gmail.com",
+      "business_name": "Cleaning With Meaning Vermont",
+      "source_query": "house cleaning Burlington VT",
+      "first_seen": 1788494307,
+      "last_seen": 1788494307
+    },
+    "taen@greatersavannahhandyman.com": {
+      "original": "taen@greatersavannahhandyman.com",
+      "normalized": "taen@greatersavannahhandyman.com",
+      "business_name": "Savannah Handyman",
+      "source_query": "handyman Savannah GA",
+      "first_seen": 1788494330,
+      "last_seen": 1788494330
+    },
+    "scott@integrityfacility.com": {
+      "original": "scott@integrityfacility.com",
+      "normalized": "scott@integrityfacility.com",
+      "business_name": "V & C Windows & Construction Cleaning",
+      "source_query": "pressure washing Flagstaff AZ",
+      "first_seen": 1788494338,
+      "last_seen": 1788494338
+    },
+    "executiveprocleaningcompany22@gmail.com": {
+      "original": "executivepro.cleaningcompany22@gmail.com",
+      "normalized": "executiveprocleaningcompany22@gmail.com",
+      "business_name": "Exotic Pressure Washing LLC",
+      "source_query": "pressure washing Flagstaff AZ",
+      "first_seen": 1788494340,
+      "last_seen": 1788494340
+    },
+    "shelly@greatermontanare.com": {
+      "original": "shelly@greatermontanare.com",
+      "normalized": "shelly@greatermontanare.com",
+      "business_name": "Evergreen Tree & Lawn Services",
+      "source_query": "tree service Missoula MT",
+      "first_seen": 1788494343,
+      "last_seen": 1788494343
+    },
+    "info@abletreeservice.com": {
+      "original": "info@abletreeservice.com",
+      "normalized": "info@abletreeservice.com",
+      "business_name": "OConnor Tree Works",
+      "source_query": "tree service Missoula MT",
+      "first_seen": 1788494345,
+      "last_seen": 1788494345
+    },
+    "support@talltreeexperts.com": {
+      "original": "support@talltreeexperts.com",
+      "normalized": "support@talltreeexperts.com",
+      "business_name": "Tall Tree Experts",
+      "source_query": "tree service Missoula MT",
+      "first_seen": 1788494348,
+      "last_seen": 1788494348
+    },
+    "darrenslominski@gmail.com": {
+      "original": "darrenslominski@gmail.com",
+      "normalized": "darrenslominski@gmail.com",
+      "business_name": "Jennison Tree Services",
+      "source_query": "tree service Missoula MT",
+      "first_seen": 1788494352,
+      "last_seen": 1788494352
+    },
+    "tolsonex@gmail.com": {
+      "original": "tolsonex@gmail.com",
+      "normalized": "tolsonex@gmail.com",
+      "business_name": "Tolson excavation and contracting",
+      "source_query": "tree service Missoula MT",
+      "first_seen": 1788494354,
+      "last_seen": 1788494354
+    },
+    "support@sittercity.com": {
+      "original": "support@sittercity.com",
+      "normalized": "support@sittercity.com",
+      "business_name": "A Pet Sitter LLC",
+      "source_query": "dog walker Boulder CO",
+      "first_seen": 1788494359,
+      "last_seen": 1788494391
+    },
+    "whitetwhitney@gmail.com": {
+      "original": "whitetwhitney@gmail.com",
+      "normalized": "whitetwhitney@gmail.com",
+      "business_name": "Walk with ME",
+      "source_query": "dog walker Boulder CO",
+      "first_seen": 1788494365,
+      "last_seen": 1788494365
+    },
+    "weyersconstructionllp@gmail.com": {
+      "original": "weyersconstructionllp@gmail.com",
+      "normalized": "weyersconstructionllp@gmail.com",
+      "business_name": "Weyers Construction LLP",
+      "source_query": "fence contractor Eugene OR",
+      "first_seen": 1788494370,
+      "last_seen": 1788494370
+    },
+    "oregonfence@oregonfence.net": {
+      "original": "oregonfence@oregonfence.net",
+      "normalized": "oregonfence@oregonfence.net",
+      "business_name": "Trusted Fence and Gate LLC",
+      "source_query": "fence contractor Eugene OR",
+      "first_seen": 1788494374,
+      "last_seen": 1788494374
+    },
+    "elitefencecoinc@hotmail.com": {
+      "original": "elitefencecoinc@hotmail.com",
+      "normalized": "elitefencecoinc@hotmail.com",
+      "business_name": "Elite Fence Co Inc",
+      "source_query": "fence contractor Eugene OR",
+      "first_seen": 1788494376,
+      "last_seen": 1788494376
+    },
+    "office@elitefencepros.net": {
+      "original": "office@elitefencepros.net",
+      "normalized": "office@elitefencepros.net",
+      "business_name": "Elite Fence Co Inc",
+      "source_query": "fence contractor Eugene OR",
+      "first_seen": 1788494376,
+      "last_seen": 1788494376
+    },
+    "rich@willamettevalleygeneral.com": {
+      "original": "rich@willamettevalleygeneral.com",
+      "normalized": "rich@willamettevalleygeneral.com",
+      "business_name": "Eugene Deck and Fence",
+      "source_query": "fence contractor Eugene OR",
+      "first_seen": 1788494379,
+      "last_seen": 1788494379
+    },
+    "service@oregonrentafence.com": {
+      "original": "service@oregonrentafence.com",
+      "normalized": "service@oregonrentafence.com",
+      "business_name": "Fencing Rental Pros Eugene",
+      "source_query": "fence contractor Eugene OR",
+      "first_seen": 1788494383,
+      "last_seen": 1788494383
+    },
+    "pawfect@hotmail.com": {
+      "original": "pawfect@hotmail.com",
+      "normalized": "pawfect@hotmail.com",
+      "business_name": "Barks & Bubbles",
+      "source_query": "pet sitting Santa Fe NM",
+      "first_seen": 1788494389,
+      "last_seen": 1788494389
+    },
+    "lindsey@barksandbubbles.us": {
+      "original": "lindsey@barksandbubbles.us",
+      "normalized": "lindsey@barksandbubbles.us",
+      "business_name": "Barks & Bubbles",
+      "source_query": "pet sitting Santa Fe NM",
+      "first_seen": 1788494389,
+      "last_seen": 1788494389
+    },
+    "sey@barksandbubbles.us": {
+      "original": "sey@barksandbubbles.us",
+      "normalized": "sey@barksandbubbles.us",
+      "business_name": "Barks & Bubbles",
+      "source_query": "pet sitting Santa Fe NM",
+      "first_seen": 1788494389,
+      "last_seen": 1788494389
+    },
+    "info@petsit.com": {
+      "original": "info@petsit.com",
+      "normalized": "info@petsit.com",
+      "business_name": "Cactus Pet Sitting LLC",
+      "source_query": "pet sitting Santa Fe NM",
+      "first_seen": 1788494391,
+      "last_seen": 1788494391
+    },
+    "petangelsantafe@gmail.com": {
+      "original": "petangelsantafe@gmail.com",
+      "normalized": "petangelsantafe@gmail.com",
+      "business_name": "Santa Fe Pet & Property Angel",
+      "source_query": "pet sitting Santa Fe NM",
+      "first_seen": 1788494394,
+      "last_seen": 1788494394
+    },
+    "smith@uslawns.net": {
+      "original": "smith@uslawns.net",
+      "normalized": "smith@uslawns.net",
+      "business_name": "U.S. Lawns - Asheville",
+      "source_query": "lawn care service Asheville NC",
+      "first_seen": 1788494439,
+      "last_seen": 1788494439
+    },
+    "bashouvip@gmail.com": {
+      "original": "bashouvip@gmail.com",
+      "normalized": "bashouvip@gmail.com",
+      "business_name": "DEM CLEANING SERVICES LLC ( Burlington,VT)",
+      "source_query": "house cleaning Burlington VT",
+      "first_seen": 1788494726,
+      "last_seen": 1788494726
+    },
+    "demcleaningservicesllc@gmail.com": {
+      "original": "demcleaningservicesllc@gmail.com",
+      "normalized": "demcleaningservicesllc@gmail.com",
+      "business_name": "DEM CLEANING SERVICES LLC ( Burlington,VT)",
+      "source_query": "house cleaning Burlington VT",
+      "first_seen": 1788494726,
+      "last_seen": 1788494726
+    },
+    "peterbreen@comcast.net": {
+      "original": "peterbreen@comcast.net",
+      "normalized": "peterbreen@comcast.net",
+      "business_name": "All Season’s Carpet & Upholstery Cleaning of Vermont",
+      "source_query": "house cleaning Burlington VT",
+      "first_seen": 1788494761,
+      "last_seen": 1788494761
+    },
+    "carl@apexvermont.com": {
+      "original": "carl@apexvermont.com",
+      "normalized": "carl@apexvermont.com",
+      "business_name": "All Season’s Carpet & Upholstery Cleaning of Vermont",
+      "source_query": "house cleaning Burlington VT",
+      "first_seen": 1788494761,
+      "last_seen": 1788494761
+    },
+    "champlainvalleycleaning@gmail.com": {
+      "original": "champlainvalleycleaning@gmail.com",
+      "normalized": "champlainvalleycleaning@gmail.com",
+      "business_name": "Champlain Valley Cleaning",
+      "source_query": "house cleaning Burlington VT",
+      "first_seen": 1788494775,
+      "last_seen": 1788494775
+    },
+    "phoenixxcleaning@gmail.com": {
+      "original": "phoenixxcleaning@gmail.com",
+      "normalized": "phoenixxcleaning@gmail.com",
+      "business_name": "Phoenix Surface Cleaning LLC.",
+      "source_query": "house cleaning Burlington VT",
+      "first_seen": 1788494783,
+      "last_seen": 1788494783
+    },
+    "aaron.hagan@mistersparky.com": {
+      "original": "aaron.hagan@mistersparky.com",
+      "normalized": "aaron.hagan@mistersparky.com",
+      "business_name": "Perfect Electricians",
+      "source_query": "electricians in Tulsa OK",
+      "first_seen": 1788494881,
+      "last_seen": 1788494881
+    },
+    "service@sparkyelite.com": {
+      "original": "service@sparkyelite.com",
+      "normalized": "service@sparkyelite.com",
+      "business_name": "Perfect Electricians",
+      "source_query": "electricians in Tulsa OK",
+      "first_seen": 1788494881,
+      "last_seen": 1788494881
+    },
+    "profiles@birdeye.com": {
+      "original": "profiles@birdeye.com",
+      "normalized": "profiles@birdeye.com",
+      "business_name": "Hayes Family Electricians",
+      "source_query": "electricians in Tulsa OK",
+      "first_seen": 1788494883,
+      "last_seen": 1788494934
+    },
+    "support@hayeselectricalservice.com": {
+      "original": "support@hayeselectricalservice.com",
+      "normalized": "support@hayeselectricalservice.com",
+      "business_name": "Hayes Family Electricians",
+      "source_query": "electricians in Tulsa OK",
+      "first_seen": 1788494883,
+      "last_seen": 1788494883
+    },
+    "help@serviceagent.ai": {
+      "original": "help@serviceagent.ai",
+      "normalized": "help@serviceagent.ai",
+      "business_name": "A1 Electric Tulsa",
+      "source_query": "electricians in Tulsa OK",
+      "first_seen": 1788494886,
+      "last_seen": 1788494886
+    },
+    "info@tulsahba.com": {
+      "original": "info@tulsahba.com",
+      "normalized": "info@tulsahba.com",
+      "business_name": "Tallent Electrical Services",
+      "source_query": "electricians in Tulsa OK",
+      "first_seen": 1788494889,
+      "last_seen": 1788494889
+    },
+    "randywilsonpainting@yahoo.com": {
+      "original": "randywilsonpainting@yahoo.com",
+      "normalized": "randywilsonpainting@yahoo.com",
+      "business_name": "H T Painting",
+      "source_query": "painters in Chattanooga TN",
+      "first_seen": 1788494898,
+      "last_seen": 1788494898
+    },
+    "cgetters@yahoo.com": {
+      "original": "cgetters@yahoo.com",
+      "normalized": "cgetters@yahoo.com",
+      "business_name": "CRITTER GETTERS TERMITE AND PEST CONTROL",
+      "source_query": "pest control in Little Rock AR",
+      "first_seen": 1788494902,
+      "last_seen": 1788494902
+    },
+    "services@crittergetters.net": {
+      "original": "services@crittergetters.net",
+      "normalized": "services@crittergetters.net",
+      "business_name": "CRITTER GETTERS TERMITE AND PEST CONTROL",
+      "source_query": "pest control in Little Rock AR",
+      "first_seen": 1788494902,
+      "last_seen": 1788494902
+    },
+    "info@ourbugguy.com": {
+      "original": "info@ourbugguy.com",
+      "normalized": "info@ourbugguy.com",
+      "business_name": "CRITTER GETTERS TERMITE AND PEST CONTROL",
+      "source_query": "pest control in Little Rock AR",
+      "first_seen": 1788494902,
+      "last_seen": 1788494902
+    },
+    "gulfcoastcarpetcleaning@comcast.net": {
+      "original": "gulfcoastcarpetcleaning@comcast.net",
+      "normalized": "gulfcoastcarpetcleaning@comcast.net",
+      "business_name": "Colorclean of the Gulf Coast",
+      "source_query": "carpet cleaning in Mobile AL",
+      "first_seen": 1788494910,
+      "last_seen": 1788494910
+    },
+    "info@coit.com": {
+      "original": "info@coit.com",
+      "normalized": "info@coit.com",
+      "business_name": "COIT Cleaning and Restoration",
+      "source_query": "carpet cleaning in Mobile AL",
+      "first_seen": 1788494915,
+      "last_seen": 1788494915
+    },
+    "first.last@cleveland.coit.com": {
+      "original": "first.last@cleveland.coit.com",
+      "normalized": "first.last@cleveland.coit.com",
+      "business_name": "COIT Cleaning and Restoration",
+      "source_query": "carpet cleaning in Mobile AL",
+      "first_seen": 1788494915,
+      "last_seen": 1788494915
+    },
+    "john.doe@cleveland.coit.com": {
+      "original": "john.doe@cleveland.coit.com",
+      "normalized": "john.doe@cleveland.coit.com",
+      "business_name": "COIT Cleaning and Restoration",
+      "source_query": "carpet cleaning in Mobile AL",
+      "first_seen": 1788494915,
+      "last_seen": 1788494915
+    },
+    "rjrichburg@bellsouth.net": {
+      "original": "rjrichburg@bellsouth.net",
+      "normalized": "rjrichburg@bellsouth.net",
+      "business_name": "Port City Carpet Service",
+      "source_query": "carpet cleaning in Mobile AL",
+      "first_seen": 1788494918,
+      "last_seen": 1788494918
+    },
+    "eccc.llc@hotmail.com": {
+      "original": "eccc.llc@hotmail.com",
+      "normalized": "eccc.llc@hotmail.com",
+      "business_name": "Gulf Coast Carpet Cleaning/ and water remediation",
+      "source_query": "carpet cleaning in Mobile AL",
+      "first_seen": 1788494920,
+      "last_seen": 1788494920
+    },
+    "indigo@indigolft.com": {
+      "original": "indigo@indigolft.com",
+      "normalized": "indigo@indigolft.com",
+      "business_name": "Indigo Loft Salon",
+      "source_query": "hair salons in Syracuse NY",
+      "first_seen": 1788494934,
+      "last_seen": 1788494934
+    },
+    "vikingplumbingboise@gmail.com": {
+      "original": "vikingplumbingboise@gmail.com",
+      "normalized": "vikingplumbingboise@gmail.com",
+      "business_name": "Viking Plumbing",
+      "source_query": "plumbers in Boise ID",
+      "first_seen": 1788495012,
+      "last_seen": 1788495012
+    },
+    "customerservice@accessheating.com": {
+      "original": "customerservice@accessheating.com",
+      "normalized": "customerservice@accessheating.com",
+      "business_name": "Meridian Plumbing, Heating and Air",
+      "source_query": "plumbers in Boise ID",
+      "first_seen": 1788495031,
+      "last_seen": 1788495031
+    },
+    "info@drakemech.com": {
+      "original": "info@drakemech.com",
+      "normalized": "info@drakemech.com",
+      "business_name": "Drake Mechanical | HVAC & Plumbing Services",
+      "source_query": "plumbers in Boise ID",
+      "first_seen": 1788495053,
+      "last_seen": 1788495053
+    },
+    "askwattson@callwattsright.com": {
+      "original": "askwattson@callwattsright.com",
+      "normalized": "askwattson@callwattsright.com",
+      "business_name": "Watt's Right Electric",
+      "source_query": "electricians in Tulsa OK",
+      "first_seen": 1788495062,
+      "last_seen": 1788495062
+    },
+    "info@ecselectricllc.com": {
+      "original": "info@ecselectricllc.com",
+      "normalized": "info@ecselectricllc.com",
+      "business_name": "Waybright Electric",
+      "source_query": "electricians in Tulsa OK",
+      "first_seen": 1788495069,
+      "last_seen": 1788495069
+    },
+    "rdorse@tulsaelectricllc.com": {
+      "original": "rdorse@tulsaelectricllc.com",
+      "normalized": "rdorse@tulsaelectricllc.com",
+      "business_name": "Tulsa Electric LLC",
+      "source_query": "electricians in Tulsa OK",
+      "first_seen": 1788495103,
+      "last_seen": 1788495103
+    },
+    "jamiemay@bobdooleyelectric.com": {
+      "original": "jamiemay@bobdooleyelectric.com",
+      "normalized": "jamiemay@bobdooleyelectric.com",
+      "business_name": "Bob Dooley Electric",
+      "source_query": "electricians in Tulsa OK",
+      "first_seen": 1788495112,
+      "last_seen": 1788495112
+    },
+    "scheduling@foxtulsa.com": {
+      "original": "scheduling@foxtulsa.com",
+      "normalized": "scheduling@foxtulsa.com",
+      "business_name": "Fox Electrical Inc.",
+      "source_query": "electricians in Tulsa OK",
+      "first_seen": 1788495176,
+      "last_seen": 1788495176
     }
   },
-  "updated_at": 1788493593,
-  "total_discovered": 35
+  "updated_at": 1788495176,
+  "total_discovered": 90
 }

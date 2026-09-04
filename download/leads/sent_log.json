@@ -1,213 +1,312 @@
 {
   "sent": [
     {
-      "ok": true,
-      "recipient": "admin@pgalawncare.com",
-      "subject": "Quick question about PGA Lawn care and Pressure washing",
-      "lead": "PGA Lawn care and Pressure washing"
-    },
-    {
-      "lead": "Black Zulu Lawn Care",
-      "recipient": "blackzululawncare@gmail.com",
-      "subject": "Quick question about Black Zulu Lawn Care",
+      "lead": "Underhill outdoor home care",
+      "recipient": "underhill.ohc@gmail.com",
+      "subject": "Quick question about Underhill outdoor home care",
       "type": "no-website",
-      "ts": 1788489323
-    },
-    {
-      "lead": "Clear View Lawn Care Services LLC",
-      "recipient": "javiertranquilino828@gmail.com",
-      "subject": "Quick question about Clear View Lawn Care Services LLC",
-      "type": "no-website",
-      "ts": 1788489412
-    },
-    {
-      "lead": "Evergreen Lawn Maintenance",
-      "recipient": "evergreenlawns@mail.com",
-      "subject": "Quick question about Evergreen Lawn Maintenance",
-      "type": "no-website",
-      "ts": 1788489502
-    },
-    {
-      "lead": "Black eagle cleaning services",
-      "recipient": "burvt@ecocleanearth.com",
-      "subject": "Quick question about Black eagle cleaning services",
-      "type": "no-website",
-      "ts": 1788489592
+      "ts": 1788495240
     },
     {
       "lead": "Cleaning With Meaning Vermont",
-      "recipient": "lizzycleans246@gmail.com",
+      "recipient": "vtbestcleaners@gmail.com",
       "subject": "Quick question about Cleaning With Meaning Vermont",
       "type": "no-website",
-      "ts": 1788489681
-    },
-    {
-      "lead": "Mike's Cleaning Services",
-      "recipient": "admin@mrmikescleaningservicevt.com",
-      "subject": "Quick question about Mike's Cleaning Services",
-      "type": "no-website",
-      "ts": 1788489771
-    },
-    {
-      "lead": "BahamaShine Mobile Detailing",
-      "recipient": "davidbennett1505@gmail.com",
-      "subject": "Quick question about BahamaShine Mobile Detailing",
-      "type": "no-website",
-      "ts": 1788489861
-    },
-    {
-      "lead": "Dad's Auto Detailing",
-      "recipient": "jamesdomings3@gmail.com",
-      "subject": "Quick question about Dad's Auto Detailing",
-      "type": "no-website",
-      "ts": 1788489951
-    },
-    {
-      "lead": "Bend Mobile Detailing",
-      "recipient": "davidbennett1505@gmail.com",
-      "subject": "Quick question about Bend Mobile Detailing",
-      "type": "no-website",
-      "ts": 1788490040
-    },
-    {
-      "lead": "Dr Detail",
-      "recipient": "info@drdetailsandiego.com",
-      "subject": "Quick question about Dr Detail",
-      "type": "no-website",
-      "ts": 1788490130
-    },
-    {
-      "lead": "Residential Services of Savannah",
-      "recipient": "operations@homelandunitedconstruction.com",
-      "subject": "Quick question about Residential Services of Savannah",
-      "type": "no-website",
-      "ts": 1788490220
-    },
-    {
-      "lead": "Professional Handyman Services",
-      "recipient": "blake@georgiahandymanexperts.com",
-      "subject": "Quick question about Professional Handyman Services",
-      "type": "no-website",
-      "ts": 1788490310
+      "ts": 1788495330
     },
     {
       "lead": "Savannah Handyman",
-      "recipient": "info@savannahpropertyguardians.com",
+      "recipient": "taen@greatersavannahhandyman.com",
       "subject": "Quick question about Savannah Handyman",
       "type": "no-website",
-      "ts": 1788490400
+      "ts": 1788495420
     },
     {
-      "lead": "Anytime Power Wash",
-      "recipient": "info@am-pros.com",
-      "subject": "Quick question about Anytime Power Wash",
+      "lead": "V & C Windows & Construction Cleaning",
+      "recipient": "scott@integrityfacility.com",
+      "subject": "Quick question about V & C Windows & Construction Cleaning",
       "type": "no-website",
-      "ts": 1788490490
+      "ts": 1788495509
     },
     {
-      "lead": "Northern Arizona Power Wash",
-      "recipient": "zach@flagsurface.com",
-      "subject": "Quick question about Northern Arizona Power Wash",
+      "lead": "Exotic Pressure Washing LLC",
+      "recipient": "executivepro.cleaningcompany22@gmail.com",
+      "subject": "Quick question about Exotic Pressure Washing LLC",
       "type": "no-website",
-      "ts": 1788490580
+      "ts": 1788495599
     },
     {
-      "lead": "Flagstaff Powerwash",
-      "recipient": "hello@flagstaffpressurewash.com",
-      "subject": "Quick question about Flagstaff Powerwash",
+      "lead": "Evergreen Tree & Lawn Services",
+      "recipient": "shelly@greatermontanare.com",
+      "subject": "Quick question about Evergreen Tree & Lawn Services",
       "type": "no-website",
-      "ts": 1788490670
+      "ts": 1788495689
     },
     {
-      "lead": "Three ladies cleaning",
-      "recipient": "lizzycleans246@gmail.com",
-      "subject": "Quick question about Three ladies cleaning",
+      "lead": "OConnor Tree Works",
+      "recipient": "info@abletreeservice.com",
+      "subject": "Quick question about OConnor Tree Works",
       "type": "no-website",
-      "ts": 1788490761
+      "ts": 1788495779
     },
     {
-      "lead": "Apollo Automotive Detailing",
-      "recipient": "kaidenmbaty@outlook.com",
-      "subject": "Quick question about Apollo Automotive Detailing",
+      "lead": "Tall Tree Experts",
+      "recipient": "support@talltreeexperts.com",
+      "subject": "Quick question about Tall Tree Experts",
       "type": "no-website",
-      "ts": 1788490851
+      "ts": 1788495869
     },
     {
-      "lead": "MR. FIXIT UPPER",
-      "recipient": "mrfixitsav@gmail.com",
-      "subject": "Quick question about MR. FIXIT UPPER",
+      "lead": "Jennison Tree Services",
+      "recipient": "darrenslominski@gmail.com",
+      "subject": "Quick question about Jennison Tree Services",
       "type": "no-website",
-      "ts": 1788490941
+      "ts": 1788495959
     },
     {
-      "lead": "EcoLawns Unlimited",
-      "recipient": "info@ecolawnsultd.com",
-      "subject": "Quick note about the EcoLawns Unlimited website",
-      "type": "low-quality-website",
-      "ts": 1788491031
+      "lead": "Tolson excavation and contracting",
+      "recipient": "tolsonex@gmail.com",
+      "subject": "Quick question about Tolson excavation and contracting",
+      "type": "no-website",
+      "ts": 1788496049
+    },
+    {
+      "lead": "A Pet Sitter LLC",
+      "recipient": "support@sittercity.com",
+      "subject": "Quick question about A Pet Sitter LLC",
+      "type": "no-website",
+      "ts": 1788496140
+    },
+    {
+      "lead": "Walk with ME",
+      "recipient": "whitetwhitney@gmail.com",
+      "subject": "Quick question about Walk with ME",
+      "type": "no-website",
+      "ts": 1788496230
+    },
+    {
+      "lead": "Weyers Construction LLP",
+      "recipient": "weyersconstructionllp@gmail.com",
+      "subject": "Quick question about Weyers Construction LLP",
+      "type": "no-website",
+      "ts": 1788496320
+    },
+    {
+      "lead": "Trusted Fence and Gate LLC",
+      "recipient": "oregonfence@oregonfence.net",
+      "subject": "Quick question about Trusted Fence and Gate LLC",
+      "type": "no-website",
+      "ts": 1788496410
+    },
+    {
+      "lead": "Elite Fence Co Inc",
+      "recipient": "elitefencecoinc@hotmail.com",
+      "subject": "Quick question about Elite Fence Co Inc",
+      "type": "no-website",
+      "ts": 1788496500
+    },
+    {
+      "lead": "Eugene Deck and Fence",
+      "recipient": "rich@willamettevalleygeneral.com",
+      "subject": "Quick question about Eugene Deck and Fence",
+      "type": "no-website",
+      "ts": 1788496590
+    },
+    {
+      "lead": "Fencing Rental Pros Eugene",
+      "recipient": "service@oregonrentafence.com",
+      "subject": "Quick question about Fencing Rental Pros Eugene",
+      "type": "no-website",
+      "ts": 1788496680
+    },
+    {
+      "lead": "Barks & Bubbles",
+      "recipient": "pawfect@hotmail.com",
+      "subject": "Quick question about Barks & Bubbles",
+      "type": "no-website",
+      "ts": 1788496771
+    },
+    {
+      "lead": "Cactus Pet Sitting LLC",
+      "recipient": "info@petsit.com",
+      "subject": "Quick question about Cactus Pet Sitting LLC",
+      "type": "no-website",
+      "ts": 1788496861
+    },
+    {
+      "lead": "Santa Fe Pet & Property Angel",
+      "recipient": "petangelsantafe@gmail.com",
+      "subject": "Quick question about Santa Fe Pet & Property Angel",
+      "type": "no-website",
+      "ts": 1788496951
+    },
+    {
+      "lead": "Perfect Electricians",
+      "recipient": "aaron.hagan@mistersparky.com",
+      "subject": "Quick question about Perfect Electricians",
+      "type": "no-website",
+      "ts": 1788497041
+    },
+    {
+      "lead": "Hayes Family Electricians",
+      "recipient": "profiles@birdeye.com",
+      "subject": "Quick question about Hayes Family Electricians",
+      "type": "no-website",
+      "ts": 1788497131
+    },
+    {
+      "lead": "A1 Electric Tulsa",
+      "recipient": "help@serviceagent.ai",
+      "subject": "Quick question about A1 Electric Tulsa",
+      "type": "no-website",
+      "ts": 1788497221
+    },
+    {
+      "lead": "Tallent Electrical Services",
+      "recipient": "info@tulsahba.com",
+      "subject": "Quick question about Tallent Electrical Services",
+      "type": "no-website",
+      "ts": 1788497311
+    },
+    {
+      "lead": "H T Painting",
+      "recipient": "randywilsonpainting@yahoo.com",
+      "subject": "Quick question about H T Painting",
+      "type": "no-website",
+      "ts": 1788497402
+    },
+    {
+      "lead": "CRITTER GETTERS TERMITE AND PEST CONTROL",
+      "recipient": "cgetters@yahoo.com",
+      "subject": "Quick question about CRITTER GETTERS TERMITE AND PEST CONTROL",
+      "type": "no-website",
+      "ts": 1788497492
+    },
+    {
+      "lead": "Colorclean of the Gulf Coast",
+      "recipient": "gulfcoastcarpetcleaning@comcast.net",
+      "subject": "Quick question about Colorclean of the Gulf Coast",
+      "type": "no-website",
+      "ts": 1788497582
+    },
+    {
+      "lead": "COIT Cleaning and Restoration",
+      "recipient": "info@coit.com",
+      "subject": "Quick question about COIT Cleaning and Restoration",
+      "type": "no-website",
+      "ts": 1788497672
+    },
+    {
+      "lead": "Port City Carpet Service",
+      "recipient": "rjrichburg@bellsouth.net",
+      "subject": "Quick question about Port City Carpet Service",
+      "type": "no-website",
+      "ts": 1788497762
+    },
+    {
+      "lead": "Gulf Coast Carpet Cleaning/ and water remediation",
+      "recipient": "eccc.llc@hotmail.com",
+      "subject": "Quick question about Gulf Coast Carpet Cleaning/ and water remediation",
+      "type": "no-website",
+      "ts": 1788497852
+    },
+    {
+      "lead": "Indigo Loft Salon",
+      "recipient": "indigo@indigolft.com",
+      "subject": "Quick question about Indigo Loft Salon",
+      "type": "no-website",
+      "ts": 1788497942
     },
     {
       "lead": "U.S. Lawns - Asheville",
-      "recipient": "robin.smith@uslawns.net",
+      "recipient": "smith@uslawns.net",
       "subject": "Quick note about the U.S. Lawns - Asheville website",
       "type": "low-quality-website",
-      "ts": 1788491121
+      "ts": 1788498033
     },
     {
-      "lead": "Linc's Lawn Care, LLC",
-      "recipient": "office@lincslawncare.com",
-      "subject": "Quick note about the Linc's Lawn Care, LLC website",
+      "lead": "DEM CLEANING SERVICES LLC ( Burlington,VT)",
+      "recipient": "bashouvip@gmail.com",
+      "subject": "Quick note about the DEM CLEANING SERVICES LLC ( Burlington,VT) website",
       "type": "low-quality-website",
-      "ts": 1788491211
+      "ts": 1788498123
     },
     {
-      "lead": "Greenscapes Landscaping & Retaining Walls",
-      "recipient": "ncgreenscapes@gmail.com",
-      "subject": "Quick note about the Greenscapes Landscaping & Retaining Walls website",
+      "lead": "All Season’s Carpet & Upholstery Cleaning of Vermont",
+      "recipient": "peterbreen@comcast.net",
+      "subject": "Quick note about the All Season’s Carpet & Upholstery Cleaning of Vermont website",
       "type": "low-quality-website",
-      "ts": 1788491301
+      "ts": 1788498213
     },
     {
-      "lead": "Greater Gallatin Landscape Contractors Inc.",
-      "recipient": "office@greatergallatin.com",
-      "subject": "Quick note about the Greater Gallatin Landscape Contractors Inc. website",
+      "lead": "Champlain Valley Cleaning",
+      "recipient": "champlainvalleycleaning@gmail.com",
+      "subject": "Quick note about the Champlain Valley Cleaning website",
       "type": "low-quality-website",
-      "ts": 1788491392
+      "ts": 1788498303
     },
     {
-      "lead": "Jerman Lawn Care LLC",
-      "recipient": "jake@jermanlawncare.com",
-      "subject": "Quick note about the Jerman Lawn Care LLC website",
+      "lead": "Phoenix Surface Cleaning LLC.",
+      "recipient": "phoenixxcleaning@gmail.com",
+      "subject": "Quick note about the Phoenix Surface Cleaning LLC. website",
       "type": "low-quality-website",
-      "ts": 1788491482
+      "ts": 1788498393
     },
     {
-      "lead": "Scenic City Trucking & Landscaping Products",
-      "recipient": "sceniccity@montana.net",
-      "subject": "Quick note about the Scenic City Trucking & Landscaping Products website",
+      "lead": "Viking Plumbing",
+      "recipient": "vikingplumbingboise@gmail.com",
+      "subject": "Quick note about the Viking Plumbing website",
       "type": "low-quality-website",
-      "ts": 1788491572
+      "ts": 1788498483
     },
     {
-      "lead": "Lime Maids",
-      "recipient": "support@limemaids.com",
-      "subject": "Quick note about the Lime Maids website",
+      "lead": "Meridian Plumbing, Heating and Air",
+      "recipient": "customerservice@accessheating.com",
+      "subject": "Quick note about the Meridian Plumbing, Heating and Air website",
       "type": "low-quality-website",
-      "ts": 1788491662
+      "ts": 1788498573
     },
     {
-      "lead": "Solstice Landscaping",
-      "recipient": "info@solsticelandscape.com",
-      "subject": "Quick note about the Solstice Landscaping website",
+      "lead": "Drake Mechanical | HVAC & Plumbing Services",
+      "recipient": "info@drakemech.com",
+      "subject": "Quick note about the Drake Mechanical | HVAC & Plumbing Services website",
       "type": "low-quality-website",
-      "ts": 1788491752
+      "ts": 1788498664
     },
     {
-      "lead": "Higher Ground Landscaping",
-      "recipient": "higherground406@gmail.com",
-      "subject": "Quick note about the Higher Ground Landscaping website",
+      "lead": "Watt's Right Electric",
+      "recipient": "askwattson@callwattsright.com",
+      "subject": "Quick note about the Watt's Right Electric website",
       "type": "low-quality-website",
-      "ts": 1788491842
+      "ts": 1788498754
+    },
+    {
+      "lead": "Waybright Electric",
+      "recipient": "info@ecselectricllc.com",
+      "subject": "Quick note about the Waybright Electric website",
+      "type": "low-quality-website",
+      "ts": 1788498844
+    },
+    {
+      "lead": "Tulsa Electric LLC",
+      "recipient": "rdorse@tulsaelectricllc.com",
+      "subject": "Quick note about the Tulsa Electric LLC website",
+      "type": "low-quality-website",
+      "ts": 1788498934
+    },
+    {
+      "lead": "Bob Dooley Electric",
+      "recipient": "jamiemay@bobdooleyelectric.com",
+      "subject": "Quick note about the Bob Dooley Electric website",
+      "type": "low-quality-website",
+      "ts": 1788499024
+    },
+    {
+      "lead": "Fox Electrical Inc.",
+      "recipient": "scheduling@foxtulsa.com",
+      "subject": "Quick note about the Fox Electrical Inc. website",
+      "type": "low-quality-website",
+      "ts": 1788499114
     }
   ],
   "failed": []
