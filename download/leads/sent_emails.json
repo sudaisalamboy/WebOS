@@ -1,0 +1,286 @@
+{
+  "emails": {
+    "admin@pgalawncare.com": {
+      "recipient": "admin@pgalawncare.com",
+      "normalized": "admin@pgalawncare.com",
+      "subject": "Quick question about PGA Lawn care and Pressure washing",
+      "lead": "PGA Lawn care and Pressure washing",
+      "type": "",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "blackzululawncare@gmail.com": {
+      "recipient": "blackzululawncare@gmail.com",
+      "normalized": "blackzululawncare@gmail.com",
+      "subject": "Quick question about Black Zulu Lawn Care",
+      "lead": "Black Zulu Lawn Care",
+      "type": "no-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "javiertranquilino828@gmail.com": {
+      "recipient": "javiertranquilino828@gmail.com",
+      "normalized": "javiertranquilino828@gmail.com",
+      "subject": "Quick question about Clear View Lawn Care Services LLC",
+      "lead": "Clear View Lawn Care Services LLC",
+      "type": "no-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "evergreenlawns@mail.com": {
+      "recipient": "evergreenlawns@mail.com",
+      "normalized": "evergreenlawns@mail.com",
+      "subject": "Quick question about Evergreen Lawn Maintenance",
+      "lead": "Evergreen Lawn Maintenance",
+      "type": "no-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "burvt@ecocleanearth.com": {
+      "recipient": "burvt@ecocleanearth.com",
+      "normalized": "burvt@ecocleanearth.com",
+      "subject": "Quick question about Black eagle cleaning services",
+      "lead": "Black eagle cleaning services",
+      "type": "no-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "lizzycleans246@gmail.com": {
+      "recipient": "lizzycleans246@gmail.com",
+      "normalized": "lizzycleans246@gmail.com",
+      "subject": "Quick question about Cleaning With Meaning Vermont",
+      "lead": "Cleaning With Meaning Vermont",
+      "type": "no-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 2
+    },
+    "admin@mrmikescleaningservicevt.com": {
+      "recipient": "admin@mrmikescleaningservicevt.com",
+      "normalized": "admin@mrmikescleaningservicevt.com",
+      "subject": "Quick question about Mike's Cleaning Services",
+      "lead": "Mike's Cleaning Services",
+      "type": "no-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "davidbennett1505@gmail.com": {
+      "recipient": "davidbennett1505@gmail.com",
+      "normalized": "davidbennett1505@gmail.com",
+      "subject": "Quick question about BahamaShine Mobile Detailing",
+      "lead": "BahamaShine Mobile Detailing",
+      "type": "no-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 2
+    },
+    "jamesdomings3@gmail.com": {
+      "recipient": "jamesdomings3@gmail.com",
+      "normalized": "jamesdomings3@gmail.com",
+      "subject": "Quick question about Dad's Auto Detailing",
+      "lead": "Dad's Auto Detailing",
+      "type": "no-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "info@drdetailsandiego.com": {
+      "recipient": "info@drdetailsandiego.com",
+      "normalized": "info@drdetailsandiego.com",
+      "subject": "Quick question about Dr Detail",
+      "lead": "Dr Detail",
+      "type": "no-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "operations@homelandunitedconstruction.com": {
+      "recipient": "operations@homelandunitedconstruction.com",
+      "normalized": "operations@homelandunitedconstruction.com",
+      "subject": "Quick question about Residential Services of Savannah",
+      "lead": "Residential Services of Savannah",
+      "type": "no-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "blake@georgiahandymanexperts.com": {
+      "recipient": "blake@georgiahandymanexperts.com",
+      "normalized": "blake@georgiahandymanexperts.com",
+      "subject": "Quick question about Professional Handyman Services",
+      "lead": "Professional Handyman Services",
+      "type": "no-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "info@savannahpropertyguardians.com": {
+      "recipient": "info@savannahpropertyguardians.com",
+      "normalized": "info@savannahpropertyguardians.com",
+      "subject": "Quick question about Savannah Handyman",
+      "lead": "Savannah Handyman",
+      "type": "no-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "info@am-pros.com": {
+      "recipient": "info@am-pros.com",
+      "normalized": "info@am-pros.com",
+      "subject": "Quick question about Anytime Power Wash",
+      "lead": "Anytime Power Wash",
+      "type": "no-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "zach@flagsurface.com": {
+      "recipient": "zach@flagsurface.com",
+      "normalized": "zach@flagsurface.com",
+      "subject": "Quick question about Northern Arizona Power Wash",
+      "lead": "Northern Arizona Power Wash",
+      "type": "no-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "hello@flagstaffpressurewash.com": {
+      "recipient": "hello@flagstaffpressurewash.com",
+      "normalized": "hello@flagstaffpressurewash.com",
+      "subject": "Quick question about Flagstaff Powerwash",
+      "lead": "Flagstaff Powerwash",
+      "type": "no-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "kaidenmbaty@outlook.com": {
+      "recipient": "kaidenmbaty@outlook.com",
+      "normalized": "kaidenmbaty@outlook.com",
+      "subject": "Quick question about Apollo Automotive Detailing",
+      "lead": "Apollo Automotive Detailing",
+      "type": "no-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "mrfixitsav@gmail.com": {
+      "recipient": "mrfixitsav@gmail.com",
+      "normalized": "mrfixitsav@gmail.com",
+      "subject": "Quick question about MR. FIXIT UPPER",
+      "lead": "MR. FIXIT UPPER",
+      "type": "no-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "info@ecolawnsultd.com": {
+      "recipient": "info@ecolawnsultd.com",
+      "normalized": "info@ecolawnsultd.com",
+      "subject": "Quick note about the EcoLawns Unlimited website",
+      "lead": "EcoLawns Unlimited",
+      "type": "low-quality-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "robin.smith@uslawns.net": {
+      "recipient": "robin.smith@uslawns.net",
+      "normalized": "robin.smith@uslawns.net",
+      "subject": "Quick note about the U.S. Lawns - Asheville website",
+      "lead": "U.S. Lawns - Asheville",
+      "type": "low-quality-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "office@lincslawncare.com": {
+      "recipient": "office@lincslawncare.com",
+      "normalized": "office@lincslawncare.com",
+      "subject": "Quick note about the Linc's Lawn Care, LLC website",
+      "lead": "Linc's Lawn Care, LLC",
+      "type": "low-quality-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "ncgreenscapes@gmail.com": {
+      "recipient": "ncgreenscapes@gmail.com",
+      "normalized": "ncgreenscapes@gmail.com",
+      "subject": "Quick note about the Greenscapes Landscaping & Retaining Walls website",
+      "lead": "Greenscapes Landscaping & Retaining Walls",
+      "type": "low-quality-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "office@greatergallatin.com": {
+      "recipient": "office@greatergallatin.com",
+      "normalized": "office@greatergallatin.com",
+      "subject": "Quick note about the Greater Gallatin Landscape Contractors Inc. website",
+      "lead": "Greater Gallatin Landscape Contractors Inc.",
+      "type": "low-quality-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "jake@jermanlawncare.com": {
+      "recipient": "jake@jermanlawncare.com",
+      "normalized": "jake@jermanlawncare.com",
+      "subject": "Quick note about the Jerman Lawn Care LLC website",
+      "lead": "Jerman Lawn Care LLC",
+      "type": "low-quality-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "sceniccity@montana.net": {
+      "recipient": "sceniccity@montana.net",
+      "normalized": "sceniccity@montana.net",
+      "subject": "Quick note about the Scenic City Trucking & Landscaping Products website",
+      "lead": "Scenic City Trucking & Landscaping Products",
+      "type": "low-quality-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "support@limemaids.com": {
+      "recipient": "support@limemaids.com",
+      "normalized": "support@limemaids.com",
+      "subject": "Quick note about the Lime Maids website",
+      "lead": "Lime Maids",
+      "type": "low-quality-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "info@solsticelandscape.com": {
+      "recipient": "info@solsticelandscape.com",
+      "normalized": "info@solsticelandscape.com",
+      "subject": "Quick note about the Solstice Landscaping website",
+      "lead": "Solstice Landscaping",
+      "type": "low-quality-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    },
+    "higherground406@gmail.com": {
+      "recipient": "higherground406@gmail.com",
+      "normalized": "higherground406@gmail.com",
+      "subject": "Quick note about the Higher Ground Landscaping website",
+      "lead": "Higher Ground Landscaping",
+      "type": "low-quality-website",
+      "first_sent": 1788493340,
+      "last_sent": 1788493340,
+      "send_count": 1
+    }
+  },
+  "updated_at": 1788493340,
+  "total_sent": 28
+}
