@@ -1,93 +1,21 @@
 {
   "no_website": [
     {
-      "name": "PGA Lawn care and Pressure washing",
-      "rating": 5,
-      "reviews": 32,
-      "phone": "+1 828-260-3472",
+      "name": "Underhill outdoor home care",
+      "rating": 3,
+      "reviews": 2,
+      "phone": "+1 803-200-8139",
       "address": null,
       "hasWebsite": false,
       "websiteUrl": null,
       "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/PGA+Lawn+care+and+Pressure+washing/data=!4m7!3m6!1s0x88598b39580b6bd5:0x510a78625ad9cdc8!8m2!3d35.6040669!4d-82.5942861!16s%2Fg%2F11t2z4h52z!19sChIJ1WsLWDmLWYgRyM3ZWmJ4ClE?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "placeUrl": "https://www.google.com/maps/place/Underhill+outdoor+home+care/data=!4m7!3m6!1s0x88598b4c206d4139:0x4cd057a2e39bcdde!8m2!3d35.6161971!4d-82.5842761!16s%2Fg%2F11w2b5jly2!19sChIJOUFtIEyLWYgR3s2b46JX0Ew?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
       "_query": "lawn care service Asheville NC",
       "emails": [
-        "admin@pgalawncare.com"
+        "underhill.ohc@gmail.com"
       ],
-      "facebook_url": "https://www.facebook.com/PGALandP",
-      "other_url": "https://pgalawncare.com",
-      "lead_type": "no-website"
-    },
-    {
-      "name": "Black Zulu Lawn Care",
-      "rating": 4.6,
-      "reviews": 11,
-      "phone": "+1 828-317-8547",
-      "address": null,
-      "hasWebsite": false,
-      "websiteUrl": null,
-      "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Black+Zulu+Lawn+Care/data=!4m7!3m6!1s0x885a1e3f459f6437:0xe3f15f1b7eb188cd!8m2!3d35.7027905!4d-82.5020833!16s%2Fg%2F11cpb2hl2r!19sChIJN2SfRT8eWogRzYixfhtf8eM?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "lawn care service Asheville NC",
-      "emails": [
-        "blackzululawncare@gmail.com"
-      ],
-      "facebook_url": "https://www.facebook.com/Black-Zulu-Lawn-Care-636174413203713",
-      "other_url": "https://nextdoor.com/pages/black-zulu-lawn-care",
-      "lead_type": "no-website"
-    },
-    {
-      "name": "Clear View Lawn Care Services LLC",
-      "rating": null,
-      "reviews": null,
-      "phone": "+1 828-708-5372",
-      "address": null,
-      "hasWebsite": false,
-      "websiteUrl": null,
-      "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Clear+View+Lawn+Care+Services+LLC/data=!4m7!3m6!1s0x88598da370f25221:0x317576d8fbbbb2fa!8m2!3d35.5834398!4d-82.6189458!16s%2Fg%2F11vyxkt5c2!19sChIJIVLycKONWYgR-rK7-9h2dTE?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "lawn care service Asheville NC",
-      "emails": [
-        "javiertranquilino828@gmail.com"
-      ],
-      "facebook_url": "https://www.facebook.com/p/Clearview-Lawn-Care-Property-Maintenance-61551552638249",
-      "other_url": "https://clearviewlawncareandlandscaping.com",
-      "lead_type": "no-website"
-    },
-    {
-      "name": "Evergreen Lawn Maintenance",
-      "rating": 4.3,
-      "reviews": 16,
-      "phone": "+1 406-599-9632",
-      "address": null,
-      "hasWebsite": false,
-      "websiteUrl": null,
-      "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Evergreen+Lawn+Maintenance/data=!4m7!3m6!1s0x534544e8e97b563b:0xd3f5731c9ec7a6de!8m2!3d45.7034206!4d-111.0302243!16s%2Fg%2F1vfp3925!19sChIJO1Z76ehERVMR3qbHnhxz9dM?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "landscaping Bozeman MT",
-      "emails": [
-        "evergreenlawns@mail.com"
-      ],
-      "facebook_url": "https://www.facebook.com/EverGreenLawnMaint",
-      "other_url": "https://www.bozemanlawncare.com",
-      "lead_type": "no-website"
-    },
-    {
-      "name": "Black eagle cleaning services",
-      "rating": 5,
-      "reviews": 5,
-      "phone": "+1 802-363-4578",
-      "address": null,
-      "hasWebsite": false,
-      "websiteUrl": null,
-      "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Black+eagle+cleaning+services/data=!4m7!3m6!1s0x4cca7bf767cd2231:0x49c64104160d6847!8m2!3d44.4644068!4d-73.2145757!16s%2Fg%2F11nbk2kjhn!19sChIJMSLNZ_d7ykwRR2gNFgRBxkk?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "house cleaning Burlington VT",
-      "emails": [
-        "burvt@ecocleanearth.com"
-      ],
-      "facebook_url": null,
-      "other_url": "https://www.vtcleaningservices.com",
+      "facebook_url": "https://www.facebook.com/61566805299666",
+      "other_url": "https://www.angi.com/companylist/us/nc/asheville/underhill-outdoor-home-care-llc-reviews-146317466.htm",
       "lead_type": "no-website"
     },
     {
@@ -102,139 +30,10 @@
       "placeUrl": "https://www.google.com/maps/place/Cleaning+With+Meaning+Vermont/data=!4m7!3m6!1s0xa27d2bfd00419b95:0x9840bb88d7429851!8m2!3d43.7618635!4d-72.9215826!16s%2Fg%2F11q2x8qc_b!19sChIJlZtBAP0rfaIRUZhC14i7QJg?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
       "_query": "house cleaning Burlington VT",
       "emails": [
-        "lizzycleans246@gmail.com"
+        "vtbestcleaners@gmail.com"
       ],
-      "facebook_url": "https://www.facebook.com/groups/1859649567630715/posts/4346407895621524",
+      "facebook_url": null,
       "other_url": "https://www.vtcleaningservices.com",
-      "lead_type": "no-website"
-    },
-    {
-      "name": "Mike's Cleaning Services",
-      "rating": 5,
-      "reviews": 2,
-      "phone": "+1 802-488-5796",
-      "address": null,
-      "hasWebsite": false,
-      "websiteUrl": null,
-      "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Mike%27s+Cleaning+Services/data=!4m7!3m6!1s0x4cca7b93d3daf9d1:0x45b5d7ba0b737ef1!8m2!3d44.5093605!4d-73.2303864!16s%2Fg%2F11gy42cccc!19sChIJ0fna05N7ykwR8X5zC7rXtUU?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "house cleaning Burlington VT",
-      "emails": [
-        "admin@mrmikescleaningservicevt.com",
-        "hrtraven@mrmikescleaningservicevt.com"
-      ],
-      "facebook_url": "https://www.facebook.com/mrmikescleaningservice",
-      "other_url": "https://www.mrmikescleaningservicevt.com/about-us",
-      "lead_type": "no-website"
-    },
-    {
-      "name": "BahamaShine Mobile Detailing",
-      "rating": 5,
-      "reviews": 9,
-      "phone": "+1 541-788-5315",
-      "address": null,
-      "hasWebsite": false,
-      "websiteUrl": null,
-      "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/BahamaShine+Mobile+Detailing/data=!4m7!3m6!1s0x54b8c7f1977e544b:0xc4eeddab174d38f4!8m2!3d44.0627541!4d-121.2762064!16s%2Fg%2F11lyx50tqc!19sChIJS1R-l_HHuFQR9DhNF6vd7sQ?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "mobile car detailing Bend OR",
-      "emails": [
-        "davidbennett1505@gmail.com"
-      ],
-      "facebook_url": "https://www.facebook.com/groups/585835672658870/posts/1304260217483075",
-      "other_url": "https://cardetailfinder.com/oregon/bend/bahamashine-mobile-detailing-bend-or",
-      "lead_type": "no-website"
-    },
-    {
-      "name": "Dad's Auto Detailing",
-      "rating": 4.8,
-      "reviews": 49,
-      "phone": "+1 541-728-6563",
-      "address": null,
-      "hasWebsite": false,
-      "websiteUrl": null,
-      "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Dad%27s+Auto+Detailing/data=!4m7!3m6!1s0x54b8c653fe45b0cb:0xad022411588ff32e!8m2!3d44.1388232!4d-121.3344008!16s%2Fg%2F1261m4r86!19sChIJy7BF_lPGuFQRLvOPWBEkAq0?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "mobile car detailing Bend OR",
-      "emails": [
-        "jamesdomings3@gmail.com",
-        "dads_detailing@yahoo.com"
-      ],
-      "facebook_url": "https://www.facebook.com/p/Dads-Custom-Auto-Detailing-100063519248535",
-      "other_url": "https://dadsmobiledetail.com",
-      "lead_type": "no-website"
-    },
-    {
-      "name": "Bend Mobile Detailing",
-      "rating": 5,
-      "reviews": 1,
-      "phone": "+1 541-977-1392",
-      "address": null,
-      "hasWebsite": false,
-      "websiteUrl": null,
-      "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Bend+Mobile+Detailing/data=!4m7!3m6!1s0x4448436e79d7749b:0xa73420e079e373a6!8m2!3d44.1550445!4d-121.257984!16s%2Fg%2F11s90pmn6y!19sChIJm3TXeW5DSEQRpnPjeeAgNKc?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "mobile car detailing Bend OR",
-      "emails": [
-        "davidbennett1505@gmail.com",
-        "centraloregonautodetail@gmail.com"
-      ],
-      "facebook_url": "https://www.facebook.com/groups/585835672658870/posts/1509341786974916",
-      "other_url": "https://www.davidsdetailing.com",
-      "lead_type": "no-website"
-    },
-    {
-      "name": "Dr Detail",
-      "rating": 4.9,
-      "reviews": 13,
-      "phone": "+1 541-404-4457",
-      "address": null,
-      "hasWebsite": false,
-      "websiteUrl": null,
-      "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Dr+Detail/data=!4m7!3m6!1s0x54c3851cd60d0e73:0xea2397e57438daf0!8m2!3d43.4060075!4d-124.2520833!16s%2Fg%2F1td1__9q!19sChIJcw4N1hyFw1QR8No4dOWXI-o?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "mobile car detailing Bend OR",
-      "emails": [
-        "info@drdetailsandiego.com"
-      ],
-      "facebook_url": "https://www.facebook.com/drdetail3114",
-      "other_url": "https://www.drdetailphd.com",
-      "lead_type": "no-website"
-    },
-    {
-      "name": "Residential Services of Savannah",
-      "rating": 5,
-      "reviews": 2,
-      "phone": "+1 912-507-8927",
-      "address": null,
-      "hasWebsite": false,
-      "websiteUrl": null,
-      "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Residential+Services+of+Savannah/data=!4m7!3m6!1s0x88fb76053eecfe93:0x8739bcba767e0e48!8m2!3d32.0311178!4d-81.0655657!16s%2Fg%2F11gf9pvms_!19sChIJk_7sPgV2-4gRSA5-drq8OYc?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDgzMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "handyman Savannah GA",
-      "emails": [
-        "operations@homelandunitedconstruction.com"
-      ],
-      "facebook_url": "https://www.facebook.com/AHSSavannah/posts/thinking-about-new-floors-we-can-help-with-thatace-handyman-services-savannah-of/973196201892157",
-      "other_url": "https://www.mrhandyman.com/greater-savannah-and-hilton-head",
-      "lead_type": "no-website"
-    },
-    {
-      "name": "Professional Handyman Services",
-      "rating": 2.8,
-      "reviews": 4,
-      "phone": "+1 912-441-4288",
-      "address": null,
-      "hasWebsite": false,
-      "websiteUrl": null,
-      "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Professional+Handyman+Services/data=!4m7!3m6!1s0x88fb75fb6ea06397:0x7237788f957a0d27!8m2!3d32.0325011!4d-81.0819895!16s%2Fg%2F1pp2tz72k!19sChIJl2Ogbvt1-4gRJw16lY94N3I?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDgzMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "handyman Savannah GA",
-      "emails": [
-        "blake@georgiahandymanexperts.com"
-      ],
-      "facebook_url": "https://www.facebook.com/AHSSavannah",
-      "other_url": "https://www.mrhandyman.com/greater-savannah-and-hilton-head",
       "lead_type": "no-website"
     },
     {
@@ -249,150 +48,531 @@
       "placeUrl": "https://www.google.com/maps/place/Savannah+Handyman/data=!4m7!3m6!1s0x88fb9e65eb8b117d:0xe5fe7c0245135600!8m2!3d32.0774014!4d-81.0908968!16s%2Fg%2F11twq3pshy!19sChIJfRGL62We-4gRAFYTRQJ8_uU?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDgzMS4wIJJjKgBIAVAD&rclk=1",
       "_query": "handyman Savannah GA",
       "emails": [
-        "info@savannahpropertyguardians.com",
-        "info@hometask.com"
+        "taen@greatersavannahhandyman.com",
+        "info@savannahpropertyguardians.com"
       ],
       "facebook_url": "https://www.facebook.com/AHSSavannah",
       "other_url": "https://www.mrhandyman.com/greater-savannah-and-hilton-head",
       "lead_type": "no-website"
     },
     {
-      "name": "Anytime Power Wash",
-      "rating": 5,
-      "reviews": 1,
-      "phone": "+1 928-607-1473",
+      "name": "V & C Windows & Construction Cleaning",
+      "rating": 4.5,
+      "reviews": 8,
+      "phone": "+1 928-853-7956",
       "address": null,
       "hasWebsite": false,
       "websiteUrl": null,
       "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Anytime+Power+Wash/data=!4m7!3m6!1s0x872d8b8b3da144df:0x9b522e5dc2d62924!8m2!3d35.2801697!4d-111.512325!16s%2Fg%2F11f66b3k8l!19sChIJ30ShPYuLLYcRJCnWwl0uUps?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "placeUrl": "https://www.google.com/maps/place/V+%26+C+Windows+%26+Construction+Cleaning/data=!4m7!3m6!1s0x872d8ed7fcd7dce7:0x9b9c2b17bf10f815!8m2!3d35.2099855!4d-111.618329!16s%2Fg%2F11c523qvlc!19sChIJ59zX_NeOLYcRFfgQvxcrnJs?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
       "_query": "pressure washing Flagstaff AZ",
       "emails": [
-        "info@am-pros.com",
-        "contact@pressureperfectaz.com"
+        "scott@integrityfacility.com"
       ],
-      "facebook_url": null,
+      "facebook_url": "https://www.facebook.com/groups/2200898567/posts/10162815139968568",
+      "other_url": "https://network.procore.com/p/vandc-windows-and-construction-cleaning-llc-flagstaff",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "Exotic Pressure Washing LLC",
+      "rating": null,
+      "reviews": null,
+      "phone": "+1 928-679-0408",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Exotic+Pressure+Washing+LLC/data=!4m7!3m6!1s0xf963970f87af403:0xc92859b64c9d3faa!8m2!3d35.3667744!4d-111.3530614!16s%2Fg%2F11q41g7sjn!19sChIJA_R6-HA5lg8Rqj-dTLZZKMk?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "pressure washing Flagstaff AZ",
+      "emails": [
+        "executivepro.cleaningcompany22@gmail.com"
+      ],
+      "facebook_url": "https://www.facebook.com/100064207290310/posts/exotic-pressure-washing-is-expanding-now-offering-professional-cleaning-services/1260618022755096",
       "other_url": "https://www.pinecountrywindows.com/commercial-pressure-washing-services",
       "lead_type": "no-website"
     },
     {
-      "name": "Northern Arizona Power Wash",
+      "name": "Evergreen Tree & Lawn Services",
+      "rating": 4.2,
+      "reviews": 5,
+      "phone": "+1 406-543-8780",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Evergreen+Tree+%26+Lawn+Services/data=!4m7!3m6!1s0x535dcdfa79525f49:0x9ec575711f364104!8m2!3d46.8549779!4d-114.0356944!16s%2Fg%2F1tyzynrg!19sChIJSV9SefrNXVMRBEE2H3F1xZ4?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "tree service Missoula MT",
+      "emails": [
+        "shelly@greatermontanare.com"
+      ],
+      "facebook_url": "https://www.facebook.com/p/Evergreen-Tree-Lawn-Service-100064003479747",
+      "other_url": "https://nextdoor.com/pages/evergreen-tree-lawn-service-missoula-mt",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "OConnor Tree Works",
       "rating": 5,
-      "reviews": 8,
-      "phone": "+1 928-853-6959",
+      "reviews": 16,
+      "phone": "+1 406-493-6882",
       "address": null,
       "hasWebsite": false,
       "websiteUrl": null,
       "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Northern+Arizona+Power+Wash/data=!4m7!3m6!1s0x872d8bb9a0db1453:0x3e8607f81258073b!8m2!3d35.909819!4d-111.450786!16s%2Fg%2F11g892my_n!19sChIJUxTboLmLLYcROwdYEvgHhj4?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "pressure washing Flagstaff AZ",
+      "placeUrl": "https://www.google.com/maps/place/OConnor+Tree+Works/data=!4m7!3m6!1s0x535dcf1832a234b3:0x90f6ee1c0a167927!8m2!3d46.8974495!4d-114.095523!16s%2Fg%2F11yb5qcgdh!19sChIJszSiMhjPXVMRJ3kWChzu9pA?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "tree service Missoula MT",
       "emails": [
-        "zach@flagsurface.com"
+        "info@abletreeservice.com"
       ],
-      "facebook_url": "https://www.facebook.com/groups/NvstStudio/posts/4342760762712914",
-      "other_url": "https://www.flagsurface.com",
+      "facebook_url": "https://www.facebook.com/61557523296975/posts/attention-homeownersoconnor-tree-service-and-crew-are-in-full-gear-ready-to-prov/122145896540250776",
+      "other_url": "https://www.homeadvisor.com/rated.OConnorTreeworks.149900411.html",
       "lead_type": "no-website"
     },
     {
-      "name": "Flagstaff Powerwash",
-      "rating": 4,
-      "reviews": 4,
-      "phone": "+1 928-707-1917",
+      "name": "Tall Tree Experts",
+      "rating": null,
+      "reviews": null,
+      "phone": "+1 406-240-4085",
       "address": null,
       "hasWebsite": false,
       "websiteUrl": null,
       "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Flagstaff+Powerwash/data=!4m7!3m6!1s0x872d8f28f3b13b51:0xf6ed0dad0c958e7b!8m2!3d35.1828354!4d-111.6130336!16s%2Fg%2F11k5n2n1p6!19sChIJUTux8yiPLYcRe46VDK0N7fY?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "pressure washing Flagstaff AZ",
+      "placeUrl": "https://www.google.com/maps/place/Tall+Tree+Experts/data=!4m7!3m6!1s0x535dcf0da2e6e45b:0xb1a9424a32ccf3cc!8m2!3d46.8876673!4d-114.0645353!16s%2Fg%2F11gxflwxby!19sChIJW-Tmog3PXVMRzPPMMkpCqbE?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "tree service Missoula MT",
       "emails": [
-        "hello@flagstaffpressurewash.com"
+        "support@talltreeexperts.com"
       ],
-      "facebook_url": null,
-      "other_url": "https://flagstaffpressurewash.com/contact",
+      "facebook_url": "https://www.facebook.com/groups/141121182701876/posts/3759404694206822",
+      "other_url": "https://talltreeexperts.com",
       "lead_type": "no-website"
     },
     {
-      "name": "Three ladies cleaning",
-      "rating": 2.8,
-      "reviews": 18,
-      "phone": "+1 802-310-0852",
+      "name": "Jennison Tree Services",
+      "rating": 4.3,
+      "reviews": 6,
+      "phone": "+1 406-676-2115",
       "address": null,
       "hasWebsite": false,
       "websiteUrl": null,
       "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Three+ladies+cleaning/data=!4m7!3m6!1s0x4cca7b73a5f6ee5d:0x988a54fff59942c5!8m2!3d44.4802156!4d-73.2130269!16s%2Fg%2F11qyqwdmy4!19sChIJXe72pXN7ykwRxUKZ9f9Uipg?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "house cleaning Burlington VT",
+      "placeUrl": "https://www.google.com/maps/place/Jennison+Tree+Services/data=!4m7!3m6!1s0x53677a398067508f:0xfb492597173cc3f6!8m2!3d47.5568359!4d-114.0665279!16s%2Fg%2F1thsfll7!19sChIJj1BngDl6Z1MR9sM8F5clSfs?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "tree service Missoula MT",
       "emails": [
-        "lizzycleans246@gmail.com"
+        "darrenslominski@gmail.com"
       ],
-      "facebook_url": "https://www.facebook.com/groups/1859649567630715/posts/4367390926856554",
-      "other_url": "https://www.care.com/house-cleaning/burlington-vt",
+      "facebook_url": "https://www.facebook.com/p/Jennison-Tree-Service-100063702540448",
+      "other_url": "https://www.affordabletreeservicesmt.com",
       "lead_type": "no-website"
     },
     {
-      "name": "Apollo Automotive Detailing",
-      "rating": 4.7,
-      "reviews": 31,
-      "phone": "+1 541-480-5018",
-      "address": null,
-      "hasWebsite": false,
-      "websiteUrl": null,
-      "bookingUrl": "https://app.squareup.com/appointments/book/c71hzqe6m8trrh/LTQKSXW6J7JBE/start?rwg_token=AE37R_iDXuY1Kv1rUq1zjNL9vDB4eFIGkqKlBYxHXLwTXp_zsLvsU6LYAiYa5FxqbMb-mQaxaxOHH4wV7-2MEKCPNe56iOVq4Q%3D%3D",
-      "placeUrl": "https://www.google.com/maps/place/Apollo+Automotive+Detailing/data=!4m7!3m6!1s0x54b8c725dadc0d8b:0xf7adab1167037576!8m2!3d44.0065494!4d-121.2198987!16s%2Fg%2F11q2f7jlmv!19sChIJiw3c2iXHuFQRdnUDZxGrrfc?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "mobile car detailing Bend OR",
-      "emails": [
-        "kaidenmbaty@outlook.com"
-      ],
-      "facebook_url": "https://www.facebook.com/groups/585835672658870/posts/1732011431374616",
-      "other_url": "https://apollocardetailing.com",
-      "lead_type": "no-website"
-    },
-    {
-      "name": "MR. FIXIT UPPER",
+      "name": "Tolson excavation and contracting",
       "rating": 5,
       "reviews": 2,
-      "phone": "+1 404-798-6548",
+      "phone": "+1 406-830-1927",
       "address": null,
       "hasWebsite": false,
       "websiteUrl": null,
       "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/MR.+FIXIT+UPPER/data=!4m7!3m6!1s0x88fb75939ec819c3:0x2e703e422f99b74a!8m2!3d32.0835384!4d-81.3266896!16s%2Fg%2F11mv_5603d!19sChIJwxnInpN1-4gRSreZL0I-cC4?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDgzMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "handyman Savannah GA",
+      "placeUrl": "https://www.google.com/maps/place/Tolson+excavation+and+contracting/data=!4m7!3m6!1s0xafbc342dd6a439bf:0x5cf3dc16dd44ba14!8m2!3d46.8893412!4d-114.0578046!16s%2Fg%2F11xmvt0vlp!19sChIJvzmk1i00vK8RFLpE3Rbc81w?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "tree service Missoula MT",
       "emails": [
-        "mrfixitsav@gmail.com"
+        "tolsonex@gmail.com"
       ],
-      "facebook_url": "https://www.facebook.com/jwmaint",
-      "other_url": "https://nextdoor.com/pages/mrfix-it-property-maintenance-savannah-ga",
+      "facebook_url": "https://www.facebook.com/p/Tolson-excavation-contracting-100077093448424",
+      "other_url": "https://www.ci.missoula.mt.us/1930/City-Tree-Service-Request",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "A Pet Sitter LLC",
+      "rating": 5,
+      "reviews": 46,
+      "phone": "+1 484-319-0285",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/A+Pet+Sitter+LLC/data=!4m7!3m6!1s0x89c6f148e7d8c3cb:0x688c7f09d7f06b0f!8m2!3d40.0302398!4d-105.282451!16s%2Fg%2F11lmks5dv7!19sChIJy8PY50jxxokRD2vw1wl_jGg?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "dog walker Boulder CO",
+      "emails": [
+        "support@sittercity.com"
+      ],
+      "facebook_url": null,
+      "other_url": "https://www.petsit.com",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "Walk with ME",
+      "rating": 5,
+      "reviews": 3,
+      "phone": "+1 781-974-2732",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Walk+with+ME/data=!4m7!3m6!1s0x2f9d051fd2067d15:0x7948b000026dcfc!8m2!3d40.0256635!4d-105.2399025!16s%2Fg%2F11tfyzpp93!19sChIJFX0G0h8FnS8R_NwmAACLlAc?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "dog walker Boulder CO",
+      "emails": [
+        "whitetwhitney@gmail.com"
+      ],
+      "facebook_url": "https://www.facebook.com/groups/328102028646568/posts/1276837730439655",
+      "other_url": "https://www.woofies.com/boulder/services/dog-walking",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "Weyers Construction LLP",
+      "rating": 5,
+      "reviews": 18,
+      "phone": "+1 541-913-2732",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Weyers+Construction+LLP/data=!4m7!3m6!1s0x54c11d90ad04f9b5:0x81a4bb5652999dcb!8m2!3d44.0878725!4d-123.1584125!16s%2Fg%2F11yzyqtqxt!19sChIJtfkErZAdwVQRy52ZUla7pIE?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "fence contractor Eugene OR",
+      "emails": [
+        "weyersconstructionllp@gmail.com"
+      ],
+      "facebook_url": "https://www.facebook.com/100032396487149/posts/weyer-construction-llp-your-trusted-local-fence-company-in-eugene-springfield-su/1740241143732418",
+      "other_url": "https://www.weyersconstructionusa.com",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "Trusted Fence and Gate LLC",
+      "rating": 5,
+      "reviews": 50,
+      "phone": "+1 541-900-3039",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Trusted+Fence+and+Gate+LLC/data=!4m7!3m6!1s0xa804ea6a11f1278b:0xa3c44998f73e4284!8m2!3d43.863966!4d-122.9990969!16s%2Fg%2F11w_v812yb!19sChIJiyfxEWrqBKgRhEI-95hJxKM?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "fence contractor Eugene OR",
+      "emails": [
+        "oregonfence@oregonfence.net"
+      ],
+      "facebook_url": "https://www.facebook.com/p/Trusted-Fence-and-Gate-LLC-61571858816848",
+      "other_url": "https://www.angi.com/companylist/us/or/eugene/trusted-fence-and-gate-reviews-1.htm",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "Elite Fence Co Inc",
+      "rating": 3,
+      "reviews": 2,
+      "phone": "+1 541-988-9889",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Elite+Fence+Co+Inc/data=!4m7!3m6!1s0x54c0e13c3af21ca9:0x4a5fe8586215b580!8m2!3d44.0630677!4d-123.1378505!16s%2Fg%2F1tdyw2fx!19sChIJqRzyOjzhwFQRgLUVYljoX0o?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "fence contractor Eugene OR",
+      "emails": [
+        "elitefencecoinc@hotmail.com",
+        "office@elitefencepros.net"
+      ],
+      "facebook_url": "https://www.facebook.com/elitefencecoinc",
+      "other_url": "https://elitefence.com",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "Eugene Deck and Fence",
+      "rating": 1,
+      "reviews": 2,
+      "phone": "+1 541-287-4700",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Eugene+Deck+and+Fence/data=!4m7!3m6!1s0x54c0e1ba12a5fcc3:0xf9fb33cb885b1b8f!8m2!3d44.057297!4d-123.059076!16s%2Fg%2F11jdqq22g_!19sChIJw_ylErrhwFQRjxtbiMsz-_k?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "fence contractor Eugene OR",
+      "emails": [
+        "rich@willamettevalleygeneral.com"
+      ],
+      "facebook_url": "https://www.facebook.com/groups/eugeneoregonhelp/posts/3478395165716514",
+      "other_url": "https://www.willamettevalleygeneral.com/eugene-fence-contractor",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "Fencing Rental Pros Eugene",
+      "rating": null,
+      "reviews": null,
+      "phone": "+1 541-527-8502",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Fencing+Rental+Pros+Eugene/data=!4m7!3m6!1s0x54c11feae9be5cb5:0x303308ad344a04d0!8m2!3d44.039744!4d-123.0918018!16s%2Fg%2F11gy3drk81!19sChIJtVy-6eofwVQR0ARKNK0IMzA?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "fence contractor Eugene OR",
+      "emails": [
+        "service@oregonrentafence.com"
+      ],
+      "facebook_url": "https://www.facebook.com/100032396487149/posts/eugenes-trusted-fence-company-at-your-service-weyer-construction-llp-is-dedicate/1759946811761851",
+      "other_url": "https://www.rentnational.com/eugene",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "Barks & Bubbles",
+      "rating": 4.1,
+      "reviews": 49,
+      "phone": "+1 505-820-2275",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Barks+%26+Bubbles/data=!4m7!3m6!1s0x87185062e8cedfd5:0xf524533da119b33c!8m2!3d35.6674819!4d-105.9564791!16s%2Fg%2F113jz09qs!19sChIJ1d_O6GJQGIcRPLMZoT1TJPU?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "pet sitting Santa Fe NM",
+      "emails": [
+        "pawfect@hotmail.com",
+        "lindsey@barksandbubbles.us",
+        "sey@barksandbubbles.us"
+      ],
+      "facebook_url": "https://www.facebook.com/barksbubbles",
+      "other_url": "https://local.yahoo.com/info-28604201-barks-bubbles-santa-fe",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "Cactus Pet Sitting LLC",
+      "rating": 5,
+      "reviews": 7,
+      "phone": "+1 505-819-7750",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Cactus+Pet+Sitting+LLC/data=!4m7!3m6!1s0xa0283724845a193:0x8500dee35ec52c33!8m2!3d35.5211616!4d-105.982459!16s%2Fg%2F11vlntfbgc!19sChIJk6FFSHKDAgoRMyzFXuPeAIU?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "pet sitting Santa Fe NM",
+      "emails": [
+        "info@petsit.com",
+        "support@sittercity.com"
+      ],
+      "facebook_url": null,
+      "other_url": "https://www.petsit.com",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "Santa Fe Pet & Property Angel",
+      "rating": null,
+      "reviews": null,
+      "phone": "+1 505-316-1657",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Santa+Fe+Pet+%26+Property+Angel/data=!4m7!3m6!1s0x8718509115d26899:0xfb23927ed8db4945!8m2!3d35.6514974!4d-105.9541039!16s%2Fg%2F1tfgk89t!19sChIJmWjSFZFQGIcRRUnb2H6SI_s?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "pet sitting Santa Fe NM",
+      "emails": [
+        "petangelsantafe@gmail.com"
+      ],
+      "facebook_url": "https://www.facebook.com/groups/136461779799902/posts/24885419904477413",
+      "other_url": "https://www.bringfido.co.uk/resource/41134",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "Perfect Electricians",
+      "rating": 4.8,
+      "reviews": 98,
+      "phone": "+1 539-666-2758",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Perfect+Electricians/data=!4m7!3m6!1s0x87b693177b6f2843:0x24ac6ff1f23be474!8m2!3d36.059932!4d-95.906408!16s%2Fg%2F11kysy_v_x!19sChIJQyhvexeTtocRdOQ78vFvrCQ?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "electricians in Tulsa OK",
+      "emails": [
+        "aaron.hagan@mistersparky.com",
+        "service@sparkyelite.com"
+      ],
+      "facebook_url": "https://www.facebook.com/groups/200597954582833/posts/1624507575525190",
+      "other_url": "https://www.mistersparky.com/tulsa/?srsltid=AfmBOorERNMSWAHeRiScBhVta0AO6w2_CBCQkw7EVVXXRhBJPILUTHwS",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "Hayes Family Electricians",
+      "rating": 4.8,
+      "reviews": 59,
+      "phone": "+1 539-224-3547",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Hayes+Family+Electricians/data=!4m7!3m6!1s0x87b695d20a4f66a3:0xaaa69fe486ff6ce9!8m2!3d36.1021075!4d-96.0264875!16s%2Fg%2F11kz3gzqc6!19sChIJo2ZPCtKVtocR6Wz_huSfpqo?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "electricians in Tulsa OK",
+      "emails": [
+        "profiles@birdeye.com",
+        "support@hayeselectricalservice.com"
+      ],
+      "facebook_url": "https://www.facebook.com/groups/200597954582833/posts/1624507575525190",
+      "other_url": "https://serviceagent.ai/directory/oklahoma/tulsa/electrician/hayes-family-electricians",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "A1 Electric Tulsa",
+      "rating": 5,
+      "reviews": 13,
+      "phone": "+1 918-290-3496",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/A1+Electric+Tulsa/data=!4m7!3m6!1s0x87b6eb47a001ca39:0xc46f64bba88b4431!8m2!3d36.1302817!4d-96.0042237!16s%2Fg%2F1wd3wknm!19sChIJOcoBoEfrtocRMUSLqLtkb8Q?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "electricians in Tulsa OK",
+      "emails": [
+        "help@serviceagent.ai"
+      ],
+      "facebook_url": "https://www.facebook.com/groups/200597954582833/posts/1624507575525190",
+      "other_url": "https://serviceagent.ai/directory/oklahoma/tulsa/electrician/a1-electric-tulsa",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "Tallent Electrical Services",
+      "rating": 5,
+      "reviews": 29,
+      "phone": "+1 918-697-6304",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Tallent+Electrical+Services/data=!4m7!3m6!1s0x87b693c941dd4749:0x2f415b027a8bc643!8m2!3d36.0628082!4d-95.9371459!16s%2Fg%2F11j8p351cj!19sChIJSUfdQcmTtocRQ8aLegJbQS8?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "electricians in Tulsa OK",
+      "emails": [
+        "info@tulsahba.com",
+        "profiles@birdeye.com"
+      ],
+      "facebook_url": "https://www.facebook.com/groups/tulsareia/posts/10163276066420101",
+      "other_url": "https://members.tulsahba.com/member-directory/Details/tallent-electrical-services-4555156",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "H T Painting",
+      "rating": 5,
+      "reviews": 2,
+      "phone": "+1 423-618-9404",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/H+T+Painting/data=!4m7!3m6!1s0x88605fc22e2af901:0x48518a18096971a5!8m2!3d35.099322!4d-85.2869801!16s%2Fg%2F1tfbz5pj!19sChIJAfkqLsJfYIgRpXFpCRiKUUg?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "painters in Chattanooga TN",
+      "emails": [
+        "randywilsonpainting@yahoo.com"
+      ],
+      "facebook_url": "https://www.facebook.com/groups/3389767044500746/posts/4258871967590245",
+      "other_url": "https://www.randywilsonpainter.com",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "CRITTER GETTERS TERMITE AND PEST CONTROL",
+      "rating": 4.7,
+      "reviews": 12,
+      "phone": "+1 501-992-0343",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/CRITTER+GETTERS+TERMITE+AND+PEST+CONTROL/data=!4m7!3m6!1s0x87d2bff6951c83a5:0xdbcb9aec6bb2be16!8m2!3d34.827846!4d-92.182517!16s%2Fg%2F11y92k0dlv!19sChIJpYMclfa_0ocRFr6ya-yay9s?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "pest control in Little Rock AR",
+      "emails": [
+        "cgetters@yahoo.com",
+        "services@crittergetters.net",
+        "info@ourbugguy.com"
+      ],
+      "facebook_url": "https://www.facebook.com/p/Critter-Getters-Pest-Services-100063511393700",
+      "other_url": "https://www.bbb.org/us/ar/north-little-rock/profile/pest-control/critter-getters-termite-pest-control-0935-90236452",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "Colorclean of the Gulf Coast",
+      "rating": 4.9,
+      "reviews": 15,
+      "phone": "+1 334-399-0772",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Colorclean+of+the+Gulf+Coast/data=!4m7!3m6!1s0x889a4df28a951e15:0x5f065508c32ec04d!8m2!3d30.6881043!4d-88.107225!16s%2Fg%2F11f9wxj7nq!19sChIJFR6VivJNmogRTcAuwwhVBl8?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "carpet cleaning in Mobile AL",
+      "emails": [
+        "gulfcoastcarpetcleaning@comcast.net"
+      ],
+      "facebook_url": null,
+      "other_url": "https://local.yahoo.com/info-212509167-colorclean-of-the-gulf-coast-mobile",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "COIT Cleaning and Restoration",
+      "rating": 2.5,
+      "reviews": 2,
+      "phone": "+1 251-665-4484",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/COIT+Cleaning+and+Restoration/data=!4m7!3m6!1s0x889bb313509693e7:0xdf151113b9a63746!8m2!3d30.6310895!4d-88.1929107!16s%2Fg%2F1tc_xctz!19sChIJ55OWUBOzm4gRRjemuRMRFd8?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "carpet cleaning in Mobile AL",
+      "emails": [
+        "info@coit.com",
+        "first.last@cleveland.coit.com",
+        "john.doe@cleveland.coit.com"
+      ],
+      "facebook_url": null,
+      "other_url": "https://www.coit.com",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "Port City Carpet Service",
+      "rating": null,
+      "reviews": null,
+      "phone": "+1 251-633-6072",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Port+City+Carpet+Service/data=!4m7!3m6!1s0x889bb323d7101283:0x208f0a5cc8e9ee72!8m2!3d30.6532504!4d-88.231277!16s%2Fg%2F11p5rkvzmt!19sChIJgxIQ1yOzm4gRcu7pyFwKjyA?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "carpet cleaning in Mobile AL",
+      "emails": [
+        "rjrichburg@bellsouth.net"
+      ],
+      "facebook_url": null,
+      "other_url": "https://www.bbb.org",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "Gulf Coast Carpet Cleaning/ and water remediation",
+      "rating": 4.7,
+      "reviews": 13,
+      "phone": "+1 251-591-4906",
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Gulf+Coast+Carpet+Cleaning%2F+and+water+remediation/data=!4m7!3m6!1s0x889a5699ed3336f7:0x5d889affcdf1ee5f!8m2!3d30.8177068!4d-88.081625!16s%2Fg%2F11xlkt7b3!19sChIJ9zYz7ZlWmogRX-7xzf-aiF0?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "carpet cleaning in Mobile AL",
+      "emails": [
+        "eccc.llc@hotmail.com"
+      ],
+      "facebook_url": "https://www.facebook.com/emeraldcoastcarpetcleaning",
+      "other_url": "https://emeraldcoastcarpetcleaningandrestoration.com",
+      "lead_type": "no-website"
+    },
+    {
+      "name": "Indigo Loft Salon",
+      "rating": 4.7,
+      "reviews": 108,
+      "phone": null,
+      "address": null,
+      "hasWebsite": false,
+      "websiteUrl": null,
+      "bookingUrl": "https://www.vagaro.com/googlemap/U2FsdGVkX19eV2FLFXcliZarKY~6A-y3D0SGjGxUCso=/services?rwg_token=AE37R_jaG8xC-DevPDyOzJOFJLz14fsCe-dPr-qkQ6CVCH1co6MA0UtEL8FrnKL2Jjb903tid0RdZV4WuDbw9tTfZHYL2OfvYQ%3D%3D",
+      "placeUrl": "https://www.google.com/maps/place/Indigo+Loft+Salon/data=!4m7!3m6!1s0x89d9f3b7fa6aa73b:0xc95a3c6126c6bd87!8m2!3d43.052183!4d-76.1538278!16s%2Fg%2F11cms2ddbk!19sChIJO6dq-rfz2YkRh73GJmE8Wsk?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "hair salons in Syracuse NY",
+      "emails": [
+        "indigo@indigolft.com",
+        "profiles@birdeye.com"
+      ],
+      "facebook_url": null,
+      "other_url": "https://www.vagaro.com",
       "lead_type": "no-website"
     }
   ],
   "has_website": [
-    {
-      "name": "EcoLawns Unlimited",
-      "rating": 5,
-      "reviews": 32,
-      "phone": "+1 828-736-2457",
-      "address": null,
-      "hasWebsite": true,
-      "websiteUrl": "https://ecolawnsultd.com/",
-      "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/EcoLawns+Unlimited/data=!4m7!3m6!1s0x885a1979f881c9ad:0x57df9f3b78e5426c!8m2!3d35.5736628!4d-82.6409905!16s%2Fg%2F11lg390rhm!19sChIJrcmB-HkZWogRbELleDuf31c?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "lawn care service Asheville NC",
-      "emails": [
-        "info@ecolawnsultd.com"
-      ],
-      "quality_score": 0,
-      "quality_reasons": [
-        "fetch-failed:202"
-      ],
-      "website_title": null,
-      "generator": null,
-      "copyright_year": null,
-      "html_size": null,
-      "is_https": true,
-      "viewport_meta": null,
-      "lead_type": "low-quality-website"
-    },
     {
       "name": "U.S. Lawns - Asheville",
       "rating": 4.5,
@@ -405,7 +585,7 @@
       "placeUrl": "https://www.google.com/maps/place/U.S.+Lawns+-+Asheville/data=!4m7!3m6!1s0x885993582b23b877:0xe141341a64fc712e!8m2!3d35.527796!4d-82.6927936!16s%2Fg%2F1tfbz5c2!19sChIJd7gjK1iTWYgRLnH8ZBo0QeE?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
       "_query": "lawn care service Asheville NC",
       "emails": [
-        "robin.smith@uslawns.net"
+        "smith@uslawns.net"
       ],
       "quality_score": 0,
       "quality_reasons": [
@@ -420,148 +600,150 @@
       "lead_type": "low-quality-website"
     },
     {
-      "name": "Linc's Lawn Care, LLC",
-      "rating": 4.7,
-      "reviews": 25,
-      "phone": "+1 828-655-7939",
-      "address": null,
-      "hasWebsite": true,
-      "websiteUrl": "https://getlincs.com/",
-      "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Linc%27s+Lawn+Care,+LLC/data=!4m7!3m6!1s0x62327169b17c12cd:0x20d05431a4e940c4!8m2!3d35.484149!4d-82.528578!16s%2Fg%2F11qws7whfj!19sChIJzRJ8sWlxMmIRxEDppDFU0CA?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "lawn care service Asheville NC",
-      "emails": [
-        "office@lincslawncare.com"
-      ],
-      "quality_score": 0,
-      "quality_reasons": [
-        "fetch-failed:no-resp"
-      ],
-      "website_title": null,
-      "generator": null,
-      "copyright_year": null,
-      "html_size": null,
-      "is_https": true,
-      "viewport_meta": null,
-      "lead_type": "low-quality-website"
-    },
-    {
-      "name": "Greenscapes Landscaping & Retaining Walls",
-      "rating": 4.1,
-      "reviews": 53,
-      "phone": "+1 828-713-0100",
-      "address": null,
-      "hasWebsite": true,
-      "websiteUrl": "http://ncgreenscapes.com/",
-      "bookingUrl": "https://clienthub.getjobber.com/hubs/84f32d49-c606-43fb-8ac7-f363b4241c10/public/requests/112016/new?rwg_token=AE37R_jt_SUZjZ_hM-YbGlpJEwBIbQaTvUWXYZ3HsRcB5ojFsPTR_1KZ5tlkwV_5xLPymh847PGD0P7v_eRb8opHZ0ooXXyYpQ%3D%3D",
-      "placeUrl": "https://www.google.com/maps/place/Greenscapes+Landscaping+%26+Retaining+Walls/data=!4m7!3m6!1s0x88598e71c22e973f:0xc77bb04ecf23501a!8m2!3d35.5864185!4d-82.5047309!16s%2Fg%2F11g8kcwl0_!19sChIJP5cuwnGOWYgRGlAjz06we8c?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "lawn care service Asheville NC",
-      "emails": [
-        "ncgreenscapes@gmail.com"
-      ],
-      "quality_score": 0,
-      "quality_reasons": [
-        "fetch-failed:202"
-      ],
-      "website_title": null,
-      "generator": null,
-      "copyright_year": null,
-      "html_size": null,
-      "is_https": false,
-      "viewport_meta": null,
-      "lead_type": "low-quality-website"
-    },
-    {
-      "name": "Greater Gallatin Landscape Contractors Inc.",
-      "rating": 4.3,
-      "reviews": 27,
-      "phone": "+1 406-570-3784",
-      "address": null,
-      "hasWebsite": true,
-      "websiteUrl": "http://greatergallatin.com/",
-      "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Greater+Gallatin+Landscape+Contractors+Inc./data=!4m7!3m6!1s0x534548f4955642dd:0xbca297d34c6a89f6!8m2!3d45.6532519!4d-111.0683244!16s%2Fg%2F1vxfzv3s!19sChIJ3UJWlfRIRVMR9olqTNOXorw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "landscaping Bozeman MT",
-      "emails": [
-        "office@greatergallatin.com"
-      ],
-      "quality_score": 0,
-      "quality_reasons": [
-        "fetch-failed:no-resp"
-      ],
-      "website_title": null,
-      "generator": null,
-      "copyright_year": null,
-      "html_size": null,
-      "is_https": false,
-      "viewport_meta": null,
-      "lead_type": "low-quality-website"
-    },
-    {
-      "name": "Jerman Lawn Care LLC",
+      "name": "DEM CLEANING SERVICES LLC ( Burlington,VT)",
       "rating": 5,
-      "reviews": 28,
-      "phone": "+1 406-600-9319",
+      "reviews": 71,
+      "phone": "+1 802-233-5650",
       "address": null,
       "hasWebsite": true,
-      "websiteUrl": "https://jermanlawncare.com/",
+      "websiteUrl": "https://www.demcleaningservicesllc.com/",
       "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Jerman+Lawn+Care+LLC/data=!4m7!3m6!1s0x2c718ca9f2b13343:0xc1ca125b0a25c9a3!8m2!3d45.6502969!4d-111.0457409!16s%2Fg%2F11vx4cx5t7!19sChIJQzOx8qmMcSwRo8klClsSysE?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "landscaping Bozeman MT",
-      "emails": [
-        "jake@jermanlawncare.com"
-      ],
-      "quality_score": 0,
-      "quality_reasons": [
-        "fetch-failed:no-resp"
-      ],
-      "website_title": null,
-      "generator": null,
-      "copyright_year": null,
-      "html_size": null,
-      "is_https": true,
-      "viewport_meta": null,
-      "lead_type": "low-quality-website"
-    },
-    {
-      "name": "Scenic City Trucking & Landscaping Products",
-      "rating": 4.7,
-      "reviews": 26,
-      "phone": "+1 406-388-7771",
-      "address": null,
-      "hasWebsite": true,
-      "websiteUrl": "https://www.sceniccitytruckandtrailers.com/",
-      "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Scenic+City+Trucking+%26+Landscaping+Products/data=!4m7!3m6!1s0x534537c812dc9b15:0xb376e129d5a0a4b2!8m2!3d45.7737679!4d-111.2281908!16s%2Fg%2F1tfjkt01!19sChIJFZvcEsg3RVMRsqSg1SnhdrM?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "landscaping Bozeman MT",
-      "emails": [
-        "sceniccity@montana.net"
-      ],
-      "quality_score": 0,
-      "quality_reasons": [
-        "fetch-failed:no-resp"
-      ],
-      "website_title": null,
-      "generator": null,
-      "copyright_year": null,
-      "html_size": null,
-      "is_https": true,
-      "viewport_meta": null,
-      "lead_type": "low-quality-website"
-    },
-    {
-      "name": "Lime Maids",
-      "rating": 4.7,
-      "reviews": 221,
-      "phone": "+1 802-827-0971",
-      "address": null,
-      "hasWebsite": true,
-      "websiteUrl": "https://limemaids.com/",
-      "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Lime+Maids/data=!4m7!3m6!1s0x4cca7a324189ec8b:0x6ec4e7c5232fe652!8m2!3d44.5218305!4d-72.922842!16s%2Fg%2F11dxrpgc1q!19sChIJi-yJQTJ6ykwRUuYvI8XnxG4?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "placeUrl": "https://www.google.com/maps/place/DEM+CLEANING+SERVICES+LLC+%28+Burlington,VT%29/data=!4m7!3m6!1s0x4cca7b8ccd13cab1:0x5e846f9b062f62f1!8m2!3d44.4806886!4d-73.2110224!16s%2Fg%2F11wr2m_lt5!19sChIJscoTzYx7ykwR8WIvBptvhF4?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
       "_query": "house cleaning Burlington VT",
       "emails": [
-        "support@limemaids.com"
+        "bashouvip@gmail.com",
+        "demcleaningservicesllc@gmail.com"
+      ],
+      "quality_score": 0,
+      "quality_reasons": [
+        "fetch-failed:no-resp"
+      ],
+      "website_title": null,
+      "generator": null,
+      "copyright_year": null,
+      "html_size": null,
+      "is_https": true,
+      "viewport_meta": null,
+      "lead_type": "low-quality-website"
+    },
+    {
+      "name": "All Season’s Carpet & Upholstery Cleaning of Vermont",
+      "rating": 4.9,
+      "reviews": 7,
+      "phone": "(802) 655-2033",
+      "address": null,
+      "hasWebsite": true,
+      "websiteUrl": "https://www.google.com/aclk?sa=L&ai=DChsSEwjWx7fv_dKWAxX5bQ8CHQpkM6IYACICCAEQABoCdGI&co=1&ase=2&gclid=EAIaIQobChMI1se37_3SlgMV-W0PAh0KZDOiEBAYASAAEgJlzPD_BwE&cid=CAASugHkaLbG4P_3vP8OHHeCXxpOmcAq1T0UgT9irjvhgDj32a9Q3F-jnaglhijAnn02wa6s0zhbxgfLc-Bzsp4JHJcx-ranriRQ7AAfO0JJTQ8s5Xi8T_1aSJoaJQo8fzfz4646cyR6HKbghG0o4xNdqEK2jPGU45mjMfAX8eNK5sSxMQ8E4Rtu2oEs8DFUbOaVjz2p760i13wK1CLNwrbi91Z_yLsCCuzTSYTIbTBVR9Cjyvvfg9Gri9SdK9Q&cce=2&category=acrcp_v1_32&sig=AOD64_3DzRuZFc5BwWAijYKzlmYswgdUNg&adurl&q&ctype=99&nis=6",
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/All+Season%E2%80%99s+Carpet+%26+Upholstery+Cleaning+of+Vermont/data=!4m7!3m6!1s0x4cca1ab9ac9947f9:0xd2e1a0ce9412e69e!8m2!3d44.805355!4d-73.079553!16s%2Fg%2F1tm1q2c7!19sChIJ-UeZrLkaykwRnuYSlM6g4dI?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "house cleaning Burlington VT",
+      "emails": [
+        "peterbreen@comcast.net",
+        "carl@apexvermont.com"
+      ],
+      "quality_score": 0,
+      "quality_reasons": [
+        "fetch-failed:no-resp"
+      ],
+      "website_title": null,
+      "generator": null,
+      "copyright_year": null,
+      "html_size": null,
+      "is_https": true,
+      "viewport_meta": null,
+      "lead_type": "low-quality-website"
+    },
+    {
+      "name": "Champlain Valley Cleaning",
+      "rating": 5,
+      "reviews": 24,
+      "phone": "+1 802-777-3824",
+      "address": null,
+      "hasWebsite": true,
+      "websiteUrl": "https://www.southburlingtoncommercialcleaning.com/",
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Champlain+Valley+Cleaning/data=!4m7!3m6!1s0x4cca7b484c1a5d5d:0x8cca0d539f9675a5!8m2!3d44.442109!4d-73.0826156!16s%2Fg%2F11q_2bmry3!19sChIJXV0aTEh7ykwRpXWWn1MNyow?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "house cleaning Burlington VT",
+      "emails": [
+        "champlainvalleycleaning@gmail.com"
+      ],
+      "quality_score": 0,
+      "quality_reasons": [
+        "fetch-failed:no-resp"
+      ],
+      "website_title": null,
+      "generator": null,
+      "copyright_year": null,
+      "html_size": null,
+      "is_https": true,
+      "viewport_meta": null,
+      "lead_type": "low-quality-website"
+    },
+    {
+      "name": "Phoenix Surface Cleaning LLC.",
+      "rating": 4.9,
+      "reviews": 10,
+      "phone": "+1 802-595-0633",
+      "address": null,
+      "hasWebsite": true,
+      "websiteUrl": "https://www.phoenixsurfacecleaning.com/",
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Phoenix+Surface+Cleaning+LLC./data=!4m7!3m6!1s0x4cb5ad4a9db07f17:0x646c3b3495438e2d!8m2!3d44.3340713!4d-72.3735835!16s%2Fg%2F11h0hlfhz1!19sChIJF3-wnUqttUwRLY5DlTQ7bGQ?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "house cleaning Burlington VT",
+      "emails": [
+        "phoenixxcleaning@gmail.com"
+      ],
+      "quality_score": 0,
+      "quality_reasons": [
+        "fetch-failed:no-resp"
+      ],
+      "website_title": null,
+      "generator": null,
+      "copyright_year": null,
+      "html_size": null,
+      "is_https": true,
+      "viewport_meta": null,
+      "lead_type": "low-quality-website"
+    },
+    {
+      "name": "Viking Plumbing",
+      "rating": 4.7,
+      "reviews": null,
+      "phone": "+1 208-369-9933",
+      "address": null,
+      "hasWebsite": true,
+      "websiteUrl": "https://vikingplumbingboise.com/",
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Viking+Plumbing/data=!4m7!3m6!1s0x54aef870a6cd2b7f:0x837981d150c3ad42!8m2!3d43.6118607!4d-116.321968!16s%2Fg%2F1tdp9bjl!19sChIJfyvNpnD4rlQRQq3DUNGBeYM?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "plumbers in Boise ID",
+      "emails": [
+        "vikingplumbingboise@gmail.com"
+      ],
+      "quality_score": 0,
+      "quality_reasons": [
+        "fetch-failed:no-resp"
+      ],
+      "website_title": null,
+      "generator": null,
+      "copyright_year": null,
+      "html_size": null,
+      "is_https": true,
+      "viewport_meta": null,
+      "lead_type": "low-quality-website"
+    },
+    {
+      "name": "Meridian Plumbing, Heating and Air",
+      "rating": 4.9,
+      "reviews": 1538,
+      "phone": "+1 208-888-7555",
+      "address": null,
+      "hasWebsite": true,
+      "websiteUrl": "https://www.meridian-plumbing.com/",
+      "bookingUrl": "https://book.servicetitan.com/c1mhi2spvtbgm7j8xwv8ciif?rwg_token=AE37R_hfS-PfJQs36hammsMg77C1sZSZE36KUVniZ4gqbBgUnRWsKWY3Wrp96q9_E8FjlmPalAHnHb5m5B1W0eRj7Qwjpwu0hg%3D%3D",
+      "placeUrl": "https://www.google.com/maps/place/Meridian+Plumbing,+Heating+and+Air/data=!4m7!3m6!1s0x54ae53e5abcc80c7:0x53d9f783a9516c78!8m2!3d43.6051343!4d-116.3864105!16s%2Fg%2F1tk22nm_!19sChIJx4DMq-VTrlQReGxRqYP32VM?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "plumbers in Boise ID",
+      "emails": [
+        "customerservice@accessheating.com"
       ],
       "quality_score": 0,
       "quality_reasons": [
@@ -576,18 +758,70 @@
       "lead_type": "low-quality-website"
     },
     {
-      "name": "Solstice Landscaping",
-      "rating": 4.9,
-      "reviews": 34,
-      "phone": "+1 406-587-2250",
+      "name": "Drake Mechanical | HVAC & Plumbing Services",
+      "rating": 4.5,
+      "reviews": 458,
+      "phone": "+1 208-362-6200",
       "address": null,
       "hasWebsite": true,
-      "websiteUrl": "http://www.solsticelandscape.com/",
+      "websiteUrl": "https://www.drakemech.com/",
       "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Solstice+Landscaping/data=!4m7!3m6!1s0x534544599c3ec99b:0x85b4ecdd03d6771!8m2!3d45.6757379!4d-111.124142!16s%2Fg%2F11c5xxv29y!19sChIJm8k-nFlERVMRcWc90M1OWwg?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "landscaping Bozeman MT",
+      "placeUrl": "https://www.google.com/maps/place/Drake+Mechanical+%7C+HVAC+%26+Plumbing+Services/data=!4m7!3m6!1s0x54ae5786c4c51825:0x117d850b49ff25d0!8m2!3d43.557194!4d-116.2499242!16s%2Fg%2F1td650lv!19sChIJJRjFxIZXrlQR0CX_SQuFfRE?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "plumbers in Boise ID",
       "emails": [
-        "info@solsticelandscape.com"
+        "info@drakemech.com"
+      ],
+      "quality_score": 0,
+      "quality_reasons": [
+        "fetch-failed:no-resp"
+      ],
+      "website_title": null,
+      "generator": null,
+      "copyright_year": null,
+      "html_size": null,
+      "is_https": true,
+      "viewport_meta": null,
+      "lead_type": "low-quality-website"
+    },
+    {
+      "name": "Watt's Right Electric",
+      "rating": 4.9,
+      "reviews": 2031,
+      "phone": "+1 918-300-3739",
+      "address": null,
+      "hasWebsite": true,
+      "websiteUrl": "https://www.callwattsright.com/?utm_medium=organic&utm_source=google&utm_campaign=gbp",
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Watt%27s+Right+Electric/data=!4m7!3m6!1s0x87b6956c9c691803:0x634d44303f0024b4!8m2!3d36.0774009!4d-95.847578!16s%2Fg%2F11skrzplnl!19sChIJAxhpnGyVtocRtCQAPzBETWM?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "electricians in Tulsa OK",
+      "emails": [
+        "askwattson@callwattsright.com"
+      ],
+      "quality_score": 0,
+      "quality_reasons": [
+        "fetch-failed:no-resp"
+      ],
+      "website_title": null,
+      "generator": null,
+      "copyright_year": null,
+      "html_size": null,
+      "is_https": true,
+      "viewport_meta": null,
+      "lead_type": "low-quality-website"
+    },
+    {
+      "name": "Waybright Electric",
+      "rating": 5,
+      "reviews": 1180,
+      "phone": "+1 918-520-3259",
+      "address": null,
+      "hasWebsite": true,
+      "websiteUrl": "http://callwaybright.com/",
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Waybright+Electric/data=!4m7!3m6!1s0x87b68d6d1c79b54b:0xe00e298dfda43214!8m2!3d36.0749519!4d-95.8280513!16s%2Fg%2F11gldwbxfr!19sChIJS7V5HG2NtocRFDKk_Y0pDuA?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "electricians in Tulsa OK",
+      "emails": [
+        "info@ecselectricllc.com"
       ],
       "quality_score": 0,
       "quality_reasons": [
@@ -602,19 +836,18 @@
       "lead_type": "low-quality-website"
     },
     {
-      "name": "Higher Ground Landscaping",
-      "rating": 4.8,
-      "reviews": 31,
-      "phone": "+1 406-580-2604",
+      "name": "Tulsa Electric LLC",
+      "rating": 5,
+      "reviews": 49,
+      "phone": "+1 918-992-5233",
       "address": null,
       "hasWebsite": true,
-      "websiteUrl": "http://highergroundlandscaping.com/",
+      "websiteUrl": "https://tulsaelectricllc.com/",
       "bookingUrl": null,
-      "placeUrl": "https://www.google.com/maps/place/Higher+Ground+Landscaping/data=!4m7!3m6!1s0x5345444fa65f80b3:0x480d8006a16109c!8m2!3d46.6795134!4d-110.0444234!16s%2Fg%2F1tdfhbxy!19sChIJs4Bfpk9ERVMRnBAWagDYgAQ?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
-      "_query": "landscaping Bozeman MT",
+      "placeUrl": "https://www.google.com/maps/place/Tulsa+Electric+LLC/data=!4m7!3m6!1s0x87b6bc582ec11a7f:0x77af13f7551da480!8m2!3d36.1756305!4d-95.9790442!16s%2Fg%2F11bzyxmhhs!19sChIJfxrBLli8tocRgKQdVfcTr3c?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "electricians in Tulsa OK",
       "emails": [
-        "higherground406@gmail.com",
-        "office@highergroundaz.com"
+        "rdorse@tulsaelectricllc.com"
       ],
       "quality_score": 0,
       "quality_reasons": [
@@ -624,7 +857,59 @@
       "generator": null,
       "copyright_year": null,
       "html_size": null,
-      "is_https": false,
+      "is_https": true,
+      "viewport_meta": null,
+      "lead_type": "low-quality-website"
+    },
+    {
+      "name": "Bob Dooley Electric",
+      "rating": 4.7,
+      "reviews": 32,
+      "phone": "+1 918-446-4333",
+      "address": null,
+      "hasWebsite": true,
+      "websiteUrl": "https://www.bobdooleyelectric.com/",
+      "bookingUrl": "https://clienthub.getjobber.com/hubs/4d5a5847-0886-4a3d-a5c9-1545aee732c6/public/requests/1914296/new?rwg_token=AE37R_jY-VPANVLGvMGHT2l2XitOo6459pu-gBybczF_iJIhm9HC5rMCoBaJz4oyKJPdVlBsxSQfDHi_s0C7onjMuvWlv7yZMw%3D%3D",
+      "placeUrl": "https://www.google.com/maps/place/Bob+Dooley+Electric/data=!4m7!3m6!1s0x87b695a1c9522f6d:0x9adf3e1be4f7e3ef!8m2!3d36.1050825!4d-96.019084!16s%2Fg%2F11sf8pnkp3!19sChIJbS9SyaGVtocR7-P35Bs-35o?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "electricians in Tulsa OK",
+      "emails": [
+        "jamiemay@bobdooleyelectric.com"
+      ],
+      "quality_score": 0,
+      "quality_reasons": [
+        "fetch-failed:202"
+      ],
+      "website_title": null,
+      "generator": null,
+      "copyright_year": null,
+      "html_size": null,
+      "is_https": true,
+      "viewport_meta": null,
+      "lead_type": "low-quality-website"
+    },
+    {
+      "name": "Fox Electrical Inc.",
+      "rating": 4.3,
+      "reviews": 17,
+      "phone": "+1 918-833-5000",
+      "address": null,
+      "hasWebsite": true,
+      "websiteUrl": "https://foxtulsa.com/",
+      "bookingUrl": null,
+      "placeUrl": "https://www.google.com/maps/place/Fox+Electrical+Inc./data=!4m7!3m6!1s0x86aae2eaf4ce885d:0x79d7c586e56d324!8m2!3d36.0868572!4d-95.8677414!16s%2Fg%2F11sttv3675!19sChIJXYjO9OriqoYRJNNWblh8nQc?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMS4wIJJjKgBIAVAD&rclk=1",
+      "_query": "electricians in Tulsa OK",
+      "emails": [
+        "scheduling@foxtulsa.com"
+      ],
+      "quality_score": 0,
+      "quality_reasons": [
+        "fetch-failed:no-resp"
+      ],
+      "website_title": null,
+      "generator": null,
+      "copyright_year": null,
+      "html_size": null,
+      "is_https": true,
       "viewport_meta": null,
       "lead_type": "low-quality-website"
     }

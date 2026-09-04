@@ -279,8 +279,448 @@
       "first_sent": 1788493340,
       "last_sent": 1788493340,
       "send_count": 1
+    },
+    "underhillohc@gmail.com": {
+      "recipient": "underhill.ohc@gmail.com",
+      "normalized": "underhillohc@gmail.com",
+      "subject": "Quick question about Underhill outdoor home care",
+      "lead": "Underhill outdoor home care",
+      "type": "no-website",
+      "first_sent": 1788495240,
+      "last_sent": 1788495240,
+      "send_count": 1
+    },
+    "vtbestcleaners@gmail.com": {
+      "recipient": "vtbestcleaners@gmail.com",
+      "normalized": "vtbestcleaners@gmail.com",
+      "subject": "Quick question about Cleaning With Meaning Vermont",
+      "lead": "Cleaning With Meaning Vermont",
+      "type": "no-website",
+      "first_sent": 1788495330,
+      "last_sent": 1788495330,
+      "send_count": 1
+    },
+    "taen@greatersavannahhandyman.com": {
+      "recipient": "taen@greatersavannahhandyman.com",
+      "normalized": "taen@greatersavannahhandyman.com",
+      "subject": "Quick question about Savannah Handyman",
+      "lead": "Savannah Handyman",
+      "type": "no-website",
+      "first_sent": 1788495420,
+      "last_sent": 1788495420,
+      "send_count": 1
+    },
+    "scott@integrityfacility.com": {
+      "recipient": "scott@integrityfacility.com",
+      "normalized": "scott@integrityfacility.com",
+      "subject": "Quick question about V & C Windows & Construction Cleaning",
+      "lead": "V & C Windows & Construction Cleaning",
+      "type": "no-website",
+      "first_sent": 1788495509,
+      "last_sent": 1788495509,
+      "send_count": 1
+    },
+    "executiveprocleaningcompany22@gmail.com": {
+      "recipient": "executivepro.cleaningcompany22@gmail.com",
+      "normalized": "executiveprocleaningcompany22@gmail.com",
+      "subject": "Quick question about Exotic Pressure Washing LLC",
+      "lead": "Exotic Pressure Washing LLC",
+      "type": "no-website",
+      "first_sent": 1788495599,
+      "last_sent": 1788495599,
+      "send_count": 1
+    },
+    "shelly@greatermontanare.com": {
+      "recipient": "shelly@greatermontanare.com",
+      "normalized": "shelly@greatermontanare.com",
+      "subject": "Quick question about Evergreen Tree & Lawn Services",
+      "lead": "Evergreen Tree & Lawn Services",
+      "type": "no-website",
+      "first_sent": 1788495689,
+      "last_sent": 1788495689,
+      "send_count": 1
+    },
+    "info@abletreeservice.com": {
+      "recipient": "info@abletreeservice.com",
+      "normalized": "info@abletreeservice.com",
+      "subject": "Quick question about OConnor Tree Works",
+      "lead": "OConnor Tree Works",
+      "type": "no-website",
+      "first_sent": 1788495779,
+      "last_sent": 1788495779,
+      "send_count": 1
+    },
+    "support@talltreeexperts.com": {
+      "recipient": "support@talltreeexperts.com",
+      "normalized": "support@talltreeexperts.com",
+      "subject": "Quick question about Tall Tree Experts",
+      "lead": "Tall Tree Experts",
+      "type": "no-website",
+      "first_sent": 1788495869,
+      "last_sent": 1788495869,
+      "send_count": 1
+    },
+    "darrenslominski@gmail.com": {
+      "recipient": "darrenslominski@gmail.com",
+      "normalized": "darrenslominski@gmail.com",
+      "subject": "Quick question about Jennison Tree Services",
+      "lead": "Jennison Tree Services",
+      "type": "no-website",
+      "first_sent": 1788495959,
+      "last_sent": 1788495959,
+      "send_count": 1
+    },
+    "tolsonex@gmail.com": {
+      "recipient": "tolsonex@gmail.com",
+      "normalized": "tolsonex@gmail.com",
+      "subject": "Quick question about Tolson excavation and contracting",
+      "lead": "Tolson excavation and contracting",
+      "type": "no-website",
+      "first_sent": 1788496049,
+      "last_sent": 1788496049,
+      "send_count": 1
+    },
+    "support@sittercity.com": {
+      "recipient": "support@sittercity.com",
+      "normalized": "support@sittercity.com",
+      "subject": "Quick question about A Pet Sitter LLC",
+      "lead": "A Pet Sitter LLC",
+      "type": "no-website",
+      "first_sent": 1788496140,
+      "last_sent": 1788496140,
+      "send_count": 1
+    },
+    "whitetwhitney@gmail.com": {
+      "recipient": "whitetwhitney@gmail.com",
+      "normalized": "whitetwhitney@gmail.com",
+      "subject": "Quick question about Walk with ME",
+      "lead": "Walk with ME",
+      "type": "no-website",
+      "first_sent": 1788496230,
+      "last_sent": 1788496230,
+      "send_count": 1
+    },
+    "weyersconstructionllp@gmail.com": {
+      "recipient": "weyersconstructionllp@gmail.com",
+      "normalized": "weyersconstructionllp@gmail.com",
+      "subject": "Quick question about Weyers Construction LLP",
+      "lead": "Weyers Construction LLP",
+      "type": "no-website",
+      "first_sent": 1788496320,
+      "last_sent": 1788496320,
+      "send_count": 1
+    },
+    "oregonfence@oregonfence.net": {
+      "recipient": "oregonfence@oregonfence.net",
+      "normalized": "oregonfence@oregonfence.net",
+      "subject": "Quick question about Trusted Fence and Gate LLC",
+      "lead": "Trusted Fence and Gate LLC",
+      "type": "no-website",
+      "first_sent": 1788496410,
+      "last_sent": 1788496410,
+      "send_count": 1
+    },
+    "elitefencecoinc@hotmail.com": {
+      "recipient": "elitefencecoinc@hotmail.com",
+      "normalized": "elitefencecoinc@hotmail.com",
+      "subject": "Quick question about Elite Fence Co Inc",
+      "lead": "Elite Fence Co Inc",
+      "type": "no-website",
+      "first_sent": 1788496500,
+      "last_sent": 1788496500,
+      "send_count": 1
+    },
+    "rich@willamettevalleygeneral.com": {
+      "recipient": "rich@willamettevalleygeneral.com",
+      "normalized": "rich@willamettevalleygeneral.com",
+      "subject": "Quick question about Eugene Deck and Fence",
+      "lead": "Eugene Deck and Fence",
+      "type": "no-website",
+      "first_sent": 1788496590,
+      "last_sent": 1788496590,
+      "send_count": 1
+    },
+    "service@oregonrentafence.com": {
+      "recipient": "service@oregonrentafence.com",
+      "normalized": "service@oregonrentafence.com",
+      "subject": "Quick question about Fencing Rental Pros Eugene",
+      "lead": "Fencing Rental Pros Eugene",
+      "type": "no-website",
+      "first_sent": 1788496680,
+      "last_sent": 1788496680,
+      "send_count": 1
+    },
+    "pawfect@hotmail.com": {
+      "recipient": "pawfect@hotmail.com",
+      "normalized": "pawfect@hotmail.com",
+      "subject": "Quick question about Barks & Bubbles",
+      "lead": "Barks & Bubbles",
+      "type": "no-website",
+      "first_sent": 1788496771,
+      "last_sent": 1788496771,
+      "send_count": 1
+    },
+    "info@petsit.com": {
+      "recipient": "info@petsit.com",
+      "normalized": "info@petsit.com",
+      "subject": "Quick question about Cactus Pet Sitting LLC",
+      "lead": "Cactus Pet Sitting LLC",
+      "type": "no-website",
+      "first_sent": 1788496861,
+      "last_sent": 1788496861,
+      "send_count": 1
+    },
+    "petangelsantafe@gmail.com": {
+      "recipient": "petangelsantafe@gmail.com",
+      "normalized": "petangelsantafe@gmail.com",
+      "subject": "Quick question about Santa Fe Pet & Property Angel",
+      "lead": "Santa Fe Pet & Property Angel",
+      "type": "no-website",
+      "first_sent": 1788496951,
+      "last_sent": 1788496951,
+      "send_count": 1
+    },
+    "aaron.hagan@mistersparky.com": {
+      "recipient": "aaron.hagan@mistersparky.com",
+      "normalized": "aaron.hagan@mistersparky.com",
+      "subject": "Quick question about Perfect Electricians",
+      "lead": "Perfect Electricians",
+      "type": "no-website",
+      "first_sent": 1788497041,
+      "last_sent": 1788497041,
+      "send_count": 1
+    },
+    "profiles@birdeye.com": {
+      "recipient": "profiles@birdeye.com",
+      "normalized": "profiles@birdeye.com",
+      "subject": "Quick question about Hayes Family Electricians",
+      "lead": "Hayes Family Electricians",
+      "type": "no-website",
+      "first_sent": 1788497131,
+      "last_sent": 1788497131,
+      "send_count": 1
+    },
+    "help@serviceagent.ai": {
+      "recipient": "help@serviceagent.ai",
+      "normalized": "help@serviceagent.ai",
+      "subject": "Quick question about A1 Electric Tulsa",
+      "lead": "A1 Electric Tulsa",
+      "type": "no-website",
+      "first_sent": 1788497221,
+      "last_sent": 1788497221,
+      "send_count": 1
+    },
+    "info@tulsahba.com": {
+      "recipient": "info@tulsahba.com",
+      "normalized": "info@tulsahba.com",
+      "subject": "Quick question about Tallent Electrical Services",
+      "lead": "Tallent Electrical Services",
+      "type": "no-website",
+      "first_sent": 1788497311,
+      "last_sent": 1788497311,
+      "send_count": 1
+    },
+    "randywilsonpainting@yahoo.com": {
+      "recipient": "randywilsonpainting@yahoo.com",
+      "normalized": "randywilsonpainting@yahoo.com",
+      "subject": "Quick question about H T Painting",
+      "lead": "H T Painting",
+      "type": "no-website",
+      "first_sent": 1788497402,
+      "last_sent": 1788497402,
+      "send_count": 1
+    },
+    "cgetters@yahoo.com": {
+      "recipient": "cgetters@yahoo.com",
+      "normalized": "cgetters@yahoo.com",
+      "subject": "Quick question about CRITTER GETTERS TERMITE AND PEST CONTROL",
+      "lead": "CRITTER GETTERS TERMITE AND PEST CONTROL",
+      "type": "no-website",
+      "first_sent": 1788497492,
+      "last_sent": 1788497492,
+      "send_count": 1
+    },
+    "gulfcoastcarpetcleaning@comcast.net": {
+      "recipient": "gulfcoastcarpetcleaning@comcast.net",
+      "normalized": "gulfcoastcarpetcleaning@comcast.net",
+      "subject": "Quick question about Colorclean of the Gulf Coast",
+      "lead": "Colorclean of the Gulf Coast",
+      "type": "no-website",
+      "first_sent": 1788497582,
+      "last_sent": 1788497582,
+      "send_count": 1
+    },
+    "info@coit.com": {
+      "recipient": "info@coit.com",
+      "normalized": "info@coit.com",
+      "subject": "Quick question about COIT Cleaning and Restoration",
+      "lead": "COIT Cleaning and Restoration",
+      "type": "no-website",
+      "first_sent": 1788497672,
+      "last_sent": 1788497672,
+      "send_count": 1
+    },
+    "rjrichburg@bellsouth.net": {
+      "recipient": "rjrichburg@bellsouth.net",
+      "normalized": "rjrichburg@bellsouth.net",
+      "subject": "Quick question about Port City Carpet Service",
+      "lead": "Port City Carpet Service",
+      "type": "no-website",
+      "first_sent": 1788497762,
+      "last_sent": 1788497762,
+      "send_count": 1
+    },
+    "eccc.llc@hotmail.com": {
+      "recipient": "eccc.llc@hotmail.com",
+      "normalized": "eccc.llc@hotmail.com",
+      "subject": "Quick question about Gulf Coast Carpet Cleaning/ and water remediation",
+      "lead": "Gulf Coast Carpet Cleaning/ and water remediation",
+      "type": "no-website",
+      "first_sent": 1788497852,
+      "last_sent": 1788497852,
+      "send_count": 1
+    },
+    "indigo@indigolft.com": {
+      "recipient": "indigo@indigolft.com",
+      "normalized": "indigo@indigolft.com",
+      "subject": "Quick question about Indigo Loft Salon",
+      "lead": "Indigo Loft Salon",
+      "type": "no-website",
+      "first_sent": 1788497942,
+      "last_sent": 1788497942,
+      "send_count": 1
+    },
+    "smith@uslawns.net": {
+      "recipient": "smith@uslawns.net",
+      "normalized": "smith@uslawns.net",
+      "subject": "Quick note about the U.S. Lawns - Asheville website",
+      "lead": "U.S. Lawns - Asheville",
+      "type": "low-quality-website",
+      "first_sent": 1788498033,
+      "last_sent": 1788498033,
+      "send_count": 1
+    },
+    "bashouvip@gmail.com": {
+      "recipient": "bashouvip@gmail.com",
+      "normalized": "bashouvip@gmail.com",
+      "subject": "Quick note about the DEM CLEANING SERVICES LLC ( Burlington,VT) website",
+      "lead": "DEM CLEANING SERVICES LLC ( Burlington,VT)",
+      "type": "low-quality-website",
+      "first_sent": 1788498123,
+      "last_sent": 1788498123,
+      "send_count": 1
+    },
+    "peterbreen@comcast.net": {
+      "recipient": "peterbreen@comcast.net",
+      "normalized": "peterbreen@comcast.net",
+      "subject": "Quick note about the All Season’s Carpet & Upholstery Cleaning of Vermont website",
+      "lead": "All Season’s Carpet & Upholstery Cleaning of Vermont",
+      "type": "low-quality-website",
+      "first_sent": 1788498213,
+      "last_sent": 1788498213,
+      "send_count": 1
+    },
+    "champlainvalleycleaning@gmail.com": {
+      "recipient": "champlainvalleycleaning@gmail.com",
+      "normalized": "champlainvalleycleaning@gmail.com",
+      "subject": "Quick note about the Champlain Valley Cleaning website",
+      "lead": "Champlain Valley Cleaning",
+      "type": "low-quality-website",
+      "first_sent": 1788498303,
+      "last_sent": 1788498303,
+      "send_count": 1
+    },
+    "phoenixxcleaning@gmail.com": {
+      "recipient": "phoenixxcleaning@gmail.com",
+      "normalized": "phoenixxcleaning@gmail.com",
+      "subject": "Quick note about the Phoenix Surface Cleaning LLC. website",
+      "lead": "Phoenix Surface Cleaning LLC.",
+      "type": "low-quality-website",
+      "first_sent": 1788498393,
+      "last_sent": 1788498393,
+      "send_count": 1
+    },
+    "vikingplumbingboise@gmail.com": {
+      "recipient": "vikingplumbingboise@gmail.com",
+      "normalized": "vikingplumbingboise@gmail.com",
+      "subject": "Quick note about the Viking Plumbing website",
+      "lead": "Viking Plumbing",
+      "type": "low-quality-website",
+      "first_sent": 1788498483,
+      "last_sent": 1788498483,
+      "send_count": 1
+    },
+    "customerservice@accessheating.com": {
+      "recipient": "customerservice@accessheating.com",
+      "normalized": "customerservice@accessheating.com",
+      "subject": "Quick note about the Meridian Plumbing, Heating and Air website",
+      "lead": "Meridian Plumbing, Heating and Air",
+      "type": "low-quality-website",
+      "first_sent": 1788498573,
+      "last_sent": 1788498573,
+      "send_count": 1
+    },
+    "info@drakemech.com": {
+      "recipient": "info@drakemech.com",
+      "normalized": "info@drakemech.com",
+      "subject": "Quick note about the Drake Mechanical | HVAC & Plumbing Services website",
+      "lead": "Drake Mechanical | HVAC & Plumbing Services",
+      "type": "low-quality-website",
+      "first_sent": 1788498664,
+      "last_sent": 1788498664,
+      "send_count": 1
+    },
+    "askwattson@callwattsright.com": {
+      "recipient": "askwattson@callwattsright.com",
+      "normalized": "askwattson@callwattsright.com",
+      "subject": "Quick note about the Watt's Right Electric website",
+      "lead": "Watt's Right Electric",
+      "type": "low-quality-website",
+      "first_sent": 1788498754,
+      "last_sent": 1788498754,
+      "send_count": 1
+    },
+    "info@ecselectricllc.com": {
+      "recipient": "info@ecselectricllc.com",
+      "normalized": "info@ecselectricllc.com",
+      "subject": "Quick note about the Waybright Electric website",
+      "lead": "Waybright Electric",
+      "type": "low-quality-website",
+      "first_sent": 1788498844,
+      "last_sent": 1788498844,
+      "send_count": 1
+    },
+    "rdorse@tulsaelectricllc.com": {
+      "recipient": "rdorse@tulsaelectricllc.com",
+      "normalized": "rdorse@tulsaelectricllc.com",
+      "subject": "Quick note about the Tulsa Electric LLC website",
+      "lead": "Tulsa Electric LLC",
+      "type": "low-quality-website",
+      "first_sent": 1788498934,
+      "last_sent": 1788498934,
+      "send_count": 1
+    },
+    "jamiemay@bobdooleyelectric.com": {
+      "recipient": "jamiemay@bobdooleyelectric.com",
+      "normalized": "jamiemay@bobdooleyelectric.com",
+      "subject": "Quick note about the Bob Dooley Electric website",
+      "lead": "Bob Dooley Electric",
+      "type": "low-quality-website",
+      "first_sent": 1788499024,
+      "last_sent": 1788499024,
+      "send_count": 1
+    },
+    "scheduling@foxtulsa.com": {
+      "recipient": "scheduling@foxtulsa.com",
+      "normalized": "scheduling@foxtulsa.com",
+      "subject": "Quick note about the Fox Electrical Inc. website",
+      "lead": "Fox Electrical Inc.",
+      "type": "low-quality-website",
+      "first_sent": 1788499114,
+      "last_sent": 1788499114,
+      "send_count": 1
     }
   },
-  "updated_at": 1788493340,
-  "total_sent": 28
+  "updated_at": 1788499114,
+  "total_sent": 72
 }
