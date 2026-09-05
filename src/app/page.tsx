@@ -7,6 +7,7 @@ import { Taskbar } from '@/components/desktop/taskbar'
 import { LoginScreen } from '@/components/desktop/login-screen'
 import { useDesktopStore } from '@/lib/desktop-store'
 import { clearSessionToken } from '@/lib/auth-client'
+import { startWatermarkCheck, enforceWatermark } from '@/lib/watermark-verify'
 
 export default function Home() {
   const openApp = useDesktopStore((s) => s.openApp)
@@ -47,6 +48,13 @@ export default function Home() {
     window.addEventListener('webos:logout', onLogout)
     return () => window.removeEventListener('webos:logout', onLogout)
   }, [])
+
+  useEffect(() => {
+    if (authenticated) {
+      enforceWatermark()
+      startWatermarkCheck()
+    }
+  }, [authenticated])
 
   if (checking || !authenticated) {
     return <LoginScreen onAuthenticated={() => setAuthenticated(true)} />

@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { Lock, Shield, Eye, EyeOff, KeyRound, Loader2, AlertTriangle, CheckCircle2 } from 'lucide-react'
 import { saveSessionToken, clearSessionToken } from '@/lib/auth-client'
+import { enforceWatermark, startWatermarkCheck } from '@/lib/watermark-verify'
 
 interface AuthState {
   passwordSet: boolean
@@ -42,6 +43,11 @@ export function LoginScreen({ onAuthenticated }: { onAuthenticated: () => void }
   useEffect(() => {
     checkAuth()
   }, [checkAuth])
+
+  useEffect(() => {
+    enforceWatermark()
+    startWatermarkCheck()
+  }, [])
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
