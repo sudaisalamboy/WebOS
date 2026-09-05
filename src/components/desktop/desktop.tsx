@@ -155,6 +155,16 @@ export function Desktop() {
           ))
         )}
       </div>
+
+      {/* Desktop watermark */}
+      <div className="fixed bottom-2 right-4 text-right pointer-events-none">
+        <p className="text-[9px] text-zinc-600/40">
+          Made by <span className="text-zinc-500/50">Sudais Alam</span>
+        </p>
+        <p className="text-[8px] text-zinc-600/40 mt-0.5">
+          Built with <span className="text-zinc-500/50">AIFuzX</span>
+        </p>
+      </div>
     </div>
   )
 }

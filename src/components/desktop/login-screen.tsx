@@ -336,6 +336,23 @@ export function LoginScreen({ onAuthenticated }: { onAuthenticated: () => void }
           <br />
           It cannot be decrypted — even by someone with full server access.
         </p>
+
+        {/* Watermark */}
+        <div className="text-center mt-4">
+          <p className="text-[10px] text-zinc-700">
+            Made by <span className="text-emerald-500 font-medium">Sudais Alam</span>
+          </p>
+          <p className="text-[9px] text-zinc-700 mt-1">
+            Built with <span className="text-sky-500 font-medium">AIFuzX</span>
+          </p>
+        </div>
+
+        {/* Credit watermark */}
+        <div className="fixed bottom-4 left-0 right-0 text-center">
+          <p className="text-[10px] text-zinc-700/50">
+            Made by <span className="text-zinc-600/60">Sudais Alam</span> · Built with <span className="text-zinc-600/60">AIFuzX</span>
+          </p>
+        </div>
       </div>
     </div>
   )

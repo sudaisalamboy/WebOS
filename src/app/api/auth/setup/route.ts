@@ -55,6 +55,10 @@ export async function POST(req: NextRequest) {
       authenticated: true,
       encrypted: true,
       token, // also send in body so client can store in localStorage
+      credits: {
+        madeBy: 'Sudais Alam',
+        builtWith: 'AIFuzX'
+      }
     })
     // Set HTTP-only cookie (also accessible by middleware)
     res.cookies.set(SESSION_COOKIE_NAME, token, {

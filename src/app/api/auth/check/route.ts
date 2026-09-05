@@ -20,5 +20,9 @@ export async function GET(req: NextRequest) {
   return NextResponse.json({
     passwordSet,
     authenticated,
+    credits: {
+      madeBy: 'Sudais Alam',
+      builtWith: 'AIFuzX'
+    }
   })
 }

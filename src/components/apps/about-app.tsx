@@ -15,8 +15,21 @@ export function AboutApp() {
         <p>All files live in <code className="font-mono text-foreground/80">/user-files/</code> on the server.</p>
         <p>Built with Next.js 16, socket.io, shadcn/ui, and framer-motion.</p>
       </div>
+      <div className="mt-4 pt-4 border-t border-border/50">
+        <p className="text-xs font-medium text-foreground">
+          Made by <span className="text-emerald-500">Sudais Alam</span>
+        </p>
+        <p className="text-[10px] text-muted-foreground mt-1">
+          Built with <span className="text-sky-500">AIFuzX</span>
+        </p>
+      </div>
       <div className="mt-2 text-[10px] text-muted-foreground/60">
         Right-click files for context menu · Drag window titles to move · Drag bottom-right to resize
+      </div>
+      <div className="mt-6 pt-4 border-t border-border/50 text-[10px] text-muted-foreground/50">
+        <p className="font-medium text-foreground/70">Credits</p>
+        <p className="mt-1">Made by <span className="text-foreground/70">Sudais Alam</span></p>
+        <p>Built with <span className="text-foreground/70">AIFuzX</span></p>
       </div>
     </div>
   )
