@@ -719,8 +719,178 @@
       "first_sent": 1788499114,
       "last_sent": 1788499114,
       "send_count": 1
+    },
+    "seekandsayenrichment@gmail.com": {
+      "recipient": "seekandsayenrichment@gmail.com",
+      "normalized": "seekandsayenrichment@gmail.com",
+      "subject": "Quick question about Seek & Say Daycare",
+      "lead": "Seek & Say Daycare",
+      "type": "no-website-school",
+      "first_sent": 1788574269,
+      "last_sent": 1788574269,
+      "send_count": 1
+    },
+    "enrollment@riseschoolaustin.org": {
+      "recipient": "enrollment@riseschoolaustin.org",
+      "normalized": "enrollment@riseschoolaustin.org",
+      "subject": "Quick question about Rise And Shine Childcare",
+      "lead": "Rise And Shine Childcare",
+      "type": "no-website-school",
+      "first_sent": 1788574781,
+      "last_sent": 1788574781,
+      "send_count": 1
+    },
+    "austin@schoolofrock.com": {
+      "recipient": "austin@schoolofrock.com",
+      "normalized": "austin@schoolofrock.com",
+      "subject": "Quick question about School of Rock",
+      "lead": "School of Rock",
+      "type": "no-website-school",
+      "first_sent": 1788574870,
+      "last_sent": 1788574870,
+      "send_count": 1
+    },
+    "info@newschoolofmusic.net": {
+      "recipient": "info@newschoolofmusic.net",
+      "normalized": "info@newschoolofmusic.net",
+      "subject": "Quick question about Austin School of Music",
+      "lead": "Austin School of Music",
+      "type": "no-website-school",
+      "first_sent": 1788574960,
+      "last_sent": 1788574960,
+      "send_count": 1
+    },
+    "scheduling@eastsidemusic.com": {
+      "recipient": "scheduling@eastsidemusic.com",
+      "normalized": "scheduling@eastsidemusic.com",
+      "subject": "Quick question about Eastside Music School",
+      "lead": "Eastside Music School",
+      "type": "no-website-school",
+      "first_sent": 1788575049,
+      "last_sent": 1788575049,
+      "send_count": 1
+    },
+    "pwa@austin.utexas.edu": {
+      "recipient": "pwa@austin.utexas.edu",
+      "normalized": "pwa@austin.utexas.edu",
+      "subject": "Quick question about Butler School of Music - University of Texas at Austin",
+      "lead": "Butler School of Music - University of Texas at Austin",
+      "type": "no-website-school",
+      "first_sent": 1788575139,
+      "last_sent": 1788575139,
+      "send_count": 1
+    },
+    "grow@redleafschoolofmusic.com": {
+      "recipient": "grow@redleafschoolofmusic.com",
+      "normalized": "grow@redleafschoolofmusic.com",
+      "subject": "Quick question about Red Leaf School of Music",
+      "lead": "Red Leaf School of Music",
+      "type": "no-website-school",
+      "first_sent": 1788575229,
+      "last_sent": 1788575229,
+      "send_count": 1
+    },
+    "info@bandaidschoolofmusic.com": {
+      "recipient": "info@bandaidschoolofmusic.com",
+      "normalized": "info@bandaidschoolofmusic.com",
+      "subject": "Quick question about Band Aid School of Music - South Austin",
+      "lead": "Band Aid School of Music - South Austin",
+      "type": "no-website-school",
+      "first_sent": 1788575318,
+      "last_sent": 1788575318,
+      "send_count": 1
+    },
+    "info@bluefrogschoolofmusic.com": {
+      "recipient": "info@bluefrogschoolofmusic.com",
+      "normalized": "info@bluefrogschoolofmusic.com",
+      "subject": "Quick question about Blue Frog School of Music",
+      "lead": "Blue Frog School of Music",
+      "type": "no-website-school",
+      "first_sent": 1788575408,
+      "last_sent": 1788575408,
+      "send_count": 1
+    },
+    "info@stereolizard.com": {
+      "recipient": "info@stereolizard.com",
+      "normalized": "info@stereolizard.com",
+      "subject": "Quick question about Austin Music School Stereo Lizard",
+      "lead": "Austin Music School Stereo Lizard",
+      "type": "no-website-school",
+      "first_sent": 1788575498,
+      "last_sent": 1788575498,
+      "send_count": 1
+    },
+    "blackboxcollective@outlook.com": {
+      "recipient": "blackboxcollective@outlook.com",
+      "normalized": "blackboxcollective@outlook.com",
+      "subject": "Quick question about Black Box Music Academy and Event Space",
+      "lead": "Black Box Music Academy and Event Space",
+      "type": "no-website-school",
+      "first_sent": 1788575587,
+      "last_sent": 1788575587,
+      "send_count": 1
+    },
+    "782-8721staff@velocitymusicacademy.com": {
+      "recipient": "782-8721staff@velocitymusicacademy.com",
+      "normalized": "782-8721staff@velocitymusicacademy.com",
+      "subject": "Quick question about Velocity Music Academy - Arbor Trails",
+      "lead": "Velocity Music Academy - Arbor Trails",
+      "type": "no-website-school",
+      "first_sent": 1788575677,
+      "last_sent": 1788575677,
+      "send_count": 1
+    },
+    "dustie@everybodyjams.com": {
+      "recipient": "dustie@everybodyjams.com",
+      "normalized": "dustie@everybodyjams.com",
+      "subject": "Quick question about Every Body Jams",
+      "lead": "Every Body Jams",
+      "type": "no-website-school",
+      "first_sent": 1788575767,
+      "last_sent": 1788575767,
+      "send_count": 1
+    },
+    "info@austindrivingschool.com": {
+      "recipient": "info@austindrivingschool.com",
+      "normalized": "info@austindrivingschool.com",
+      "subject": "Quick question about Pflugerville Driving School",
+      "lead": "Pflugerville Driving School",
+      "type": "no-website-school",
+      "first_sent": 1788575856,
+      "last_sent": 1788575856,
+      "send_count": 1
+    },
+    "austin@eliteprep.com": {
+      "recipient": "austin@eliteprep.com",
+      "normalized": "austin@eliteprep.com",
+      "subject": "Quick question about Synapse Prep",
+      "lead": "Synapse Prep",
+      "type": "no-website-school",
+      "first_sent": 1788575946,
+      "last_sent": 1788575946,
+      "send_count": 1
+    },
+    "info@austinspanishacademy.co": {
+      "recipient": "info@austinspanishacademy.co",
+      "normalized": "info@austinspanishacademy.co",
+      "subject": "Quick question about Spanish Tutoring & Instruction",
+      "lead": "Spanish Tutoring & Instruction",
+      "type": "no-website-school",
+      "first_sent": 1788576036,
+      "last_sent": 1788576036,
+      "send_count": 1
+    },
+    "esl@foundcom.org": {
+      "recipient": "esl@foundcom.org",
+      "normalized": "esl@foundcom.org",
+      "subject": "Quick question about Ingles a tu ritmo",
+      "lead": "Ingles a tu ritmo",
+      "type": "no-website-school",
+      "first_sent": 1788576125,
+      "last_sent": 1788576125,
+      "send_count": 1
     }
   },
-  "updated_at": 1788499114,
-  "total_sent": 72
+  "updated_at": 1788576125,
+  "total_sent": 89
 }
