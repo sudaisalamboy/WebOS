@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="noVNC_loading">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Remote Chrome</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { height: 100%; width: 100%; background: #000; overflow: hidden; font-family: -apple-system, system-ui, sans-serif; }
+        #top_bar { display: none; }
+        #screen { width: 100%; height: 100%; }
+        #status {
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            color: #67c5d4; font-size: 18px; text-align: center; z-index: 100;
+        }
+        #status::before {
+            content: ''; display: block; width: 40px; height: 40px; margin: 0 auto 16px;
+            border: 3px solid rgba(103, 197, 212, 0.2); border-top-color: #67c5d4;
+            border-radius: 50%; animation: spin 1s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <div id="status">Loading Remote Chrome…</div>
+    <div id="screen"></div>
+
+    <script type="module">
+        import RFB from '/api/vnc/core/rfb.js';
+
+        function status(msg) {
+            document.getElementById('status').textContent = msg;
+        }
+
+        function readQueryVariable(name, defaultValue) {
+            const re = new RegExp('.*[?&]' + name + '=([^&#]*)');
+            const match = document.location.href.match(re);
+            if (match) return decodeURIComponent(match[1]);
+            return defaultValue || null;
+        }
+
+        const host = window.location.hostname;
+        const port = window.location.port;
+        // The WebSocket path includes XTransformPort so Caddy routes it to websockify (port 6080)
+        const wsPath = readQueryVariable('path', 'websockify?XTransformPort=6080');
+        const password = readQueryVariable('password');
+        const scale = readQueryVariable('scale', 'true') === 'true';
+
+        // Build WebSocket URL — goes through Caddy proxy with XTransformPort=6080
+        let url = window.location.protocol === 'https:' ? 'wss' : 'ws';
+        url += '://' + host;
+        if (port) url += ':' + port;
+        url += '/' + wsPath;
+
+        status('Connecting to Remote Chrome…');
+
+        let rfb = new RFB(document.getElementById('screen'), url,
+            { credentials: { password: password } });
+        rfb.scaleViewport = scale;
+
+        rfb.addEventListener('connect', (e) => {
+            status('');
+            document.documentElement.classList.remove('noVNC_loading');
+        });
+
+        rfb.addEventListener('disconnect', (e) => {
+            if (e.detail.clean) {
+                status('Disconnected');
+            } else {
+                status('Connection lost. Reconnecting…');
+            }
+        });
+
+        rfb.addEventListener('credentialsrequired', (e) => {
+            // If no password was provided in URL, we can't prompt (headless)
+            status('Password required — add &password=YOUR_PASSWORD to URL');
+        });
+
+        rfb.addEventListener('desktopname', (e) => {
+            document.title = 'Remote Chrome — ' + e.detail.name;
+        });
+    </script>
+</body>
+</html>
