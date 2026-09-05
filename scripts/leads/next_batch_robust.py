@@ -29,7 +29,7 @@ SCHOOL_TYPES = [
     "montessori schools", "test prep centers", "art schools", "language schools",
 ]
 
-CITIES = ["Austin TX", "San Antonio TX"]
+CITIES = ["Phoenix AZ", "Tucson AZ"]
 TARGET = 50
 
 

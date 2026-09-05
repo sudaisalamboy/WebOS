@@ -1,584 +1,710 @@
 [
   {
-    "name": "Seek & Say Daycare",
-    "rating": 4.7,
-    "reviews": 37,
-    "phone": "+1 512-928-8811",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Seek+%26+Say+Daycare/data=!4m7!3m6!1s0x8644b7ca8a150d2b:0x401bb5a410cfbff6!8m2!3d30.2847958!4d-97.6631663!16s%2Fg%2F1tp08hpn!19sChIJKw0Visq3RIYR9r_PEKS1G0A?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "daycares in Austin TX",
-    "emails": [
-      "seekandsayenrichment@gmail.com"
-    ],
-    "facebook_url": "https://www.facebook.com/SeekAndSay",
-    "other_url": "http://www.toddly.app/school-profile/Seek-and-Say-Enrichment-Day-Care-Austin-TX-15608",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Rise And Shine Childcare",
-    "rating": 5,
-    "reviews": 4,
-    "phone": "+1 737-333-7974",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Rise+And+Shine+Childcare/data=!4m7!3m6!1s0x8644b305fdf8aac5:0xbb0b59e77ee3fb12!8m2!3d30.1987883!4d-97.7469082!16s%2Fg%2F11y_py17c_!19sChIJxar4_QWzRIYREvvjfudZC7s?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "daycares in Austin TX",
-    "emails": [
-      "enrollment@riseschoolaustin.org",
-      "info@riseschoolaustin.org"
-    ],
-    "facebook_url": "https://www.facebook.com/groups/1513060186065304/posts/1975625396475445",
-    "other_url": "https://upwards.com/daycare/rise-and-shine-childcare-austin",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "School of Rock",
-    "rating": 4.9,
-    "reviews": 127,
-    "phone": null,
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/School+of+Rock/data=!4m7!3m6!1s0x8644cbafa21699c7:0xf73a67a44dea3a64!8m2!3d30.3553142!4d-97.7326857!16s%2Fg%2F1tcts1k3!19sChIJx5kWoq_LRIYRZDrqTaRnOvc?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Austin TX",
-    "emails": [
-      "austin@schoolofrock.com"
-    ],
-    "facebook_url": "https://www.facebook.com/schoolofrockaustin",
-    "other_url": "https://www.schoolofrock.com/locations/austin",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Austin School of Music",
-    "rating": 4.9,
-    "reviews": 48,
-    "phone": null,
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Austin+School+of+Music/data=!4m7!3m6!1s0x865b4d94a07074f7:0xf5d142e5a462ccfd!8m2!3d30.1994343!4d-97.8066801!16s%2Fg%2F11tmllnxsk!19sChIJ93RwoJRNW4YR_cxipOVC0fU?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Austin TX",
-    "emails": [
-      "info@newschoolofmusic.net"
-    ],
-    "facebook_url": null,
-    "other_url": "https://music.utexas.edu/about/contact",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Eastside Music School",
-    "rating": 4.8,
-    "reviews": 49,
-    "phone": null,
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Eastside+Music+School/data=!4m7!3m6!1s0x8644b5a58809fbd1:0x8c8f9d162a726176!8m2!3d30.2648957!4d-97.7342139!16s%2Fg%2F1tdcxgyk!19sChIJ0fsJiKW1RIYRdmFyKhadj4w?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Austin TX",
-    "emails": [
-      "scheduling@eastsidemusic.com"
-    ],
-    "facebook_url": null,
-    "other_url": "https://eastsidemusic.com/contact",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Butler School of Music - University of Texas at Austin",
-    "rating": 4.6,
-    "reviews": 50,
-    "phone": null,
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Butler+School+of+Music+-+University+of+Texas+at+Austin/data=!4m7!3m6!1s0x8644b5900e8d2737:0x713aacb187d499e5!8m2!3d30.2870442!4d-97.7303036!16s%2Fm%2F0406qkd!19sChIJNyeNDpC1RIYR5ZnUh7GsOnE?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Austin TX",
-    "emails": [
-      "pwa@austin.utexas.edu"
-    ],
-    "facebook_url": "https://www.facebook.com/ButlerSOM",
-    "other_url": "https://music.utexas.edu/about/contact",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Red Leaf School of Music",
-    "rating": 5,
-    "reviews": 26,
-    "phone": null,
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Red+Leaf+School+of+Music/data=!4m7!3m6!1s0x8644b4afb489da2f:0xd09623c05fbaf72!8m2!3d30.2149069!4d-97.7773628!16s%2Fg%2F1wj_6f1t!19sChIJL9qJtK-0RIYRcq_7BTxiCQ0?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Austin TX",
-    "emails": [
-      "grow@redleafschoolofmusic.com"
-    ],
-    "facebook_url": "https://www.facebook.com/redleafschoolofmusic",
-    "other_url": "https://www.redleafschoolofmusic.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Band Aid School of Music - South Austin",
-    "rating": 4.9,
-    "reviews": 107,
-    "phone": null,
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Band+Aid+School+of+Music+-+South+Austin/data=!4m7!3m6!1s0x8644b4da2eb5c683:0xbe6e35f71ed7aaed!8m2!3d30.2448448!4d-97.7715363!16s%2Fg%2F113h7wh6n!19sChIJg8a1Ltq0RIYR7arXHvc1br4?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Austin TX",
-    "emails": [
-      "info@bandaidschoolofmusic.com",
-      "info@riverbendcentre.org"
-    ],
-    "facebook_url": "https://www.facebook.com/bandaidschoolofmusic",
-    "other_url": "https://www.bandaidschoolofmusic.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Blue Frog School of Music",
-    "rating": 5,
-    "reviews": 44,
-    "phone": null,
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Blue+Frog+School+of+Music/data=!4m7!3m6!1s0x865b4903200e96ff:0xe0ba6d8255d2a6c5!8m2!3d30.2326999!4d-97.9130583!16s%2Fg%2F1hjgzf2yf!19sChIJ_5YOIANJW4YRxabSVYJtuuA?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Austin TX",
-    "emails": [
-      "info@bluefrogschoolofmusic.com",
-      "bands@bluefrogschoolofmusic.com"
-    ],
-    "facebook_url": "https://www.facebook.com/bluefrogschoolofmusic",
-    "other_url": "https://bluefrogschoolofmusic.com/contact-us",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Austin Music School Stereo Lizard",
-    "rating": 4.8,
-    "reviews": 29,
-    "phone": null,
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Austin+Music+School+Stereo+Lizard/data=!4m7!3m6!1s0x865b335054a0e9a1:0xac62f1cdf5e385c9!8m2!3d30.4468478!4d-97.7951413!16s%2Fg%2F11vbbsyf8v!19sChIJoemgVFAzW4YRyYXj9c3xYqw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Austin TX",
-    "emails": [
-      "info@stereolizard.com"
-    ],
-    "facebook_url": null,
-    "other_url": "https://stereolizard.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Black Box Music Academy and Event Space",
-    "rating": 4.8,
-    "reviews": 22,
-    "phone": null,
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Black+Box+Music+Academy+and+Event+Space/data=!4m7!3m6!1s0x8644d18e1f09ddc3:0xe4d960b10f89f399!8m2!3d30.2664603!4d-97.7412342!16s%2Fg%2F11v095qmjp!19sChIJw90JH47RRIYRmfOJD7Fg2eQ?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Austin TX",
-    "emails": [
-      "blackboxcollective@outlook.com",
-      "admin@blackboxmusicarts.com"
-    ],
-    "facebook_url": "https://www.facebook.com/hall6089",
-    "other_url": "https://www.blackboxmusicarts.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Velocity Music Academy - Arbor Trails",
-    "rating": 5,
-    "reviews": 47,
-    "phone": null,
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Velocity+Music+Academy+-+Arbor+Trails/data=!4m7!3m6!1s0x865b4bbe0ba15ee7:0x55d7dc7e550a6150!8m2!3d30.2213046!4d-97.841034!16s%2Fg%2F1tjhy21t!19sChIJ516hC75LW4YRUGEKVX7c11U?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Austin TX",
-    "emails": [
-      "782-8721staff@velocitymusicacademy.com",
-      "arbortrails@velocitymusicacademy.com",
-      "staff@velocitymusicacademy.com"
-    ],
-    "facebook_url": "https://www.facebook.com/velocityarbortrails",
-    "other_url": "https://www.ensembleschools.com/velocity/locations/austin-tx",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Every Body Jams",
-    "rating": 5,
-    "reviews": 2,
-    "phone": null,
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Every+Body+Jams/data=!4m7!3m6!1s0x8644b54074820f17:0x7b453564932a7da8!8m2!3d30.2586822!4d-97.728172!16s%2Fg%2F11z76rlbxh!19sChIJFw-CdEC1RIYRqH0qk2Q1RXs?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Austin TX",
-    "emails": [
-      "dustie@everybodyjams.com"
-    ],
-    "facebook_url": "https://www.facebook.com/everybodyjams",
-    "other_url": "https://www.everybodyjams.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Pflugerville Driving School",
-    "rating": 4.1,
-    "reviews": 384,
-    "phone": "+1 512-670-9900",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Pflugerville+Driving+School/data=!4m7!3m6!1s0x8644cf0357f756bf:0x49106ffb6cdc02d3!8m2!3d30.4469109!4d-97.6370076!16s%2Fg%2F1tfrs9ns!19sChIJv1b3VwPPRIYR0wLcbPtvEEk?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "driving schools in Austin TX",
-    "emails": [
-      "info@austindrivingschool.com"
-    ],
-    "facebook_url": "https://www.facebook.com/CBSAustin/posts/the-pflugerville-driving-school-in-round-rock-shuts-down-unexpectedly-leaving-st/1110125437824467",
-    "other_url": "https://austindrivingschool.com/ads-locations/pflugerville",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Synapse Prep",
-    "rating": 5,
-    "reviews": 2,
-    "phone": "+1 512-481-2485",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Synapse+Prep/data=!4m7!3m6!1s0x8644b5c4c5972a97:0xf4ddceabe2092474!8m2!3d30.232174!4d-97.778954!16s%2Fg%2F11hznhdkmj!19sChIJlyqXxcS1RIYRdCQJ4qvO3fQ?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "test prep centers in Austin TX",
-    "emails": [
-      "austin@eliteprep.com",
-      "customer.care@kaplan.com"
-    ],
-    "facebook_url": null,
-    "other_url": "https://www.advantagetesting.com/locations/austin",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Spanish Tutoring & Instruction",
-    "rating": 4.9,
-    "reviews": 18,
-    "phone": "+1 512-771-7477",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Spanish+Tutoring+%26+Instruction/data=!4m7!3m6!1s0x865b375000000001:0x6e21ffc9b346b239!8m2!3d30.335737!4d-97.7563713!16s%2Fg%2F1tqnm15v!19sChIJAQAAAFA3W4YRObJGs8n_IW4?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "language schools in Austin TX",
-    "emails": [
-      "info@austinspanishacademy.co",
-      "projare@live.com"
-    ],
-    "facebook_url": null,
-    "other_url": "https://austinspanishacademy.co/spanish-classes-lakeway",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Ingles a tu ritmo",
-    "rating": 5,
-    "reviews": 70,
-    "phone": "+1 737-654-1239",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Ingles+a+tu+ritmo/data=!4m7!3m6!1s0x8644c9b42c0f2e71:0x28f0b0fb0479f54f!8m2!3d30.3920398!4d-97.6595105!16s%2Fg%2F11xtl4jlp4!19sChIJcS4PLLTJRIYRT_V5BPuw8Cg?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "language schools in Austin TX",
-    "emails": [
-      "esl@foundcom.org",
-      "hello@hoft.edu",
-      "norma.garzamittanck@austinisd.org"
-    ],
-    "facebook_url": null,
-    "other_url": "https://global.utexas.edu/english-language-center",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Cooper Learning Center",
-    "rating": 4.5,
-    "reviews": 16,
-    "phone": "+1 210-438-6810",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Cooper+Learning+Center/data=!4m7!3m6!1s0x865c58d6fceaaaab:0x29fc3f3d65eeda24!8m2!3d29.41488!4d-98.5250083!16s%2Fg%2F11fz9z28z1!19sChIJq6rq_NZYXIYRJNruZT0__Ck?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "tutoring centers in San Antonio TX",
-    "emails": [
-      "sac-tutoring@alamo.edu",
-      "tutoring@tamusa.edu"
-    ],
-    "facebook_url": "https://www.facebook.com/HuntingtonStoneOakTX",
-    "other_url": "https://www.alamo.edu/sac/experience-sac/current-students/student-resources/tutoring-centers",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Margarita Huantes Learning Center",
-    "rating": 4.6,
-    "reviews": 29,
-    "phone": "+1 210-554-2453",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Margarita+Huantes+Learning+Center/data=!4m7!3m6!1s0x145c2d4b2f4fc5f7:0x1b66e536d882ff4e!8m2!3d29.4187879!4d-98.5159649!16s%2Fg%2F11b74nr7gh!19sChIJ98VPL0stXBQRTv-C2DblZhs?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "tutoring centers in San Antonio TX",
-    "emails": [
-      "info@eotosa.org"
-    ],
-    "facebook_url": "https://www.facebook.com/groups/womenunlimitedsa/posts/1137766614096681",
-    "other_url": "https://www.sacrd.org/directory/program/20423",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Semeneya",
-    "rating": 4.6,
-    "reviews": 67,
-    "phone": "+1 210-651-2328",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Semeneya/data=!4m7!3m6!1s0x865c8a923e516313:0x9def4428ae2405dd!8m2!3d29.4054923!4d-98.5030723!16s%2Fg%2F1v2f0yjz!19sChIJE2NRPpKKXIYR3QUkrihE750?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "dance schools in San Antonio TX",
-    "emails": [
-      "semeneya@gmail.com",
-      "saritazuniga@gmail.com"
-    ],
-    "facebook_url": "https://www.facebook.com/mysemeneya",
-    "other_url": "https://fun4alamokids.com/Programs-Classes/Dance/Semeneya-Dance-Studio/View-details",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "The Guitar Studio",
-    "rating": null,
-    "reviews": 726,
-    "phone": "(726) 256-3028",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/The+Guitar+Studio/data=!4m7!3m6!1s0x865c617a30f27715:0x244789c44a22df6c!8m2!3d29.604216!4d-98.443876!16s%2Fg%2F11ysdbfl7p!19sChIJFXfyMHphXIYRbN8iSsSJRyQ?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in San Antonio TX",
-    "emails": [
-      "info@musicallivingacademy.com",
-      "westtexasmusicacademy@gmail.com",
-      "contact@samusicacademy.com"
-    ],
-    "facebook_url": null,
-    "other_url": "https://samusicacademy.com/drumoffer",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Musical Arts Center of San Antonio, Inc.",
-    "rating": 4.7,
-    "reviews": 49,
-    "phone": "+1 210-697-7111",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Musical+Arts+Center+of+San+Antonio,+Inc./data=!4m7!3m6!1s0x865c66e182281913:0x6c73439e025d060d!8m2!3d29.5592291!4d-98.5992811!16s%2Fg%2F1thf8zwp!19sChIJExkoguFmXIYRDQZdAp5Dc2w?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in San Antonio TX",
-    "emails": [
-      "info@macsainc.com"
-    ],
-    "facebook_url": "https://www.facebook.com/musicalartscenter1",
-    "other_url": "https://www.sanantoniomusicschools.com/lessons",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Big Star Music Academy",
-    "rating": 4.9,
-    "reviews": 63,
-    "phone": "+1 210-379-6063",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Big+Star+Music+Academy/data=!4m7!3m6!1s0x865c8b3898881063:0xc9564add49b4cf98!8m2!3d29.5667839!4d-98.4527206!16s%2Fg%2F11kfcm2dmn!19sChIJYxCImDiLXIYRmM-0Sd1KVsk?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in San Antonio TX",
-    "emails": [
-      "bigstarmusicacademy@gmail.com"
-    ],
-    "facebook_url": "https://www.facebook.com/BigStarMusicAcademy",
-    "other_url": "https://www.bigstarmusicacademy.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Music on Magnolia",
-    "rating": 4.9,
-    "reviews": 53,
-    "phone": "+1 210-906-8690",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Music+on+Magnolia/data=!4m7!3m6!1s0x865c5f65a6309115:0x5cd96e18652266!8m2!3d29.4613497!4d-98.4994466!16s%2Fg%2F11q950ttz1!19sChIJFZEwpmVfXIYRZiJlGG7ZXAA?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in San Antonio TX",
-    "emails": [
-      "frontdesk@musiconmagnolia.com"
-    ],
-    "facebook_url": "https://www.facebook.com/musiconmagnoliaave",
-    "other_url": "https://musiconmagnolia.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "San Antonio Arts Academy",
-    "rating": 4.9,
-    "reviews": 65,
-    "phone": "+1 210-340-7877",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/San+Antonio+Arts+Academy/data=!4m7!3m6!1s0x865c60f327411293:0x685376f7c7eddb4d!8m2!3d29.437574!4d-98.461727!16s%2Fg%2F12cpb1nvs!19sChIJkxJBJ_NgXIYRTdvtx_d2U2g?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in San Antonio TX",
-    "emails": [
-      "saartsacademy1@gmail.com",
-      "sanantonio@schoolofrock.com",
-      "info@macsainc.com"
-    ],
-    "facebook_url": "https://www.facebook.com/pianoguitarsinginglessons",
-    "other_url": "https://pianoguitarsinginglessons.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Northside Music School",
-    "rating": 5,
-    "reviews": 12,
-    "phone": "+1 210-696-1973",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Northside+Music+School/data=!4m7!3m6!1s0x865c60d36fcf395d:0xdf0c7ee66f30837c!8m2!3d29.5516598!4d-98.5700714!16s%2Fg%2F1tcz8r3g!19sChIJXTnPb9NgXIYRfIMwb-Z-DN8?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in San Antonio TX",
-    "emails": [
-      "learnmusic@northsidemusicschool.com"
-    ],
-    "facebook_url": "https://www.facebook.com/Northsidemusicschool",
-    "other_url": "https://www.northsidemusicschool.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Anthem School Of Music",
-    "rating": 4.4,
-    "reviews": 47,
-    "phone": "+1 210-368-9649",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Anthem+School+Of+Music/data=!4m7!3m6!1s0x865c6436b2c64f7b:0xb510261e34930beb!8m2!3d29.6567487!4d-98.626822!16s%2Fg%2F11h0_jv62!19sChIJe0_GsjZkXIYR6wuTNB4mELU?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in San Antonio TX",
-    "emails": [
-      "music@utsa.edu"
-    ],
-    "facebook_url": null,
-    "other_url": "https://www.sa.gov",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Jensen's Yamaha Music School",
-    "rating": 4.9,
-    "reviews": 32,
-    "phone": "+1 210-366-5048",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Jensen%27s+Yamaha+Music+School/data=!4m7!3m6!1s0x865c6060df61c4fd:0xac3c3cda8cf1e368!8m2!3d29.5352184!4d-98.5217619!16s%2Fg%2F1th6f805!19sChIJ_cRh32BgXIYRaOPxjNo8PKw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in San Antonio TX",
-    "emails": [
-      "jensensyamahamusic@gmail.com"
-    ],
-    "facebook_url": "https://www.facebook.com/jensensyamaha",
-    "other_url": "https://www.jensensyamahamusic.com/map-contact",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "LJE Music Lessons",
-    "rating": 4.7,
-    "reviews": 39,
-    "phone": "+1 210-332-9179",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/LJE+Music+Lessons/data=!4m7!3m6!1s0x865c4297d5c2659d:0xcf2d64df4ae021bb!8m2!3d29.491106!4d-98.682109!16s%2Fg%2F126452vb4!19sChIJnWXC1ZdCXIYRuyHgSt9kLc8?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in San Antonio TX",
-    "emails": [
-      "contact@ljemusiclessons.com"
-    ],
-    "facebook_url": null,
-    "other_url": "https://www.ljemusiclessons.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Joy Academy of Music",
-    "rating": 5,
-    "reviews": 20,
-    "phone": "+1 210-268-8373",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Joy+Academy+of+Music/data=!4m7!3m6!1s0x865c5dde7ad8a94d:0x575ee7b5eba760db!8m2!3d29.486569!4d-98.5769735!16s%2Fg%2F1tf5f4vb!19sChIJTanYet5dXIYR22Cn67XnXlc?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in San Antonio TX",
-    "emails": [
-      "info@joyacademyofmusic.com",
-      "music@utsa.edu"
-    ],
-    "facebook_url": "https://www.facebook.com/joyacademyofmusic",
-    "other_url": "https://www.joyacademyofmusic.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "55 Driving School",
-    "rating": 3.9,
-    "reviews": 34,
-    "phone": "+1 210-674-7710",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/55+Driving+School/data=!4m7!3m6!1s0x865c43b970bbc897:0x52ea5307553868d0!8m2!3d29.4172061!4d-98.6477782!16s%2Fg%2F126107lvl!19sChIJl8i7cLlDXIYR0Gg4VQdT6lI?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "driving schools in San Antonio TX",
-    "emails": [
-      "anamaria@compbio.ludwig.org.br",
-      "carolinemguerra@icloud.com"
-    ],
-    "facebook_url": null,
-    "other_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3152357",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Interstate Driving School",
-    "rating": 3.9,
-    "reviews": 13,
-    "phone": "+1 210-923-1515",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Interstate+Driving+School/data=!4m7!3m6!1s0x865c59ae12a4a7fb:0xf4059e1a00a2fa1a!8m2!3d29.3662142!4d-98.534435!16s%2Fg%2F1tsbmjss!19sChIJ-6ekEq5ZXIYRGvqiABqeBfQ?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "driving schools in San Antonio TX",
-    "emails": [
-      "driversedu@neisd.net"
-    ],
-    "facebook_url": "https://www.facebook.com/groups/724852228674815/posts/1604925700667459",
-    "other_url": "https://www.neisd.net/__catapult_pages/02161e62-3c05-489b-af25-9d9f90151054/Driver-Education.html",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "C&P Test Prep",
+    "name": "Middle School Tutors",
     "rating": null,
     "reviews": null,
-    "phone": "+1 210-639-0519",
+    "phone": "+1 480-707-2292",
     "hasWebsite": false,
     "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/C%26P+Test+Prep/data=!4m7!3m6!1s0x865cf30716c40929:0xb21e617abdda7c0d!8m2!3d29.4815988!4d-98.3597834!16s%2Fg%2F11kc8mfv3p!19sChIJKQnEFgfzXIYRDXzavXphHrI?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "test prep centers in San Antonio TX",
+    "placeUrl": "https://www.google.com/maps/place/Middle+School+Tutors/data=!4m7!3m6!1s0x872b0d082e3c0acb:0xd5fecb5a2ace3bba!8m2!3d33.4759176!4d-112.0220162!16s%2Fg%2F11sm903bf1!19sChIJywo8LggNK4cRujvOKlrL_tU?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "tutoring centers in Phoenix AZ",
     "emails": [
-      "info@saedpartnership.org",
-      "info@testgeek.com"
+      "learnwithalohallc@gmail.com"
+    ],
+    "facebook_url": "https://www.facebook.com/groups/4200098158/posts/10162518023778159",
+    "other_url": null,
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Creciendo Con Proposito Learning Center,LLC",
+    "rating": 5,
+    "reviews": 6,
+    "phone": "+1 602-825-0680",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Creciendo+Con+Proposito+Learning+Center,LLC/data=!4m7!3m6!1s0x872b13a892d14f6d:0xab41a981d51c28a1!8m2!3d33.4771954!4d-112.074704!16s%2Fg%2F11zd3z1n71!19sChIJbU_RkqgTK4cRoSgc1YGpQas?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "tutoring centers in Phoenix AZ",
+    "emails": [
+      "office@acceleratedlearningcenteraz.com",
+      "tutoring@cgc.edu"
+    ],
+    "facebook_url": "https://www.facebook.com/61587871814107/posts/creciendo-con-prop%C3%B3sito-learning-center-llc-is-with-ms-mildred/122121328035262393",
+    "other_url": "https://centralaz.edu/current-students/learning-center",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Luna Daycare",
+    "rating": 4.6,
+    "reviews": 8,
+    "phone": "+1 602-317-0289",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Luna+Daycare/data=!4m7!3m6!1s0x872b71860c4e6169:0xff0481c55d711b00!8m2!3d33.6309058!4d-112.0106373!16s%2Fg%2F11c5hhzv5m!19sChIJaWFODIZxK4cRABtxXcWBBP8?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "daycares in Phoenix AZ",
+    "emails": [
+      "lunadaycare@hotmail.comwebsite",
+      "contact@qualitybusinessawards.com"
+    ],
+    "facebook_url": "https://www.facebook.com/groups/254673208546795/posts/1799287994085301",
+    "other_url": "https://www.care.com/b/l/luna-daycare/phoenix-az-15824-n-33rd-pl",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Prestige Music Academy",
+    "rating": 4.8,
+    "reviews": 41,
+    "phone": "+1 602-253-6266",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Prestige+Music+Academy/data=!4m7!3m6!1s0x872b129698f3d347:0x97b71a41d33f2be7!8m2!3d33.506763!4d-112.0642161!16s%2Fg%2F1wcxdkhm!19sChIJR9PzmJYSK4cR5ys_00Eat5c?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Phoenix AZ",
+    "emails": [
+      "info@prestigemusicacademy.com",
+      "dewey@prestigemusicacademy.com"
     ],
     "facebook_url": null,
-    "other_url": "CAESfgHrOzAV3rBFmZwwY4hKZ8NtTwOzwtGkh06zZUVMiFQsr20iDAGQJO8rGKoBp7cvpaIA0tvg6MhVOwbdMHqKYGJIZ1FAAfxBYQe6SXmS78WumCw4cBGUS0eA7j6ck1zeCFzuWp8sq0YPpcMTSIJUHMC2KaSMO0EpdbU1qaY8zA",
+    "other_url": "https://prestigemusicacademy.com/contact-us",
     "lead_type": "no-website-school"
   },
   {
-    "name": "Coppini Academy of Fine Arts",
-    "rating": 4.9,
-    "reviews": 23,
-    "phone": null,
+    "name": "Phoenix Conservatory of Music",
+    "rating": 4.4,
+    "reviews": 32,
+    "phone": "+1 602-353-9900",
     "hasWebsite": false,
     "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Coppini+Academy+of+Fine+Arts/data=!4m7!3m6!1s0x865c5f78f5783803:0x3c51486f5016b4c4!8m2!3d29.4695893!4d-98.492412!16s%2Fg%2F1vm_y9c7!19sChIJAzh49XhfXIYRxLQWUG9IUTw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "art schools in San Antonio TX",
+    "placeUrl": "https://www.google.com/maps/place/Phoenix+Conservatory+of+Music/data=!4m7!3m6!1s0x872b6cee677b7cd1:0x7f435bcecf525890!8m2!3d33.4849391!4d-112.0532902!16s%2Fg%2F1tdgkqsh!19sChIJ0Xx7Z-5sK4cRkFhSz85bQ38?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Phoenix AZ",
     "emails": [
-      "coppini@gmail.com",
-      "info@thecoppini.org"
+      "info@pcmrocks.org",
+      "sadienorkin@gmail.com"
     ],
-    "facebook_url": "https://www.facebook.com/CoppiniAcademyofFineArt",
-    "other_url": "https://thecoppini.org",
+    "facebook_url": "https://www.facebook.com/PCMRocks/posts/every-great-musician-started-somewherebefore-the-performancesbefore-the-scholars/1640961038036319",
+    "other_url": "https://pcmrocks.org/about-pcm/contact-us",
     "lead_type": "no-website-school"
   },
   {
-    "name": "UTSA Southwest Campus",
+    "name": "Rosie's House A Music Academy",
     "rating": 4.7,
-    "reviews": 64,
+    "reviews": 50,
+    "phone": "+1 602-252-8475",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Rosie%27s+House+A+Music+Academy/data=!4m7!3m6!1s0x872b1241b9ca5da1:0xc1468be5303ed477!8m2!3d33.4466284!4d-112.0611564!16s%2Fg%2F1td13r5m!19sChIJoV3KuUESK4cRd9Q-MOWLRsE?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Phoenix AZ",
+    "emails": [
+      "info@rosieshouse.org"
+    ],
+    "facebook_url": "https://www.facebook.com/Rosieshouse",
+    "other_url": "https://rosieshouse.org",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Music Maker Workshops",
+    "rating": 4.9,
+    "reviews": 141,
+    "phone": "+1 480-706-1224",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Music+Maker+Workshops/data=!4m7!3m6!1s0x872b0492a3523529:0xad0c24673fa51580!8m2!3d33.3044996!4d-112.0125796!16s%2Fg%2F1tgpbr4c!19sChIJKTVSo5IEK4cRgBWlP2ckDK0?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Phoenix AZ",
+    "emails": [
+      "lessons@mmwaz.com",
+      "programs@mim.org"
+    ],
+    "facebook_url": "https://www.facebook.com/MusicMakerWorkshops",
+    "other_url": "https://mmwaz.com",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Phoenix Music Lessons",
+    "rating": 4.8,
+    "reviews": 33,
+    "phone": "+1 602-955-2702",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Phoenix+Music+Lessons/data=!4m7!3m6!1s0x872b723a92a58b2b:0x5173e7bf09c252bb!8m2!3d33.6125437!4d-112.013759!16s%2Fg%2F1thlzxq_!19sChIJK4ulkjpyK4cRu1LCCb_nc1E?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Phoenix AZ",
+    "emails": [
+      "contacts@phoenixcenterforthearts.org",
+      "arcadia@schoolofrock.com"
+    ],
+    "facebook_url": null,
+    "other_url": "https://phoenixmusiclessons.com",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Funtimes Music School",
+    "rating": 4.9,
+    "reviews": 45,
+    "phone": "+1 480-613-7560",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Funtimes+Music+School/data=!4m7!3m6!1s0x872b050557d4b43d:0x128d15308d53cc3c!8m2!3d33.3315191!4d-111.9780733!16s%2Fg%2F11yc349n6m!19sChIJPbTUVwUFK4cRPMxTjTAVjRI?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Phoenix AZ",
+    "emails": [
+      "funtimesmusicschool@gmail.com"
+    ],
+    "facebook_url": "https://www.facebook.com/p/Funtimes-Music-School-61572419310937",
+    "other_url": "https://www.funtimesmusicschool.com",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "School of Rock Arcadia",
+    "rating": 4.7,
+    "reviews": 25,
+    "phone": "+1 480-914-7625",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/School+of+Rock+Arcadia/data=!4m7!3m6!1s0x872b0da457085bf7:0xf430cb1565459ccf!8m2!3d33.4947326!4d-112.0212287!16s%2Fg%2F11s8zf4yf_!19sChIJ91sIV6QNK4cRz5xFZRXLMPQ?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Phoenix AZ",
+    "emails": [
+      "meissnerm@montclair.edu"
+    ],
+    "facebook_url": "https://www.facebook.com/cityoflightstheatreandcabaret/posts/meet-andrew-toniolo-andrew-is-a-vocal-and-choral-music-educatorperformer-and-he-/923216480235801",
+    "other_url": null,
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "North Phoenix Yamaha Music School",
+    "rating": 5,
+    "reviews": 13,
+    "phone": "+1 480-926-4441",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/North+Phoenix+Yamaha+Music+School/data=!4m7!3m6!1s0x872b71990de5c317:0xb2aee3995e557d51!8m2!3d33.6126164!4d-112.0143811!16s%2Fg%2F11gy08r4mx!19sChIJF8PlDZlxK4cRUX1VXpnjrrI?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Phoenix AZ",
+    "emails": [
+      "office@evyms.com",
+      "piano@yamahanorthumberland.com"
+    ],
+    "facebook_url": "https://www.facebook.com/nycjobsuk/posts/could-you-inspire-the-next-generation-of-pianists-and-help-young-musicians-disco/1555762703256104",
+    "other_url": "https://www.evyamahamusic.com/junior-music-course-1",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Arizona School of Music",
+    "rating": 5,
+    "reviews": 15,
+    "phone": "+1 480-227-0546",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Arizona+School+of+Music/data=!4m7!3m6!1s0x872b7030f41193e7:0x2f61510ed774e104!8m2!3d33.6894638!4d-112.0427293!16s%2Fg%2F1hhghvpq5!19sChIJ55MR9DBwK4cRBOF01w5RYS8?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Phoenix AZ",
+    "emails": [
+      "info@music.arizona.edu",
+      "info@arizonaschoolofmusic.com",
+      "musicweb@cfa.arizona.edu"
+    ],
+    "facebook_url": "https://www.facebook.com/UAZMusic",
+    "other_url": "https://music.arizona.edu",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "The Note Room Academy of Music and Arts",
+    "rating": 5,
+    "reviews": 9,
+    "phone": "+1 602-571-1909",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/The+Note+Room+Academy+of+Music+and+Arts/data=!4m7!3m6!1s0x872b664c8b46cd31:0x6d35d7c083584bf4!8m2!3d33.7011972!4d-112.1624792!16s%2Fg%2F12j1lxp31!19sChIJMc1Gi0xmK4cR9EtYg8DXNW0?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Phoenix AZ",
+    "emails": [
+      "rscarboro@bellsouth.net"
+    ],
+    "facebook_url": "https://www.facebook.com/jimmydavismusic/posts/-jimmy-davis-music-is-now-in-avondale-were-excited-to-officially-introduce-jimmy/1518738026918133",
+    "other_url": "http://ga68.atspace.com/emails10.html",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Phoenix College Department of Music",
+    "rating": 4.7,
+    "reviews": 3,
+    "phone": "+1 602-285-7876",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Phoenix+College+Department+of+Music/data=!4m7!3m6!1s0x872b1255c72348bf:0xead525a2db0f897!8m2!3d33.4831146!4d-112.0874102!16s%2Fg%2F11bv3rtmc0!19sChIJv0gjx1USK4cRl_iwLVpSrQ4?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Phoenix AZ",
+    "emails": [
+      "bakerw@iecc.edu",
+      "julia.lougheed@phoenixcollege.edu",
+      "info@pcmrocks.org"
+    ],
+    "facebook_url": "https://www.facebook.com/phxcollege/posts/phoenix-college-not-only-has-a-historic-campus-but-a-historic-music-program-arou/1163065269201306",
+    "other_url": "https://www.phoenixcollege.edu/degrees-certificates/music-performance",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Blue in Green Youth Piano Academy",
+    "rating": 5,
+    "reviews": 16,
+    "phone": "+1 602-539-8438",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Blue+in+Green+Youth+Piano+Academy/data=!4m7!3m6!1s0x872b0dacdb94b8c5:0x7d2604c57ec283!8m2!3d33.4951776!4d-112.0263287!16s%2Fg%2F11h10ztr88!19sChIJxbiU26wNK4cRg8J-xQQmfQA?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Phoenix AZ",
+    "emails": [
+      "info@blueingreenaz.com"
+    ],
+    "facebook_url": "https://www.facebook.com/blueingreenaz",
+    "other_url": "https://www.blueingreenaz.com",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Squaw Peak Taekwondo - ATA",
+    "rating": 4.8,
+    "reviews": 40,
+    "phone": "+1 602-997-1535",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Squaw+Peak+Taekwondo+-+ATA/data=!4m7!3m6!1s0x872b6d5d018df8e9:0xdcd5180d5b003ba8!8m2!3d33.5509066!4d-112.057003!16s%2Fg%2F1261dg6zc!19sChIJ6fiNAV1tK4cRqDsAWw0Y1dw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "martial arts schools in Phoenix AZ",
+    "emails": [
+      "mark@gilbridesata.com",
+      "info@elementata.com",
+      "atajaykang@gmail.com"
+    ],
+    "facebook_url": "https://www.facebook.com/Mr.Glbde",
+    "other_url": "https://ataarizona.com/schools/squaw-peak-ata",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Be An Artist",
+    "rating": 5,
+    "reviews": 3,
+    "phone": "+1 602-369-4555",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Be+An+Artist/data=!4m7!3m6!1s0x872b0463f6aaf63f:0x1035e66df9f90df0!8m2!3d33.3039882!4d-111.9944475!16s%2Fg%2F11bttk9xzb!19sChIJP_aq9mMEK4cR8A35-W3mNRA?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "art schools in Phoenix AZ",
+    "emails": [
+      "info@azarts.gov",
+      "info@arizonaartistsguild.net",
+      "crobel@azopera.org"
+    ],
+    "facebook_url": null,
+    "other_url": "https://phoenixcenterforthearts.org",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "English 4U LLC",
+    "rating": 4.9,
+    "reviews": 58,
+    "phone": "+1 602-538-8298",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/English+4U+LLC/data=!4m7!3m6!1s0x872b13e84e698a97:0x669fb097349d3faf!8m2!3d33.5165269!4d-112.0981475!16s%2Fg%2F11mpq_xysx!19sChIJl4ppTugTK4cRrz-dNJewn2Y?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "language schools in Phoenix AZ",
+    "emails": [
+      "support@literacyphoenix.org"
+    ],
+    "facebook_url": null,
+    "other_url": "https://trustanalytica.org/us/az/phoenix/reviews/english-4u-llc",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "HA.P.I Clases de Inglés",
+    "rating": 4.9,
+    "reviews": 94,
+    "phone": "+1 480-548-3556",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/HA.P.I+Clases+de+Ingl%C3%A9s/data=!4m7!3m6!1s0x872b09f9bdb79037:0x180272439a4bc080!8m2!3d33.4247127!4d-111.9486161!16s%2Fg%2F11rcsqtx1m!19sChIJN5C3vfkJK4cRgMBLmkNyAhg?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "language schools in Phoenix AZ",
+    "emails": [
+      "hapischool@yahoo.com",
+      "hapi.arizona@yahoo.com",
+      "gpsadulted@gilbertschools.net"
+    ],
+    "facebook_url": "https://www.facebook.com/HAPIclasesdeingles",
+    "other_url": "https://hapi-clases-de-ingls.wheree.com",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Language Centers West",
+    "rating": 2.3,
+    "reviews": 3,
+    "phone": "+1 602-571-5040",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Language+Centers+West/data=!4m7!3m6!1s0x872b6ce33f1297bb:0xb55507bbc69c7a6d!8m2!3d33.6819515!4d-112.1017673!16s%2Fg%2F1tf65yr4!19sChIJu5cSP-NsK4cRbXqcxrsHVbU?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "language schools in Phoenix AZ",
+    "emails": [
+      "adulteducation@cochise.edu",
+      "awc.lapaz@azwestern.edu",
+      "languageculture@phxindcenter.org"
+    ],
+    "facebook_url": "https://www.facebook.com/PhoenixIndianCenter/posts/y%C3%A1%C3%A1t%C3%A9%C3%A9h-shik%C3%A9%C3%AD-d%C3%B3%C3%B3-shidin%C3%A9%C3%A9-our-language-and-culture-dept-is-seeking-dedicated-d/1385283236960718",
+    "other_url": "https://www.languageinternational.com/school/language-centers-west-64934",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Clase de Ingles Gratis",
+    "rating": 5,
+    "reviews": 2,
+    "phone": "+1 623-888-1178",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Clase+de+Ingles+Gratis/data=!4m7!3m6!1s0x872b11bca2868b8d:0x54ae9390865a660e!8m2!3d33.3926607!4d-112.0814039!16s%2Fg%2F11ryk0hsbv!19sChIJjYuGorwRK4cRDmZahpCTrlQ?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "language schools in Phoenix AZ",
+    "emails": [
+      "ask@acyraz.org",
+      "jeff.eldot@phoenixcollege.edu",
+      "gpsadulted@gilbertschools.net"
+    ],
+    "facebook_url": "https://www.facebook.com/ACYRAZ/posts/do-you-or-someone-you-know-want-to-learn-english-enroll-at-acyr%EF%B8%8F-students-must-b/1396383149270101",
+    "other_url": "https://www.phoenixcollege.edu/degrees-certificates/english-second-language",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Magnus Language Institute",
+    "rating": 5,
+    "reviews": 7,
+    "phone": "+1 602-492-8728",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Magnus+Language+Institute/data=!4m7!3m6!1s0x872b0b6c7e34717d:0x559c4efe169c7478!8m2!3d33.4956777!4d-111.9253434!16s%2Fg%2F11j2405577!19sChIJfXE0fmwLK4cReHScFv5OnFU?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "language schools in Phoenix AZ",
+    "emails": [
+      "info@magnusspanishservices.com",
+      "rosi@magnusspanishservices.com"
+    ],
+    "facebook_url": "https://www.facebook.com/magnuslanguageinstitute",
+    "other_url": "https://square.site/book/LJ8CTBZMWW01Z/magnus-language-institute-scottsdale-az",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "The English Academy",
+    "rating": 4.3,
+    "reviews": 3,
+    "phone": "+1 602-237-6025",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/The+English+Academy/data=!4m7!3m6!1s0x872b14c3c6cc8b43:0xd0c09afdb7e3931d!8m2!3d33.492672!4d-112.174068!16s%2Fg%2F119tqgp3r!19sChIJQ4vMxsMUK4cRHZPjt_2awNA?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "language schools in Phoenix AZ",
+    "emails": [
+      "oelas@azed.gov",
+      "jeff.eldot@phoenixcollege.edu",
+      "info@parlayvacay.com"
+    ],
+    "facebook_url": null,
+    "other_url": "https://www.azed.gov",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Clase de Inglés Gratis - Tempe",
+    "rating": 5,
+    "reviews": 5,
+    "phone": "+1 480-896-2012",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Clase+de+Ingl%C3%A9s+Gratis+-+Tempe/data=!4m7!3m6!1s0x872b092b7c8cc125:0x5d6060bb3703e131!8m2!3d33.3961395!4d-111.904831!16s%2Fg%2F11mqm122gb!19sChIJJcGMfCsJK4cRMeEDN7tgYF0?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "language schools in Phoenix AZ",
+    "emails": [
+      "kmills@gilacountyaz.gov",
+      "jeff.eldot@phoenixcollege.edu"
+    ],
+    "facebook_url": "https://www.facebook.com/AvondaleAZLibrary/posts/english-for-speakers-of-other-languages-esol-ages-16for-adult-learners-these-fre/1458973342937748",
+    "other_url": "https://www.azed.gov/adultedservices/Adult-Education-Programs",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Kids of the King Tutoring Services, LLC",
+    "rating": null,
+    "reviews": null,
+    "phone": "+1 520-396-3633",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Kids+of+the+King+Tutoring+Services,+LLC/data=!4m7!3m6!1s0x86d6714eb06f2a8f:0xa94f9065e51b3a1d!8m2!3d32.2468055!4d-110.9910461!16s%2Fg%2F11g65fnrbb!19sChIJjypvsE5x1oYRHTob5WWQT6k?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "tutoring centers in Tucson AZ",
+    "emails": [
+      "meghan@kingtutoringoxford.com"
+    ],
+    "facebook_url": "https://www.facebook.com/groups/326956177382083/posts/24637535009230861",
+    "other_url": "https://local.yahoo.com/info-206070669-kids-of-the-king-tutoring-services-tucson",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "BuffTutor - University & High School Tutors - Tucson",
+    "rating": null,
+    "reviews": null,
     "phone": null,
     "hasWebsite": false,
     "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/UTSA+Southwest+Campus/data=!4m7!3m6!1s0x865c5f516cc29d8f:0xdc256a34bdf0d9ce!8m2!3d29.431318!4d-98.4921269!16s%2Fg%2F1td8zjz0!19sChIJj53CbFFfXIYRztnwvTRqJdw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "art schools in San Antonio TX",
+    "placeUrl": "https://www.google.com/maps/place/BuffTutor+-+University+%26+High+School+Tutors+-+Tucson/data=!4m7!3m6!1s0x86d671f5f6527a5d:0xc06ef7a7187f5e7c!8m2!3d32.2206618!4d-110.9446561!16s%2Fg%2F11thk4xkf6!19sChIJXXpS9vVx1oYRfF5_GKf3bsA?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "tutoring centers in Tucson AZ",
     "emails": [
-      "art@utsa.edu",
-      "communityart@utsa.edu",
-      "pace@utsa.edu"
+      "gomezm@arizona.edu",
+      "contact@bufftutor.com"
     ],
-    "facebook_url": "https://www.facebook.com/artutsa",
-    "other_url": "https://colfa.utsa.edu/art",
+    "facebook_url": "https://www.facebook.com/BuffTutor",
+    "other_url": "https://bufftutor.com",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Felicia Chew Tutoring Services",
+    "rating": null,
+    "reviews": null,
+    "phone": "+1 520-909-3888",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Felicia+Chew+Tutoring+Services/data=!4m7!3m6!1s0x86d6739f6543adb7:0xafcc8123ad096f07!8m2!3d32.2760612!4d-110.9573957!16s%2Fg%2F11h6qkg970!19sChIJt61DZZ9z1oYRB28JrSOBzK8?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "tutoring centers in Tucson AZ",
+    "emails": [
+      "pcc-tutoring@pima.edu",
+      "jluquin2@pima.edu",
+      "tutors@eac.edu"
+    ],
+    "facebook_url": "https://www.facebook.com/groups/326956177382083/posts/24637535009230861",
+    "other_url": "https://www.pima.edu/academics-programs/academic-support/tutoring/index.html",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Lehner Private Tutoring",
+    "rating": 5,
+    "reviews": 15,
+    "phone": "+1 480-269-0419",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Lehner+Private+Tutoring/data=!4m7!3m6!1s0x86d67197c490fb57:0x9067bd3c0d40e7ac!8m2!3d46.423669!4d-129.9427086!16s%2Fg%2F11nh6991c2!19sChIJV_uQxJdx1oYRrOdADTy9Z5A?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "tutoring centers in Tucson AZ",
+    "emails": [
+      "lehnerprivatetutoring@gmail.com",
+      "thinktank@arizona.edu",
+      "pcc-tutoring@pima.edu"
+    ],
+    "facebook_url": "https://www.facebook.com/lehnerprivatetutoring",
+    "other_url": "https://nextdoor.com/pages/lehner-private-tutoring-tempe-az",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Beginning School",
+    "rating": 5,
+    "reviews": 3,
+    "phone": "+1 520-299-6066",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Beginning+School/data=!4m7!3m6!1s0x86d67236c15012bd:0x489bdfb568f7915c!8m2!3d32.288359!4d-110.9432608!16s%2Fm%2F0762fr3!19sChIJvRJQwTZy1oYRXJH3aLXfm0g?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "private schools in Tucson AZ",
+    "emails": [
+      "driegert@academydelsol.com",
+      "zwickl@istucson.org",
+      "admissions@istucson.org"
+    ],
+    "facebook_url": null,
+    "other_url": "https://thaaz.org/stem-private-school-tucson-az",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "El Rio Daycare",
+    "rating": 4.6,
+    "reviews": 17,
+    "phone": "+1 520-623-5912",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/El+Rio+Daycare/data=!4m7!3m6!1s0x86d671346f915555:0x4974be8012df93aa!8m2!3d32.2363653!4d-110.9944343!16s%2Fg%2F11ghq_vx_y!19sChIJVVWRbzRx1oYRqpPfEoC-dEk?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "daycares in Tucson AZ",
+    "emails": [
+      "info@elriodaycare.org"
+    ],
+    "facebook_url": null,
+    "other_url": "https://elriodaycare.org/contact-us",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "First Impressions Day Care",
+    "rating": 4.3,
+    "reviews": 16,
+    "phone": "+1 520-745-6354",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/First+Impressions+Day+Care/data=!4m7!3m6!1s0x86d66f938b2b6b79:0xd749176b8cd0dc56!8m2!3d32.2123383!4d-110.8746779!16s%2Fg%2F1tcxdn5h!19sChIJeWsri5Nv1oYRVtzQjGsXSdc?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "daycares in Tucson AZ",
+    "emails": [
+      "ranch@tlechildcare.com"
+    ],
+    "facebook_url": "https://www.facebook.com/p/First-Impressions-Preschool-Daycare-Center-100072450108835",
+    "other_url": "https://www.kindercare.com/our-centers/tucson/az/000385",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Tucson Music Lessons",
+    "rating": 5,
+    "reviews": 31,
+    "phone": "+1 520-260-8745",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Tucson+Music+Lessons/data=!4m7!3m6!1s0x86d674dc86d0afa9:0xfcfed88ae4e331d5!8m2!3d32.3249447!4d-111.0368588!16s%2Fg%2F11cn5m5z76!19sChIJqa_Qhtx01oYR1THj5IrY_vw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Tucson AZ",
+    "emails": [
+      "media@schoolofrock.com"
+    ],
+    "facebook_url": null,
+    "other_url": "https://www.schoolofrock.com",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "School of Rock Tucson",
+    "rating": 4.9,
+    "reviews": 30,
+    "phone": "+1 833-887-7625",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/School+of+Rock+Tucson/data=!4m7!3m6!1s0x86d66f01bc1be4f7:0x14fd93bcee75c3b3!8m2!3d32.2493105!4d-110.8516132!16s%2Fg%2F11t_v17gsc!19sChIJ9-QbvAFv1oYRs8N17ryT_RQ?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Tucson AZ",
+    "emails": [
+      "tucson@schoolofrock.com"
+    ],
+    "facebook_url": "https://www.facebook.com/SORTucson",
+    "other_url": "https://www.schoolofrock.com/locations/tucson/our-school",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Tempo Music and Arts Academy",
+    "rating": 4.9,
+    "reviews": 31,
+    "phone": "+1 520-268-8590",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Tempo+Music+and+Arts+Academy/data=!4m7!3m6!1s0x86d5e10e04bdd711:0xf76e0cd6c7faf753!8m2!3d32.361758!4d-111.119105!16s%2Fg%2F11s4s4_lpb!19sChIJEde9BA7h1YYRU_f6x9YMbvc?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Tucson AZ",
+    "emails": [
+      "info@tempemusicacademy.com"
+    ],
+    "facebook_url": "https://www.facebook.com/groups/thevillagesfloridacommunityinformation/posts/1544952117275304",
+    "other_url": "https://www.tempemusicacademy.com/contact-us",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Sonoran Music Academy",
+    "rating": 5,
+    "reviews": 14,
+    "phone": "+1 480-447-2302",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Sonoran+Music+Academy/data=!4m7!3m6!1s0x86d673ee659617d1:0x45f340a8d4a05636!8m2!3d32.2791421!4d-110.962368!16s%2Fg%2F11txxvcmwn!19sChIJ0ReWZe5z1oYRNlag1KhA80U?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Tucson AZ",
+    "emails": [
+      "info@sonoranmusicacademy.com"
+    ],
+    "facebook_url": "https://www.facebook.com/SonoranMusicAcademy",
+    "other_url": "https://www.sonoranmusicacademy.com",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Kindermusik At Musical Steps",
+    "rating": 5,
+    "reviews": 33,
+    "phone": "+1 520-784-4344",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Kindermusik+At+Musical+Steps/data=!4m7!3m6!1s0x86d66ee15b060821:0x5f27ae9fe60925f1!8m2!3d32.2496042!4d-110.812719!16s%2Fg%2F1vl5h6qr!19sChIJIQgGW-Fu1oYR8SUJ5p-uJ18?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Tucson AZ",
+    "emails": [
+      "mary@kindermusikwithmary.com"
+    ],
+    "facebook_url": "https://www.facebook.com/musicalsteps",
+    "other_url": "https://musicalsteps.kindermusik.com",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Instrumental Music Center Speedway",
+    "rating": 4.8,
+    "reviews": 862,
+    "phone": "+1 520-733-7334",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Instrumental+Music+Center+Speedway/data=!4m7!3m6!1s0x86d66f1abfc5306f:0xf1fa4ff4b904c0ff!8m2!3d32.2359358!4d-110.8420971!16s%2Fg%2F1tsr3n9n!19sChIJbzDFvxpv1oYR_8AEufRP-vE?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Tucson AZ",
+    "emails": [
+      "imcstaff@imc-az.com"
+    ],
+    "facebook_url": null,
+    "other_url": "https://www.imc-az.com/?srsltid=AfmBOopOg2zJm7kgjeGGiKf63smz_3-Pcq5Rx79nH8Zmn02nXnG00fYp",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Artistry Academy Music & Art",
+    "rating": 4.9,
+    "reviews": 90,
+    "phone": "+1 520-651-9617",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Artistry+Academy+Music+%26+Art/data=!4m7!3m6!1s0x86d60c30bd921189:0xfc5d8702f18d7fe0!8m2!3d32.426083!4d-110.9592802!16s%2Fg%2F12qfqqh_1!19sChIJiRGSvTAM1oYR4H-N8QKHXfw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Tucson AZ",
+    "emails": [
+      "artistryoffice@artistryacademy.net",
+      "office@artistryacademy.com"
+    ],
+    "facebook_url": "https://www.facebook.com/artistryacademymusicandart",
+    "other_url": "https://artistryacademy.net",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "TimeHarmony Music Lessons",
+    "rating": 5,
+    "reviews": 10,
+    "phone": "+1 520-326-7559",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/TimeHarmony+Music+Lessons/data=!4m7!3m6!1s0x86d6702820784375:0xe535447ed069a0b!8m2!3d32.1557085!4d-110.8825026!16s%2Fg%2F11fy54clbv!19sChIJdUN4IChw1oYRC5oG7UdUUw4?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Tucson AZ",
+    "emails": [
+      "timeharmonymusic@gmail.com",
+      "tucson@schoolofrock.com"
+    ],
+    "facebook_url": "https://www.facebook.com/TimeHarmony",
+    "other_url": "https://timeharmony.com/lessons",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Operachi Music School",
+    "rating": 5,
+    "reviews": 2,
+    "phone": "+1 520-370-8713",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Operachi+Music+School/data=!4m7!3m6!1s0x86d671647dd2dce7:0xdc508211219639c5!8m2!3d32.2508147!4d-110.9743958!16s%2Fg%2F11w35fv59t!19sChIJ59zSfWRx1oYRxTmWIRGCUNw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Tucson AZ",
+    "emails": [
+      "operachimusicschool@gmail.com",
+      "halverson14@gmail.com"
+    ],
+    "facebook_url": "https://www.facebook.com/groups/1526195410901616/posts/3216051608582646",
+    "other_url": "https://www.operachimusicschool.com",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Music & Arts",
+    "rating": 4.7,
+    "reviews": 28,
+    "phone": "+1 520-731-8229",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Music+%26+Arts/data=!4m7!3m6!1s0x86d667b8c5246b2d:0x98b8497010ea9299!8m2!3d32.2060148!4d-110.7868871!16s%2Fg%2F11pqc48vbd!19sChIJLWskxbhn1oYRmZLqEHBJuJg?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Tucson AZ",
+    "emails": [
+      "tiffnene@hotmail.com"
+    ],
+    "facebook_url": "https://www.facebook.com/marshillfirstfriday/posts/-mars-hill-is-the-place-to-be-this-fourth-of-july-were-lighting-up-the-town-with/657841310643995",
+    "other_url": "http://www.ohhellofriendblog.com/2011/03/collection-trade.html",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Tucson Jazz Institute",
+    "rating": 4.6,
+    "reviews": 11,
+    "phone": "+1 520-514-0935",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Tucson+Jazz+Institute/data=!4m7!3m6!1s0x86d66fa24c043f6f:0x742285a6493b7b16!8m2!3d32.1873234!4d-110.9362571!16s%2Fg%2F1tr7jv1x!19sChIJbz8ETKJv1oYRFns7SaaFInQ?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Tucson AZ",
+    "emails": [
+      "tucsonjazzinstitute@gmail.com",
+      "treasurer@tjmfdn.org"
+    ],
+    "facebook_url": "https://www.facebook.com/tucsonjazzinstitute",
+    "other_url": "https://www.tucsonjazzinstitute.com",
     "lead_type": "no-website-school"
   }
 ]

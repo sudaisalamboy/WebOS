@@ -56,3 +56,192 @@ Pending: 34 schools
 [16/34] Ingles a tu ritmo
   ✓ SENT to esl@foundcom.org
   ... waiting 75s
+[17/34] Cooper Learning Center
+  ✓ SENT to sac-tutoring@alamo.edu
+  ... waiting 75s
+[18/34] Margarita Huantes Learning Center
+  ✓ SENT to info@eotosa.org
+  ... waiting 75s
+[19/34] Semeneya
+  ✓ SENT to semeneya@gmail.com
+  ... waiting 75s
+[20/34] The Guitar Studio
+  ✓ SENT to info@musicallivingacademy.com
+  ... waiting 75s
+[21/34] Musical Arts Center of San Antonio, Inc.
+  ✓ SENT to info@macsainc.com
+  ... waiting 75s
+[22/34] Big Star Music Academy
+  ✓ SENT to bigstarmusicacademy@gmail.com
+  ... waiting 75s
+[23/34] Music on Magnolia
+  ✓ SENT to frontdesk@musiconmagnolia.com
+  ... waiting 75s
+[24/34] San Antonio Arts Academy
+  ✓ SENT to saartsacademy1@gmail.com
+  ... waiting 75s
+[25/34] Northside Music School
+  ✓ SENT to learnmusic@northsidemusicschool.com
+  ... waiting 75s
+[26/34] Anthem School Of Music
+  ✓ SENT to music@utsa.edu
+  ... waiting 75s
+[27/34] Jensen's Yamaha Music School
+  ✓ SENT to jensensyamahamusic@gmail.com
+  ... waiting 75s
+[28/34] LJE Music Lessons
+  ✓ SENT to contact@ljemusiclessons.com
+  ... waiting 75s
+[29/34] Joy Academy of Music
+  ✓ SENT to info@joyacademyofmusic.com
+  ... waiting 75s
+[30/34] 55 Driving School
+  ✓ SENT to anamaria@compbio.ludwig.org.br
+  ... waiting 75s
+[31/34] Interstate Driving School
+  ✓ SENT to driversedu@neisd.net
+  ... waiting 75s
+[32/34] C&P Test Prep
+  ✓ SENT to info@saedpartnership.org
+  ... waiting 75s
+[33/34] Coppini Academy of Fine Arts
+  ✓ SENT to coppini@gmail.com
+  ... waiting 75s
+[34/34] UTSA Southwest Campus
+  ✓ SENT to art@utsa.edu
+
+===== DONE =====
+Sent this run: 34
+Total sent (all): 107
+Loaded 42 schools
+Pending: 42 schools
+
+[1/42] Middle School Tutors
+  ✓ SENT to learnwithalohallc@gmail.com
+  ... waiting 75s
+[2/42] Creciendo Con Proposito Learning Center,LLC
+  ✓ SENT to office@acceleratedlearningcenteraz.com
+  ... waiting 75s
+[3/42] Luna Daycare
+  ✓ SENT to lunadaycare@hotmail.comwebsite
+  ... waiting 75s
+[4/42] Prestige Music Academy
+  ✓ SENT to info@prestigemusicacademy.com
+  ... waiting 75s
+[5/42] Phoenix Conservatory of Music
+  ✓ SENT to info@pcmrocks.org
+  ... waiting 75s
+[6/42] Rosie's House A Music Academy
+  ✓ SENT to info@rosieshouse.org
+  ... waiting 75s
+[7/42] Music Maker Workshops
+  ✓ SENT to lessons@mmwaz.com
+  ... waiting 75s
+[8/42] Phoenix Music Lessons
+  ✓ SENT to contacts@phoenixcenterforthearts.org
+  ... waiting 75s
+[9/42] Funtimes Music School
+  ✓ SENT to funtimesmusicschool@gmail.com
+  ... waiting 75s
+[10/42] School of Rock Arcadia
+  ✓ SENT to meissnerm@montclair.edu
+  ... waiting 75s
+[11/42] North Phoenix Yamaha Music School
+  ✓ SENT to office@evyms.com
+  ... waiting 75s
+[12/42] Arizona School of Music
+  ✓ SENT to info@music.arizona.edu
+  ... waiting 75s
+[13/42] The Note Room Academy of Music and Arts
+  ✓ SENT to rscarboro@bellsouth.net
+  ... waiting 75s
+[14/42] Phoenix College Department of Music
+  ✓ SENT to bakerw@iecc.edu
+  ... waiting 75s
+[15/42] Blue in Green Youth Piano Academy
+  ✓ SENT to info@blueingreenaz.com
+  ... waiting 75s
+[16/42] Squaw Peak Taekwondo - ATA
+  ✓ SENT to mark@gilbridesata.com
+  ... waiting 75s
+[17/42] Be An Artist
+  ✓ SENT to info@azarts.gov
+  ... waiting 75s
+[18/42] English 4U LLC
+  ✓ SENT to support@literacyphoenix.org
+  ... waiting 75s
+[19/42] HA.P.I Clases de Inglés
+  ✓ SENT to hapischool@yahoo.com
+  ... waiting 75s
+[20/42] Language Centers West
+  ✓ SENT to adulteducation@cochise.edu
+  ... waiting 75s
+[21/42] Clase de Ingles Gratis
+  ✓ SENT to ask@acyraz.org
+  ... waiting 75s
+[22/42] Magnus Language Institute
+  ✓ SENT to info@magnusspanishservices.com
+  ... waiting 75s
+[23/42] The English Academy
+  ✓ SENT to oelas@azed.gov
+  ... waiting 75s
+[24/42] Clase de Inglés Gratis - Tempe
+  ✓ SENT to kmills@gilacountyaz.gov
+  ... waiting 75s
+[25/42] Kids of the King Tutoring Services, LLC
+  ✓ SENT to meghan@kingtutoringoxford.com
+  ... waiting 75s
+[26/42] BuffTutor - University & High School Tutors - Tucson
+  ✓ SENT to gomezm@arizona.edu
+  ... waiting 75s
+[27/42] Felicia Chew Tutoring Services
+  ✓ SENT to pcc-tutoring@pima.edu
+  ... waiting 75s
+[28/42] Lehner Private Tutoring
+  ✓ SENT to lehnerprivatetutoring@gmail.com
+  ... waiting 75s
+[29/42] Beginning School
+  ✓ SENT to driegert@academydelsol.com
+  ... waiting 75s
+[30/42] El Rio Daycare
+  ✓ SENT to info@elriodaycare.org
+  ... waiting 75s
+[31/42] First Impressions Day Care
+  ✓ SENT to ranch@tlechildcare.com
+  ... waiting 75s
+[32/42] Tucson Music Lessons
+  ✓ SENT to media@schoolofrock.com
+  ... waiting 75s
+[33/42] School of Rock Tucson
+  ✓ SENT to tucson@schoolofrock.com
+  ... waiting 75s
+[34/42] Tempo Music and Arts Academy
+  ✓ SENT to info@tempemusicacademy.com
+  ... waiting 75s
+[35/42] Sonoran Music Academy
+  ✓ SENT to info@sonoranmusicacademy.com
+  ... waiting 75s
+[36/42] Kindermusik At Musical Steps
+  ✓ SENT to mary@kindermusikwithmary.com
+  ... waiting 75s
+[37/42] Instrumental Music Center Speedway
+  ✓ SENT to imcstaff@imc-az.com
+  ... waiting 75s
+[38/42] Artistry Academy Music & Art
+  ✓ SENT to artistryoffice@artistryacademy.net
+  ... waiting 75s
+[39/42] TimeHarmony Music Lessons
+  ✓ SENT to timeharmonymusic@gmail.com
+  ... waiting 75s
+[40/42] Operachi Music School
+  ✓ SENT to operachimusicschool@gmail.com
+  ... waiting 75s
+[41/42] Music & Arts
+  ✓ SENT to tiffnene@hotmail.com
+  ... waiting 75s
+[42/42] Tucson Jazz Institute
+  ✓ SENT to tucsonjazzinstitute@gmail.com
+
+===== DONE =====
+Sent this run: 42
+Total sent (all): 149
