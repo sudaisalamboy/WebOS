@@ -889,8 +889,608 @@
       "first_sent": 1788576125,
       "last_sent": 1788576125,
       "send_count": 1
+    },
+    "sac-tutoring@alamo.edu": {
+      "recipient": "sac-tutoring@alamo.edu",
+      "normalized": "sac-tutoring@alamo.edu",
+      "subject": "Quick question about Cooper Learning Center",
+      "lead": "Cooper Learning Center",
+      "type": "no-website-school",
+      "first_sent": 1788576215,
+      "last_sent": 1788576215,
+      "send_count": 1
+    },
+    "info@eotosa.org": {
+      "recipient": "info@eotosa.org",
+      "normalized": "info@eotosa.org",
+      "subject": "Quick question about Margarita Huantes Learning Center",
+      "lead": "Margarita Huantes Learning Center",
+      "type": "no-website-school",
+      "first_sent": 1788576305,
+      "last_sent": 1788576305,
+      "send_count": 1
+    },
+    "semeneya@gmail.com": {
+      "recipient": "semeneya@gmail.com",
+      "normalized": "semeneya@gmail.com",
+      "subject": "Quick question about Semeneya",
+      "lead": "Semeneya",
+      "type": "no-website-school",
+      "first_sent": 1788576394,
+      "last_sent": 1788576394,
+      "send_count": 1
+    },
+    "info@musicallivingacademy.com": {
+      "recipient": "info@musicallivingacademy.com",
+      "normalized": "info@musicallivingacademy.com",
+      "subject": "Quick question about The Guitar Studio",
+      "lead": "The Guitar Studio",
+      "type": "no-website-school",
+      "first_sent": 1788576484,
+      "last_sent": 1788576484,
+      "send_count": 1
+    },
+    "info@macsainc.com": {
+      "recipient": "info@macsainc.com",
+      "normalized": "info@macsainc.com",
+      "subject": "Quick question about Musical Arts Center of San Antonio, Inc.",
+      "lead": "Musical Arts Center of San Antonio, Inc.",
+      "type": "no-website-school",
+      "first_sent": 1788576574,
+      "last_sent": 1788576574,
+      "send_count": 1
+    },
+    "bigstarmusicacademy@gmail.com": {
+      "recipient": "bigstarmusicacademy@gmail.com",
+      "normalized": "bigstarmusicacademy@gmail.com",
+      "subject": "Quick question about Big Star Music Academy",
+      "lead": "Big Star Music Academy",
+      "type": "no-website-school",
+      "first_sent": 1788576663,
+      "last_sent": 1788576663,
+      "send_count": 1
+    },
+    "frontdesk@musiconmagnolia.com": {
+      "recipient": "frontdesk@musiconmagnolia.com",
+      "normalized": "frontdesk@musiconmagnolia.com",
+      "subject": "Quick question about Music on Magnolia",
+      "lead": "Music on Magnolia",
+      "type": "no-website-school",
+      "first_sent": 1788576753,
+      "last_sent": 1788576753,
+      "send_count": 1
+    },
+    "saartsacademy1@gmail.com": {
+      "recipient": "saartsacademy1@gmail.com",
+      "normalized": "saartsacademy1@gmail.com",
+      "subject": "Quick question about San Antonio Arts Academy",
+      "lead": "San Antonio Arts Academy",
+      "type": "no-website-school",
+      "first_sent": 1788576842,
+      "last_sent": 1788576842,
+      "send_count": 1
+    },
+    "learnmusic@northsidemusicschool.com": {
+      "recipient": "learnmusic@northsidemusicschool.com",
+      "normalized": "learnmusic@northsidemusicschool.com",
+      "subject": "Quick question about Northside Music School",
+      "lead": "Northside Music School",
+      "type": "no-website-school",
+      "first_sent": 1788576932,
+      "last_sent": 1788576932,
+      "send_count": 1
+    },
+    "music@utsa.edu": {
+      "recipient": "music@utsa.edu",
+      "normalized": "music@utsa.edu",
+      "subject": "Quick question about Anthem School Of Music",
+      "lead": "Anthem School Of Music",
+      "type": "no-website-school",
+      "first_sent": 1788577022,
+      "last_sent": 1788577022,
+      "send_count": 1
+    },
+    "jensensyamahamusic@gmail.com": {
+      "recipient": "jensensyamahamusic@gmail.com",
+      "normalized": "jensensyamahamusic@gmail.com",
+      "subject": "Quick question about Jensen's Yamaha Music School",
+      "lead": "Jensen's Yamaha Music School",
+      "type": "no-website-school",
+      "first_sent": 1788577111,
+      "last_sent": 1788577111,
+      "send_count": 1
+    },
+    "contact@ljemusiclessons.com": {
+      "recipient": "contact@ljemusiclessons.com",
+      "normalized": "contact@ljemusiclessons.com",
+      "subject": "Quick question about LJE Music Lessons",
+      "lead": "LJE Music Lessons",
+      "type": "no-website-school",
+      "first_sent": 1788577201,
+      "last_sent": 1788577201,
+      "send_count": 1
+    },
+    "info@joyacademyofmusic.com": {
+      "recipient": "info@joyacademyofmusic.com",
+      "normalized": "info@joyacademyofmusic.com",
+      "subject": "Quick question about Joy Academy of Music",
+      "lead": "Joy Academy of Music",
+      "type": "no-website-school",
+      "first_sent": 1788577291,
+      "last_sent": 1788577291,
+      "send_count": 1
+    },
+    "anamaria@compbio.ludwig.org.br": {
+      "recipient": "anamaria@compbio.ludwig.org.br",
+      "normalized": "anamaria@compbio.ludwig.org.br",
+      "subject": "Quick question about 55 Driving School",
+      "lead": "55 Driving School",
+      "type": "no-website-school",
+      "first_sent": 1788577380,
+      "last_sent": 1788577380,
+      "send_count": 1
+    },
+    "driversedu@neisd.net": {
+      "recipient": "driversedu@neisd.net",
+      "normalized": "driversedu@neisd.net",
+      "subject": "Quick question about Interstate Driving School",
+      "lead": "Interstate Driving School",
+      "type": "no-website-school",
+      "first_sent": 1788577470,
+      "last_sent": 1788577470,
+      "send_count": 1
+    },
+    "info@saedpartnership.org": {
+      "recipient": "info@saedpartnership.org",
+      "normalized": "info@saedpartnership.org",
+      "subject": "Quick question about C&P Test Prep",
+      "lead": "C&P Test Prep",
+      "type": "no-website-school",
+      "first_sent": 1788577559,
+      "last_sent": 1788577559,
+      "send_count": 1
+    },
+    "coppini@gmail.com": {
+      "recipient": "coppini@gmail.com",
+      "normalized": "coppini@gmail.com",
+      "subject": "Quick question about Coppini Academy of Fine Arts",
+      "lead": "Coppini Academy of Fine Arts",
+      "type": "no-website-school",
+      "first_sent": 1788577649,
+      "last_sent": 1788577649,
+      "send_count": 1
+    },
+    "art@utsa.edu": {
+      "recipient": "art@utsa.edu",
+      "normalized": "art@utsa.edu",
+      "subject": "Quick question about UTSA Southwest Campus",
+      "lead": "UTSA Southwest Campus",
+      "type": "no-website-school",
+      "first_sent": 1788577739,
+      "last_sent": 1788577739,
+      "send_count": 1
+    },
+    "learnwithalohallc@gmail.com": {
+      "recipient": "learnwithalohallc@gmail.com",
+      "normalized": "learnwithalohallc@gmail.com",
+      "subject": "Quick question about Middle School Tutors",
+      "lead": "Middle School Tutors",
+      "type": "no-website-school",
+      "first_sent": 1788584766,
+      "last_sent": 1788584766,
+      "send_count": 1
+    },
+    "office@acceleratedlearningcenteraz.com": {
+      "recipient": "office@acceleratedlearningcenteraz.com",
+      "normalized": "office@acceleratedlearningcenteraz.com",
+      "subject": "Quick question about Creciendo Con Proposito Learning Center,LLC",
+      "lead": "Creciendo Con Proposito Learning Center,LLC",
+      "type": "no-website-school",
+      "first_sent": 1788584855,
+      "last_sent": 1788584855,
+      "send_count": 1
+    },
+    "lunadaycare@hotmail.comwebsite": {
+      "recipient": "lunadaycare@hotmail.comwebsite",
+      "normalized": "lunadaycare@hotmail.comwebsite",
+      "subject": "Quick question about Luna Daycare",
+      "lead": "Luna Daycare",
+      "type": "no-website-school",
+      "first_sent": 1788584945,
+      "last_sent": 1788584945,
+      "send_count": 1
+    },
+    "info@prestigemusicacademy.com": {
+      "recipient": "info@prestigemusicacademy.com",
+      "normalized": "info@prestigemusicacademy.com",
+      "subject": "Quick question about Prestige Music Academy",
+      "lead": "Prestige Music Academy",
+      "type": "no-website-school",
+      "first_sent": 1788585035,
+      "last_sent": 1788585035,
+      "send_count": 1
+    },
+    "info@pcmrocks.org": {
+      "recipient": "info@pcmrocks.org",
+      "normalized": "info@pcmrocks.org",
+      "subject": "Quick question about Phoenix Conservatory of Music",
+      "lead": "Phoenix Conservatory of Music",
+      "type": "no-website-school",
+      "first_sent": 1788585124,
+      "last_sent": 1788585124,
+      "send_count": 1
+    },
+    "info@rosieshouse.org": {
+      "recipient": "info@rosieshouse.org",
+      "normalized": "info@rosieshouse.org",
+      "subject": "Quick question about Rosie's House A Music Academy",
+      "lead": "Rosie's House A Music Academy",
+      "type": "no-website-school",
+      "first_sent": 1788585214,
+      "last_sent": 1788585214,
+      "send_count": 1
+    },
+    "lessons@mmwaz.com": {
+      "recipient": "lessons@mmwaz.com",
+      "normalized": "lessons@mmwaz.com",
+      "subject": "Quick question about Music Maker Workshops",
+      "lead": "Music Maker Workshops",
+      "type": "no-website-school",
+      "first_sent": 1788585304,
+      "last_sent": 1788585304,
+      "send_count": 1
+    },
+    "contacts@phoenixcenterforthearts.org": {
+      "recipient": "contacts@phoenixcenterforthearts.org",
+      "normalized": "contacts@phoenixcenterforthearts.org",
+      "subject": "Quick question about Phoenix Music Lessons",
+      "lead": "Phoenix Music Lessons",
+      "type": "no-website-school",
+      "first_sent": 1788585393,
+      "last_sent": 1788585393,
+      "send_count": 1
+    },
+    "funtimesmusicschool@gmail.com": {
+      "recipient": "funtimesmusicschool@gmail.com",
+      "normalized": "funtimesmusicschool@gmail.com",
+      "subject": "Quick question about Funtimes Music School",
+      "lead": "Funtimes Music School",
+      "type": "no-website-school",
+      "first_sent": 1788585483,
+      "last_sent": 1788585483,
+      "send_count": 1
+    },
+    "meissnerm@montclair.edu": {
+      "recipient": "meissnerm@montclair.edu",
+      "normalized": "meissnerm@montclair.edu",
+      "subject": "Quick question about School of Rock Arcadia",
+      "lead": "School of Rock Arcadia",
+      "type": "no-website-school",
+      "first_sent": 1788585573,
+      "last_sent": 1788585573,
+      "send_count": 1
+    },
+    "office@evyms.com": {
+      "recipient": "office@evyms.com",
+      "normalized": "office@evyms.com",
+      "subject": "Quick question about North Phoenix Yamaha Music School",
+      "lead": "North Phoenix Yamaha Music School",
+      "type": "no-website-school",
+      "first_sent": 1788585662,
+      "last_sent": 1788585662,
+      "send_count": 1
+    },
+    "info@music.arizona.edu": {
+      "recipient": "info@music.arizona.edu",
+      "normalized": "info@music.arizona.edu",
+      "subject": "Quick question about Arizona School of Music",
+      "lead": "Arizona School of Music",
+      "type": "no-website-school",
+      "first_sent": 1788585752,
+      "last_sent": 1788585752,
+      "send_count": 1
+    },
+    "rscarboro@bellsouth.net": {
+      "recipient": "rscarboro@bellsouth.net",
+      "normalized": "rscarboro@bellsouth.net",
+      "subject": "Quick question about The Note Room Academy of Music and Arts",
+      "lead": "The Note Room Academy of Music and Arts",
+      "type": "no-website-school",
+      "first_sent": 1788585841,
+      "last_sent": 1788585841,
+      "send_count": 1
+    },
+    "bakerw@iecc.edu": {
+      "recipient": "bakerw@iecc.edu",
+      "normalized": "bakerw@iecc.edu",
+      "subject": "Quick question about Phoenix College Department of Music",
+      "lead": "Phoenix College Department of Music",
+      "type": "no-website-school",
+      "first_sent": 1788585931,
+      "last_sent": 1788585931,
+      "send_count": 1
+    },
+    "info@blueingreenaz.com": {
+      "recipient": "info@blueingreenaz.com",
+      "normalized": "info@blueingreenaz.com",
+      "subject": "Quick question about Blue in Green Youth Piano Academy",
+      "lead": "Blue in Green Youth Piano Academy",
+      "type": "no-website-school",
+      "first_sent": 1788586021,
+      "last_sent": 1788586021,
+      "send_count": 1
+    },
+    "mark@gilbridesata.com": {
+      "recipient": "mark@gilbridesata.com",
+      "normalized": "mark@gilbridesata.com",
+      "subject": "Quick question about Squaw Peak Taekwondo - ATA",
+      "lead": "Squaw Peak Taekwondo - ATA",
+      "type": "no-website-school",
+      "first_sent": 1788586110,
+      "last_sent": 1788586110,
+      "send_count": 1
+    },
+    "info@azarts.gov": {
+      "recipient": "info@azarts.gov",
+      "normalized": "info@azarts.gov",
+      "subject": "Quick question about Be An Artist",
+      "lead": "Be An Artist",
+      "type": "no-website-school",
+      "first_sent": 1788586200,
+      "last_sent": 1788586200,
+      "send_count": 1
+    },
+    "support@literacyphoenix.org": {
+      "recipient": "support@literacyphoenix.org",
+      "normalized": "support@literacyphoenix.org",
+      "subject": "Quick question about English 4U LLC",
+      "lead": "English 4U LLC",
+      "type": "no-website-school",
+      "first_sent": 1788586290,
+      "last_sent": 1788586290,
+      "send_count": 1
+    },
+    "hapischool@yahoo.com": {
+      "recipient": "hapischool@yahoo.com",
+      "normalized": "hapischool@yahoo.com",
+      "subject": "Quick question about HA.P.I Clases de Inglés",
+      "lead": "HA.P.I Clases de Inglés",
+      "type": "no-website-school",
+      "first_sent": 1788586379,
+      "last_sent": 1788586379,
+      "send_count": 1
+    },
+    "adulteducation@cochise.edu": {
+      "recipient": "adulteducation@cochise.edu",
+      "normalized": "adulteducation@cochise.edu",
+      "subject": "Quick question about Language Centers West",
+      "lead": "Language Centers West",
+      "type": "no-website-school",
+      "first_sent": 1788586469,
+      "last_sent": 1788586469,
+      "send_count": 1
+    },
+    "ask@acyraz.org": {
+      "recipient": "ask@acyraz.org",
+      "normalized": "ask@acyraz.org",
+      "subject": "Quick question about Clase de Ingles Gratis",
+      "lead": "Clase de Ingles Gratis",
+      "type": "no-website-school",
+      "first_sent": 1788586559,
+      "last_sent": 1788586559,
+      "send_count": 1
+    },
+    "info@magnusspanishservices.com": {
+      "recipient": "info@magnusspanishservices.com",
+      "normalized": "info@magnusspanishservices.com",
+      "subject": "Quick question about Magnus Language Institute",
+      "lead": "Magnus Language Institute",
+      "type": "no-website-school",
+      "first_sent": 1788586649,
+      "last_sent": 1788586649,
+      "send_count": 1
+    },
+    "oelas@azed.gov": {
+      "recipient": "oelas@azed.gov",
+      "normalized": "oelas@azed.gov",
+      "subject": "Quick question about The English Academy",
+      "lead": "The English Academy",
+      "type": "no-website-school",
+      "first_sent": 1788586738,
+      "last_sent": 1788586738,
+      "send_count": 1
+    },
+    "kmills@gilacountyaz.gov": {
+      "recipient": "kmills@gilacountyaz.gov",
+      "normalized": "kmills@gilacountyaz.gov",
+      "subject": "Quick question about Clase de Inglés Gratis - Tempe",
+      "lead": "Clase de Inglés Gratis - Tempe",
+      "type": "no-website-school",
+      "first_sent": 1788586828,
+      "last_sent": 1788586828,
+      "send_count": 1
+    },
+    "meghan@kingtutoringoxford.com": {
+      "recipient": "meghan@kingtutoringoxford.com",
+      "normalized": "meghan@kingtutoringoxford.com",
+      "subject": "Quick question about Kids of the King Tutoring Services, LLC",
+      "lead": "Kids of the King Tutoring Services, LLC",
+      "type": "no-website-school",
+      "first_sent": 1788586917,
+      "last_sent": 1788586917,
+      "send_count": 1
+    },
+    "gomezm@arizona.edu": {
+      "recipient": "gomezm@arizona.edu",
+      "normalized": "gomezm@arizona.edu",
+      "subject": "Quick question about BuffTutor - University & High School Tutors - Tucson",
+      "lead": "BuffTutor - University & High School Tutors - Tucson",
+      "type": "no-website-school",
+      "first_sent": 1788587007,
+      "last_sent": 1788587007,
+      "send_count": 1
+    },
+    "pcc-tutoring@pima.edu": {
+      "recipient": "pcc-tutoring@pima.edu",
+      "normalized": "pcc-tutoring@pima.edu",
+      "subject": "Quick question about Felicia Chew Tutoring Services",
+      "lead": "Felicia Chew Tutoring Services",
+      "type": "no-website-school",
+      "first_sent": 1788587097,
+      "last_sent": 1788587097,
+      "send_count": 1
+    },
+    "lehnerprivatetutoring@gmail.com": {
+      "recipient": "lehnerprivatetutoring@gmail.com",
+      "normalized": "lehnerprivatetutoring@gmail.com",
+      "subject": "Quick question about Lehner Private Tutoring",
+      "lead": "Lehner Private Tutoring",
+      "type": "no-website-school",
+      "first_sent": 1788587186,
+      "last_sent": 1788587186,
+      "send_count": 1
+    },
+    "driegert@academydelsol.com": {
+      "recipient": "driegert@academydelsol.com",
+      "normalized": "driegert@academydelsol.com",
+      "subject": "Quick question about Beginning School",
+      "lead": "Beginning School",
+      "type": "no-website-school",
+      "first_sent": 1788587276,
+      "last_sent": 1788587276,
+      "send_count": 1
+    },
+    "info@elriodaycare.org": {
+      "recipient": "info@elriodaycare.org",
+      "normalized": "info@elriodaycare.org",
+      "subject": "Quick question about El Rio Daycare",
+      "lead": "El Rio Daycare",
+      "type": "no-website-school",
+      "first_sent": 1788587366,
+      "last_sent": 1788587366,
+      "send_count": 1
+    },
+    "ranch@tlechildcare.com": {
+      "recipient": "ranch@tlechildcare.com",
+      "normalized": "ranch@tlechildcare.com",
+      "subject": "Quick question about First Impressions Day Care",
+      "lead": "First Impressions Day Care",
+      "type": "no-website-school",
+      "first_sent": 1788587455,
+      "last_sent": 1788587455,
+      "send_count": 1
+    },
+    "media@schoolofrock.com": {
+      "recipient": "media@schoolofrock.com",
+      "normalized": "media@schoolofrock.com",
+      "subject": "Quick question about Tucson Music Lessons",
+      "lead": "Tucson Music Lessons",
+      "type": "no-website-school",
+      "first_sent": 1788587545,
+      "last_sent": 1788587545,
+      "send_count": 1
+    },
+    "tucson@schoolofrock.com": {
+      "recipient": "tucson@schoolofrock.com",
+      "normalized": "tucson@schoolofrock.com",
+      "subject": "Quick question about School of Rock Tucson",
+      "lead": "School of Rock Tucson",
+      "type": "no-website-school",
+      "first_sent": 1788587634,
+      "last_sent": 1788587634,
+      "send_count": 1
+    },
+    "info@tempemusicacademy.com": {
+      "recipient": "info@tempemusicacademy.com",
+      "normalized": "info@tempemusicacademy.com",
+      "subject": "Quick question about Tempo Music and Arts Academy",
+      "lead": "Tempo Music and Arts Academy",
+      "type": "no-website-school",
+      "first_sent": 1788587724,
+      "last_sent": 1788587724,
+      "send_count": 1
+    },
+    "info@sonoranmusicacademy.com": {
+      "recipient": "info@sonoranmusicacademy.com",
+      "normalized": "info@sonoranmusicacademy.com",
+      "subject": "Quick question about Sonoran Music Academy",
+      "lead": "Sonoran Music Academy",
+      "type": "no-website-school",
+      "first_sent": 1788587814,
+      "last_sent": 1788587814,
+      "send_count": 1
+    },
+    "mary@kindermusikwithmary.com": {
+      "recipient": "mary@kindermusikwithmary.com",
+      "normalized": "mary@kindermusikwithmary.com",
+      "subject": "Quick question about Kindermusik At Musical Steps",
+      "lead": "Kindermusik At Musical Steps",
+      "type": "no-website-school",
+      "first_sent": 1788587904,
+      "last_sent": 1788587904,
+      "send_count": 1
+    },
+    "imcstaff@imc-az.com": {
+      "recipient": "imcstaff@imc-az.com",
+      "normalized": "imcstaff@imc-az.com",
+      "subject": "Quick question about Instrumental Music Center Speedway",
+      "lead": "Instrumental Music Center Speedway",
+      "type": "no-website-school",
+      "first_sent": 1788587993,
+      "last_sent": 1788587993,
+      "send_count": 1
+    },
+    "artistryoffice@artistryacademy.net": {
+      "recipient": "artistryoffice@artistryacademy.net",
+      "normalized": "artistryoffice@artistryacademy.net",
+      "subject": "Quick question about Artistry Academy Music & Art",
+      "lead": "Artistry Academy Music & Art",
+      "type": "no-website-school",
+      "first_sent": 1788588083,
+      "last_sent": 1788588083,
+      "send_count": 1
+    },
+    "timeharmonymusic@gmail.com": {
+      "recipient": "timeharmonymusic@gmail.com",
+      "normalized": "timeharmonymusic@gmail.com",
+      "subject": "Quick question about TimeHarmony Music Lessons",
+      "lead": "TimeHarmony Music Lessons",
+      "type": "no-website-school",
+      "first_sent": 1788588172,
+      "last_sent": 1788588172,
+      "send_count": 1
+    },
+    "operachimusicschool@gmail.com": {
+      "recipient": "operachimusicschool@gmail.com",
+      "normalized": "operachimusicschool@gmail.com",
+      "subject": "Quick question about Operachi Music School",
+      "lead": "Operachi Music School",
+      "type": "no-website-school",
+      "first_sent": 1788588262,
+      "last_sent": 1788588262,
+      "send_count": 1
+    },
+    "tiffnene@hotmail.com": {
+      "recipient": "tiffnene@hotmail.com",
+      "normalized": "tiffnene@hotmail.com",
+      "subject": "Quick question about Music & Arts",
+      "lead": "Music & Arts",
+      "type": "no-website-school",
+      "first_sent": 1788588352,
+      "last_sent": 1788588352,
+      "send_count": 1
+    },
+    "tucsonjazzinstitute@gmail.com": {
+      "recipient": "tucsonjazzinstitute@gmail.com",
+      "normalized": "tucsonjazzinstitute@gmail.com",
+      "subject": "Quick question about Tucson Jazz Institute",
+      "lead": "Tucson Jazz Institute",
+      "type": "no-website-school",
+      "first_sent": 1788588441,
+      "last_sent": 1788588441,
+      "send_count": 1
     }
   },
-  "updated_at": 1788576125,
-  "total_sent": 89
+  "updated_at": 1788588441,
+  "total_sent": 149
 }

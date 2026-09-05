@@ -549,3 +549,495 @@ Phase 3: Sending 35 pitch emails (watermark removed)
   [5/35] Eastside Music School
     ✗ FAILED: To field not found
     ... waiting 75s
+============================================================
+  NEXT BATCH — Austin TX + San Antonio TX schools
+============================================================
+
+>>> PHASE 1: Scrape Google Maps
+Phase 1: 24 queries, 0 already done
+
+  → tutoring centers in Phoenix AZ
+  → navigating to: https://www.google.com/maps/search/tutoring+centers+in+Phoenix+AZ…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 19 listings loaded
+    scroll 3/3: 19 listings loaded
+  ✓ extracted 19 listings from 'tutoring centers in Phoenix AZ'
+    ✓ 19 listings (total: 19)
+
+  → private schools in Phoenix AZ
+  → navigating to: https://www.google.com/maps/search/private+schools+in+Phoenix+AZ…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 21 listings loaded
+    scroll 3/3: 28 listings loaded
+  ✓ extracted 28 listings from 'private schools in Phoenix AZ'
+    ✓ 28 listings (total: 47)
+
+  → preschools in Phoenix AZ
+  → navigating to: https://www.google.com/maps/search/preschools+in+Phoenix+AZ…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 21 listings loaded
+    scroll 3/3: 22 listings loaded
+  ✓ extracted 22 listings from 'preschools in Phoenix AZ'
+    ✓ 22 listings (total: 69)
+
+  → daycares in Phoenix AZ
+  → navigating to: https://www.google.com/maps/search/daycares+in+Phoenix+AZ…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 21 listings loaded
+    scroll 3/3: 22 listings loaded
+  ✓ extracted 22 listings from 'daycares in Phoenix AZ'
+    ✓ 22 listings (total: 91)
+
+  → dance schools in Phoenix AZ
+  → navigating to: https://www.google.com/maps/search/dance+schools+in+Phoenix+AZ…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'dance schools in Phoenix AZ'
+    ✓ 27 listings (total: 118)
+
+  → music schools in Phoenix AZ
+  → navigating to: https://www.google.com/maps/search/music+schools+in+Phoenix+AZ…
+    scroll 1/3: 10 listings loaded
+    scroll 2/3: 15 listings loaded
+    scroll 3/3: 20 listings loaded
+  ✓ extracted 20 listings from 'music schools in Phoenix AZ'
+    ✓ 20 listings (total: 138)
+
+  → martial arts schools in Phoenix AZ
+  → navigating to: https://www.google.com/maps/search/martial+arts+schools+in+Phoenix+AZ…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'martial arts schools in Phoenix AZ'
+    ✓ 27 listings (total: 165)
+
+  → driving schools in Phoenix AZ
+  → navigating to: https://www.google.com/maps/search/driving+schools+in+Phoenix+AZ…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'driving schools in Phoenix AZ'
+    ✓ 27 listings (total: 192)
+
+  → montessori schools in Phoenix AZ
+  → navigating to: https://www.google.com/maps/search/montessori+schools+in+Phoenix+AZ…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 21 listings loaded
+    scroll 3/3: 28 listings loaded
+  ✓ extracted 28 listings from 'montessori schools in Phoenix AZ'
+    ✓ 28 listings (total: 220)
+
+  → test prep centers in Phoenix AZ
+  → navigating to: https://www.google.com/maps/search/test+prep+centers+in+Phoenix+AZ…
+    scroll 1/3: 5 listings loaded
+    scroll 2/3: 5 listings loaded
+    scroll 3/3: 5 listings loaded
+  ✓ extracted 5 listings from 'test prep centers in Phoenix AZ'
+    ✓ 5 listings (total: 225)
+
+  → art schools in Phoenix AZ
+  → navigating to: https://www.google.com/maps/search/art+schools+in+Phoenix+AZ…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'art schools in Phoenix AZ'
+    ✓ 27 listings (total: 252)
+
+  → language schools in Phoenix AZ
+  → navigating to: https://www.google.com/maps/search/language+schools+in+Phoenix+AZ…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'language schools in Phoenix AZ'
+    ✓ 27 listings (total: 279)
+
+  → tutoring centers in Tucson AZ
+  → navigating to: https://www.google.com/maps/search/tutoring+centers+in+Tucson+AZ…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 19 listings loaded
+    scroll 3/3: 19 listings loaded
+  ✓ extracted 19 listings from 'tutoring centers in Tucson AZ'
+    ✓ 19 listings (total: 298)
+
+  → private schools in Tucson AZ
+  → navigating to: https://www.google.com/maps/search/private+schools+in+Tucson+AZ…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'private schools in Tucson AZ'
+    ✓ 27 listings (total: 325)
+
+  → preschools in Tucson AZ
+  → navigating to: https://www.google.com/maps/search/preschools+in+Tucson+AZ…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'preschools in Tucson AZ'
+    ✓ 27 listings (total: 352)
+
+  → daycares in Tucson AZ
+  → navigating to: https://www.google.com/maps/search/daycares+in+Tucson+AZ…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 21 listings loaded
+    scroll 3/3: 28 listings loaded
+  ✓ extracted 28 listings from 'daycares in Tucson AZ'
+    ✓ 28 listings (total: 380)
+
+  → dance schools in Tucson AZ
+  → navigating to: https://www.google.com/maps/search/dance+schools+in+Tucson+AZ…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'dance schools in Tucson AZ'
+    ✓ 27 listings (total: 407)
+
+  → music schools in Tucson AZ
+  → navigating to: https://www.google.com/maps/search/music+schools+in+Tucson+AZ…
+    scroll 1/3: 10 listings loaded
+    scroll 2/3: 15 listings loaded
+    scroll 3/3: 20 listings loaded
+  ✓ extracted 20 listings from 'music schools in Tucson AZ'
+    ✓ 20 listings (total: 427)
+
+  → martial arts schools in Tucson AZ
+  → navigating to: https://www.google.com/maps/search/martial+arts+schools+in+Tucson+AZ…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 21 listings loaded
+    scroll 3/3: 28 listings loaded
+  ✓ extracted 28 listings from 'martial arts schools in Tucson AZ'
+    ✓ 28 listings (total: 455)
+
+  → driving schools in Tucson AZ
+  → navigating to: https://www.google.com/maps/search/driving+schools+in+Tucson+AZ…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'driving schools in Tucson AZ'
+    ✓ 27 listings (total: 482)
+
+  → montessori schools in Tucson AZ
+  → navigating to: https://www.google.com/maps/search/montessori+schools+in+Tucson+AZ…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 16 listings loaded
+    scroll 3/3: 16 listings loaded
+  ✓ extracted 16 listings from 'montessori schools in Tucson AZ'
+    ✓ 16 listings (total: 498)
+
+  → test prep centers in Tucson AZ
+  → navigating to: https://www.google.com/maps/search/test+prep+centers+in+Tucson+AZ…
+    scroll 1/3: 5 listings loaded
+    scroll 2/3: 5 listings loaded
+    scroll 3/3: 5 listings loaded
+  ✓ extracted 5 listings from 'test prep centers in Tucson AZ'
+    ✓ 5 listings (total: 503)
+
+  → art schools in Tucson AZ
+  → navigating to: https://www.google.com/maps/search/art+schools+in+Tucson+AZ…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'art schools in Tucson AZ'
+    ✓ 27 listings (total: 530)
+
+  → language schools in Tucson AZ
+  → navigating to: https://www.google.com/maps/search/language+schools+in+Tucson+AZ…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'language schools in Tucson AZ'
+    ✓ 27 listings (total: 557)
+
+✓ Phase 1 complete: 478 unique listings, 65 no-website
+
+>>> PHASE 2: Find emails
+
+Phase 2: Finding emails for 65 no-website schools
+  Already found: 0, target: 50
+
+  [1/65] Middle School Tutors
+    emails: ['learnwithalohallc@gmail.com']
+    ✓ ADDED #1
+
+  [2/65] Creciendo Con Proposito Learning Center,LLC
+    emails: ['office@acceleratedlearningcenteraz.com', 'tutoring@cgc.edu']
+    ✓ ADDED #2
+
+  [3/65] Luna Daycare
+    emails: ['lunadaycare@hotmail.comwebsite', 'contact@qualitybusinessawards.com']
+    ✓ ADDED #3
+
+  [4/65] Escuela De Musica JIREH - Music School
+    emails: []
+    ✗ no email
+
+  [5/65] Prestige Music Academy
+    emails: ['info@prestigemusicacademy.com', 'dewey@prestigemusicacademy.com']
+    ✓ ADDED #4
+
+  [6/65] Desert Ridge Music Academy
+    emails: []
+    ✗ no email
+
+  [7/65] Phoenix Conservatory of Music
+    emails: ['info@pcmrocks.org', 'sadienorkin@gmail.com']
+    ✓ ADDED #5
+
+  [8/65] Rosie's House A Music Academy
+    emails: ['info@rosieshouse.org']
+    ✓ ADDED #6
+
+  [9/65] Music Maker Workshops
+    emails: ['lessons@mmwaz.com', 'programs@mim.org']
+    ✓ ADDED #7
+
+  [10/65] Strum University
+    emails: []
+    ✗ no email
+
+  [11/65] SOUNDS Academy
+    emails: []
+    ✗ no email
+
+  [12/65] Phoenix Music Lessons
+    emails: ['contacts@phoenixcenterforthearts.org', 'arcadia@schoolofrock.com']
+    ✓ ADDED #8
+
+  [13/65] Funtimes Music School
+    emails: ['funtimesmusicschool@gmail.com']
+    ✓ ADDED #9
+
+  [14/65] School of Rock Arcadia
+    emails: ['meissnerm@montclair.edu']
+    ✓ ADDED #10
+
+  [15/65] North Phoenix Yamaha Music School
+    emails: ['office@evyms.com', 'piano@yamahanorthumberland.com']
+    ✓ ADDED #11
+
+  [16/65] Arizona School of Music
+    emails: ['info@music.arizona.edu', 'info@arizonaschoolofmusic.com', 'musicweb@cfa.arizona.edu']
+    ✓ ADDED #12
+
+  [17/65] Music Lessons Arizona
+    emails: ['contacts@phoenixcenterforthearts.org']
+    ⊘ already in registry — skipped
+
+  [18/65] The Note Room Academy of Music and Arts
+    emails: ['rscarboro@bellsouth.net']
+    ✓ ADDED #13
+
+  [19/65] Phoenix College Department of Music
+    emails: ['bakerw@iecc.edu', 'julia.lougheed@phoenixcollege.edu', 'info@pcmrocks.org']
+    ✓ ADDED #14
+
+  [20/65] Coronado School of Music
+    emails: ['arcadia@schoolofrock.com', 'jletts@amphi.com']
+    ⊘ already in registry — skipped
+
+  [21/65] Pro Harmony Music
+    emails: []
+    ✗ no email
+
+  [22/65] Music Works Community
+    emails: ['info@pcmrocks.org', 'director@musicworkscommunity.com']
+    ⊘ already in registry — skipped
+
+  [23/65] Blue in Green Youth Piano Academy
+    emails: ['info@blueingreenaz.com']
+    ✓ ADDED #15
+
+  [24/65] Squaw Peak Taekwondo - ATA
+    emails: ['mark@gilbridesata.com', 'info@elementata.com', 'atajaykang@gmail.com']
+    ✓ ADDED #16
+
+  [25/65] Test Prep Academy
+    emails: []
+    ✗ no email
+
+  [26/65] Be An Artist
+    emails: ['info@azarts.gov', 'info@arizonaartistsguild.net', 'crobel@azopera.org']
+    ✓ ADDED #17
+
+  [27/65] English 4U LLC
+    emails: ['support@literacyphoenix.org']
+    ✓ ADDED #18
+
+  [28/65] HA.P.I Clases de Inglés
+    emails: ['hapischool@yahoo.com', 'hapi.arizona@yahoo.com', 'gpsadulted@gilbertschools.net']
+    ✓ ADDED #19
+
+  [29/65] Language Centers West
+    emails: ['adulteducation@cochise.edu', 'awc.lapaz@azwestern.edu', 'languageculture@phxindcenter.org']
+    ✓ ADDED #20
+
+  [30/65] Clase de Ingles Gratis
+    emails: ['ask@acyraz.org', 'jeff.eldot@phoenixcollege.edu', 'gpsadulted@gilbertschools.net']
+    ✓ ADDED #21
+
+  [31/65] Magnus Language Institute
+    emails: ['info@magnusspanishservices.com', 'rosi@magnusspanishservices.com']
+    ✓ ADDED #22
+
+  [32/65] The English Academy
+    emails: ['oelas@azed.gov', 'jeff.eldot@phoenixcollege.edu', 'info@parlayvacay.com']
+    ✓ ADDED #23
+
+  [33/65] Ingles Practico
+    emails: ['jeff.eldot@phoenixcollege.edu', 'kmills@gilacountyaz.gov']
+    ⊘ already in registry — skipped
+
+  [34/65] Clase de Inglés Gratis - Tempe
+    emails: ['kmills@gilacountyaz.gov', 'jeff.eldot@phoenixcollege.edu']
+    ✓ ADDED #24
+
+  [35/65] Kids of the King Tutoring Services, LLC
+    emails: ['meghan@kingtutoringoxford.com']
+    ✓ ADDED #25
+
+  [36/65] BuffTutor - University & High School Tutors - Tucson
+    emails: ['gomezm@arizona.edu', 'contact@bufftutor.com']
+    ✓ ADDED #26
+
+  [37/65] Felicia Chew Tutoring Services
+    emails: ['pcc-tutoring@pima.edu', 'jluquin2@pima.edu', 'tutors@eac.edu']
+    ✓ ADDED #27
+
+  [38/65] Lehner Private Tutoring
+    emails: ['lehnerprivatetutoring@gmail.com', 'thinktank@arizona.edu', 'pcc-tutoring@pima.edu']
+    ✓ ADDED #28
+
+  [39/65] Campus Tutoring Services
+    emails: ['pcc-tutoring@pima.edu', 'thinktank@arizona.edu']
+    ⊘ already in registry — skipped
+
+  [40/65] Beginning School
+    emails: ['driegert@academydelsol.com', 'zwickl@istucson.org', 'admissions@istucson.org']
+    ✓ ADDED #29
+
+  [41/65] El Rio Daycare
+    emails: ['info@elriodaycare.org']
+    ✓ ADDED #30
+
+  [42/65] Little Town Child Care
+    emails: []
+    ✗ no email
+
+  [43/65] First Impressions Day Care
+    emails: ['ranch@tlechildcare.com']
+    ✓ ADDED #31
+
+  [44/65] Allegro Music & Dance - Foothills
+    emails: []
+    ✗ no email
+
+  [45/65] Tucson Music Lessons
+    emails: ['media@schoolofrock.com']
+    ✓ ADDED #32
+
+  [46/65] School of Rock Tucson
+    emails: ['tucson@schoolofrock.com']
+    ✓ ADDED #33
+
+  [47/65] Tempo Music and Arts Academy
+    emails: ['info@tempemusicacademy.com']
+    ✓ ADDED #34
+
+  [48/65] Sonoran Music Academy
+    emails: ['info@sonoranmusicacademy.com']
+    ✓ ADDED #35
+
+  [49/65] Kindermusik At Musical Steps
+    emails: ['mary@kindermusikwithmary.com']
+    ✓ ADDED #36
+
+  [50/65] Instrumental Music Center Speedway
+    emails: ['imcstaff@imc-az.com']
+    ✓ ADDED #37
+
+  [51/65] Artistry Academy Music & Art
+    emails: ['artistryoffice@artistryacademy.net', 'office@artistryacademy.com']
+    ✓ ADDED #38
+
+  [52/65] Tucson School of Music
+    emails: ['musicweb@cfa.arizona.edu', 'info@music.arizona.edu', 'acvoita@pima.edu']
+    ⊘ already in registry — skipped
+
+  [53/65] University of Arizona School of Music
+    emails: ['musicweb@cfa.arizona.edu']
+    ⊘ already in registry — skipped
+
+  [54/65] Creative Keys - Innovative Music Education
+    emails: []
+    ✗ no email
+
+  [55/65] TimeHarmony Music Lessons
+    emails: ['timeharmonymusic@gmail.com', 'tucson@schoolofrock.com']
+    ✓ ADDED #39
+
+  [56/65] R L Music Studio
+    emails: ['info@music.arizona.edu', 'info@tempomusicandarts.com']
+    ⊘ already in registry — skipped
+
+  [57/65] Operachi Music School
+    emails: ['operachimusicschool@gmail.com', 'halverson14@gmail.com']
+    ✓ ADDED #40
+
+  [58/65] Music & Arts
+    emails: ['tiffnene@hotmail.com']
+    ✓ ADDED #41
+
+  [59/65] Fred Fox School of Music :Jared Immerman
+    emails: ['info@music.arizona.edu', 'musicweb@cfa.arizona.edu', 'mlwilliams@email.arizona.edu']
+    ⊘ already in registry — skipped
+
+  [60/65] Tucson Jazz Institute
+    emails: ['tucsonjazzinstitute@gmail.com', 'treasurer@tjmfdn.org']
+    ✓ ADDED #42
+
+  [61/65] Sing With Nancy
+    emails: []
+    ✗ no email
+
+  [62/65] Sonoran Driving School
+    emails: []
+    ✗ no email
+
+  [63/65] Crunch Time Test Prep
+    emails: []
+    ✗ no email
+
+  [64/65] Language Horizons
+    emails: []
+    ✗ no email
+
+  [65/65] Child Language Center
+    emails: []
+    ✗ no email
+
+✓ Phase 2 complete: 42 schools with emails
+
+>>> PHASE 3: Send pitches
+
+Phase 3: Sending 42 pitch emails (watermark removed)
+  Already sent (all campaigns): 107
+
+  [1/42] Middle School Tutors
+    ✗ FAILED: To field not found
+    ... waiting 75s
+
+  [2/42] Creciendo Con Proposito Learning Center,LLC
+    ✗ FAILED: To field not found
+    ... waiting 75s
+
+  [3/42] Luna Daycare
+    ✗ FAILED: To field not found
+    ... waiting 75s
+
+  [4/42] Prestige Music Academy
+    ✗ FAILED: To field not found
+    ... waiting 75s
+
+  [5/42] Phoenix Conservatory of Music
+    ✗ FAILED: To field not found
+    ... waiting 75s

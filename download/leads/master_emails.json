@@ -1159,8 +1159,584 @@
       "source_query": "art schools in San Antonio TX",
       "first_seen": 1788573833,
       "last_seen": 1788573833
+    },
+    "learnwithalohallc@gmail.com": {
+      "original": "learnwithalohallc@gmail.com",
+      "normalized": "learnwithalohallc@gmail.com",
+      "business_name": "Middle School Tutors",
+      "source_query": "tutoring centers in Phoenix AZ",
+      "first_seen": 1788584075,
+      "last_seen": 1788584075
+    },
+    "office@acceleratedlearningcenteraz.com": {
+      "original": "office@acceleratedlearningcenteraz.com",
+      "normalized": "office@acceleratedlearningcenteraz.com",
+      "business_name": "Creciendo Con Proposito Learning Center,LLC",
+      "source_query": "tutoring centers in Phoenix AZ",
+      "first_seen": 1788584078,
+      "last_seen": 1788584078
+    },
+    "tutoring@cgc.edu": {
+      "original": "tutoring@cgc.edu",
+      "normalized": "tutoring@cgc.edu",
+      "business_name": "Creciendo Con Proposito Learning Center,LLC",
+      "source_query": "tutoring centers in Phoenix AZ",
+      "first_seen": 1788584078,
+      "last_seen": 1788584078
+    },
+    "lunadaycare@hotmail.comwebsite": {
+      "original": "lunadaycare@hotmail.comwebsite",
+      "normalized": "lunadaycare@hotmail.comwebsite",
+      "business_name": "Luna Daycare",
+      "source_query": "daycares in Phoenix AZ",
+      "first_seen": 1788584080,
+      "last_seen": 1788584080
+    },
+    "contact@qualitybusinessawards.com": {
+      "original": "contact@qualitybusinessawards.com",
+      "normalized": "contact@qualitybusinessawards.com",
+      "business_name": "Luna Daycare",
+      "source_query": "daycares in Phoenix AZ",
+      "first_seen": 1788584080,
+      "last_seen": 1788584080
+    },
+    "info@prestigemusicacademy.com": {
+      "original": "info@prestigemusicacademy.com",
+      "normalized": "info@prestigemusicacademy.com",
+      "business_name": "Prestige Music Academy",
+      "source_query": "music schools in Phoenix AZ",
+      "first_seen": 1788584090,
+      "last_seen": 1788584090
+    },
+    "dewey@prestigemusicacademy.com": {
+      "original": "dewey@prestigemusicacademy.com",
+      "normalized": "dewey@prestigemusicacademy.com",
+      "business_name": "Prestige Music Academy",
+      "source_query": "music schools in Phoenix AZ",
+      "first_seen": 1788584090,
+      "last_seen": 1788584090
+    },
+    "info@pcmrocks.org": {
+      "original": "info@pcmrocks.org",
+      "normalized": "info@pcmrocks.org",
+      "business_name": "Phoenix Conservatory of Music",
+      "source_query": "music schools in Phoenix AZ",
+      "first_seen": 1788584096,
+      "last_seen": 1788584150
+    },
+    "sadienorkin@gmail.com": {
+      "original": "sadienorkin@gmail.com",
+      "normalized": "sadienorkin@gmail.com",
+      "business_name": "Phoenix Conservatory of Music",
+      "source_query": "music schools in Phoenix AZ",
+      "first_seen": 1788584096,
+      "last_seen": 1788584096
+    },
+    "info@rosieshouse.org": {
+      "original": "info@rosieshouse.org",
+      "normalized": "info@rosieshouse.org",
+      "business_name": "Rosie's House A Music Academy",
+      "source_query": "music schools in Phoenix AZ",
+      "first_seen": 1788584104,
+      "last_seen": 1788584104
+    },
+    "lessons@mmwaz.com": {
+      "original": "lessons@mmwaz.com",
+      "normalized": "lessons@mmwaz.com",
+      "business_name": "Music Maker Workshops",
+      "source_query": "music schools in Phoenix AZ",
+      "first_seen": 1788584107,
+      "last_seen": 1788584107
+    },
+    "programs@mim.org": {
+      "original": "programs@mim.org",
+      "normalized": "programs@mim.org",
+      "business_name": "Music Maker Workshops",
+      "source_query": "music schools in Phoenix AZ",
+      "first_seen": 1788584107,
+      "last_seen": 1788584107
+    },
+    "contacts@phoenixcenterforthearts.org": {
+      "original": "contacts@phoenixcenterforthearts.org",
+      "normalized": "contacts@phoenixcenterforthearts.org",
+      "business_name": "Phoenix Music Lessons",
+      "source_query": "music schools in Phoenix AZ",
+      "first_seen": 1788584128,
+      "last_seen": 1788584128
+    },
+    "arcadia@schoolofrock.com": {
+      "original": "arcadia@schoolofrock.com",
+      "normalized": "arcadia@schoolofrock.com",
+      "business_name": "Phoenix Music Lessons",
+      "source_query": "music schools in Phoenix AZ",
+      "first_seen": 1788584128,
+      "last_seen": 1788584128
+    },
+    "funtimesmusicschool@gmail.com": {
+      "original": "funtimesmusicschool@gmail.com",
+      "normalized": "funtimesmusicschool@gmail.com",
+      "business_name": "Funtimes Music School",
+      "source_query": "music schools in Phoenix AZ",
+      "first_seen": 1788584131,
+      "last_seen": 1788584131
+    },
+    "meissnerm@montclair.edu": {
+      "original": "meissnerm@montclair.edu",
+      "normalized": "meissnerm@montclair.edu",
+      "business_name": "School of Rock Arcadia",
+      "source_query": "music schools in Phoenix AZ",
+      "first_seen": 1788584133,
+      "last_seen": 1788584133
+    },
+    "office@evyms.com": {
+      "original": "office@evyms.com",
+      "normalized": "office@evyms.com",
+      "business_name": "North Phoenix Yamaha Music School",
+      "source_query": "music schools in Phoenix AZ",
+      "first_seen": 1788584137,
+      "last_seen": 1788584137
+    },
+    "piano@yamahanorthumberland.com": {
+      "original": "piano@yamahanorthumberland.com",
+      "normalized": "piano@yamahanorthumberland.com",
+      "business_name": "North Phoenix Yamaha Music School",
+      "source_query": "music schools in Phoenix AZ",
+      "first_seen": 1788584137,
+      "last_seen": 1788584137
+    },
+    "info@music.arizona.edu": {
+      "original": "info@music.arizona.edu",
+      "normalized": "info@music.arizona.edu",
+      "business_name": "Arizona School of Music",
+      "source_query": "music schools in Phoenix AZ",
+      "first_seen": 1788584139,
+      "last_seen": 1788584139
+    },
+    "info@arizonaschoolofmusic.com": {
+      "original": "info@arizonaschoolofmusic.com",
+      "normalized": "info@arizonaschoolofmusic.com",
+      "business_name": "Arizona School of Music",
+      "source_query": "music schools in Phoenix AZ",
+      "first_seen": 1788584139,
+      "last_seen": 1788584139
+    },
+    "musicweb@cfa.arizona.edu": {
+      "original": "musicweb@cfa.arizona.edu",
+      "normalized": "musicweb@cfa.arizona.edu",
+      "business_name": "Arizona School of Music",
+      "source_query": "music schools in Phoenix AZ",
+      "first_seen": 1788584139,
+      "last_seen": 1788584139
+    },
+    "rscarboro@bellsouth.net": {
+      "original": "rscarboro@bellsouth.net",
+      "normalized": "rscarboro@bellsouth.net",
+      "business_name": "The Note Room Academy of Music and Arts",
+      "source_query": "music schools in Phoenix AZ",
+      "first_seen": 1788584147,
+      "last_seen": 1788584147
+    },
+    "bakerw@iecc.edu": {
+      "original": "bakerw@iecc.edu",
+      "normalized": "bakerw@iecc.edu",
+      "business_name": "Phoenix College Department of Music",
+      "source_query": "music schools in Phoenix AZ",
+      "first_seen": 1788584150,
+      "last_seen": 1788584150
+    },
+    "julia.lougheed@phoenixcollege.edu": {
+      "original": "julia.lougheed@phoenixcollege.edu",
+      "normalized": "julia.lougheed@phoenixcollege.edu",
+      "business_name": "Phoenix College Department of Music",
+      "source_query": "music schools in Phoenix AZ",
+      "first_seen": 1788584150,
+      "last_seen": 1788584150
+    },
+    "info@blueingreenaz.com": {
+      "original": "info@blueingreenaz.com",
+      "normalized": "info@blueingreenaz.com",
+      "business_name": "Blue in Green Youth Piano Academy",
+      "source_query": "music schools in Phoenix AZ",
+      "first_seen": 1788584164,
+      "last_seen": 1788584164
+    },
+    "mark@gilbridesata.com": {
+      "original": "mark@gilbridesata.com",
+      "normalized": "mark@gilbridesata.com",
+      "business_name": "Squaw Peak Taekwondo - ATA",
+      "source_query": "martial arts schools in Phoenix AZ",
+      "first_seen": 1788584167,
+      "last_seen": 1788584167
+    },
+    "info@elementata.com": {
+      "original": "info@elementata.com",
+      "normalized": "info@elementata.com",
+      "business_name": "Squaw Peak Taekwondo - ATA",
+      "source_query": "martial arts schools in Phoenix AZ",
+      "first_seen": 1788584167,
+      "last_seen": 1788584167
+    },
+    "atajaykang@gmail.com": {
+      "original": "atajaykang@gmail.com",
+      "normalized": "atajaykang@gmail.com",
+      "business_name": "Squaw Peak Taekwondo - ATA",
+      "source_query": "martial arts schools in Phoenix AZ",
+      "first_seen": 1788584167,
+      "last_seen": 1788584167
+    },
+    "info@azarts.gov": {
+      "original": "info@azarts.gov",
+      "normalized": "info@azarts.gov",
+      "business_name": "Be An Artist",
+      "source_query": "art schools in Phoenix AZ",
+      "first_seen": 1788584183,
+      "last_seen": 1788584183
+    },
+    "info@arizonaartistsguild.net": {
+      "original": "info@arizonaartistsguild.net",
+      "normalized": "info@arizonaartistsguild.net",
+      "business_name": "Be An Artist",
+      "source_query": "art schools in Phoenix AZ",
+      "first_seen": 1788584183,
+      "last_seen": 1788584183
+    },
+    "crobel@azopera.org": {
+      "original": "crobel@azopera.org",
+      "normalized": "crobel@azopera.org",
+      "business_name": "Be An Artist",
+      "source_query": "art schools in Phoenix AZ",
+      "first_seen": 1788584183,
+      "last_seen": 1788584183
+    },
+    "support@literacyphoenix.org": {
+      "original": "support@literacyphoenix.org",
+      "normalized": "support@literacyphoenix.org",
+      "business_name": "English 4U LLC",
+      "source_query": "language schools in Phoenix AZ",
+      "first_seen": 1788584186,
+      "last_seen": 1788584186
+    },
+    "hapischool@yahoo.com": {
+      "original": "hapischool@yahoo.com",
+      "normalized": "hapischool@yahoo.com",
+      "business_name": "HA.P.I Clases de Inglés",
+      "source_query": "language schools in Phoenix AZ",
+      "first_seen": 1788584193,
+      "last_seen": 1788584193
+    },
+    "hapi.arizona@yahoo.com": {
+      "original": "hapi.arizona@yahoo.com",
+      "normalized": "hapi.arizona@yahoo.com",
+      "business_name": "HA.P.I Clases de Inglés",
+      "source_query": "language schools in Phoenix AZ",
+      "first_seen": 1788584193,
+      "last_seen": 1788584193
+    },
+    "gpsadulted@gilbertschools.net": {
+      "original": "gpsadulted@gilbertschools.net",
+      "normalized": "gpsadulted@gilbertschools.net",
+      "business_name": "HA.P.I Clases de Inglés",
+      "source_query": "language schools in Phoenix AZ",
+      "first_seen": 1788584193,
+      "last_seen": 1788584202
+    },
+    "adulteducation@cochise.edu": {
+      "original": "adulteducation@cochise.edu",
+      "normalized": "adulteducation@cochise.edu",
+      "business_name": "Language Centers West",
+      "source_query": "language schools in Phoenix AZ",
+      "first_seen": 1788584197,
+      "last_seen": 1788584197
+    },
+    "awc.lapaz@azwestern.edu": {
+      "original": "awc.lapaz@azwestern.edu",
+      "normalized": "awc.lapaz@azwestern.edu",
+      "business_name": "Language Centers West",
+      "source_query": "language schools in Phoenix AZ",
+      "first_seen": 1788584197,
+      "last_seen": 1788584197
+    },
+    "languageculture@phxindcenter.org": {
+      "original": "languageculture@phxindcenter.org",
+      "normalized": "languageculture@phxindcenter.org",
+      "business_name": "Language Centers West",
+      "source_query": "language schools in Phoenix AZ",
+      "first_seen": 1788584197,
+      "last_seen": 1788584197
+    },
+    "ask@acyraz.org": {
+      "original": "ask@acyraz.org",
+      "normalized": "ask@acyraz.org",
+      "business_name": "Clase de Ingles Gratis",
+      "source_query": "language schools in Phoenix AZ",
+      "first_seen": 1788584202,
+      "last_seen": 1788584202
+    },
+    "jeff.eldot@phoenixcollege.edu": {
+      "original": "jeff.eldot@phoenixcollege.edu",
+      "normalized": "jeff.eldot@phoenixcollege.edu",
+      "business_name": "Clase de Ingles Gratis",
+      "source_query": "language schools in Phoenix AZ",
+      "first_seen": 1788584202,
+      "last_seen": 1788584212
+    },
+    "info@magnusspanishservices.com": {
+      "original": "info@magnusspanishservices.com",
+      "normalized": "info@magnusspanishservices.com",
+      "business_name": "Magnus Language Institute",
+      "source_query": "language schools in Phoenix AZ",
+      "first_seen": 1788584205,
+      "last_seen": 1788584205
+    },
+    "rosi@magnusspanishservices.com": {
+      "original": "rosi@magnusspanishservices.com",
+      "normalized": "rosi@magnusspanishservices.com",
+      "business_name": "Magnus Language Institute",
+      "source_query": "language schools in Phoenix AZ",
+      "first_seen": 1788584205,
+      "last_seen": 1788584205
+    },
+    "oelas@azed.gov": {
+      "original": "oelas@azed.gov",
+      "normalized": "oelas@azed.gov",
+      "business_name": "The English Academy",
+      "source_query": "language schools in Phoenix AZ",
+      "first_seen": 1788584207,
+      "last_seen": 1788584207
+    },
+    "info@parlayvacay.com": {
+      "original": "info@parlayvacay.com",
+      "normalized": "info@parlayvacay.com",
+      "business_name": "The English Academy",
+      "source_query": "language schools in Phoenix AZ",
+      "first_seen": 1788584207,
+      "last_seen": 1788584207
+    },
+    "kmills@gilacountyaz.gov": {
+      "original": "kmills@gilacountyaz.gov",
+      "normalized": "kmills@gilacountyaz.gov",
+      "business_name": "Clase de Inglés Gratis - Tempe",
+      "source_query": "language schools in Phoenix AZ",
+      "first_seen": 1788584212,
+      "last_seen": 1788584212
+    },
+    "meghan@kingtutoringoxford.com": {
+      "original": "meghan@kingtutoringoxford.com",
+      "normalized": "meghan@kingtutoringoxford.com",
+      "business_name": "Kids of the King Tutoring Services, LLC",
+      "source_query": "tutoring centers in Tucson AZ",
+      "first_seen": 1788584218,
+      "last_seen": 1788584218
+    },
+    "gomezm@arizona.edu": {
+      "original": "gomezm@arizona.edu",
+      "normalized": "gomezm@arizona.edu",
+      "business_name": "BuffTutor - University & High School Tutors - Tucson",
+      "source_query": "tutoring centers in Tucson AZ",
+      "first_seen": 1788584221,
+      "last_seen": 1788584221
+    },
+    "contact@bufftutor.com": {
+      "original": "contact@bufftutor.com",
+      "normalized": "contact@bufftutor.com",
+      "business_name": "BuffTutor - University & High School Tutors - Tucson",
+      "source_query": "tutoring centers in Tucson AZ",
+      "first_seen": 1788584221,
+      "last_seen": 1788584221
+    },
+    "pcc-tutoring@pima.edu": {
+      "original": "pcc-tutoring@pima.edu",
+      "normalized": "pcc-tutoring@pima.edu",
+      "business_name": "Felicia Chew Tutoring Services",
+      "source_query": "tutoring centers in Tucson AZ",
+      "first_seen": 1788584224,
+      "last_seen": 1788584226
+    },
+    "jluquin2@pima.edu": {
+      "original": "jluquin2@pima.edu",
+      "normalized": "jluquin2@pima.edu",
+      "business_name": "Felicia Chew Tutoring Services",
+      "source_query": "tutoring centers in Tucson AZ",
+      "first_seen": 1788584224,
+      "last_seen": 1788584224
+    },
+    "tutors@eac.edu": {
+      "original": "tutors@eac.edu",
+      "normalized": "tutors@eac.edu",
+      "business_name": "Felicia Chew Tutoring Services",
+      "source_query": "tutoring centers in Tucson AZ",
+      "first_seen": 1788584224,
+      "last_seen": 1788584224
+    },
+    "lehnerprivatetutoring@gmail.com": {
+      "original": "lehnerprivatetutoring@gmail.com",
+      "normalized": "lehnerprivatetutoring@gmail.com",
+      "business_name": "Lehner Private Tutoring",
+      "source_query": "tutoring centers in Tucson AZ",
+      "first_seen": 1788584226,
+      "last_seen": 1788584226
+    },
+    "thinktank@arizona.edu": {
+      "original": "thinktank@arizona.edu",
+      "normalized": "thinktank@arizona.edu",
+      "business_name": "Lehner Private Tutoring",
+      "source_query": "tutoring centers in Tucson AZ",
+      "first_seen": 1788584226,
+      "last_seen": 1788584226
+    },
+    "driegert@academydelsol.com": {
+      "original": "driegert@academydelsol.com",
+      "normalized": "driegert@academydelsol.com",
+      "business_name": "Beginning School",
+      "source_query": "private schools in Tucson AZ",
+      "first_seen": 1788584230,
+      "last_seen": 1788584230
+    },
+    "zwickl@istucson.org": {
+      "original": "zwickl@istucson.org",
+      "normalized": "zwickl@istucson.org",
+      "business_name": "Beginning School",
+      "source_query": "private schools in Tucson AZ",
+      "first_seen": 1788584230,
+      "last_seen": 1788584230
+    },
+    "admissions@istucson.org": {
+      "original": "admissions@istucson.org",
+      "normalized": "admissions@istucson.org",
+      "business_name": "Beginning School",
+      "source_query": "private schools in Tucson AZ",
+      "first_seen": 1788584230,
+      "last_seen": 1788584230
+    },
+    "info@elriodaycare.org": {
+      "original": "info@elriodaycare.org",
+      "normalized": "info@elriodaycare.org",
+      "business_name": "El Rio Daycare",
+      "source_query": "daycares in Tucson AZ",
+      "first_seen": 1788584234,
+      "last_seen": 1788584234
+    },
+    "ranch@tlechildcare.com": {
+      "original": "ranch@tlechildcare.com",
+      "normalized": "ranch@tlechildcare.com",
+      "business_name": "First Impressions Day Care",
+      "source_query": "daycares in Tucson AZ",
+      "first_seen": 1788584239,
+      "last_seen": 1788584239
+    },
+    "media@schoolofrock.com": {
+      "original": "media@schoolofrock.com",
+      "normalized": "media@schoolofrock.com",
+      "business_name": "Tucson Music Lessons",
+      "source_query": "music schools in Tucson AZ",
+      "first_seen": 1788584256,
+      "last_seen": 1788584256
+    },
+    "tucson@schoolofrock.com": {
+      "original": "tucson@schoolofrock.com",
+      "normalized": "tucson@schoolofrock.com",
+      "business_name": "School of Rock Tucson",
+      "source_query": "music schools in Tucson AZ",
+      "first_seen": 1788584260,
+      "last_seen": 1788584295
+    },
+    "info@tempemusicacademy.com": {
+      "original": "info@tempemusicacademy.com",
+      "normalized": "info@tempemusicacademy.com",
+      "business_name": "Tempo Music and Arts Academy",
+      "source_query": "music schools in Tucson AZ",
+      "first_seen": 1788584262,
+      "last_seen": 1788584262
+    },
+    "info@sonoranmusicacademy.com": {
+      "original": "info@sonoranmusicacademy.com",
+      "normalized": "info@sonoranmusicacademy.com",
+      "business_name": "Sonoran Music Academy",
+      "source_query": "music schools in Tucson AZ",
+      "first_seen": 1788584265,
+      "last_seen": 1788584265
+    },
+    "mary@kindermusikwithmary.com": {
+      "original": "mary@kindermusikwithmary.com",
+      "normalized": "mary@kindermusikwithmary.com",
+      "business_name": "Kindermusik At Musical Steps",
+      "source_query": "music schools in Tucson AZ",
+      "first_seen": 1788584269,
+      "last_seen": 1788584269
+    },
+    "imcstaff@imc-az.com": {
+      "original": "imcstaff@imc-az.com",
+      "normalized": "imcstaff@imc-az.com",
+      "business_name": "Instrumental Music Center Speedway",
+      "source_query": "music schools in Tucson AZ",
+      "first_seen": 1788584273,
+      "last_seen": 1788584273
+    },
+    "artistryoffice@artistryacademy.net": {
+      "original": "artistryoffice@artistryacademy.net",
+      "normalized": "artistryoffice@artistryacademy.net",
+      "business_name": "Artistry Academy Music & Art",
+      "source_query": "music schools in Tucson AZ",
+      "first_seen": 1788584275,
+      "last_seen": 1788584275
+    },
+    "office@artistryacademy.com": {
+      "original": "office@artistryacademy.com",
+      "normalized": "office@artistryacademy.com",
+      "business_name": "Artistry Academy Music & Art",
+      "source_query": "music schools in Tucson AZ",
+      "first_seen": 1788584275,
+      "last_seen": 1788584275
+    },
+    "timeharmonymusic@gmail.com": {
+      "original": "timeharmonymusic@gmail.com",
+      "normalized": "timeharmonymusic@gmail.com",
+      "business_name": "TimeHarmony Music Lessons",
+      "source_query": "music schools in Tucson AZ",
+      "first_seen": 1788584295,
+      "last_seen": 1788584295
+    },
+    "operachimusicschool@gmail.com": {
+      "original": "operachimusicschool@gmail.com",
+      "normalized": "operachimusicschool@gmail.com",
+      "business_name": "Operachi Music School",
+      "source_query": "music schools in Tucson AZ",
+      "first_seen": 1788584299,
+      "last_seen": 1788584299
+    },
+    "halverson14@gmail.com": {
+      "original": "halverson14@gmail.com",
+      "normalized": "halverson14@gmail.com",
+      "business_name": "Operachi Music School",
+      "source_query": "music schools in Tucson AZ",
+      "first_seen": 1788584299,
+      "last_seen": 1788584299
+    },
+    "tiffnene@hotmail.com": {
+      "original": "tiffnene@hotmail.com",
+      "normalized": "tiffnene@hotmail.com",
+      "business_name": "Music & Arts",
+      "source_query": "music schools in Tucson AZ",
+      "first_seen": 1788584302,
+      "last_seen": 1788584302
+    },
+    "tucsonjazzinstitute@gmail.com": {
+      "original": "tucsonjazzinstitute@gmail.com",
+      "normalized": "tucsonjazzinstitute@gmail.com",
+      "business_name": "Tucson Jazz Institute",
+      "source_query": "music schools in Tucson AZ",
+      "first_seen": 1788584310,
+      "last_seen": 1788584310
+    },
+    "treasurer@tjmfdn.org": {
+      "original": "treasurer@tjmfdn.org",
+      "normalized": "treasurer@tjmfdn.org",
+      "business_name": "Tucson Jazz Institute",
+      "source_query": "music schools in Tucson AZ",
+      "first_seen": 1788584310,
+      "last_seen": 1788584310
     }
   },
-  "updated_at": 1788573833,
-  "total_discovered": 145
+  "updated_at": 1788584310,
+  "total_discovered": 217
 }
