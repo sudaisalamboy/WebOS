@@ -719,8 +719,448 @@
       "source_query": "electricians in Tulsa OK",
       "first_seen": 1788495176,
       "last_seen": 1788495176
+    },
+    "seekandsayenrichment@gmail.com": {
+      "original": "seekandsayenrichment@gmail.com",
+      "normalized": "seekandsayenrichment@gmail.com",
+      "business_name": "Seek & Say Daycare",
+      "source_query": "daycares in Austin TX",
+      "first_seen": 1788573628,
+      "last_seen": 1788573628
+    },
+    "enrollment@riseschoolaustin.org": {
+      "original": "enrollment@riseschoolaustin.org",
+      "normalized": "enrollment@riseschoolaustin.org",
+      "business_name": "Rise And Shine Childcare",
+      "source_query": "daycares in Austin TX",
+      "first_seen": 1788573630,
+      "last_seen": 1788573630
+    },
+    "info@riseschoolaustin.org": {
+      "original": "info@riseschoolaustin.org",
+      "normalized": "info@riseschoolaustin.org",
+      "business_name": "Rise And Shine Childcare",
+      "source_query": "daycares in Austin TX",
+      "first_seen": 1788573630,
+      "last_seen": 1788573630
+    },
+    "austin@schoolofrock.com": {
+      "original": "austin@schoolofrock.com",
+      "normalized": "austin@schoolofrock.com",
+      "business_name": "School of Rock",
+      "source_query": "music schools in Austin TX",
+      "first_seen": 1788573632,
+      "last_seen": 1788573632
+    },
+    "info@newschoolofmusic.net": {
+      "original": "info@newschoolofmusic.net",
+      "normalized": "info@newschoolofmusic.net",
+      "business_name": "Austin School of Music",
+      "source_query": "music schools in Austin TX",
+      "first_seen": 1788573635,
+      "last_seen": 1788573635
+    },
+    "scheduling@eastsidemusic.com": {
+      "original": "scheduling@eastsidemusic.com",
+      "normalized": "scheduling@eastsidemusic.com",
+      "business_name": "Eastside Music School",
+      "source_query": "music schools in Austin TX",
+      "first_seen": 1788573641,
+      "last_seen": 1788573641
+    },
+    "pwa@austin.utexas.edu": {
+      "original": "pwa@austin.utexas.edu",
+      "normalized": "pwa@austin.utexas.edu",
+      "business_name": "Butler School of Music - University of Texas at Austin",
+      "source_query": "music schools in Austin TX",
+      "first_seen": 1788573643,
+      "last_seen": 1788573643
+    },
+    "grow@redleafschoolofmusic.com": {
+      "original": "grow@redleafschoolofmusic.com",
+      "normalized": "grow@redleafschoolofmusic.com",
+      "business_name": "Red Leaf School of Music",
+      "source_query": "music schools in Austin TX",
+      "first_seen": 1788573663,
+      "last_seen": 1788573663
+    },
+    "info@bandaidschoolofmusic.com": {
+      "original": "info@bandaidschoolofmusic.com",
+      "normalized": "info@bandaidschoolofmusic.com",
+      "business_name": "Band Aid School of Music - South Austin",
+      "source_query": "music schools in Austin TX",
+      "first_seen": 1788573670,
+      "last_seen": 1788573670
+    },
+    "info@riverbendcentre.org": {
+      "original": "info@riverbendcentre.org",
+      "normalized": "info@riverbendcentre.org",
+      "business_name": "Band Aid School of Music - South Austin",
+      "source_query": "music schools in Austin TX",
+      "first_seen": 1788573670,
+      "last_seen": 1788573670
+    },
+    "info@bluefrogschoolofmusic.com": {
+      "original": "info@bluefrogschoolofmusic.com",
+      "normalized": "info@bluefrogschoolofmusic.com",
+      "business_name": "Blue Frog School of Music",
+      "source_query": "music schools in Austin TX",
+      "first_seen": 1788573673,
+      "last_seen": 1788573673
+    },
+    "bands@bluefrogschoolofmusic.com": {
+      "original": "bands@bluefrogschoolofmusic.com",
+      "normalized": "bands@bluefrogschoolofmusic.com",
+      "business_name": "Blue Frog School of Music",
+      "source_query": "music schools in Austin TX",
+      "first_seen": 1788573673,
+      "last_seen": 1788573673
+    },
+    "info@stereolizard.com": {
+      "original": "info@stereolizard.com",
+      "normalized": "info@stereolizard.com",
+      "business_name": "Austin Music School Stereo Lizard",
+      "source_query": "music schools in Austin TX",
+      "first_seen": 1788573676,
+      "last_seen": 1788573676
+    },
+    "blackboxcollective@outlook.com": {
+      "original": "blackboxcollective@outlook.com",
+      "normalized": "blackboxcollective@outlook.com",
+      "business_name": "Black Box Music Academy and Event Space",
+      "source_query": "music schools in Austin TX",
+      "first_seen": 1788573682,
+      "last_seen": 1788573682
+    },
+    "admin@blackboxmusicarts.com": {
+      "original": "admin@blackboxmusicarts.com",
+      "normalized": "admin@blackboxmusicarts.com",
+      "business_name": "Black Box Music Academy and Event Space",
+      "source_query": "music schools in Austin TX",
+      "first_seen": 1788573682,
+      "last_seen": 1788573682
+    },
+    "782-8721staff@velocitymusicacademy.com": {
+      "original": "782-8721staff@velocitymusicacademy.com",
+      "normalized": "782-8721staff@velocitymusicacademy.com",
+      "business_name": "Velocity Music Academy - Arbor Trails",
+      "source_query": "music schools in Austin TX",
+      "first_seen": 1788573684,
+      "last_seen": 1788573684
+    },
+    "arbortrails@velocitymusicacademy.com": {
+      "original": "arbortrails@velocitymusicacademy.com",
+      "normalized": "arbortrails@velocitymusicacademy.com",
+      "business_name": "Velocity Music Academy - Arbor Trails",
+      "source_query": "music schools in Austin TX",
+      "first_seen": 1788573684,
+      "last_seen": 1788573684
+    },
+    "staff@velocitymusicacademy.com": {
+      "original": "staff@velocitymusicacademy.com",
+      "normalized": "staff@velocitymusicacademy.com",
+      "business_name": "Velocity Music Academy - Arbor Trails",
+      "source_query": "music schools in Austin TX",
+      "first_seen": 1788573684,
+      "last_seen": 1788573684
+    },
+    "dustie@everybodyjams.com": {
+      "original": "dustie@everybodyjams.com",
+      "normalized": "dustie@everybodyjams.com",
+      "business_name": "Every Body Jams",
+      "source_query": "music schools in Austin TX",
+      "first_seen": 1788573690,
+      "last_seen": 1788573690
+    },
+    "info@austindrivingschool.com": {
+      "original": "info@austindrivingschool.com",
+      "normalized": "info@austindrivingschool.com",
+      "business_name": "Pflugerville Driving School",
+      "source_query": "driving schools in Austin TX",
+      "first_seen": 1788573692,
+      "last_seen": 1788573692
+    },
+    "austin@eliteprep.com": {
+      "original": "austin@eliteprep.com",
+      "normalized": "austin@eliteprep.com",
+      "business_name": "Synapse Prep",
+      "source_query": "test prep centers in Austin TX",
+      "first_seen": 1788573696,
+      "last_seen": 1788573696
+    },
+    "customer.care@kaplan.com": {
+      "original": "customer.care@kaplan.com",
+      "normalized": "customer.care@kaplan.com",
+      "business_name": "Synapse Prep",
+      "source_query": "test prep centers in Austin TX",
+      "first_seen": 1788573696,
+      "last_seen": 1788573696
+    },
+    "info@austinspanishacademy.co": {
+      "original": "info@austinspanishacademy.co",
+      "normalized": "info@austinspanishacademy.co",
+      "business_name": "Spanish Tutoring & Instruction",
+      "source_query": "language schools in Austin TX",
+      "first_seen": 1788573698,
+      "last_seen": 1788573698
+    },
+    "projare@live.com": {
+      "original": "projare@live.com",
+      "normalized": "projare@live.com",
+      "business_name": "Spanish Tutoring & Instruction",
+      "source_query": "language schools in Austin TX",
+      "first_seen": 1788573698,
+      "last_seen": 1788573698
+    },
+    "esl@foundcom.org": {
+      "original": "esl@foundcom.org",
+      "normalized": "esl@foundcom.org",
+      "business_name": "Ingles a tu ritmo",
+      "source_query": "language schools in Austin TX",
+      "first_seen": 1788573703,
+      "last_seen": 1788573703
+    },
+    "hello@hoft.edu": {
+      "original": "hello@hoft.edu",
+      "normalized": "hello@hoft.edu",
+      "business_name": "Ingles a tu ritmo",
+      "source_query": "language schools in Austin TX",
+      "first_seen": 1788573703,
+      "last_seen": 1788573703
+    },
+    "norma.garzamittanck@austinisd.org": {
+      "original": "norma.garzamittanck@austinisd.org",
+      "normalized": "norma.garzamittanck@austinisd.org",
+      "business_name": "Ingles a tu ritmo",
+      "source_query": "language schools in Austin TX",
+      "first_seen": 1788573703,
+      "last_seen": 1788573703
+    },
+    "sac-tutoring@alamo.edu": {
+      "original": "sac-tutoring@alamo.edu",
+      "normalized": "sac-tutoring@alamo.edu",
+      "business_name": "Cooper Learning Center",
+      "source_query": "tutoring centers in San Antonio TX",
+      "first_seen": 1788573708,
+      "last_seen": 1788573708
+    },
+    "tutoring@tamusa.edu": {
+      "original": "tutoring@tamusa.edu",
+      "normalized": "tutoring@tamusa.edu",
+      "business_name": "Cooper Learning Center",
+      "source_query": "tutoring centers in San Antonio TX",
+      "first_seen": 1788573708,
+      "last_seen": 1788573708
+    },
+    "info@eotosa.org": {
+      "original": "info@eotosa.org",
+      "normalized": "info@eotosa.org",
+      "business_name": "Margarita Huantes Learning Center",
+      "source_query": "tutoring centers in San Antonio TX",
+      "first_seen": 1788573713,
+      "last_seen": 1788573713
+    },
+    "semeneya@gmail.com": {
+      "original": "semeneya@gmail.com",
+      "normalized": "semeneya@gmail.com",
+      "business_name": "Semeneya",
+      "source_query": "dance schools in San Antonio TX",
+      "first_seen": 1788573742,
+      "last_seen": 1788573742
+    },
+    "saritazuniga@gmail.com": {
+      "original": "saritazuniga@gmail.com",
+      "normalized": "saritazuniga@gmail.com",
+      "business_name": "Semeneya",
+      "source_query": "dance schools in San Antonio TX",
+      "first_seen": 1788573742,
+      "last_seen": 1788573742
+    },
+    "info@musicallivingacademy.com": {
+      "original": "info@musicallivingacademy.com",
+      "normalized": "info@musicallivingacademy.com",
+      "business_name": "The Guitar Studio",
+      "source_query": "music schools in San Antonio TX",
+      "first_seen": 1788573745,
+      "last_seen": 1788573745
+    },
+    "westtexasmusicacademy@gmail.com": {
+      "original": "westtexasmusicacademy@gmail.com",
+      "normalized": "westtexasmusicacademy@gmail.com",
+      "business_name": "The Guitar Studio",
+      "source_query": "music schools in San Antonio TX",
+      "first_seen": 1788573745,
+      "last_seen": 1788573745
+    },
+    "contact@samusicacademy.com": {
+      "original": "contact@samusicacademy.com",
+      "normalized": "contact@samusicacademy.com",
+      "business_name": "The Guitar Studio",
+      "source_query": "music schools in San Antonio TX",
+      "first_seen": 1788573745,
+      "last_seen": 1788573745
+    },
+    "info@macsainc.com": {
+      "original": "info@macsainc.com",
+      "normalized": "info@macsainc.com",
+      "business_name": "Musical Arts Center of San Antonio, Inc.",
+      "source_query": "music schools in San Antonio TX",
+      "first_seen": 1788573749,
+      "last_seen": 1788573782
+    },
+    "bigstarmusicacademy@gmail.com": {
+      "original": "bigstarmusicacademy@gmail.com",
+      "normalized": "bigstarmusicacademy@gmail.com",
+      "business_name": "Big Star Music Academy",
+      "source_query": "music schools in San Antonio TX",
+      "first_seen": 1788573776,
+      "last_seen": 1788573776
+    },
+    "frontdesk@musiconmagnolia.com": {
+      "original": "frontdesk@musiconmagnolia.com",
+      "normalized": "frontdesk@musiconmagnolia.com",
+      "business_name": "Music on Magnolia",
+      "source_query": "music schools in San Antonio TX",
+      "first_seen": 1788573779,
+      "last_seen": 1788573779
+    },
+    "saartsacademy1@gmail.com": {
+      "original": "saartsacademy1@gmail.com",
+      "normalized": "saartsacademy1@gmail.com",
+      "business_name": "San Antonio Arts Academy",
+      "source_query": "music schools in San Antonio TX",
+      "first_seen": 1788573782,
+      "last_seen": 1788573782
+    },
+    "sanantonio@schoolofrock.com": {
+      "original": "sanantonio@schoolofrock.com",
+      "normalized": "sanantonio@schoolofrock.com",
+      "business_name": "San Antonio Arts Academy",
+      "source_query": "music schools in San Antonio TX",
+      "first_seen": 1788573782,
+      "last_seen": 1788573782
+    },
+    "learnmusic@northsidemusicschool.com": {
+      "original": "learnmusic@northsidemusicschool.com",
+      "normalized": "learnmusic@northsidemusicschool.com",
+      "business_name": "Northside Music School",
+      "source_query": "music schools in San Antonio TX",
+      "first_seen": 1788573785,
+      "last_seen": 1788573785
+    },
+    "music@utsa.edu": {
+      "original": "music@utsa.edu",
+      "normalized": "music@utsa.edu",
+      "business_name": "Anthem School Of Music",
+      "source_query": "music schools in San Antonio TX",
+      "first_seen": 1788573787,
+      "last_seen": 1788573813
+    },
+    "jensensyamahamusic@gmail.com": {
+      "original": "jensensyamahamusic@gmail.com",
+      "normalized": "jensensyamahamusic@gmail.com",
+      "business_name": "Jensen's Yamaha Music School",
+      "source_query": "music schools in San Antonio TX",
+      "first_seen": 1788573799,
+      "last_seen": 1788573799
+    },
+    "contact@ljemusiclessons.com": {
+      "original": "contact@ljemusiclessons.com",
+      "normalized": "contact@ljemusiclessons.com",
+      "business_name": "LJE Music Lessons",
+      "source_query": "music schools in San Antonio TX",
+      "first_seen": 1788573809,
+      "last_seen": 1788573809
+    },
+    "info@joyacademyofmusic.com": {
+      "original": "info@joyacademyofmusic.com",
+      "normalized": "info@joyacademyofmusic.com",
+      "business_name": "Joy Academy of Music",
+      "source_query": "music schools in San Antonio TX",
+      "first_seen": 1788573813,
+      "last_seen": 1788573813
+    },
+    "anamaria@compbio.ludwig.org.br": {
+      "original": "anamaria@compbio.ludwig.org.br",
+      "normalized": "anamaria@compbio.ludwig.org.br",
+      "business_name": "55 Driving School",
+      "source_query": "driving schools in San Antonio TX",
+      "first_seen": 1788573821,
+      "last_seen": 1788573821
+    },
+    "carolinemguerra@icloud.com": {
+      "original": "carolinemguerra@icloud.com",
+      "normalized": "carolinemguerra@icloud.com",
+      "business_name": "55 Driving School",
+      "source_query": "driving schools in San Antonio TX",
+      "first_seen": 1788573821,
+      "last_seen": 1788573821
+    },
+    "driversedu@neisd.net": {
+      "original": "driversedu@neisd.net",
+      "normalized": "driversedu@neisd.net",
+      "business_name": "Interstate Driving School",
+      "source_query": "driving schools in San Antonio TX",
+      "first_seen": 1788573823,
+      "last_seen": 1788573823
+    },
+    "info@saedpartnership.org": {
+      "original": "info@saedpartnership.org",
+      "normalized": "info@saedpartnership.org",
+      "business_name": "C&P Test Prep",
+      "source_query": "test prep centers in San Antonio TX",
+      "first_seen": 1788573828,
+      "last_seen": 1788573828
+    },
+    "info@testgeek.com": {
+      "original": "info@testgeek.com",
+      "normalized": "info@testgeek.com",
+      "business_name": "C&P Test Prep",
+      "source_query": "test prep centers in San Antonio TX",
+      "first_seen": 1788573828,
+      "last_seen": 1788573828
+    },
+    "coppini@gmail.com": {
+      "original": "coppini@gmail.com",
+      "normalized": "coppini@gmail.com",
+      "business_name": "Coppini Academy of Fine Arts",
+      "source_query": "art schools in San Antonio TX",
+      "first_seen": 1788573831,
+      "last_seen": 1788573831
+    },
+    "info@thecoppini.org": {
+      "original": "info@thecoppini.org",
+      "normalized": "info@thecoppini.org",
+      "business_name": "Coppini Academy of Fine Arts",
+      "source_query": "art schools in San Antonio TX",
+      "first_seen": 1788573831,
+      "last_seen": 1788573831
+    },
+    "art@utsa.edu": {
+      "original": "art@utsa.edu",
+      "normalized": "art@utsa.edu",
+      "business_name": "UTSA Southwest Campus",
+      "source_query": "art schools in San Antonio TX",
+      "first_seen": 1788573833,
+      "last_seen": 1788573833
+    },
+    "communityart@utsa.edu": {
+      "original": "communityart@utsa.edu",
+      "normalized": "communityart@utsa.edu",
+      "business_name": "UTSA Southwest Campus",
+      "source_query": "art schools in San Antonio TX",
+      "first_seen": 1788573833,
+      "last_seen": 1788573833
+    },
+    "pace@utsa.edu": {
+      "original": "pace@utsa.edu",
+      "normalized": "pace@utsa.edu",
+      "business_name": "UTSA Southwest Campus",
+      "source_query": "art schools in San Antonio TX",
+      "first_seen": 1788573833,
+      "last_seen": 1788573833
     }
   },
-  "updated_at": 1788495176,
-  "total_discovered": 90
+  "updated_at": 1788573833,
+  "total_discovered": 145
 }

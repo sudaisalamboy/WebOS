@@ -1,0 +1,551 @@
+============================================================
+  NEXT BATCH — Austin TX + San Antonio TX schools
+============================================================
+
+>>> PHASE 1: Scrape Google Maps
+Phase 1: 24 queries, 0 already done
+
+  → tutoring centers in Austin TX
+  → navigating to: https://www.google.com/maps/search/tutoring+centers+in+Austin+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 21 listings loaded
+    scroll 3/3: 28 listings loaded
+  ✓ extracted 28 listings from 'tutoring centers in Austin TX'
+    ✓ 28 listings (total: 28)
+
+  → private schools in Austin TX
+  → navigating to: https://www.google.com/maps/search/private+schools+in+Austin+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+============================================================
+  NEXT BATCH — Austin TX + San Antonio TX schools
+============================================================
+
+>>> PHASE 1: Scrape Google Maps
+Phase 1: 24 queries, 1 already done
+
+  → private schools in Austin TX
+  → navigating to: https://www.google.com/maps/search/private+schools+in+Austin+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'private schools in Austin TX'
+    ✓ 27 listings (total: 55)
+
+  → preschools in Austin TX
+  → navigating to: https://www.google.com/maps/search/preschools+in+Austin+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 21 listings loaded
+    scroll 3/3: 28 listings loaded
+  ✓ extracted 28 listings from 'preschools in Austin TX'
+    ✓ 28 listings (total: 83)
+
+  → daycares in Austin TX
+  → navigating to: https://www.google.com/maps/search/daycares+in+Austin+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 21 listings loaded
+    scroll 3/3: 22 listings loaded
+  ✓ extracted 22 listings from 'daycares in Austin TX'
+    ✓ 22 listings (total: 105)
+
+  → dance schools in Austin TX
+  → navigating to: https://www.google.com/maps/search/dance+schools+in+Austin+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 21 listings loaded
+    scroll 3/3: 28 listings loaded
+  ✓ extracted 28 listings from 'dance schools in Austin TX'
+    ✓ 28 listings (total: 133)
+
+  → music schools in Austin TX
+  → navigating to: https://www.google.com/maps/search/music+schools+in+Austin+TX…
+    scroll 1/3: 10 listings loaded
+    scroll 2/3: 15 listings loaded
+    scroll 3/3: 20 listings loaded
+  ✓ extracted 20 listings from 'music schools in Austin TX'
+    ✓ 20 listings (total: 153)
+
+  → martial arts schools in Austin TX
+  → navigating to: https://www.google.com/maps/search/martial+arts+schools+in+Austin+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 21 listings loaded
+    scroll 3/3: 28 listings loaded
+  ✓ extracted 28 listings from 'martial arts schools in Austin TX'
+    ✓ 28 listings (total: 181)
+
+  → driving schools in Austin TX
+  → navigating to: https://www.google.com/maps/search/driving+schools+in+Austin+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'driving schools in Austin TX'
+    ✓ 27 listings (total: 208)
+
+  → montessori schools in Austin TX
+  → navigating to: https://www.google.com/maps/search/montessori+schools+in+Austin+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'montessori schools in Austin TX'
+    ✓ 27 listings (total: 235)
+
+  → test prep centers in Austin TX
+  → navigating to: https://www.google.com/maps/search/test+prep+centers+in+Austin+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'test prep centers in Austin TX'
+    ✓ 27 listings (total: 262)
+
+  → art schools in Austin TX
+  → navigating to: https://www.google.com/maps/search/art+schools+in+Austin+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'art schools in Austin TX'
+    ✓ 27 listings (total: 289)
+
+  → language schools in Austin TX
+  → navigating to: https://www.google.com/maps/search/language+schools+in+Austin+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'language schools in Austin TX'
+    ✓ 27 listings (total: 316)
+
+  → tutoring centers in San Antonio TX
+  → navigating to: https://www.google.com/maps/search/tutoring+centers+in+San+Antonio+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'tutoring centers in San Antonio TX'
+    ✓ 27 listings (total: 343)
+
+  → private schools in San Antonio TX
+  → navigating to: https://www.google.com/maps/search/private+schools+in+San+Antonio+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'private schools in San Antonio TX'
+    ✓ 27 listings (total: 370)
+
+  → preschools in San Antonio TX
+  → navigating to: https://www.google.com/maps/search/preschools+in+San+Antonio+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'preschools in San Antonio TX'
+    ✓ 27 listings (total: 397)
+
+  → daycares in San Antonio TX
+  → navigating to: https://www.google.com/maps/search/daycares+in+San+Antonio+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 21 listings loaded
+    scroll 3/3: 22 listings loaded
+  ✓ extracted 22 listings from 'daycares in San Antonio TX'
+    ✓ 22 listings (total: 419)
+
+  → dance schools in San Antonio TX
+  → navigating to: https://www.google.com/maps/search/dance+schools+in+San+Antonio+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'dance schools in San Antonio TX'
+    ✓ 27 listings (total: 446)
+
+  → music schools in San Antonio TX
+  → navigating to: https://www.google.com/maps/search/music+schools+in+San+Antonio+TX…
+    scroll 1/3: 10 listings loaded
+    scroll 2/3: 15 listings loaded
+    scroll 3/3: 20 listings loaded
+  ✓ extracted 20 listings from 'music schools in San Antonio TX'
+    ✓ 20 listings (total: 466)
+
+  → martial arts schools in San Antonio TX
+  → navigating to: https://www.google.com/maps/search/martial+arts+schools+in+San+Antonio+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 21 listings loaded
+    scroll 3/3: 28 listings loaded
+  ✓ extracted 28 listings from 'martial arts schools in San Antonio TX'
+    ✓ 28 listings (total: 494)
+
+  → driving schools in San Antonio TX
+  → navigating to: https://www.google.com/maps/search/driving+schools+in+San+Antonio+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'driving schools in San Antonio TX'
+    ✓ 27 listings (total: 521)
+
+  → montessori schools in San Antonio TX
+  → navigating to: https://www.google.com/maps/search/montessori+schools+in+San+Antonio+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'montessori schools in San Antonio TX'
+    ✓ 27 listings (total: 548)
+
+  → test prep centers in San Antonio TX
+  → navigating to: https://www.google.com/maps/search/test+prep+centers+in+San+Antonio+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 16 listings loaded
+    scroll 3/3: 16 listings loaded
+  ✓ extracted 16 listings from 'test prep centers in San Antonio TX'
+    ✓ 16 listings (total: 564)
+
+  → art schools in San Antonio TX
+  → navigating to: https://www.google.com/maps/search/art+schools+in+San+Antonio+TX…
+    scroll 1/3: 10 listings loaded
+    scroll 2/3: 15 listings loaded
+    scroll 3/3: 20 listings loaded
+  ✓ extracted 20 listings from 'art schools in San Antonio TX'
+    ✓ 20 listings (total: 584)
+
+  → language schools in San Antonio TX
+  → navigating to: https://www.google.com/maps/search/language+schools+in+San+Antonio+TX…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'language schools in San Antonio TX'
+    ✓ 27 listings (total: 611)
+
+✓ Phase 1 complete: 523 unique listings, 80 no-website
+
+>>> PHASE 2: Find emails
+
+Phase 2: Finding emails for 80 no-website schools
+  Already found: 0, target: 50
+
+  [1/80] Seek & Say Daycare
+    emails: ['seekandsayenrichment@gmail.com']
+    ✓ ADDED #1
+
+  [2/80] Rise And Shine Childcare
+    emails: ['enrollment@riseschoolaustin.org', 'info@riseschoolaustin.org']
+    ✓ ADDED #2
+
+  [3/80] School of Rock
+    emails: ['austin@schoolofrock.com']
+    ✓ ADDED #3
+
+  [4/80] Austin School of Music
+    emails: ['info@newschoolofmusic.net']
+    ✓ ADDED #4
+
+  [5/80] Northwest School of Music -- Austin Music Lessons
+    emails: []
+    ✗ no email
+
+  [6/80] Eastside Music School
+    emails: ['scheduling@eastsidemusic.com']
+    ✓ ADDED #5
+
+  [7/80] Butler School of Music - University of Texas at Austin
+    emails: ['pwa@austin.utexas.edu']
+    ✓ ADDED #6
+
+  [8/80] Orpheus Academy of Music
+    emails: []
+    ✗ no email
+
+  [9/80] North Austin School of Music
+    emails: ['info@newschoolofmusic.net']
+    ⊘ already in registry — skipped
+
+  [10/80] The Music Academy of Austin
+    emails: ['info@newschoolofmusic.net']
+    ⊘ already in registry — skipped
+
+  [11/80] New School of Music, Austin
+    emails: ['info@newschoolofmusic.net']
+    ⊘ already in registry — skipped
+
+  [12/80] Greater Austin Music Academy
+    emails: []
+    ✗ no email
+
+  [13/80] Red Leaf School of Music
+    emails: ['grow@redleafschoolofmusic.com']
+    ✓ ADDED #7
+
+  [14/80] Franklin Music Academy
+    emails: []
+    ✗ no email
+
+  [15/80] Band Aid School of Music - South Austin
+    emails: ['info@bandaidschoolofmusic.com', 'info@riverbendcentre.org']
+    ✓ ADDED #8
+
+  [16/80] Blue Frog School of Music
+    emails: ['info@bluefrogschoolofmusic.com', 'bands@bluefrogschoolofmusic.com']
+    ✓ ADDED #9
+
+  [17/80] Austin Music School Stereo Lizard
+    emails: ['info@stereolizard.com']
+    ✓ ADDED #10
+
+  [18/80] Black Box Music Academy and Event Space
+    emails: ['blackboxcollective@outlook.com', 'admin@blackboxmusicarts.com']
+    ✓ ADDED #11
+
+  [19/80] Velocity Music Academy - Arbor Trails
+    emails: ['782-8721staff@velocitymusicacademy.com', 'arbortrails@velocitymusicacademy.com', 'staff@velocitymusicacademy.com']
+    ✓ ADDED #12
+
+  [20/80] Armstrong Community Music School
+    emails: []
+    ✗ no email
+
+  [21/80] Every Body Jams
+    emails: ['dustie@everybodyjams.com']
+    ✓ ADDED #13
+
+  [22/80] Pflugerville Driving School
+    emails: ['info@austindrivingschool.com']
+    ✓ ADDED #14
+
+  [23/80] Synapse Prep
+    emails: ['austin@eliteprep.com', 'customer.care@kaplan.com']
+    ✓ ADDED #15
+
+  [24/80] Spanish Tutoring & Instruction
+    emails: ['info@austinspanishacademy.co', 'projare@live.com']
+    ✓ ADDED #16
+
+  [25/80] Beto’s English House
+    emails: []
+    ✗ no email
+
+  [26/80] Ingles a tu ritmo
+    emails: ['esl@foundcom.org', 'hello@hoft.edu', 'norma.garzamittanck@austinisd.org']
+    ✓ ADDED #17
+
+  [27/80] Willie C. Velasquez Learning Center
+    emails: []
+    ✗ no email
+
+  [28/80] Cooper Learning Center
+    emails: ['sac-tutoring@alamo.edu', 'tutoring@tamusa.edu']
+    ✓ ADDED #18
+
+  [29/80] Margarita Huantes Learning Center
+    emails: ['info@eotosa.org']
+    ✓ ADDED #19
+
+  [30/80] Little Wonderland Child Care & Learning Center Inc
+    emails: []
+    ✗ no email
+
+  [31/80] Noah's Ark Home Child Care
+    emails: []
+    ✗ no email
+
+  [32/80] Alice In Wonderland Daycare
+    emails: []
+    ✗ no email
+
+  [33/80] Semeneya
+    emails: ['semeneya@gmail.com', 'saritazuniga@gmail.com']
+    ✓ ADDED #20
+
+  [34/80] The Guitar Studio
+    emails: ['info@musicallivingacademy.com', 'westtexasmusicacademy@gmail.com', 'contact@samusicacademy.com']
+    ✓ ADDED #21
+
+  [35/80] San Antonio Music Academy
+    emails: ['contact@samusicacademy.com']
+    ⊘ already in registry — skipped
+
+  [36/80] Musical Arts Center of San Antonio, Inc.
+    emails: ['info@macsainc.com']
+    ✓ ADDED #22
+
+  [37/80] Sage Music – San Antonio
+    emails: []
+    ✗ no email
+
+  [39/80] Big Star Music Academy
+    emails: ['bigstarmusicacademy@gmail.com']
+    ✓ ADDED #23
+
+  [40/80] Music on Magnolia
+    emails: ['frontdesk@musiconmagnolia.com']
+    ✓ ADDED #24
+
+  [41/80] San Antonio Arts Academy
+    emails: ['saartsacademy1@gmail.com', 'sanantonio@schoolofrock.com', 'info@macsainc.com']
+    ✓ ADDED #25
+
+  [42/80] Northside Music School
+    emails: ['learnmusic@northsidemusicschool.com']
+    ✓ ADDED #26
+
+  [44/80] Anthem School Of Music
+    emails: ['music@utsa.edu']
+    ✓ ADDED #27
+
+  [45/80] Institute Of Musical Arts
+    emails: ['info@macsainc.com', 'music@utsa.edu']
+    ⊘ already in registry — skipped
+
+  [46/80] School
+    emails: ['music@utsa.edu', 'info@macsainc.com', 'anthemstudios210@gmail.com']
+    ⊘ already in registry — skipped
+
+  [47/80] Clases de Musica - Guitarra, Piano y Canto ) San Antonio Tx Music Lessons (SAMusic TX) Converse TX
+    emails: []
+    ✗ no email
+
+  [48/80] Jensen's Yamaha Music School
+    emails: ['jensensyamahamusic@gmail.com']
+    ✓ ADDED #28
+
+  [49/80] Music Masters
+    emails: []
+    ✗ no email
+
+  [50/80] Music Institute Of San Antonio
+    emails: ['music@utsa.edu', 'frontdesk@musiconmagnolia.com']
+    ⊘ already in registry — skipped
+
+  [51/80] BlackBox Music & Arts
+    emails: ['admin@blackboxmusicarts.com']
+    ⊘ already in registry — skipped
+
+  [52/80] LJE Music Lessons
+    emails: ['contact@ljemusiclessons.com']
+    ✓ ADDED #29
+
+  [53/80] Joy Academy of Music
+    emails: ['info@joyacademyofmusic.com', 'music@utsa.edu']
+    ✓ ADDED #30
+
+  [54/80] A D S/Adult Driving School
+    emails: ['info@austindrivingschool.com', 'driversedu@neisd.net']
+    ⊘ already in registry — skipped
+
+  [55/80] REYNA One-On-One CDL Truck Driver Training
+    emails: []
+    ✗ no email
+
+  [56/80] 55 Driving School
+    emails: ['anamaria@compbio.ludwig.org.br', 'carolinemguerra@icloud.com']
+    ✓ ADDED #31
+
+  [57/80] Interstate Driving School
+    emails: ['driversedu@neisd.net']
+    ✓ ADDED #32
+
+  [58/80] Texas Driving School
+    emails: ['driversedu@neisd.net']
+    ⊘ already in registry — skipped
+
+  [59/80] C&P Test Prep
+    emails: ['info@saedpartnership.org', 'info@testgeek.com']
+    ✓ ADDED #33
+
+  [60/80] Coppini Academy of Fine Arts
+    emails: ['coppini@gmail.com', 'info@thecoppini.org']
+    ✓ ADDED #34
+
+  [61/80] UTSA Southwest Campus
+    emails: ['art@utsa.edu', 'communityart@utsa.edu', 'pace@utsa.edu']
+    ✓ ADDED #35
+
+  [62/80] Fine Art Academy of San Antonio
+    emails: []
+    ✗ no email
+
+  [63/80] UTSA School of Art
+    emails: []
+    ✗ no email
+
+  [64/80] Edgewood Fine Arts Academy
+    emails: []
+    ✗ no email
+
+  [65/80] Visual Arts Center
+    emails: []
+    ✗ no email
+
+  [66/80] Blue Star Arts Complex
+    emails: []
+    ✗ no email
+
+  [67/80] SAY Sí
+    emails: []
+    ✗ no email
+
+  [68/80] Hindes Fine Art
+    emails: []
+    ✗ no email
+
+  [69/80] Beach House Arts
+    emails: []
+    ✗ no email
+
+  [70/80] Palmetto Center for the Arts (NORTHWEST VISTA COLLEGE)
+    emails: []
+    ✗ no email
+
+  [72/80] 聖安東尼奧藝術博物館
+    emails: []
+    ✗ no email
+
+  [73/80] Santa Reparata International School of Art, US Admissions Office
+    emails: []
+    ✗ no email
+
+  [74/80] Susi Lopera Art Studio
+    emails: []
+    ✗ no email
+
+  [75/80] McAllister Fine Arts Center
+    emails: []
+    ✗ no email
+
+  [76/80] DiZurita - House of Art
+    emails: []
+    ✗ no email
+
+  [77/80] Hausmann Millworks
+    emails: []
+    ✗ no email
+
+  [78/80] Artpace San Antonio
+    emails: []
+    ✗ no email
+
+  [79/80] ArtTree Art School
+    emails: []
+    ✗ no email
+
+  [80/80] Escuela De Ingles
+    emails: []
+    ✗ no email
+
+✓ Phase 2 complete: 35 schools with emails
+
+>>> PHASE 3: Send pitches
+
+Phase 3: Sending 35 pitch emails (watermark removed)
+  Already sent (all campaigns): 72
+
+  [1/35] Seek & Say Daycare
+    ✗ FAILED: To field not found
+    ... waiting 75s
+
+  [2/35] Rise And Shine Childcare
+    ✗ FAILED: To field not found
+    ... waiting 75s
+
+  [3/35] School of Rock
+    ✗ FAILED: To field not found
+    ... waiting 75s
+
+  [4/35] Austin School of Music
+    ✗ FAILED: To field not found
+    ... waiting 75s
+
+  [5/35] Eastside Music School
+    ✗ FAILED: To field not found
+    ... waiting 75s

@@ -1,0 +1,58 @@
+Loaded 35 schools with emails
+Pending: 35 schools
+Delay: 75s between emails
+
+[1/35] Seek & Say Daycare
+  ✓ SENT to seekandsayenrichment@gmail.com
+  ... waiting 75s
+Loaded 35 schools
+Pending: 34 schools
+
+[1/34] Rise And Shine Childcare
+  ✓ SENT to enrollment@riseschoolaustin.org
+  ... waiting 75s
+[2/34] School of Rock
+  ✓ SENT to austin@schoolofrock.com
+  ... waiting 75s
+[3/34] Austin School of Music
+  ✓ SENT to info@newschoolofmusic.net
+  ... waiting 75s
+[4/34] Eastside Music School
+  ✓ SENT to scheduling@eastsidemusic.com
+  ... waiting 75s
+[5/34] Butler School of Music - University of Texas at Austin
+  ✓ SENT to pwa@austin.utexas.edu
+  ... waiting 75s
+[6/34] Red Leaf School of Music
+  ✓ SENT to grow@redleafschoolofmusic.com
+  ... waiting 75s
+[7/34] Band Aid School of Music - South Austin
+  ✓ SENT to info@bandaidschoolofmusic.com
+  ... waiting 75s
+[8/34] Blue Frog School of Music
+  ✓ SENT to info@bluefrogschoolofmusic.com
+  ... waiting 75s
+[9/34] Austin Music School Stereo Lizard
+  ✓ SENT to info@stereolizard.com
+  ... waiting 75s
+[10/34] Black Box Music Academy and Event Space
+  ✓ SENT to blackboxcollective@outlook.com
+  ... waiting 75s
+[11/34] Velocity Music Academy - Arbor Trails
+  ✓ SENT to 782-8721staff@velocitymusicacademy.com
+  ... waiting 75s
+[12/34] Every Body Jams
+  ✓ SENT to dustie@everybodyjams.com
+  ... waiting 75s
+[13/34] Pflugerville Driving School
+  ✓ SENT to info@austindrivingschool.com
+  ... waiting 75s
+[14/34] Synapse Prep
+  ✓ SENT to austin@eliteprep.com
+  ... waiting 75s
+[15/34] Spanish Tutoring & Instruction
+  ✓ SENT to info@austinspanishacademy.co
+  ... waiting 75s
+[16/34] Ingles a tu ritmo
+  ✓ SENT to esl@foundcom.org
+  ... waiting 75s
