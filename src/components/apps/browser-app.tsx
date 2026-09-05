@@ -49,7 +49,7 @@ const BLOCKED_DOMAINS = [
   'yahoo.com',
   'bing.com',
   'duckduckgo.com',
-  'chatgpt.com', 'openai.com', 'chat.z.ai',
+  'chatgpt.com', 'openai.com',
   'claude.ai', 'anthropic.com',
   'spotify.com',
   'twitch.tv',
@@ -282,7 +282,7 @@ export function BrowserApp() {
 
   const isBookmarked_ = isBookmarked
   const targetHost = (() => {
-    try { return new URL(url).hostname } catch { return url } 
+    try { return new URL(url).hostname } catch { return url }
   })()
 
   return (
