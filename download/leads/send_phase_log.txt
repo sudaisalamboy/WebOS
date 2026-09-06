@@ -1,247 +1,135 @@
-Loaded 35 schools with emails
-Pending: 35 schools
-Delay: 75s between emails
+Loaded 43 schools
+Pending: 43 schools
 
-[1/35] Seek & Say Daycare
-  ✓ SENT to seekandsayenrichment@gmail.com
+[1/43] Tinker Town Preschool
+  ✓ SENT to childcare@tinkertowndenver.com
   ... waiting 75s
-Loaded 35 schools
-Pending: 34 schools
-
-[1/34] Rise And Shine Childcare
-  ✓ SENT to enrollment@riseschoolaustin.org
+[2/43] Daddy Mom Daycare
+  ✓ SENT to us.sulekha@sulekha.com
   ... waiting 75s
-[2/34] School of Rock
-  ✓ SENT to austin@schoolofrock.com
+[3/43] Step by Step Learning Center
+  ✓ SENT to stepbystep@qwestoffice.net
   ... waiting 75s
-[3/34] Austin School of Music
-  ✓ SENT to info@newschoolofmusic.net
+[4/43] Denver Academy of Musical Arts
+  ✓ SENT to admin@denverama.org
   ... waiting 75s
-[4/34] Eastside Music School
-  ✓ SENT to scheduling@eastsidemusic.com
+[5/43] Musical Life Denver
+  ✓ SENT to office@musicallifedenver.com
   ... waiting 75s
-[5/34] Butler School of Music - University of Texas at Austin
-  ✓ SENT to pwa@austin.utexas.edu
+[6/43] Sollohub School of Music
+  ✓ SENT to sollohubmusic@gmail.com
   ... waiting 75s
-[6/34] Red Leaf School of Music
-  ✓ SENT to grow@redleafschoolofmusic.com
+[7/43] Lamont School of Music
+  ✓ SENT to musicadmission@du.edu
   ... waiting 75s
-[7/34] Band Aid School of Music - South Austin
-  ✓ SENT to info@bandaidschoolofmusic.com
+[8/43] Pirisen Music Lessons
+  ✓ SENT to denver@pirisen.com
   ... waiting 75s
-[8/34] Blue Frog School of Music
-  ✓ SENT to info@bluefrogschoolofmusic.com
+[9/43] Moon Magnet Music School
+  ✓ SENT to reed@moonmagnetmusicschool.com
   ... waiting 75s
-[9/34] Austin Music School Stereo Lizard
-  ✓ SENT to info@stereolizard.com
+[10/43] Children's Music Academy of Congress Park
+  ✓ SENT to info@childrensmusicacademy.org
   ... waiting 75s
-[10/34] Black Box Music Academy and Event Space
-  ✓ SENT to blackboxcollective@outlook.com
+[11/43] New Cottage Arts
+  ✓ SENT to info@newcottagearts.org
   ... waiting 75s
-[11/34] Velocity Music Academy - Arbor Trails
-  ✓ SENT to 782-8721staff@velocitymusicacademy.com
+[12/43] Denver School Of The Arts
+  ✓ SENT to info@dsafriends.org
   ... waiting 75s
-[12/34] Every Body Jams
-  ✓ SENT to dustie@everybodyjams.com
+[13/43] Art Students League of Denver
+  ✓ SENT to info@asld.org
   ... waiting 75s
-[13/34] Pflugerville Driving School
-  ✓ SENT to info@austindrivingschool.com
+[14/43] REAL Academy of Art Colorado
+  ✓ SENT to info@realacademyartco.org
   ... waiting 75s
-[14/34] Synapse Prep
-  ✓ SENT to austin@eliteprep.com
+[15/43] Academy of Art University
+  ✓ SENT to meyer@du.edu
   ... waiting 75s
-[15/34] Spanish Tutoring & Instruction
-  ✓ SENT to info@austinspanishacademy.co
+[16/43] Puff, Pass, and Paint Denver
+  ✓ SENT to info@puffpassandpaint.com
   ... waiting 75s
-[16/34] Ingles a tu ritmo
-  ✓ SENT to esl@foundcom.org
+[17/43] Art Garage
+  ✓ SENT to info@artgaragedenver.com
   ... waiting 75s
-[17/34] Cooper Learning Center
-  ✓ SENT to sac-tutoring@alamo.edu
+[18/43] Rocky Mountain College of Art + Design
+  ✓ SENT to marketing@rmcad.edu
   ... waiting 75s
-[18/34] Margarita Huantes Learning Center
-  ✓ SENT to info@eotosa.org
+[19/43] CU Denver College of Arts & Media
+  ✓ SENT to admissions@cudenver.edu
   ... waiting 75s
-[19/34] Semeneya
-  ✓ SENT to semeneya@gmail.com
+[20/43] Denver Art Society
+  ✓ SENT to 720-446-8813hello@denversartdistrict.org
   ... waiting 75s
-[20/34] The Guitar Studio
-  ✓ SENT to info@musicallivingacademy.com
+[21/43] RedLine Contemporary Art Center
+  ✓ SENT to info@redlineart.org
   ... waiting 75s
-[21/34] Musical Arts Center of San Antonio, Inc.
-  ✓ SENT to info@macsainc.com
+[22/43] ReCreative Denver
+  ✗ FAILED: To field not found
   ... waiting 75s
-[22/34] Big Star Music Academy
-  ✓ SENT to bigstarmusicacademy@gmail.com
+[23/43] @Art Gym
+  ✗ FAILED: To field not found
   ... waiting 75s
-[23/34] Music on Magnolia
-  ✓ SENT to frontdesk@musiconmagnolia.com
+[24/43] Craftsman & Apprentice
+  ✗ FAILED: To field not found
   ... waiting 75s
-[24/34] San Antonio Arts Academy
-  ✓ SENT to saartsacademy1@gmail.com
+[25/43] Grace Noel Art
+  ✗ FAILED: To field not found
   ... waiting 75s
-[25/34] Northside Music School
-  ✓ SENT to learnmusic@northsidemusicschool.com
+[26/43] Denver Performing Arts Complex
+  ✗ FAILED: To field not found
   ... waiting 75s
-[26/34] Anthem School Of Music
-  ✓ SENT to music@utsa.edu
+[27/43] Inglés entre panas
+  ✗ FAILED: To field not found
   ... waiting 75s
-[27/34] Jensen's Yamaha Music School
-  ✓ SENT to jensensyamahamusic@gmail.com
+[28/43] Tutoring Colorado Springs
+  ✗ FAILED: To field not found
   ... waiting 75s
-[28/34] LJE Music Lessons
-  ✓ SENT to contact@ljemusiclessons.com
+[29/43] Colorado Springs Music School
+  ✗ FAILED: To field not found
   ... waiting 75s
-[29/34] Joy Academy of Music
-  ✓ SENT to info@joyacademyofmusic.com
+[30/43] Colorado Springs Conservatory
+  ✗ FAILED: To field not found
   ... waiting 75s
-[30/34] 55 Driving School
-  ✓ SENT to anamaria@compbio.ludwig.org.br
+[31/43] 232 Music Studios
+  ✗ FAILED: To field not found
   ... waiting 75s
-[31/34] Interstate Driving School
-  ✓ SENT to driversedu@neisd.net
+[32/43] All Aboard Family Music
+  ✗ FAILED: To field not found
   ... waiting 75s
-[32/34] C&P Test Prep
-  ✓ SENT to info@saedpartnership.org
+[33/43] CCC MUSIC COMPANY
+  ✗ FAILED: To field not found
   ... waiting 75s
-[33/34] Coppini Academy of Fine Arts
-  ✓ SENT to coppini@gmail.com
+[34/43] Pikes Peak Clay Studio (By Pikes Peak Artist Collective)
+  ✗ FAILED: To field not found
   ... waiting 75s
-[34/34] UTSA Southwest Campus
-  ✓ SENT to art@utsa.edu
-
-===== DONE =====
-Sent this run: 34
-Total sent (all): 107
-Loaded 42 schools
-Pending: 42 schools
-
-[1/42] Middle School Tutors
-  ✓ SENT to learnwithalohallc@gmail.com
+[35/43] Silversound Guitar
+  ✗ FAILED: To field not found
   ... waiting 75s
-[2/42] Creciendo Con Proposito Learning Center,LLC
-  ✓ SENT to office@acceleratedlearningcenteraz.com
+[36/43] Sperry S. And Ella Graber Packard Hall of Music and Art
+  ✗ FAILED: To field not found
   ... waiting 75s
-[3/42] Luna Daycare
-  ✓ SENT to lunadaycare@hotmail.comwebsite
+[37/43] Springs Jewelry Studio
+  ✗ FAILED: To field not found
   ... waiting 75s
-[4/42] Prestige Music Academy
-  ✓ SENT to info@prestigemusicacademy.com
+[38/43] Fine Arts Center
+  ✗ FAILED: To field not found
   ... waiting 75s
-[5/42] Phoenix Conservatory of Music
-  ✓ SENT to info@pcmrocks.org
+[39/43] The Black Forest Academy of Music. LLC
+  ✗ FAILED: To field not found
   ... waiting 75s
-[6/42] Rosie's House A Music Academy
-  ✓ SENT to info@rosieshouse.org
+[40/43] Harmonic Garden School of Music
+  ✗ FAILED: To field not found
   ... waiting 75s
-[7/42] Music Maker Workshops
-  ✓ SENT to lessons@mmwaz.com
+[41/43] Springs GTMA Martial Arts
+  ✗ FAILED: To field not found
   ... waiting 75s
-[8/42] Phoenix Music Lessons
-  ✓ SENT to contacts@phoenixcenterforthearts.org
+[42/43] Elevated Arts Academy
+  ✗ FAILED: To field not found
   ... waiting 75s
-[9/42] Funtimes Music School
-  ✓ SENT to funtimesmusicschool@gmail.com
-  ... waiting 75s
-[10/42] School of Rock Arcadia
-  ✓ SENT to meissnerm@montclair.edu
-  ... waiting 75s
-[11/42] North Phoenix Yamaha Music School
-  ✓ SENT to office@evyms.com
-  ... waiting 75s
-[12/42] Arizona School of Music
-  ✓ SENT to info@music.arizona.edu
-  ... waiting 75s
-[13/42] The Note Room Academy of Music and Arts
-  ✓ SENT to rscarboro@bellsouth.net
-  ... waiting 75s
-[14/42] Phoenix College Department of Music
-  ✓ SENT to bakerw@iecc.edu
-  ... waiting 75s
-[15/42] Blue in Green Youth Piano Academy
-  ✓ SENT to info@blueingreenaz.com
-  ... waiting 75s
-[16/42] Squaw Peak Taekwondo - ATA
-  ✓ SENT to mark@gilbridesata.com
-  ... waiting 75s
-[17/42] Be An Artist
-  ✓ SENT to info@azarts.gov
-  ... waiting 75s
-[18/42] English 4U LLC
-  ✓ SENT to support@literacyphoenix.org
-  ... waiting 75s
-[19/42] HA.P.I Clases de Inglés
-  ✓ SENT to hapischool@yahoo.com
-  ... waiting 75s
-[20/42] Language Centers West
-  ✓ SENT to adulteducation@cochise.edu
-  ... waiting 75s
-[21/42] Clase de Ingles Gratis
-  ✓ SENT to ask@acyraz.org
-  ... waiting 75s
-[22/42] Magnus Language Institute
-  ✓ SENT to info@magnusspanishservices.com
-  ... waiting 75s
-[23/42] The English Academy
-  ✓ SENT to oelas@azed.gov
-  ... waiting 75s
-[24/42] Clase de Inglés Gratis - Tempe
-  ✓ SENT to kmills@gilacountyaz.gov
-  ... waiting 75s
-[25/42] Kids of the King Tutoring Services, LLC
-  ✓ SENT to meghan@kingtutoringoxford.com
-  ... waiting 75s
-[26/42] BuffTutor - University & High School Tutors - Tucson
-  ✓ SENT to gomezm@arizona.edu
-  ... waiting 75s
-[27/42] Felicia Chew Tutoring Services
-  ✓ SENT to pcc-tutoring@pima.edu
-  ... waiting 75s
-[28/42] Lehner Private Tutoring
-  ✓ SENT to lehnerprivatetutoring@gmail.com
-  ... waiting 75s
-[29/42] Beginning School
-  ✓ SENT to driegert@academydelsol.com
-  ... waiting 75s
-[30/42] El Rio Daycare
-  ✓ SENT to info@elriodaycare.org
-  ... waiting 75s
-[31/42] First Impressions Day Care
-  ✓ SENT to ranch@tlechildcare.com
-  ... waiting 75s
-[32/42] Tucson Music Lessons
-  ✓ SENT to media@schoolofrock.com
-  ... waiting 75s
-[33/42] School of Rock Tucson
-  ✓ SENT to tucson@schoolofrock.com
-  ... waiting 75s
-[34/42] Tempo Music and Arts Academy
-  ✓ SENT to info@tempemusicacademy.com
-  ... waiting 75s
-[35/42] Sonoran Music Academy
-  ✓ SENT to info@sonoranmusicacademy.com
-  ... waiting 75s
-[36/42] Kindermusik At Musical Steps
-  ✓ SENT to mary@kindermusikwithmary.com
-  ... waiting 75s
-[37/42] Instrumental Music Center Speedway
-  ✓ SENT to imcstaff@imc-az.com
-  ... waiting 75s
-[38/42] Artistry Academy Music & Art
-  ✓ SENT to artistryoffice@artistryacademy.net
-  ... waiting 75s
-[39/42] TimeHarmony Music Lessons
-  ✓ SENT to timeharmonymusic@gmail.com
-  ... waiting 75s
-[40/42] Operachi Music School
-  ✓ SENT to operachimusicschool@gmail.com
-  ... waiting 75s
-[41/42] Music & Arts
-  ✓ SENT to tiffnene@hotmail.com
-  ... waiting 75s
-[42/42] Tucson Jazz Institute
-  ✓ SENT to tucsonjazzinstitute@gmail.com
+[43/43] ESL Classes Colorado Springs
+  ✗ FAILED: To field not found
 
 ===== DONE =====
-Sent this run: 42
-Total sent (all): 149
+Sent this run: 21
+Total sent (all): 170
