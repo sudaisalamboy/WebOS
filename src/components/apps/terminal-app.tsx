@@ -1,465 +1,205 @@
 'use client'
 
-import { useState, useRef, useEffect, useCallback } from 'react'
-import { FsEntry, fsList, fsRead, fsWrite, fsMkdir, fsDelete, fsRename, fsCopy, fsMove, dirname, basename, joinPath, extname } from '@/lib/fs-client'
-import { useDesktopStore } from '@/lib/desktop-store'
-import { FILE_DRAG_MIME } from '@/components/desktop/file-icon'
+import { useEffect, useRef, useState } from 'react'
+import { Terminal } from '@xterm/xterm'
+import { FitAddon } from '@xterm/addon-fit'
+import { WebLinksAddon } from '@xterm/addon-web-links'
+import '@xterm/xterm/css/xterm.css'
 import { cn } from '@/lib/utils'
 
-interface Line {
-  type: 'input' | 'output' | 'error' | 'system'
-  text: string
-  cwd?: string
-}
-
-const HELP_TEXT = `Available commands:
-  ls [path]            list directory
-  cd <path>            change directory
-  pwd                  print working directory
-  cat <file>           print file content
-  echo <text>          print text (supports > file and >> file)
-  mkdir <dir>          create directory
-  touch <file>         create empty file
-  rm <path>            remove file or directory (recursive)
-  mv <src> <dst>       move or rename
-  cp <src> <dst>       copy file or directory
-  edit <file>          open file in Text Editor
-  open <app>           open an app: terminal, browser, notes, files, vps
-  tree [path]          show directory tree (max depth 3)
-  clear                clear the screen
-  help                 show this help
-  whoami               print user
-  date                 print date
-  exit                 close terminal`
-
+/**
+ * Real terminal backed by a PTY WebSocket.
+ *
+ * Connects to ws://<host>/?XTransformPort=3003 (the Caddy gateway routes
+ * this to the PTY mini-service on port 3003, which spawns a real bash shell
+ * in a pseudo-terminal).
+ *
+ * This is a REAL terminal — vim, nano, top, htop, ssh, etc. all work
+ * because we're talking to a real PTY, not a JS command interpreter.
+ * All control keys (Insert, Delete, Home, End, PageUp/Down, Ctrl+R,
+ * Ctrl+C, Ctrl+Z, Ctrl+[, etc.) are handled by xterm.js and forwarded
+ * as raw bytes to the PTY.
+ */
 export function TerminalApp() {
-  const [cwd, setCwd] = useState('/')
-  const [lines, setLines] = useState<Line[]>([
-    { type: 'system', text: 'WebOS Terminal v1.0 — type "help" for commands. Drop a file to auto-run.' },
-  ])
-  const [input, setInput] = useState('')
-  const [history, setHistory] = useState<string[]>([])
-  const [historyIdx, setHistoryIdx] = useState(-1)
-  const [dragOver, setDragOver] = useState(false)
-  const scrollRef = useRef<HTMLDivElement>(null)
-  const inputRef = useRef<HTMLInputElement>(null)
-  const { openApp, closeWindow } = useDesktopStore()
+  const containerRef = useRef<HTMLDivElement>(null)
+  const termRef = useRef<Terminal | null>(null)
+  const fitRef = useRef<FitAddon | null>(null)
+  const wsRef = useRef<WebSocket | null>(null)
+  const [connected, setConnected] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+  const [reconnectAttempt, setReconnectAttempt] = useState(0)
 
   useEffect(() => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollTop = scrollRef.current.scrollHeight
-    }
-  }, [lines])
+    if (!containerRef.current) return
 
-  const push = useCallback((line: Line) => setLines((prev) => [...prev, line]), [])
+    // Create xterm.js terminal
+    const term = new Terminal({
+      fontFamily: '"Cascadia Code", "Fira Code", "JetBrains Mono", "Courier New", monospace',
+      fontSize: 14,
+      cursorBlink: true,
+      cursorStyle: 'bar',
+      allowProposedApi: true,
+      scrollback: 10000,
+      convertEol: false,
+      // Critical: enable application cursor mode + modifyOtherKeys so
+      // vim/less/etc. receive proper escape sequences for arrow keys.
+      macOptionIsMeta: true,
+    })
+    const fit = new FitAddon()
+    term.loadAddon(fit)
+    term.loadAddon(new WebLinksAddon())
+    term.open(containerRef.current)
+    fit.fit()
 
-  function resolvePath(arg: string): string {
-    if (!arg) return cwd
-    if (arg.startsWith('/')) return arg
-    return joinPath(cwd, arg)
-  }
+    termRef.current = term
+    fitRef.current = fit
 
-  async function runCommand(raw: string) {
-    const trimmed = raw.trim()
-    push({ type: 'input', text: raw, cwd })
+    term.writeln('\x1b[1;32mWebOS Terminal\x1b[0m — real bash via PTY')
+    term.writeln('\x1b[2mConnecting to shell…\x1b[0m')
 
-    if (!trimmed) return
+    // Connect to the PTY WebSocket via the Caddy gateway.
+    // The XTransformPort query param tells Caddy to route to port 3003.
+    const wsUrl = `${window.location.protocol === 'https:' ? 'wss' : 'ws'}://${window.location.host}/?XTransformPort=3003`
 
-    setHistory((prev) => [...prev, trimmed])
-    setHistoryIdx(-1)
+    let disposed = false
 
-    // Handle output redirection (echo > file, echo >> file)
-    const redirMatch = trimmed.match(/^(.+?)\s*(>>|>)\s*(\S+)$/)
-    let cmd = trimmed
-    let redir: { mode: '>' | '>>'; file: string } | null = null
-    if (redirMatch) {
-      cmd = redirMatch[1]
-      redir = { mode: redirMatch[2] as '>' | '>>', file: redirMatch[3] }
-    }
+    function connect() {
+      if (disposed) return
+      const ws = new WebSocket(wsUrl)
+      wsRef.current = ws
 
-    const [name, ...args] = cmd.split(/\s+/)
-    const out: string[] = []
-    const err: string[] = []
+      ws.onopen = () => {
+        if (disposed) return
+        setConnected(true)
+        setError(null)
+        term.writeln('\x1b[1;32m✓ Connected\x1b[0m')
+        // Send initial resize so the shell knows our dimensions
+        sendResize()
+        // Focus the terminal
+        term.focus()
+      }
 
-    try {
-      switch (name) {
-        case 'help':
-          out.push(HELP_TEXT)
-          break
-        case 'pwd':
-          out.push(cwd)
-          break
-        case 'whoami':
-          out.push('webos-user')
-          break
-        case 'date':
-          out.push(new Date().toString())
-          break
-        case 'clear':
-          setLines([])
-          return
-        case 'exit':
-          closeWindow(useDesktopStore.getState().windows.find((w) => w.appId === 'terminal')?.id ?? '')
-          return
-        case 'ls': {
-          const target = resolvePath(args[0] ?? '')
-          const entries = await fsList(target)
-          if (entries.length === 0) {
-            // empty dir, no output
-          } else {
-            out.push(
-              entries
-                .map((e) => (e.isDir ? `${e.name}/` : e.name))
-                .join('   ')
-            )
+      ws.onmessage = (event) => {
+        if (disposed) return
+        // The PTY service sends raw bytes. WebSocket messages can be
+        // strings or Blobs/ArrayBuffers. We handle both.
+        if (event.data instanceof Blob) {
+          event.data.arrayBuffer().then((buf) => {
+            term.write(new Uint8Array(buf))
+          })
+        } else if (event.data instanceof ArrayBuffer) {
+          term.write(new Uint8Array(event.data))
+        } else {
+          // String — write directly
+          term.write(event.data)
+        }
+      }
+
+      ws.onerror = () => {
+        if (disposed) return
+        setError('WebSocket connection error')
+      }
+
+      ws.onclose = () => {
+        if (disposed) return
+        setConnected(false)
+        term.writeln('\r\n\x1b[33m[Connection closed — reconnecting in 3s…]\x1b[0m')
+        // Auto-reconnect
+        setTimeout(() => {
+          if (!disposed) {
+            setReconnectAttempt((n) => n + 1)
+            connect()
           }
-          break
-        }
-        case 'cd': {
-          const target = resolvePath(args[0] ?? '/')
-          // Validate it's a directory
-          const parent = dirname(target)
-          const entries = await fsList(parent)
-          const found = entries.find((e) => e.path === target)
-          if (!found) err.push(`cd: no such directory: ${args[0]}`)
-          else if (!found.isDir) err.push(`cd: not a directory: ${args[0]}`)
-          else setCwd(target)
-          break
-        }
-        case 'cat': {
-          if (!args[0]) { err.push('cat: missing file operand'); break }
-          const target = resolvePath(args[0])
-          const content = await fsRead(target)
-          out.push(content)
-          break
-        }
-        case 'echo': {
-          const text = args.join(' ')
-          if (redir) {
-            const target = resolvePath(redir.file)
-            let prev = ''
-            if (redir.mode === '>>') {
-              try { prev = await fsRead(target) + '\n' } catch { /* ignore */ }
-            }
-            await fsWrite(target, prev + text + '\n')
-          } else {
-            out.push(text)
-          }
-          break
-        }
-        case 'mkdir': {
-          if (!args[0]) { err.push('mkdir: missing operand'); break }
-          await fsMkdir(resolvePath(args[0]))
-          break
-        }
-        case 'touch': {
-          if (!args[0]) { err.push('touch: missing operand'); break }
-          await fsWrite(resolvePath(args[0]), '')
-          break
-        }
-        case 'rm': {
-          if (!args[0]) { err.push('rm: missing operand'); break }
-          // Support -rf flags (ignored, we always recurse)
-          const target = args.find((a) => !a.startsWith('-'))
-          if (!target) { err.push('rm: missing operand'); break }
-          await fsDelete(resolvePath(target))
-          break
-        }
-        case 'mv': {
-          if (args.length < 2) { err.push('mv: missing operand'); break }
-          await fsMove(resolvePath(args[0]), resolvePath(args[1]))
-          break
-        }
-        case 'cp': {
-          if (args.length < 2) { err.push('cp: missing operand'); break }
-          await fsCopy(resolvePath(args[0]), resolvePath(args[1]))
-          break
-        }
-        case 'rename': {
-          if (args.length < 2) { err.push('rename: missing operand'); break }
-          await fsRename(resolvePath(args[0]), resolvePath(args[1]))
-          break
-        }
-        case 'edit': {
-          if (!args[0]) { err.push('edit: missing file operand'); break }
-          const target = resolvePath(args[0])
-          openApp('text-editor', { payload: { path: target }, title: `Edit · ${basename(target)}` })
-          out.push(`opening ${target} in Text Editor`)
-          break
-        }
-        case 'open': {
-          const app = args[0]
-          const valid: Record<string, AppId> = {
-            terminal: 'terminal', browser: 'browser', notes: 'notes',
-            files: 'file-explorer', explorer: 'file-explorer', vps: 'vps-dashboard',
-          }
-          if (!app || !valid[app]) {
-            err.push(`open: unknown app "${app ?? ''}". Valid: ${Object.keys(valid).join(', ')}`)
-          } else {
-            openApp(valid[app])
-            out.push(`opening ${app}`)
-          }
-          break
-        }
-        case 'tree': {
-          const target = resolvePath(args[0] ?? '')
-          out.push(target)
-          const tree = await buildTree(target, 3)
-          out.push(tree)
-          break
-        }
-        default:
-          err.push(`command not found: ${name} (try "help")`)
+        }, 3000)
       }
-    } catch (e) {
-      err.push((e as Error).message)
     }
 
-    out.forEach((t) => push({ type: 'output', text: t }))
-    err.forEach((t) => push({ type: 'error', text: t }))
-  }
+    connect()
 
-  async function buildTree(p: string, depth: number, prefix = ''): Promise<string> {
-    if (depth <= 0) return ''
-    try {
-      const entries = await fsList(p)
-      const lines: string[] = []
-      entries.forEach((e, i) => {
-        const isLast = i === entries.length - 1
-        lines.push(`${prefix}${isLast ? '└── ' : '├── '}${e.name}${e.isDir ? '/' : ''}`)
-      })
-      // recurse into dirs
-      for (let i = 0; i < entries.length; i++) {
-        const e = entries[i]
-        if (e.isDir) {
-          const isLast = i === entries.length - 1
-          const sub = await buildTree(e.path, depth - 1, prefix + (isLast ? '    ' : '│   '))
-          if (sub) lines.push(sub)
+    // Pipe terminal input → WebSocket (keyboard → PTY)
+    const onDataDisposable = term.onData((data) => {
+      if (wsRef.current?.readyState === WebSocket.OPEN) {
+        wsRef.current.send(data)
+      }
+    })
+
+    // Track current rows for the resize message
+    let rows = term.rows
+
+    function sendResize() {
+      if (wsRef.current?.readyState === WebSocket.OPEN && fitRef.current) {
+        const dims = fitRef.current.proposeDimensions()
+        if (dims) {
+          // Send resize as a binary marker: \x00RESIZE:<cols>x<rows>\x00
+          // The PTY service detects this marker and calls TIOCSWINSZ.
+          const marker = `\x00RESIZE:${dims.cols}x${rows}\x00`
+          wsRef.current.send(marker)
         }
       }
-      return lines.join('\n')
-    } catch {
-      return ''
     }
-  }
 
-  function onKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
-    if (e.key === 'Enter') {
-      const cmd = input
-      setInput('')
-      runCommand(cmd)
-    } else if (e.key === 'ArrowUp') {
-      e.preventDefault()
-      if (history.length === 0) return
-      const newIdx = historyIdx === -1 ? history.length - 1 : Math.max(0, historyIdx - 1)
-      setHistoryIdx(newIdx)
-      setInput(history[newIdx])
-    } else if (e.key === 'ArrowDown') {
-      e.preventDefault()
-      if (historyIdx === -1) return
-      const newIdx = historyIdx + 1
-      if (newIdx >= history.length) {
-        setHistoryIdx(-1)
-        setInput('')
-      } else {
-        setHistoryIdx(newIdx)
-        setInput(history[newIdx])
+    // Handle window resize → tell the PTY to resize
+    const onResize = () => {
+      if (fitRef.current) {
+        fitRef.current.fit()
+        rows = term.rows
+        sendResize()
       }
-    } else if (e.key === 'l' && (e.ctrlKey || e.metaKey)) {
-      e.preventDefault()
-      setLines([])
-    } else if (e.key === 'Tab') {
-      e.preventDefault()
-      // Simple tab completion
-      tabComplete()
     }
-  }
+    window.addEventListener('resize', onResize)
 
-  async function tabComplete() {
-    const parts = input.split(/\s+/)
-    const last = parts[parts.length - 1] ?? ''
-    // Find candidates in cwd or specified dir
-    const slashIdx = last.lastIndexOf('/')
-    const dir = slashIdx >= 0 ? resolvePath(last.slice(0, slashIdx)) : cwd
-    const prefix = slashIdx >= 0 ? last.slice(slashIdx + 1) : last
-    try {
-      const entries = await fsList(dir)
-      const matches = entries.filter((e) => e.name.startsWith(prefix))
-      if (matches.length === 1) {
-        const m = matches[0]
-        const completed = (slashIdx >= 0 ? last.slice(0, slashIdx + 1) : '') + m.name + (m.isDir ? '/' : '')
-        parts[parts.length - 1] = completed
-        setInput(parts.join(' '))
-      } else if (matches.length > 1) {
-        push({ type: 'output', text: matches.map((m) => m.name + (m.isDir ? '/' : '')).join('   ') })
-      }
-    } catch {
-      // ignore
-    }
-  }
-
-  // Drag-and-drop: drop a file → auto-run based on extension
-  function onTerminalDragOver(e: React.DragEvent) {
-    if (e.dataTransfer.types.includes(FILE_DRAG_MIME) || e.dataTransfer.types.includes('text/plain')) {
-      e.preventDefault()
-      e.dataTransfer.dropEffect = 'copy'
-      setDragOver(true)
-    }
-  }
-
-  function onTerminalDragLeave(e: React.DragEvent) {
-    if (e.currentTarget === e.target) setDragOver(false)
-  }
-
-  async function onTerminalDrop(e: React.DragEvent) {
-    e.preventDefault()
-    setDragOver(false)
-    const path = e.dataTransfer.getData(FILE_DRAG_MIME) || e.dataTransfer.getData('text/plain')
-    if (!path) return
-    await runDroppedFile(path)
-  }
-
-  /**
-   * Auto-run a file based on its extension.
-   *  - .js files → evaluate in a sandboxed Function and print output/errors
-   *  - .json files → parse and pretty-print
-   *  - directories → ls
-   *  - other text files (.txt, .md, .log, .sh, .py, .ts, etc.) → cat
-   *  - unknown → cat (server returns raw bytes-as-utf8)
-   */
-  async function runDroppedFile(path: string) {
-    const name = basename(path)
-    const ext = extname(path)
-
-    push({ type: 'system', text: `📂 Dropped: ${path}` })
-
-    try {
-      // Directory → ls
-      const parentDir = dirname(path)
-      const entries = await fsList(parentDir)
-      const entry = entries.find((e) => e.path === path)
-
-      if (entry?.isDir) {
-        await runCommand(`ls ${path}`)
-        return
-      }
-
-      // Read file content
-      const content = await fsRead(path)
-
-      if (ext === 'js') {
-        // Execute JS in a sandboxed Function with console redirected to a buffer
-        push({ type: 'input', text: `node ${path}`, cwd })
-        push({ type: 'output', text: `→ executing ${name}…` })
-        const logs: string[] = []
-        const fakeConsole = {
-          log: (...args: unknown[]) => logs.push(args.map(formatValue).join(' ')),
-          info: (...args: unknown[]) => logs.push(args.map(formatValue).join(' ')),
-          warn: (...args: unknown[]) => logs.push(args.map(formatValue).join(' ')),
-          error: (...args: unknown[]) => logs.push(args.map(formatValue).join(' ')),
-        }
+    // Also resize when the container size changes (e.g., window restored)
+    const resizeObserver = new ResizeObserver(() => {
+      if (fitRef.current) {
         try {
-          // Wrap in async function to allow await
-          const fn = new Function('console', `"use strict";\n${content}`)
-          const result = fn(fakeConsole)
-          if (result instanceof Promise) await result
-          if (logs.length > 0) {
-            logs.forEach((l) => push({ type: 'output', text: l }))
-          } else {
-            push({ type: 'output', text: '✓ (no output)' })
-          }
-        } catch (err) {
-          push({ type: 'error', text: String((err as Error)?.stack ?? err) })
-        }
-        return
+          fitRef.current.fit()
+          rows = term.rows
+          sendResize()
+        } catch {}
       }
+    })
+    resizeObserver.observe(containerRef.current)
 
-      if (ext === 'json') {
-        push({ type: 'input', text: `cat ${path} | json`, cwd })
-        try {
-          const parsed = JSON.parse(content)
-          push({ type: 'output', text: JSON.stringify(parsed, null, 2) })
-        } catch (err) {
-          push({ type: 'error', text: `Invalid JSON: ${(err as Error).message}` })
-          push({ type: 'output', text: content })
-        }
-        return
-      }
-
-      // Default: cat the file
-      await runCommand(`cat ${path}`)
-    } catch (err) {
-      push({ type: 'error', text: `Failed to run ${path}: ${(err as Error).message}` })
+    // Cleanup
+    return () => {
+      disposed = true
+      window.removeEventListener('resize', onResize)
+      resizeObserver.disconnect()
+      onDataDisposable.dispose()
+      try { ws.close() } catch {}
+      try { term.dispose() } catch {}
+      termRef.current = null
+      fitRef.current = null
+      wsRef.current = null
     }
-  }
-
-  function formatValue(v: unknown): string {
-    if (typeof v === 'string') return v
-    if (v === null) return 'null'
-    if (v === undefined) return 'undefined'
-    if (typeof v === 'object') {
-      try { return JSON.stringify(v) } catch { return String(v) }
-    }
-    return String(v)
-  }
+  }, [])
 
   return (
-    <div
-      className={cn(
-        'relative flex h-full w-full flex-col bg-zinc-950 text-zinc-100 font-mono text-xs sm:text-sm transition-colors',
-        dragOver && 'bg-emerald-950/40 ring-2 ring-inset ring-emerald-500/50'
-      )}
-      onClick={() => inputRef.current?.focus()}
-      onDragOver={onTerminalDragOver}
-      onDragLeave={onTerminalDragLeave}
-      onDrop={onTerminalDrop}
-    >
-      {dragOver && (
-        <div className="absolute inset-0 z-30 flex items-center justify-center pointer-events-none">
-          <div className="rounded-2xl border-2 border-dashed border-emerald-500/70 bg-emerald-500/15 px-10 py-6 text-center backdrop-blur-sm">
-            <div className="text-3xl mb-1">⚡</div>
-            <div className="text-emerald-200 font-semibold">Drop to run</div>
-            <div className="text-emerald-300/70 text-xs mt-1">.js executes · .json pretty-prints · folders list · others cat</div>
-          </div>
-        </div>
-      )}
-      <div ref={scrollRef} className="flex-1 overflow-y-auto p-3 space-y-0.5">
-        {lines.map((line, i) => (
-          <div key={i} className="whitespace-pre-wrap break-all leading-relaxed">
-            {line.type === 'input' ? (
-              <div>
-                <span className="text-emerald-400">webos-user@webos</span>
-                <span className="text-zinc-500">:</span>
-                <span className="text-sky-400">{line.cwd}</span>
-                <span className="text-zinc-500">$ </span>
-                <span className="text-zinc-100">{line.text}</span>
-              </div>
-            ) : line.type === 'error' ? (
-              <span className="text-rose-400">{line.text}</span>
-            ) : line.type === 'system' ? (
-              <span className="text-amber-400">{line.text}</span>
-            ) : (
-              <span className="text-zinc-200">{line.text}</span>
-            )}
-          </div>
-        ))}
-        <div className="flex items-center">
-          <span className="text-emerald-400">webos-user@webos</span>
-          <span className="text-zinc-500">:</span>
-          <span className="text-sky-400">{cwd}</span>
-          <span className="text-zinc-500">$&nbsp;</span>
-          <input
-            ref={inputRef}
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={onKeyDown}
-            autoFocus
-            spellCheck={false}
-            autoComplete="off"
-            className="flex-1 bg-transparent outline-none text-zinc-100 caret-emerald-400"
-          />
-        </div>
+    <div className="relative flex h-full w-full flex-col bg-zinc-950">
+      {/* Status bar */}
+      <div className={cn(
+        'flex items-center gap-2 px-3 py-1 text-[10px] font-mono border-b shrink-0',
+        connected
+          ? 'bg-emerald-950/50 border-emerald-800/50 text-emerald-300'
+          : 'bg-zinc-900 border-zinc-800 text-zinc-500'
+      )}>
+        <span className={cn(
+          'h-1.5 w-1.5 rounded-full',
+          connected ? 'bg-emerald-500 animate-pulse' : 'bg-zinc-600'
+        )} />
+        {connected ? 'CONNECTED' : 'DISCONNECTED'}
+        {error && <span className="text-rose-400 ml-2">{error}</span>}
+        {reconnectAttempt > 0 && !connected && (
+          <span className="text-amber-400 ml-2">reconnect #{reconnectAttempt}</span>
+        )}
+        <span className="ml-auto text-zinc-500">bash · vim · nano · all control keys work</span>
       </div>
+      {/* xterm.js container */}
+      <div
+        ref={containerRef}
+        className="flex-1 overflow-hidden p-1"
+        onClick={() => termRef.current?.focus()}
+      />
     </div>
   )
 }

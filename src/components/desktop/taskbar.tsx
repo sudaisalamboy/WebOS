@@ -3,17 +3,13 @@
 import { useState, useEffect } from 'react'
 import { useDesktopStore, AppId } from '@/lib/desktop-store'
 import { cn } from '@/lib/utils'
-import { Terminal, Globe, StickyNote, FolderOpen, Activity, Info, Search, Shield, Share2, Lock, Camera, Crosshair, Monitor, Video } from 'lucide-react'
+import { Terminal, Globe, StickyNote, FolderOpen, Activity, Info, Search, Lock, Camera, Monitor, Video } from 'lucide-react'
 
 const APPS: { id: AppId; name: string; icon: React.ReactNode; color: string }[] = [
   { id: 'terminal', name: 'Terminal', icon: <Terminal className="h-5 w-5" />, color: 'text-slate-300' },
   { id: 'browser', name: 'Browser', icon: <Globe className="h-5 w-5" />, color: 'text-sky-400' },
-  { id: 'tor-browser', name: 'Tor Browser', icon: <Shield className="h-5 w-5" />, color: 'text-violet-400' },
-  { id: 'tor-suite', name: 'TorSuite Pro', icon: <Crosshair className="h-5 w-5" />, color: 'text-cyan-400' },
   { id: 'remote-chrome', name: 'Remote Chrome', icon: <Monitor className="h-5 w-5" />, color: 'text-emerald-400' },
   { id: 'camera-inject', name: 'Camera Inject', icon: <Video className="h-5 w-5" />, color: 'text-fuchsia-400' },
-  { id: 'onionshare', name: 'OnionShare', icon: <Share2 className="h-5 w-5" />, color: 'text-emerald-400' },
-  { id: 'security-lab', name: 'Security Lab', icon: <Shield className="h-5 w-5" />, color: 'text-rose-400' },
   { id: 'screenshot', name: 'Screenshot', icon: <Camera className="h-5 w-5" />, color: 'text-cyan-400' },
   { id: 'encrypted-notes', name: 'Encrypted Notes', icon: <Lock className="h-5 w-5" />, color: 'text-amber-400' },
   { id: 'notes', name: 'Notes', icon: <StickyNote className="h-5 w-5" />, color: 'text-amber-400' },

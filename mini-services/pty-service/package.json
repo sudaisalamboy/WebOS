@@ -1,0 +1,11 @@
+{
+  "name": "pty-service",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot index.ts"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
