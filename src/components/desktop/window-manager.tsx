@@ -10,8 +10,8 @@ import { TextEditorApp } from '@/components/apps/text-editor-app'
 import { VpsDashboardApp } from '@/components/apps/vps-dashboard-app'
 import { RemoteChromeApp } from '@/components/apps/remote-chrome-app'
 import { EncryptedNotesApp } from '@/components/apps/encrypted-notes-app'
-import { ScreenshotApp } from '@/components/apps/screenshot-app'
 import { CameraInjectApp } from '@/components/apps/camera-inject-app'
+import { ChromeDebuggerApp } from '@/components/apps/chrome-debugger-app'
 import { AboutApp } from '@/components/apps/about-app'
 
 export function WindowManager() {
@@ -44,10 +44,10 @@ function renderApp(appId: string, payload?: Record<string, unknown>) {
       return <VpsDashboardApp />
     case 'remote-chrome':
       return <RemoteChromeApp />
-    case 'screenshot':
-      return <ScreenshotApp />
     case 'camera-inject':
       return <CameraInjectApp />
+    case 'chrome-debugger':
+      return <ChromeDebuggerApp />
     case 'encrypted-notes':
       return <EncryptedNotesApp />
     case 'about':

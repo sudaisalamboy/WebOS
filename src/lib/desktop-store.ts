@@ -12,8 +12,8 @@ export type AppId =
   | 'about'
   | 'remote-chrome'
   | 'encrypted-notes'
-  | 'screenshot'
   | 'camera-inject'
+  | 'chrome-debugger'
 
 export interface WindowState {
   id: string // unique instance id
@@ -109,17 +109,17 @@ const APP_DEFAULTS: Record<AppId, Omit<WindowState, 'id' | 'zIndex' | 'minimized
     icon: '🔐',
     x: 150, y: 100, width: 880, height: 560,
   },
-  screenshot: {
-    appId: 'screenshot',
-    title: 'Screenshot',
-    icon: '📷',
-    x: 130, y: 90, width: 900, height: 640,
-  },
   'camera-inject': {
     appId: 'camera-inject',
     title: 'Camera Inject',
     icon: '🎥',
     x: 120, y: 80, width: 520, height: 720,
+  },
+  'chrome-debugger': {
+    appId: 'chrome-debugger',
+    title: 'Chrome Debugger',
+    icon: '🔧',
+    x: 80, y: 60, width: 1100, height: 740,
   },
 }
 
