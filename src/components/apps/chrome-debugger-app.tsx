@@ -428,7 +428,7 @@ export function ChromeDebuggerApp() {
             <div className="flex items-center gap-2">
               <button
                 onClick={() => copyToClipboard(logs.map(l => `[${new Date(l.ts).toLocaleTimeString()}] ${l.level.toUpperCase()} ${l.msg}`).join('\n'), 'activity')}
-                className="flex items-center gap-1 text-[9px] text-zinc-600 hover:text-zinc-400 transition"
+                className="flex items-center gap-1 text-[9px] text-zinc-500 hover:text-zinc-300 transition rounded px-1.5 py-0.5 hover:bg-zinc-800"
               >
                 {copiedLog === 'activity' ? (
                   <><ClipboardCheck className="h-3 w-3 text-emerald-400" /> <span className="text-emerald-400">Copied</span></>
@@ -438,9 +438,9 @@ export function ChromeDebuggerApp() {
               </button>
               <button
                 onClick={() => setLogs([])}
-                className="text-[9px] text-zinc-600 hover:text-zinc-400"
+                className="text-[9px] text-zinc-500 hover:text-rose-400 transition rounded px-1.5 py-0.5 hover:bg-zinc-800"
               >
-                clear
+                Clear
               </button>
             </div>
           </div>
