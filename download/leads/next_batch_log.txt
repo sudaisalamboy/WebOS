@@ -1041,3 +1041,523 @@ Phase 3: Sending 42 pitch emails (watermark removed)
   [5/42] Phoenix Conservatory of Music
     ✗ FAILED: To field not found
     ... waiting 75s
+============================================================
+  NEXT BATCH — Austin TX + San Antonio TX schools
+============================================================
+
+>>> PHASE 1: Scrape Google Maps
+Phase 1: 24 queries, 0 already done
+
+  → tutoring centers in Denver CO
+  → navigating to: https://www.google.com/maps/search/tutoring+centers+in+Denver+CO…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'tutoring centers in Denver CO'
+    ✓ 27 listings (total: 27)
+
+  → private schools in Denver CO
+  → navigating to: https://www.google.com/maps/search/private+schools+in+Denver+CO…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'private schools in Denver CO'
+    ✓ 27 listings (total: 54)
+
+  → preschools in Denver CO
+  → navigating to: https://www.google.com/maps/search/preschools+in+Denver+CO…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'preschools in Denver CO'
+    ✓ 27 listings (total: 81)
+
+  → daycares in Denver CO
+  → navigating to: https://www.google.com/maps/search/daycares+in+Denver+CO…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 21 listings loaded
+    scroll 3/3: 28 listings loaded
+  ✓ extracted 28 listings from 'daycares in Denver CO'
+    ✓ 28 listings (total: 109)
+
+  → dance schools in Denver CO
+  → navigating to: https://www.google.com/maps/search/dance+schools+in+Denver+CO…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 21 listings loaded
+    scroll 3/3: 28 listings loaded
+  ✓ extracted 28 listings from 'dance schools in Denver CO'
+    ✓ 28 listings (total: 137)
+
+  → music schools in Denver CO
+  → navigating to: https://www.google.com/maps/search/music+schools+in+Denver+CO…
+    scroll 1/3: 10 listings loaded
+    scroll 2/3: 15 listings loaded
+    scroll 3/3: 20 listings loaded
+  ✓ extracted 20 listings from 'music schools in Denver CO'
+    ✓ 20 listings (total: 157)
+
+  → martial arts schools in Denver CO
+  → navigating to: https://www.google.com/maps/search/martial+arts+schools+in+Denver+CO…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 21 listings loaded
+    scroll 3/3: 22 listings loaded
+  ✓ extracted 22 listings from 'martial arts schools in Denver CO'
+    ✓ 22 listings (total: 179)
+
+  → driving schools in Denver CO
+  → navigating to: https://www.google.com/maps/search/driving+schools+in+Denver+CO…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'driving schools in Denver CO'
+    ✓ 27 listings (total: 206)
+
+  → montessori schools in Denver CO
+  → navigating to: https://www.google.com/maps/search/montessori+schools+in+Denver+CO…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'montessori schools in Denver CO'
+    ✓ 27 listings (total: 233)
+
+  → test prep centers in Denver CO
+  → navigating to: https://www.google.com/maps/search/test+prep+centers+in+Denver+CO…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'test prep centers in Denver CO'
+    ✓ 27 listings (total: 260)
+
+  → art schools in Denver CO
+  → navigating to: https://www.google.com/maps/search/art+schools+in+Denver+CO…
+    scroll 1/3: 10 listings loaded
+    scroll 2/3: 15 listings loaded
+    scroll 3/3: 20 listings loaded
+  ✓ extracted 20 listings from 'art schools in Denver CO'
+    ✓ 20 listings (total: 280)
+
+  → language schools in Denver CO
+  → navigating to: https://www.google.com/maps/search/language+schools+in+Denver+CO…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'language schools in Denver CO'
+    ✓ 27 listings (total: 307)
+
+  → tutoring centers in Colorado Springs CO
+  → navigating to: https://www.google.com/maps/search/tutoring+centers+in+Colorado+Springs+CO…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'tutoring centers in Colorado Springs CO'
+    ✓ 27 listings (total: 334)
+
+  → private schools in Colorado Springs CO
+  → navigating to: https://www.google.com/maps/search/private+schools+in+Colorado+Springs+CO…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 21 listings loaded
+    scroll 3/3: 22 listings loaded
+  ✓ extracted 22 listings from 'private schools in Colorado Springs CO'
+    ✓ 22 listings (total: 356)
+
+  → preschools in Colorado Springs CO
+  → navigating to: https://www.google.com/maps/search/preschools+in+Colorado+Springs+CO…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 21 listings loaded
+    scroll 3/3: 22 listings loaded
+  ✓ extracted 22 listings from 'preschools in Colorado Springs CO'
+    ✓ 22 listings (total: 378)
+
+  → daycares in Colorado Springs CO
+  → navigating to: https://www.google.com/maps/search/daycares+in+Colorado+Springs+CO…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 21 listings loaded
+    scroll 3/3: 22 listings loaded
+  ✓ extracted 22 listings from 'daycares in Colorado Springs CO'
+    ✓ 22 listings (total: 400)
+
+  → dance schools in Colorado Springs CO
+  → navigating to: https://www.google.com/maps/search/dance+schools+in+Colorado+Springs+CO…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'dance schools in Colorado Springs CO'
+    ✓ 27 listings (total: 427)
+
+  → music schools in Colorado Springs CO
+  → navigating to: https://www.google.com/maps/search/music+schools+in+Colorado+Springs+CO…
+    scroll 1/3: 10 listings loaded
+    scroll 2/3: 15 listings loaded
+    scroll 3/3: 20 listings loaded
+  ✓ extracted 20 listings from 'music schools in Colorado Springs CO'
+    ✓ 20 listings (total: 447)
+
+  → martial arts schools in Colorado Springs CO
+  → navigating to: https://www.google.com/maps/search/martial+arts+schools+in+Colorado+Springs+CO…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'martial arts schools in Colorado Springs CO'
+    ✓ 27 listings (total: 474)
+
+  → driving schools in Colorado Springs CO
+  → navigating to: https://www.google.com/maps/search/driving+schools+in+Colorado+Springs+CO…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'driving schools in Colorado Springs CO'
+    ✓ 27 listings (total: 501)
+
+  → montessori schools in Colorado Springs CO
+  → navigating to: https://www.google.com/maps/search/montessori+schools+in+Colorado+Springs+CO…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 21 listings loaded
+    scroll 3/3: 21 listings loaded
+  ✓ extracted 21 listings from 'montessori schools in Colorado Springs CO'
+    ✓ 21 listings (total: 522)
+
+  → test prep centers in Colorado Springs CO
+  → navigating to: https://www.google.com/maps/search/test+prep+centers+in+Colorado+Springs+CO…
+    scroll 1/3: 12 listings loaded
+    scroll 2/3: 12 listings loaded
+    scroll 3/3: 12 listings loaded
+  ✓ extracted 12 listings from 'test prep centers in Colorado Springs CO'
+    ✓ 12 listings (total: 534)
+
+  → art schools in Colorado Springs CO
+  → navigating to: https://www.google.com/maps/search/art+schools+in+Colorado+Springs+CO…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'art schools in Colorado Springs CO'
+    ✓ 27 listings (total: 561)
+
+  → language schools in Colorado Springs CO
+  → navigating to: https://www.google.com/maps/search/language+schools+in+Colorado+Springs+CO…
+    scroll 1/3: 14 listings loaded
+    scroll 2/3: 20 listings loaded
+    scroll 3/3: 27 listings loaded
+  ✓ extracted 27 listings from 'language schools in Colorado Springs CO'
+    ✓ 27 listings (total: 588)
+
+✓ Phase 1 complete: 478 unique listings, 72 no-website
+
+>>> PHASE 2: Find emails
+
+Phase 2: Finding emails for 72 no-website schools
+  Already found: 0, target: 50
+
+  [1/72] Tinker Town Preschool
+    emails: ['childcare@tinkertowndenver.com']
+    ✓ ADDED #1
+
+  [2/72] Daddy Mom Daycare
+    emails: ['us.sulekha@sulekha.com', '512-231-9226corporate@sulekha.com']
+    ✓ ADDED #2
+
+  [3/72] Step by Step Learning Center
+    emails: ['stepbystep@qwestoffice.net']
+    ✓ ADDED #3
+
+  [4/72] Denver Academy of Musical Arts
+    emails: ['admin@denverama.org']
+    ✓ ADDED #4
+
+  [5/72] Musical Life Denver
+    emails: ['office@musicallifedenver.com', 'collin@musicallifedenver.com', 'keelan@musicallifedenver.com']
+    ✓ ADDED #5
+
+  [6/72] School of Rock
+    emails: []
+    ✗ no email
+
+  [7/72] Sollohub School of Music
+    emails: ['sollohubmusic@gmail.com', 'info@swallowhillmusic.org']
+    ✓ ADDED #6
+
+  [8/72] Lamont School of Music
+    emails: ['musicadmission@du.edu']
+    ✓ ADDED #7
+
+  [9/72] Denver Music Institute
+    emails: ['info@swallowhillmusic.org', 'info@coloradomusicinstitute.com', 'info@denverbrass.org']
+    ⊘ already in registry — skipped
+
+  [10/72] Pirisen Music Lessons
+    emails: ['denver@pirisen.com', 'littleton@pirisen.com']
+    ✓ ADDED #8
+
+  [11/72] The Music Academy
+    emails: ['info@swallowhillmusic.org', 'music@lakewoodmusicschool.com']
+    ⊘ already in registry — skipped
+
+  [12/72] Children's Music Academy of Park Hill, Denver
+    emails: ['info@swallowhillmusic.org']
+    ⊘ already in registry — skipped
+
+  [13/72] Swallow Hill Music
+    emails: ['info@swallowhillmusic.org', 'development@swallowhillmusic.org']
+    ⊘ already in registry — skipped
+
+  [14/72] Moon Magnet Music School
+    emails: ['reed@moonmagnetmusicschool.com']
+    ✓ ADDED #9
+
+  [15/72] Colorado Music Institute
+    emails: []
+    ✗ no email
+
+  [16/72] Children's Music Academy of Congress Park
+    emails: ['info@childrensmusicacademy.org']
+    ✓ ADDED #10
+
+  [17/72] DVLP Academy
+    emails: []
+    ✗ no email
+
+  [18/72] Music Lesson Cafe
+    emails: ['info@swallowhillmusic.org']
+    ⊘ already in registry — skipped
+
+  [19/72] Merry Music Lessons - Denver
+    emails: ['info@swallowhillmusic.org', 'westcolfaxmusic@gmail.com', 'director@davinciarts.org']
+    ⊘ already in registry — skipped
+
+  [20/72] Musikkii
+    emails: ['info@swallowhillmusic.org', 'contact@musikkii.com', 'lakewoodschoolofmusic@gmail.com']
+    ⊘ already in registry — skipped
+
+  [21/72] Grant Street Music Lessons
+    emails: ['info@swallowhillmusic.org', 'info@coloradomusicinstitute.com', 'director@davinciarts.org']
+    ⊘ already in registry — skipped
+
+  [22/72] New Cottage Arts
+    emails: ['info@newcottagearts.org']
+    ✓ ADDED #11
+
+  [23/72] Make Great Music
+    emails: ['info@swallowhillmusic.org']
+    ⊘ already in registry — skipped
+
+  [24/72] Test
+    emails: ['info@testgeek.com', 'info@denvertestprep.com', 'denver@advantagetesting.com']
+    ⊘ already in registry — skipped
+
+  [25/72] Denver School Of The Arts
+    emails: ['info@dsafriends.org']
+    ✓ ADDED #12
+
+  [26/72] Art Students League of Denver
+    emails: ['info@asld.org']
+    ✓ ADDED #13
+
+  [27/72] REAL Academy of Art Colorado
+    emails: ['info@realacademyartco.org']
+    ✓ ADDED #14
+
+  [28/72] Kunsmiller Creative Arts Academy
+    emails: []
+    ✗ no email
+
+  [29/72] Academy of Art University
+    emails: ['meyer@du.edu', 'admission@du.edu', 'info@realacademyartco.org']
+    ✓ ADDED #15
+
+  [30/72] 丹佛美術館
+    emails: ['info@dsafriends.org', 'info@botanicgardens.org']
+    ⊘ already in registry — skipped
+
+  [31/72] Puff, Pass, and Paint Denver
+    emails: ['info@puffpassandpaint.com']
+    ✓ ADDED #16
+
+  [32/72] Art Garage
+    emails: ['info@artgaragedenver.com']
+    ✓ ADDED #17
+
+  [33/72] Rocky Mountain College of Art + Design
+    emails: ['marketing@rmcad.edu']
+    ✓ ADDED #18
+
+  [34/72] CU Denver College of Arts & Media
+    emails: ['admissions@cudenver.edu', 'cam@ucdenver.edu', 'visualarts@ucdenver.edu']
+    ✓ ADDED #19
+
+  [35/72] Center for Visual Art - Metropolitan State University of Denver
+    emails: []
+    ✗ no email
+
+  [36/72] Denver Art Society
+    emails: ['720-446-8813hello@denversartdistrict.org', 'publicart@denvergov.org']
+    ✓ ADDED #20
+
+  [37/72] ARTistic Fox Art & Design Academy
+    emails: []
+    ✗ no email
+
+  [38/72] RedLine Contemporary Art Center
+    emails: ['info@redlineart.org']
+    ✓ ADDED #21
+
+  [39/72] ReCreative Denver
+    emails: ['donate@recreativedenver.org', 'artsculture.recreation@denvergov.org', 'info@recreativedenver.org']
+    ✓ ADDED #22
+
+  [40/72] @Art Gym
+    emails: ['tamara@coloradosun.com']
+    ✓ ADDED #23
+
+  [41/72] Craftsman & Apprentice
+    emails: ['discovery_link@dpsk12.org', 'bethany@craftsmanandapprentice.com']
+    ✓ ADDED #24
+
+  [42/72] Grace Noel Art
+    emails: ['grace@gracenoel.art']
+    ✓ ADDED #25
+
+  [43/72] Arts Street
+    emails: ['publicart@denvergov.org']
+    ⊘ already in registry — skipped
+
+  [44/72] Denver Performing Arts Complex
+    emails: ['artscomplexpatronservices@denvergov.org']
+    ✓ ADDED #26
+
+  [45/72] Inglés entre panas
+    emails: ['international@rrcc.edu', 'learnenglish@emilygriffith.edu', 'admissions@emilygriffith.edu']
+    ✓ ADDED #27
+
+  [46/72] Private Language Center (Centro De Idiomas)
+    emails: ['international@rrcc.edu', 'learning@siflanguageschool.com', 'office@denverlanguageschool.org']
+    ⊘ already in registry — skipped
+
+  [47/72] Jasmin's Tutoring
+    emails: ['support@sittercity.com']
+    ⊘ already in registry — skipped
+
+  [48/72] Tutoring Colorado Springs
+    emails: ['jdorring@uccs.edu', 'go@uccs.edu']
+    ✓ ADDED #28
+
+  [49/72] Colorado Springs Music School
+    emails: ['office@coloradospringsmusicschool.com']
+    ✓ ADDED #29
+
+  [50/72] Colorado Springs Conservatory
+    emails: ['csc@csconservatory.org', 'support@peakradar.com', 'nhalvorson@csconservatory.org']
+    ✓ ADDED #30
+
+  [51/72] School of Rock
+    emails: ['office@coloradospringsmusicschool.com']
+    ⊘ already in registry — skipped
+
+  [52/72] Music & Play COS
+    emails: ['office@coloradospringsmusicschool.com', 'staff@musicandplaycos.com', 'solsen@uccs.edu']
+    ⊘ already in registry — skipped
+
+  [53/72] Rocky Mountain Academy of Music
+    emails: []
+    ✗ no email
+
+  [54/72] 232 Music Studios
+    emails: ['info@232musicstudios.com', 'info@lovelandacademyofmusic.com']
+    ✓ ADDED #31
+
+  [55/72] All Aboard Family Music
+    emails: ['info@allaboardfamilymusic.com', 'support@peakradar.com']
+    ✓ ADDED #32
+
+  [56/72] CCC MUSIC COMPANY
+    emails: ['shazia.ali@pikespeak.edu', 'office@coloradospringsmusicschool.com']
+    ✓ ADDED #33
+
+  [57/72] Pikes Peak Clay Studio (By Pikes Peak Artist Collective)
+    emails: ['info@pikespeakartist.com']
+    ✓ ADDED #34
+
+  [58/72] TR Music & Voice Lessons
+    emails: ['office@coloradospringsmusicschool.com', 'solsen@uccs.edu', 'cmcallis@uccs.edu']
+    ⊘ already in registry — skipped
+
+  [59/72] Silversound Guitar
+    emails: ['info@silversoundguitar.com', 'office@coloradospringsmusicschool.com']
+    ✓ ADDED #35
+
+  [60/72] Colorado College Summer Music Festival
+    emails: ['support@peakradar.com', 'file@kktv.com']
+    ⊘ already in registry — skipped
+
+  [61/72] Sperry S. And Ella Graber Packard Hall of Music and Art
+    emails: ['music.library@coloradocollege.edu']
+    ✓ ADDED #36
+
+  [62/72] Springs Jewelry Studio
+    emails: ['info@springsjewelrystudio.com', 'office@coloradospringsmusicschool.com', 'info@coloradospringsmusicschool.com']
+    ✓ ADDED #37
+
+  [63/72] Stars & Moon Voice Studio
+    emails: ['office@coloradospringsmusicschool.com']
+    ⊘ already in registry — skipped
+
+  [64/72] Fine Arts Center
+    emails: ['info@visitcos.com', 'support@peakradar.com', 'fac@coloradocollege.edu']
+    ✓ ADDED #38
+
+  [65/72] Music & Arts
+    emails: []
+    ✗ no email
+
+  [66/72] The Black Forest Academy of Music. LLC
+    emails: ['cmsbattlecreek@yourmusiccenter.org', 'info@lovelandacademyofmusic.com', 'president@blackroseacoustic.net']
+    ✓ ADDED #39
+
+  [67/72] Harmonic Garden School of Music
+    emails: ['josh@harmonicgarden.com', 'filler@godaddy.com']
+    ✓ ADDED #40
+
+  [68/72] Shin’s Music Studio
+    emails: ['office@coloradospringsmusicschool.com', 'support@peakradar.com']
+    ⊘ already in registry — skipped
+
+  [69/72] Springs GTMA Martial Arts
+    emails: ['melodynoller@springsata.com', 'info@dumyonmartialarts.org']
+    ✓ ADDED #41
+
+  [70/72] Elevated Arts Academy
+    emails: ['airacademy@asd20.org', 'amy.ripperger@asd20.org']
+    ✓ ADDED #42
+
+  [71/72] Sign 'n Grow Baby Sign Language
+    emails: []
+    ✗ no email
+
+  [72/72] ESL Classes Colorado Springs
+    emails: ['esl@pikespeak.edu']
+    ✓ ADDED #43
+
+✓ Phase 2 complete: 43 schools with emails
+
+>>> PHASE 3: Send pitches
+
+Phase 3: Sending 43 pitch emails (watermark removed)
+  Already sent (all campaigns): 149
+
+  [1/43] Tinker Town Preschool
+    ✗ FAILED: To field not found
+    ... waiting 75s
+
+  [2/43] Daddy Mom Daycare
+    ✗ FAILED: To field not found
+    ... waiting 75s
+
+  [3/43] Step by Step Learning Center
+    ✗ FAILED: To field not found
+    ... waiting 75s
+
+  [4/43] Denver Academy of Musical Arts
+    ✗ FAILED: To field not found
+    ... waiting 75s
+
+  [5/43] Musical Life Denver
+    ✗ FAILED: To field not found
+    ... waiting 75s

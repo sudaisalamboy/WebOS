@@ -1735,8 +1735,544 @@
       "source_query": "music schools in Tucson AZ",
       "first_seen": 1788584310,
       "last_seen": 1788584310
+    },
+    "childcare@tinkertowndenver.com": {
+      "original": "childcare@tinkertowndenver.com",
+      "normalized": "childcare@tinkertowndenver.com",
+      "business_name": "Tinker Town Preschool",
+      "source_query": "preschools in Denver CO",
+      "first_seen": 1788686246,
+      "last_seen": 1788686246
+    },
+    "us.sulekha@sulekha.com": {
+      "original": "us.sulekha@sulekha.com",
+      "normalized": "us.sulekha@sulekha.com",
+      "business_name": "Daddy Mom Daycare",
+      "source_query": "daycares in Denver CO",
+      "first_seen": 1788686249,
+      "last_seen": 1788686249
+    },
+    "512-231-9226corporate@sulekha.com": {
+      "original": "512-231-9226corporate@sulekha.com",
+      "normalized": "512-231-9226corporate@sulekha.com",
+      "business_name": "Daddy Mom Daycare",
+      "source_query": "daycares in Denver CO",
+      "first_seen": 1788686249,
+      "last_seen": 1788686249
+    },
+    "stepbystep@qwestoffice.net": {
+      "original": "stepbystep@qwestoffice.net",
+      "normalized": "stepbystep@qwestoffice.net",
+      "business_name": "Step by Step Learning Center",
+      "source_query": "daycares in Denver CO",
+      "first_seen": 1788686252,
+      "last_seen": 1788686252
+    },
+    "admin@denverama.org": {
+      "original": "admin@denverama.org",
+      "normalized": "admin@denverama.org",
+      "business_name": "Denver Academy of Musical Arts",
+      "source_query": "music schools in Denver CO",
+      "first_seen": 1788686255,
+      "last_seen": 1788686255
+    },
+    "office@musicallifedenver.com": {
+      "original": "office@musicallifedenver.com",
+      "normalized": "office@musicallifedenver.com",
+      "business_name": "Musical Life Denver",
+      "source_query": "music schools in Denver CO",
+      "first_seen": 1788686258,
+      "last_seen": 1788686258
+    },
+    "collin@musicallifedenver.com": {
+      "original": "collin@musicallifedenver.com",
+      "normalized": "collin@musicallifedenver.com",
+      "business_name": "Musical Life Denver",
+      "source_query": "music schools in Denver CO",
+      "first_seen": 1788686258,
+      "last_seen": 1788686258
+    },
+    "keelan@musicallifedenver.com": {
+      "original": "keelan@musicallifedenver.com",
+      "normalized": "keelan@musicallifedenver.com",
+      "business_name": "Musical Life Denver",
+      "source_query": "music schools in Denver CO",
+      "first_seen": 1788686258,
+      "last_seen": 1788686258
+    },
+    "sollohubmusic@gmail.com": {
+      "original": "sollohubmusic@gmail.com",
+      "normalized": "sollohubmusic@gmail.com",
+      "business_name": "Sollohub School of Music",
+      "source_query": "music schools in Denver CO",
+      "first_seen": 1788686274,
+      "last_seen": 1788686274
+    },
+    "info@swallowhillmusic.org": {
+      "original": "info@swallowhillmusic.org",
+      "normalized": "info@swallowhillmusic.org",
+      "business_name": "Sollohub School of Music",
+      "source_query": "music schools in Denver CO",
+      "first_seen": 1788686274,
+      "last_seen": 1788686274
+    },
+    "musicadmission@du.edu": {
+      "original": "musicadmission@du.edu",
+      "normalized": "musicadmission@du.edu",
+      "business_name": "Lamont School of Music",
+      "source_query": "music schools in Denver CO",
+      "first_seen": 1788686276,
+      "last_seen": 1788686276
+    },
+    "denver@pirisen.com": {
+      "original": "denver@pirisen.com",
+      "normalized": "denver@pirisen.com",
+      "business_name": "Pirisen Music Lessons",
+      "source_query": "music schools in Denver CO",
+      "first_seen": 1788686281,
+      "last_seen": 1788686281
+    },
+    "littleton@pirisen.com": {
+      "original": "littleton@pirisen.com",
+      "normalized": "littleton@pirisen.com",
+      "business_name": "Pirisen Music Lessons",
+      "source_query": "music schools in Denver CO",
+      "first_seen": 1788686281,
+      "last_seen": 1788686281
+    },
+    "reed@moonmagnetmusicschool.com": {
+      "original": "reed@moonmagnetmusicschool.com",
+      "normalized": "reed@moonmagnetmusicschool.com",
+      "business_name": "Moon Magnet Music School",
+      "source_query": "music schools in Denver CO",
+      "first_seen": 1788686292,
+      "last_seen": 1788686292
+    },
+    "info@childrensmusicacademy.org": {
+      "original": "info@childrensmusicacademy.org",
+      "normalized": "info@childrensmusicacademy.org",
+      "business_name": "Children's Music Academy of Congress Park",
+      "source_query": "music schools in Denver CO",
+      "first_seen": 1788686307,
+      "last_seen": 1788686307
+    },
+    "info@newcottagearts.org": {
+      "original": "info@newcottagearts.org",
+      "normalized": "info@newcottagearts.org",
+      "business_name": "New Cottage Arts",
+      "source_query": "music schools in Denver CO",
+      "first_seen": 1788686323,
+      "last_seen": 1788686323
+    },
+    "info@dsafriends.org": {
+      "original": "info@dsafriends.org",
+      "normalized": "info@dsafriends.org",
+      "business_name": "Denver School Of The Arts",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686328,
+      "last_seen": 1788686328
+    },
+    "info@asld.org": {
+      "original": "info@asld.org",
+      "normalized": "info@asld.org",
+      "business_name": "Art Students League of Denver",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686331,
+      "last_seen": 1788686331
+    },
+    "info@realacademyartco.org": {
+      "original": "info@realacademyartco.org",
+      "normalized": "info@realacademyartco.org",
+      "business_name": "REAL Academy of Art Colorado",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686334,
+      "last_seen": 1788686356
+    },
+    "meyer@du.edu": {
+      "original": "meyer@du.edu",
+      "normalized": "meyer@du.edu",
+      "business_name": "Academy of Art University",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686356,
+      "last_seen": 1788686356
+    },
+    "admission@du.edu": {
+      "original": "admission@du.edu",
+      "normalized": "admission@du.edu",
+      "business_name": "Academy of Art University",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686356,
+      "last_seen": 1788686356
+    },
+    "info@puffpassandpaint.com": {
+      "original": "info@puffpassandpaint.com",
+      "normalized": "info@puffpassandpaint.com",
+      "business_name": "Puff, Pass, and Paint Denver",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686361,
+      "last_seen": 1788686361
+    },
+    "info@artgaragedenver.com": {
+      "original": "info@artgaragedenver.com",
+      "normalized": "info@artgaragedenver.com",
+      "business_name": "Art Garage",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686364,
+      "last_seen": 1788686364
+    },
+    "marketing@rmcad.edu": {
+      "original": "marketing@rmcad.edu",
+      "normalized": "marketing@rmcad.edu",
+      "business_name": "Rocky Mountain College of Art + Design",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686366,
+      "last_seen": 1788686366
+    },
+    "admissions@cudenver.edu": {
+      "original": "admissions@cudenver.edu",
+      "normalized": "admissions@cudenver.edu",
+      "business_name": "CU Denver College of Arts & Media",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686372,
+      "last_seen": 1788686372
+    },
+    "cam@ucdenver.edu": {
+      "original": "cam@ucdenver.edu",
+      "normalized": "cam@ucdenver.edu",
+      "business_name": "CU Denver College of Arts & Media",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686372,
+      "last_seen": 1788686372
+    },
+    "visualarts@ucdenver.edu": {
+      "original": "visualarts@ucdenver.edu",
+      "normalized": "visualarts@ucdenver.edu",
+      "business_name": "CU Denver College of Arts & Media",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686372,
+      "last_seen": 1788686372
+    },
+    "720-446-8813hello@denversartdistrict.org": {
+      "original": "720-446-8813hello@denversartdistrict.org",
+      "normalized": "720-446-8813hello@denversartdistrict.org",
+      "business_name": "Denver Art Society",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686378,
+      "last_seen": 1788686378
+    },
+    "publicart@denvergov.org": {
+      "original": "publicart@denvergov.org",
+      "normalized": "publicart@denvergov.org",
+      "business_name": "Denver Art Society",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686378,
+      "last_seen": 1788686378
+    },
+    "info@redlineart.org": {
+      "original": "info@redlineart.org",
+      "normalized": "info@redlineart.org",
+      "business_name": "RedLine Contemporary Art Center",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686401,
+      "last_seen": 1788686401
+    },
+    "donate@recreativedenver.org": {
+      "original": "donate@recreativedenver.org",
+      "normalized": "donate@recreativedenver.org",
+      "business_name": "ReCreative Denver",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686403,
+      "last_seen": 1788686403
+    },
+    "artsculture.recreation@denvergov.org": {
+      "original": "artsculture.recreation@denvergov.org",
+      "normalized": "artsculture.recreation@denvergov.org",
+      "business_name": "ReCreative Denver",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686403,
+      "last_seen": 1788686403
+    },
+    "info@recreativedenver.org": {
+      "original": "info@recreativedenver.org",
+      "normalized": "info@recreativedenver.org",
+      "business_name": "ReCreative Denver",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686403,
+      "last_seen": 1788686403
+    },
+    "tamara@coloradosun.com": {
+      "original": "tamara@coloradosun.com",
+      "normalized": "tamara@coloradosun.com",
+      "business_name": "@Art Gym",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686408,
+      "last_seen": 1788686408
+    },
+    "discovery_link@dpsk12.org": {
+      "original": "discovery_link@dpsk12.org",
+      "normalized": "discovery_link@dpsk12.org",
+      "business_name": "Craftsman & Apprentice",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686412,
+      "last_seen": 1788686412
+    },
+    "bethany@craftsmanandapprentice.com": {
+      "original": "bethany@craftsmanandapprentice.com",
+      "normalized": "bethany@craftsmanandapprentice.com",
+      "business_name": "Craftsman & Apprentice",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686412,
+      "last_seen": 1788686412
+    },
+    "grace@gracenoel.art": {
+      "original": "grace@gracenoel.art",
+      "normalized": "grace@gracenoel.art",
+      "business_name": "Grace Noel Art",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686414,
+      "last_seen": 1788686414
+    },
+    "artscomplexpatronservices@denvergov.org": {
+      "original": "artscomplexpatronservices@denvergov.org",
+      "normalized": "artscomplexpatronservices@denvergov.org",
+      "business_name": "Denver Performing Arts Complex",
+      "source_query": "art schools in Denver CO",
+      "first_seen": 1788686419,
+      "last_seen": 1788686419
+    },
+    "international@rrcc.edu": {
+      "original": "international@rrcc.edu",
+      "normalized": "international@rrcc.edu",
+      "business_name": "Inglés entre panas",
+      "source_query": "language schools in Denver CO",
+      "first_seen": 1788686423,
+      "last_seen": 1788686423
+    },
+    "learnenglish@emilygriffith.edu": {
+      "original": "learnenglish@emilygriffith.edu",
+      "normalized": "learnenglish@emilygriffith.edu",
+      "business_name": "Inglés entre panas",
+      "source_query": "language schools in Denver CO",
+      "first_seen": 1788686423,
+      "last_seen": 1788686423
+    },
+    "admissions@emilygriffith.edu": {
+      "original": "admissions@emilygriffith.edu",
+      "normalized": "admissions@emilygriffith.edu",
+      "business_name": "Inglés entre panas",
+      "source_query": "language schools in Denver CO",
+      "first_seen": 1788686423,
+      "last_seen": 1788686423
+    },
+    "jdorring@uccs.edu": {
+      "original": "jdorring@uccs.edu",
+      "normalized": "jdorring@uccs.edu",
+      "business_name": "Tutoring Colorado Springs",
+      "source_query": "tutoring centers in Colorado Springs CO",
+      "first_seen": 1788686429,
+      "last_seen": 1788686429
+    },
+    "go@uccs.edu": {
+      "original": "go@uccs.edu",
+      "normalized": "go@uccs.edu",
+      "business_name": "Tutoring Colorado Springs",
+      "source_query": "tutoring centers in Colorado Springs CO",
+      "first_seen": 1788686429,
+      "last_seen": 1788686429
+    },
+    "office@coloradospringsmusicschool.com": {
+      "original": "office@coloradospringsmusicschool.com",
+      "normalized": "office@coloradospringsmusicschool.com",
+      "business_name": "Colorado Springs Music School",
+      "source_query": "music schools in Colorado Springs CO",
+      "first_seen": 1788686432,
+      "last_seen": 1788686468
+    },
+    "csc@csconservatory.org": {
+      "original": "csc@csconservatory.org",
+      "normalized": "csc@csconservatory.org",
+      "business_name": "Colorado Springs Conservatory",
+      "source_query": "music schools in Colorado Springs CO",
+      "first_seen": 1788686435,
+      "last_seen": 1788686435
+    },
+    "support@peakradar.com": {
+      "original": "support@peakradar.com",
+      "normalized": "support@peakradar.com",
+      "business_name": "Colorado Springs Conservatory",
+      "source_query": "music schools in Colorado Springs CO",
+      "first_seen": 1788686435,
+      "last_seen": 1788686473
+    },
+    "nhalvorson@csconservatory.org": {
+      "original": "nhalvorson@csconservatory.org",
+      "normalized": "nhalvorson@csconservatory.org",
+      "business_name": "Colorado Springs Conservatory",
+      "source_query": "music schools in Colorado Springs CO",
+      "first_seen": 1788686435,
+      "last_seen": 1788686435
+    },
+    "info@232musicstudios.com": {
+      "original": "info@232musicstudios.com",
+      "normalized": "info@232musicstudios.com",
+      "business_name": "232 Music Studios",
+      "source_query": "music schools in Colorado Springs CO",
+      "first_seen": 1788686447,
+      "last_seen": 1788686447
+    },
+    "info@lovelandacademyofmusic.com": {
+      "original": "info@lovelandacademyofmusic.com",
+      "normalized": "info@lovelandacademyofmusic.com",
+      "business_name": "232 Music Studios",
+      "source_query": "music schools in Colorado Springs CO",
+      "first_seen": 1788686447,
+      "last_seen": 1788686485
+    },
+    "info@allaboardfamilymusic.com": {
+      "original": "info@allaboardfamilymusic.com",
+      "normalized": "info@allaboardfamilymusic.com",
+      "business_name": "All Aboard Family Music",
+      "source_query": "music schools in Colorado Springs CO",
+      "first_seen": 1788686449,
+      "last_seen": 1788686449
+    },
+    "shazia.ali@pikespeak.edu": {
+      "original": "shazia.ali@pikespeak.edu",
+      "normalized": "shazia.ali@pikespeak.edu",
+      "business_name": "CCC MUSIC COMPANY",
+      "source_query": "music schools in Colorado Springs CO",
+      "first_seen": 1788686452,
+      "last_seen": 1788686452
+    },
+    "info@pikespeakartist.com": {
+      "original": "info@pikespeakartist.com",
+      "normalized": "info@pikespeakartist.com",
+      "business_name": "Pikes Peak Clay Studio (By Pikes Peak Artist Collective)",
+      "source_query": "music schools in Colorado Springs CO",
+      "first_seen": 1788686455,
+      "last_seen": 1788686455
+    },
+    "info@silversoundguitar.com": {
+      "original": "info@silversoundguitar.com",
+      "normalized": "info@silversoundguitar.com",
+      "business_name": "Silversound Guitar",
+      "source_query": "music schools in Colorado Springs CO",
+      "first_seen": 1788686459,
+      "last_seen": 1788686459
+    },
+    "music.library@coloradocollege.edu": {
+      "original": "music.library@coloradocollege.edu",
+      "normalized": "music.library@coloradocollege.edu",
+      "business_name": "Sperry S. And Ella Graber Packard Hall of Music and Art",
+      "source_query": "music schools in Colorado Springs CO",
+      "first_seen": 1788686466,
+      "last_seen": 1788686466
+    },
+    "info@springsjewelrystudio.com": {
+      "original": "info@springsjewelrystudio.com",
+      "normalized": "info@springsjewelrystudio.com",
+      "business_name": "Springs Jewelry Studio",
+      "source_query": "music schools in Colorado Springs CO",
+      "first_seen": 1788686468,
+      "last_seen": 1788686468
+    },
+    "info@coloradospringsmusicschool.com": {
+      "original": "info@coloradospringsmusicschool.com",
+      "normalized": "info@coloradospringsmusicschool.com",
+      "business_name": "Springs Jewelry Studio",
+      "source_query": "music schools in Colorado Springs CO",
+      "first_seen": 1788686468,
+      "last_seen": 1788686468
+    },
+    "info@visitcos.com": {
+      "original": "info@visitcos.com",
+      "normalized": "info@visitcos.com",
+      "business_name": "Fine Arts Center",
+      "source_query": "music schools in Colorado Springs CO",
+      "first_seen": 1788686473,
+      "last_seen": 1788686473
+    },
+    "fac@coloradocollege.edu": {
+      "original": "fac@coloradocollege.edu",
+      "normalized": "fac@coloradocollege.edu",
+      "business_name": "Fine Arts Center",
+      "source_query": "music schools in Colorado Springs CO",
+      "first_seen": 1788686473,
+      "last_seen": 1788686473
+    },
+    "cmsbattlecreek@yourmusiccenter.org": {
+      "original": "cmsbattlecreek@yourmusiccenter.org",
+      "normalized": "cmsbattlecreek@yourmusiccenter.org",
+      "business_name": "The Black Forest Academy of Music. LLC",
+      "source_query": "music schools in Colorado Springs CO",
+      "first_seen": 1788686485,
+      "last_seen": 1788686485
+    },
+    "president@blackroseacoustic.net": {
+      "original": "president@blackroseacoustic.net",
+      "normalized": "president@blackroseacoustic.net",
+      "business_name": "The Black Forest Academy of Music. LLC",
+      "source_query": "music schools in Colorado Springs CO",
+      "first_seen": 1788686485,
+      "last_seen": 1788686485
+    },
+    "josh@harmonicgarden.com": {
+      "original": "josh@harmonicgarden.com",
+      "normalized": "josh@harmonicgarden.com",
+      "business_name": "Harmonic Garden School of Music",
+      "source_query": "music schools in Colorado Springs CO",
+      "first_seen": 1788686488,
+      "last_seen": 1788686488
+    },
+    "filler@godaddy.com": {
+      "original": "filler@godaddy.com",
+      "normalized": "filler@godaddy.com",
+      "business_name": "Harmonic Garden School of Music",
+      "source_query": "music schools in Colorado Springs CO",
+      "first_seen": 1788686488,
+      "last_seen": 1788686488
+    },
+    "melodynoller@springsata.com": {
+      "original": "melodynoller@springsata.com",
+      "normalized": "melodynoller@springsata.com",
+      "business_name": "Springs GTMA Martial Arts",
+      "source_query": "martial arts schools in Colorado Springs CO",
+      "first_seen": 1788686492,
+      "last_seen": 1788686492
+    },
+    "info@dumyonmartialarts.org": {
+      "original": "info@dumyonmartialarts.org",
+      "normalized": "info@dumyonmartialarts.org",
+      "business_name": "Springs GTMA Martial Arts",
+      "source_query": "martial arts schools in Colorado Springs CO",
+      "first_seen": 1788686492,
+      "last_seen": 1788686492
+    },
+    "airacademy@asd20.org": {
+      "original": "airacademy@asd20.org",
+      "normalized": "airacademy@asd20.org",
+      "business_name": "Elevated Arts Academy",
+      "source_query": "art schools in Colorado Springs CO",
+      "first_seen": 1788686496,
+      "last_seen": 1788686496
+    },
+    "amy.ripperger@asd20.org": {
+      "original": "amy.ripperger@asd20.org",
+      "normalized": "amy.ripperger@asd20.org",
+      "business_name": "Elevated Arts Academy",
+      "source_query": "art schools in Colorado Springs CO",
+      "first_seen": 1788686496,
+      "last_seen": 1788686496
+    },
+    "esl@pikespeak.edu": {
+      "original": "esl@pikespeak.edu",
+      "normalized": "esl@pikespeak.edu",
+      "business_name": "ESL Classes Colorado Springs",
+      "source_query": "language schools in Colorado Springs CO",
+      "first_seen": 1788686506,
+      "last_seen": 1788686506
     }
   },
-  "updated_at": 1788584310,
-  "total_discovered": 217
+  "updated_at": 1788686506,
+  "total_discovered": 284
 }

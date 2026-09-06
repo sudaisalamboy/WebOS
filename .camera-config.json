@@ -1,0 +1,20 @@
+{
+  "sourceType": "test-pattern",
+  "zoom": 1,
+  "panX": 0,
+  "panY": 0,
+  "brightness": 100,
+  "contrast": 100,
+  "saturation": 100,
+  "hue": 0,
+  "mirror": false,
+  "flip": false,
+  "grayscale": false,
+  "sepia": false,
+  "invert": false,
+  "width": 640,
+  "height": 480,
+  "fps": 15,
+  "stretchX": 1,
+  "stretchY": 1
+}

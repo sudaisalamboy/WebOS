@@ -1,710 +1,721 @@
 [
   {
-    "name": "Middle School Tutors",
-    "rating": null,
-    "reviews": null,
-    "phone": "+1 480-707-2292",
+    "name": "Tinker Town Preschool",
+    "rating": 4.8,
+    "reviews": 16,
+    "phone": "+1 303-377-6217",
     "hasWebsite": false,
     "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Middle+School+Tutors/data=!4m7!3m6!1s0x872b0d082e3c0acb:0xd5fecb5a2ace3bba!8m2!3d33.4759176!4d-112.0220162!16s%2Fg%2F11sm903bf1!19sChIJywo8LggNK4cRujvOKlrL_tU?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "tutoring centers in Phoenix AZ",
+    "placeUrl": "https://www.google.com/maps/place/Tinker+Town+Preschool/data=!4m7!3m6!1s0x876c7b4b68a986b1:0x659de3ea872065bc!8m2!3d39.7591979!4d-104.8655743!16s%2Fg%2F11h1dc4hlh!19sChIJsYapaEt7bIcRvGUgh-rjnWU?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "preschools in Denver CO",
     "emails": [
-      "learnwithalohallc@gmail.com"
+      "childcare@tinkertowndenver.com"
     ],
-    "facebook_url": "https://www.facebook.com/groups/4200098158/posts/10162518023778159",
-    "other_url": null,
+    "facebook_url": null,
+    "other_url": "https://centralparkscoop.com/drop-in-childcare-in-stapleton-the-inside-scoop-on-tinker-town-opening-in-eastbridge-soon",
     "lead_type": "no-website-school"
   },
   {
-    "name": "Creciendo Con Proposito Learning Center,LLC",
+    "name": "Daddy Mom Daycare",
+    "rating": 4.8,
+    "reviews": 29,
+    "phone": "+1 303-935-6234",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Daddy+Mom+Daycare/data=!4m7!3m6!1s0x876b806b29ced73f:0x47abea0698d18c97!8m2!3d39.6695749!4d-105.0527408!16s%2Fg%2F1vbl81sz!19sChIJP9fOKWuAa4cRl4zRmAbqq0c?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "daycares in Denver CO",
+    "emails": [
+      "us.sulekha@sulekha.com",
+      "512-231-9226corporate@sulekha.com"
+    ],
+    "facebook_url": "https://www.facebook.com/Daddymomdaycare",
+    "other_url": "https://denverearlychildhood.org/field-notes-a-visit-with-daddy-mom-daycare",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Step by Step Learning Center",
+    "rating": 4.5,
+    "reviews": 24,
+    "phone": "+1 303-455-3665",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Step+by+Step+Learning+Center/data=!4m7!3m6!1s0x876c786237ba6f73:0xa11bd17223161c8b!8m2!3d39.7766934!4d-105.0161633!16s%2Fg%2F1ptyx07q6!19sChIJc2-6N2J4bIcRixwWI3LRG6E?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "daycares in Denver CO",
+    "emails": [
+      "stepbystep@qwestoffice.net"
+    ],
+    "facebook_url": null,
+    "other_url": "https://www.stepbystepchildcare.net",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Denver Academy of Musical Arts",
     "rating": 5,
-    "reviews": 6,
-    "phone": "+1 602-825-0680",
+    "reviews": 28,
+    "phone": null,
     "hasWebsite": false,
     "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Creciendo+Con+Proposito+Learning+Center,LLC/data=!4m7!3m6!1s0x872b13a892d14f6d:0xab41a981d51c28a1!8m2!3d33.4771954!4d-112.074704!16s%2Fg%2F11zd3z1n71!19sChIJbU_RkqgTK4cRoSgc1YGpQas?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "tutoring centers in Phoenix AZ",
+    "placeUrl": "https://www.google.com/maps/place/Denver+Academy+of+Musical+Arts/data=!4m7!3m6!1s0x876c7f8b4801c9f7:0x4892f4605e0d343b!8m2!3d39.6900003!4d-104.9415822!16s%2Fg%2F11n8v8bwlm!19sChIJ98kBSIt_bIcROzQNXmD0kkg?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Denver CO",
     "emails": [
-      "office@acceleratedlearningcenteraz.com",
-      "tutoring@cgc.edu"
+      "admin@denverama.org"
     ],
-    "facebook_url": "https://www.facebook.com/61587871814107/posts/creciendo-con-prop%C3%B3sito-learning-center-llc-is-with-ms-mildred/122121328035262393",
-    "other_url": "https://centralaz.edu/current-students/learning-center",
+    "facebook_url": "https://www.facebook.com/Denverama.org",
+    "other_url": "https://www.denverama.org",
     "lead_type": "no-website-school"
   },
   {
-    "name": "Luna Daycare",
+    "name": "Musical Life Denver",
+    "rating": 5,
+    "reviews": 217,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Musical+Life+Denver/data=!4m7!3m6!1s0x876c7fd31fd5cbb9:0xff282d742690b210!8m2!3d39.665037!4d-104.9873594!16s%2Fg%2F11cn3v8pzs!19sChIJucvVH9N_bIcRELKQJnQtKP8?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Denver CO",
+    "emails": [
+      "office@musicallifedenver.com",
+      "collin@musicallifedenver.com",
+      "keelan@musicallifedenver.com"
+    ],
+    "facebook_url": "https://www.facebook.com/musicallifedenver",
+    "other_url": "https://musicallifedenver.com",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Sollohub School of Music",
+    "rating": 5,
+    "reviews": 78,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Sollohub+School+of+Music/data=!4m7!3m6!1s0x876c79348d927927:0xc77b075e12ed1c7!8m2!3d39.7427794!4d-104.9668918!16s%2Fg%2F11c22mxfch!19sChIJJ3mSjTR5bIcRx9Eu4XWwdww?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Denver CO",
+    "emails": [
+      "sollohubmusic@gmail.com",
+      "info@swallowhillmusic.org"
+    ],
+    "facebook_url": "https://www.facebook.com/sollohubschool",
+    "other_url": "https://sollohubmusic.com",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Lamont School of Music",
     "rating": 4.6,
-    "reviews": 8,
-    "phone": "+1 602-317-0289",
+    "reviews": 24,
+    "phone": null,
     "hasWebsite": false,
     "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Luna+Daycare/data=!4m7!3m6!1s0x872b71860c4e6169:0xff0481c55d711b00!8m2!3d33.6309058!4d-112.0106373!16s%2Fg%2F11c5hhzv5m!19sChIJaWFODIZxK4cRABtxXcWBBP8?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "daycares in Phoenix AZ",
+    "placeUrl": "https://www.google.com/maps/place/Lamont+School+of+Music/data=!4m7!3m6!1s0x876c7e164f80521d:0xd5b10361089cb6c3!8m2!3d39.6746515!4d-104.9601227!16s%2Fm%2F0ds2622!19sChIJHVKATxZ-bIcRw7acCGEDsdU?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Denver CO",
     "emails": [
-      "lunadaycare@hotmail.comwebsite",
-      "contact@qualitybusinessawards.com"
+      "musicadmission@du.edu"
     ],
-    "facebook_url": "https://www.facebook.com/groups/254673208546795/posts/1799287994085301",
-    "other_url": "https://www.care.com/b/l/luna-daycare/phoenix-az-15824-n-33rd-pl",
+    "facebook_url": "https://www.facebook.com/DU.Lamont",
+    "other_url": "https://liberalarts.du.edu/lamont",
     "lead_type": "no-website-school"
   },
   {
-    "name": "Prestige Music Academy",
-    "rating": 4.8,
-    "reviews": 41,
-    "phone": "+1 602-253-6266",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Prestige+Music+Academy/data=!4m7!3m6!1s0x872b129698f3d347:0x97b71a41d33f2be7!8m2!3d33.506763!4d-112.0642161!16s%2Fg%2F1wcxdkhm!19sChIJR9PzmJYSK4cR5ys_00Eat5c?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Phoenix AZ",
-    "emails": [
-      "info@prestigemusicacademy.com",
-      "dewey@prestigemusicacademy.com"
-    ],
-    "facebook_url": null,
-    "other_url": "https://prestigemusicacademy.com/contact-us",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Phoenix Conservatory of Music",
-    "rating": 4.4,
-    "reviews": 32,
-    "phone": "+1 602-353-9900",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Phoenix+Conservatory+of+Music/data=!4m7!3m6!1s0x872b6cee677b7cd1:0x7f435bcecf525890!8m2!3d33.4849391!4d-112.0532902!16s%2Fg%2F1tdgkqsh!19sChIJ0Xx7Z-5sK4cRkFhSz85bQ38?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Phoenix AZ",
-    "emails": [
-      "info@pcmrocks.org",
-      "sadienorkin@gmail.com"
-    ],
-    "facebook_url": "https://www.facebook.com/PCMRocks/posts/every-great-musician-started-somewherebefore-the-performancesbefore-the-scholars/1640961038036319",
-    "other_url": "https://pcmrocks.org/about-pcm/contact-us",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Rosie's House A Music Academy",
-    "rating": 4.7,
-    "reviews": 50,
-    "phone": "+1 602-252-8475",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Rosie%27s+House+A+Music+Academy/data=!4m7!3m6!1s0x872b1241b9ca5da1:0xc1468be5303ed477!8m2!3d33.4466284!4d-112.0611564!16s%2Fg%2F1td13r5m!19sChIJoV3KuUESK4cRd9Q-MOWLRsE?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Phoenix AZ",
-    "emails": [
-      "info@rosieshouse.org"
-    ],
-    "facebook_url": "https://www.facebook.com/Rosieshouse",
-    "other_url": "https://rosieshouse.org",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Music Maker Workshops",
-    "rating": 4.9,
-    "reviews": 141,
-    "phone": "+1 480-706-1224",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Music+Maker+Workshops/data=!4m7!3m6!1s0x872b0492a3523529:0xad0c24673fa51580!8m2!3d33.3044996!4d-112.0125796!16s%2Fg%2F1tgpbr4c!19sChIJKTVSo5IEK4cRgBWlP2ckDK0?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Phoenix AZ",
-    "emails": [
-      "lessons@mmwaz.com",
-      "programs@mim.org"
-    ],
-    "facebook_url": "https://www.facebook.com/MusicMakerWorkshops",
-    "other_url": "https://mmwaz.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Phoenix Music Lessons",
-    "rating": 4.8,
-    "reviews": 33,
-    "phone": "+1 602-955-2702",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Phoenix+Music+Lessons/data=!4m7!3m6!1s0x872b723a92a58b2b:0x5173e7bf09c252bb!8m2!3d33.6125437!4d-112.013759!16s%2Fg%2F1thlzxq_!19sChIJK4ulkjpyK4cRu1LCCb_nc1E?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Phoenix AZ",
-    "emails": [
-      "contacts@phoenixcenterforthearts.org",
-      "arcadia@schoolofrock.com"
-    ],
-    "facebook_url": null,
-    "other_url": "https://phoenixmusiclessons.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Funtimes Music School",
-    "rating": 4.9,
-    "reviews": 45,
-    "phone": "+1 480-613-7560",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Funtimes+Music+School/data=!4m7!3m6!1s0x872b050557d4b43d:0x128d15308d53cc3c!8m2!3d33.3315191!4d-111.9780733!16s%2Fg%2F11yc349n6m!19sChIJPbTUVwUFK4cRPMxTjTAVjRI?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Phoenix AZ",
-    "emails": [
-      "funtimesmusicschool@gmail.com"
-    ],
-    "facebook_url": "https://www.facebook.com/p/Funtimes-Music-School-61572419310937",
-    "other_url": "https://www.funtimesmusicschool.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "School of Rock Arcadia",
-    "rating": 4.7,
-    "reviews": 25,
-    "phone": "+1 480-914-7625",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/School+of+Rock+Arcadia/data=!4m7!3m6!1s0x872b0da457085bf7:0xf430cb1565459ccf!8m2!3d33.4947326!4d-112.0212287!16s%2Fg%2F11s8zf4yf_!19sChIJ91sIV6QNK4cRz5xFZRXLMPQ?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Phoenix AZ",
-    "emails": [
-      "meissnerm@montclair.edu"
-    ],
-    "facebook_url": "https://www.facebook.com/cityoflightstheatreandcabaret/posts/meet-andrew-toniolo-andrew-is-a-vocal-and-choral-music-educatorperformer-and-he-/923216480235801",
-    "other_url": null,
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "North Phoenix Yamaha Music School",
+    "name": "Pirisen Music Lessons",
     "rating": 5,
-    "reviews": 13,
-    "phone": "+1 480-926-4441",
+    "reviews": 117,
+    "phone": null,
     "hasWebsite": false,
     "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/North+Phoenix+Yamaha+Music+School/data=!4m7!3m6!1s0x872b71990de5c317:0xb2aee3995e557d51!8m2!3d33.6126164!4d-112.0143811!16s%2Fg%2F11gy08r4mx!19sChIJF8PlDZlxK4cRUX1VXpnjrrI?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Phoenix AZ",
+    "placeUrl": "https://www.google.com/maps/place/Pirisen+Music+Lessons/data=!4m7!3m6!1s0x876c7b416a21fc13:0xf8a507ded7fbdb66!8m2!3d39.7707162!4d-104.8649027!16s%2Fg%2F11bxd_lwxx!19sChIJE_whakF7bIcRZtv7194Hpfg?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Denver CO",
     "emails": [
-      "office@evyms.com",
-      "piano@yamahanorthumberland.com"
+      "denver@pirisen.com",
+      "littleton@pirisen.com"
     ],
-    "facebook_url": "https://www.facebook.com/nycjobsuk/posts/could-you-inspire-the-next-generation-of-pianists-and-help-young-musicians-disco/1555762703256104",
-    "other_url": "https://www.evyamahamusic.com/junior-music-course-1",
+    "facebook_url": "https://www.facebook.com/pirisenmusiclessons",
+    "other_url": "https://www.pirisenmusiclessons.com",
     "lead_type": "no-website-school"
   },
   {
-    "name": "Arizona School of Music",
+    "name": "Moon Magnet Music School",
+    "rating": 5,
+    "reviews": 25,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Moon+Magnet+Music+School/data=!4m7!3m6!1s0xa3a48b8380bf3779:0x7cdd7eab63d2aa86!8m2!3d39.732543!4d-104.8444535!16s%2Fg%2F11pcpld5fx!19sChIJeTe_gIOLpKMRhqrSY6t-3Xw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Denver CO",
+    "emails": [
+      "reed@moonmagnetmusicschool.com"
+    ],
+    "facebook_url": null,
+    "other_url": "https://www.moonmagnetmusicschool.com",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Children's Music Academy of Congress Park",
+    "rating": 5,
+    "reviews": 1,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Children%27s+Music+Academy+of+Congress+Park/data=!4m7!3m6!1s0x876c7eaf115a5bb7:0xb8543a3f733ff802!8m2!3d39.7350112!4d-104.9466048!16s%2Fg%2F11h3vb_rvj!19sChIJt1taEa9-bIcRAvg_cz86VLg?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Denver CO",
+    "emails": [
+      "info@childrensmusicacademy.org"
+    ],
+    "facebook_url": null,
+    "other_url": "https://frontporchne.com/resource-guide-musicarts",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "New Cottage Arts",
+    "rating": 5,
+    "reviews": 11,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/New+Cottage+Arts/data=!4m7!3m6!1s0x876c7f0037617429:0xe252f913ce3ee368!8m2!3d39.7045683!4d-105.025577!16s%2Fg%2F11fmpx9wqp!19sChIJKXRhNwB_bIcRaOM-zhP5UuI?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Denver CO",
+    "emails": [
+      "info@newcottagearts.org"
+    ],
+    "facebook_url": "https://www.facebook.com/newcottagearts",
+    "other_url": "https://www.newcottagearts.org/about",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Denver School Of The Arts",
+    "rating": 4.3,
+    "reviews": 87,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Denver+School+Of+The+Arts/data=!4m7!3m6!1s0x876c7c77e9bf94e9:0x69ee4595f6d0e789!8m2!3d39.7482806!4d-104.9050995!16zL20vMGRzNGx6!19sChIJ6ZS_6Xd8bIcRiefQ9pVF7mk?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "art schools in Denver CO",
+    "emails": [
+      "info@dsafriends.org"
+    ],
+    "facebook_url": "https://www.facebook.com/dsaofficial",
+    "other_url": "https://dsa.dpsk12.org",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Art Students League of Denver",
+    "rating": 4.4,
+    "reviews": 53,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Art+Students+League+of+Denver/data=!4m7!3m6!1s0x876c7ee238e57793:0xace65732e9cb67c3!8m2!3d39.719724!4d-104.9834724!16s%2Fg%2F1pp2x67pd!19sChIJk3flOOJ-bIcRw2fL6TJX5qw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "art schools in Denver CO",
+    "emails": [
+      "info@asld.org"
+    ],
+    "facebook_url": "https://www.facebook.com/ArtStudentsLeagueDenver",
+    "other_url": "https://asld.org",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "REAL Academy of Art Colorado",
+    "rating": 5,
+    "reviews": 49,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/REAL+Academy+of+Art+Colorado/data=!4m7!3m6!1s0x876c7d0d2f351c51:0x77ec699ffae5a4fc!8m2!3d39.6779817!4d-104.9174282!16s%2Fg%2F11gnp_nm34!19sChIJURw1Lw19bIcR_KTl-p9p7Hc?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "art schools in Denver CO",
+    "emails": [
+      "info@realacademyartco.org"
+    ],
+    "facebook_url": "https://www.facebook.com/REALAcademyofArt",
+    "other_url": "https://realacademyartco.org",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Academy of Art University",
+    "rating": 5,
+    "reviews": 1,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Academy+of+Art+University/data=!4m7!3m6!1s0x876c7e77ba679321:0xf248de627b99a58!8m2!3d39.6924575!4d-104.9411669!16s%2Fg%2F1tcvjlb9!19sChIJIZNnund-bIcRWJq5J-aNJA8?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "art schools in Denver CO",
+    "emails": [
+      "meyer@du.edu",
+      "admission@du.edu",
+      "info@realacademyartco.org"
+    ],
+    "facebook_url": "https://www.facebook.com/REALAcademyofArt",
+    "other_url": "https://www.academyart.edu",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Puff, Pass, and Paint Denver",
+    "rating": 4.8,
+    "reviews": 429,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Puff,+Pass,+and+Paint+Denver/data=!4m7!3m6!1s0x876c79f2de1e7ff5:0xe2be24adbba00c27!8m2!3d39.6818689!4d-104.9908667!16s%2Fg%2F11n10yh_dk!19sChIJ9X8e3vJ5bIcRJwygu60kvuI?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "art schools in Denver CO",
+    "emails": [
+      "info@puffpassandpaint.com"
+    ],
+    "facebook_url": "https://www.facebook.com/puffpassandpaint",
+    "other_url": "https://puffpassandpaint.com",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Art Garage",
+    "rating": 4.8,
+    "reviews": 87,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Art+Garage/data=!4m7!3m6!1s0x876c7bf4ebd34d27:0x7ca0bc327cab6506!8m2!3d39.7508276!4d-104.9170984!16s%2Fg%2F1tfgk9br!19sChIJJ03T6_R7bIcRBmWrfDK8oHw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "art schools in Denver CO",
+    "emails": [
+      "info@artgaragedenver.com"
+    ],
+    "facebook_url": "https://www.facebook.com/ArtGarageDenver",
+    "other_url": "https://www.artgaragedenver.com",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Rocky Mountain College of Art + Design",
+    "rating": 3.3,
+    "reviews": 96,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Rocky+Mountain+College+of+Art+%2B+Design/data=!4m7!3m6!1s0x876b87230aee7afb:0xac1ade1b75943210!8m2!3d39.7435489!4d-105.0699741!16zL20vMDVqNnhi!19sChIJ-3ruCiOHa4cREDKUdRveGqw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "art schools in Denver CO",
+    "emails": [
+      "marketing@rmcad.edu"
+    ],
+    "facebook_url": "https://www.facebook.com/RMCADartschool",
+    "other_url": "https://www.rmcad.edu",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "CU Denver College of Arts & Media",
+    "rating": 3.4,
+    "reviews": 5,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/CU+Denver+College+of+Arts+%26+Media/data=!4m7!3m6!1s0x876c790a8e3b7e79:0xc3abec5628d7839c!8m2!3d39.7428157!4d-105.0040466!16s%2Fg%2F11h__kqmcd!19sChIJeX47jgp5bIcRnIPXKFbsq8M?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "art schools in Denver CO",
+    "emails": [
+      "admissions@cudenver.edu",
+      "cam@ucdenver.edu",
+      "visualarts@ucdenver.edu"
+    ],
+    "facebook_url": "https://www.facebook.com/CUDenverCAM",
+    "other_url": "https://artsandmedia.ucdenver.edu",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Denver Art Society",
+    "rating": 4.8,
+    "reviews": 94,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Denver+Art+Society/data=!4m7!3m6!1s0x876c7f303ef707f9:0x96bfc26e4fdf5671!8m2!3d39.728042!4d-104.9984043!16s%2Fm%2F0lhll5k!19sChIJ-Qf3PjB_bIcRcVbfT27Cv5Y?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "art schools in Denver CO",
+    "emails": [
+      "720-446-8813hello@denversartdistrict.org",
+      "publicart@denvergov.org"
+    ],
+    "facebook_url": null,
+    "other_url": "https://www.denverartsociety.org",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "RedLine Contemporary Art Center",
+    "rating": 4.7,
+    "reviews": 360,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/RedLine+Contemporary+Art+Center/data=!4m7!3m6!1s0x876c78df64346d5f:0x9edcfb3fbc739690!8m2!3d39.7550314!4d-104.9861995!16s%2Fg%2F11b77dy98m!19sChIJX200ZN94bIcRkJZzvD_73J4?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "art schools in Denver CO",
+    "emails": [
+      "info@redlineart.org"
+    ],
+    "facebook_url": "https://www.facebook.com/redlineartdenver",
+    "other_url": "https://www.redlineart.org",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "ReCreative Denver",
+    "rating": 4.8,
+    "reviews": 175,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/ReCreative+Denver/data=!4m7!3m6!1s0x876c7f30486f577b:0x8e28c54bdf0536ac!8m2!3d39.7285032!4d-104.9988996!16s%2Fg%2F11c2jbcw_w!19sChIJe1dvSDB_bIcRrDYF30vFKI4?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "art schools in Denver CO",
+    "emails": [
+      "donate@recreativedenver.org",
+      "artsculture.recreation@denvergov.org",
+      "info@recreativedenver.org"
+    ],
+    "facebook_url": null,
+    "other_url": "https://www.recreativedenver.org",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "@Art Gym",
+    "rating": 4.7,
+    "reviews": 73,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/%27@Art+Gym%27/data=!4m7!3m6!1s0x876c7c72c5e657c3:0x7ad05eccac1a1996!8m2!3d39.7394092!4d-104.9148124!16s%2Fg%2F11c3pwr32h!19sChIJw1fmxXJ8bIcRlhkarMxe0Ho?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "art schools in Denver CO",
+    "emails": [
+      "tamara@coloradosun.com"
+    ],
+    "facebook_url": "https://www.facebook.com/artgymdenver",
+    "other_url": "https://artgymdenver.com",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Craftsman & Apprentice",
+    "rating": 5,
+    "reviews": 26,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Craftsman+%26+Apprentice/data=!4m7!3m6!1s0x876c7930637c4659:0xbbe1fea15eff8cfd!8m2!3d39.7555414!4d-104.973698!16s%2Fg%2F11b5vwthvv!19sChIJWUZ8YzB5bIcR_Yz_XqH-4bs?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "art schools in Denver CO",
+    "emails": [
+      "discovery_link@dpsk12.org",
+      "bethany@craftsmanandapprentice.com"
+    ],
+    "facebook_url": null,
+    "other_url": "https://craftsmanandapprentice.com/?srsltid=AfmBOorRK6kWs-u8o64w0a2p57WAH_6STbiaklERRtSdKxby5zZkOZ0j",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Grace Noel Art",
+    "rating": 5,
+    "reviews": 81,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Grace+Noel+Art/data=!4m7!3m6!1s0x876c7f1719237c6d:0xdfad0ffa6b173780!8m2!3d39.728044!4d-104.9984705!16s%2Fg%2F11gy3bvzzn!19sChIJbXwjGRd_bIcRgDcXa_oPrd8?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "art schools in Denver CO",
+    "emails": [
+      "grace@gracenoel.art"
+    ],
+    "facebook_url": null,
+    "other_url": "https://gracenoel.art",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Denver Performing Arts Complex",
+    "rating": 4.8,
+    "reviews": 4921,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Denver+Performing+Arts+Complex/data=!4m7!3m6!1s0x876c78d1d5c6fb4b:0xa381e27f707e3d1d!8m2!3d39.7445062!4d-104.9981874!16zL20vMDl6d3Jj!19sChIJS_vG1dF4bIcRHT1-cH_igaM?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "art schools in Denver CO",
+    "emails": [
+      "artscomplexpatronservices@denvergov.org"
+    ],
+    "facebook_url": null,
+    "other_url": "https://www.denvercenter.org",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Inglés entre panas",
     "rating": 5,
     "reviews": 15,
-    "phone": "+1 480-227-0546",
+    "phone": "+1 720-356-2697",
     "hasWebsite": false,
     "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Arizona+School+of+Music/data=!4m7!3m6!1s0x872b7030f41193e7:0x2f61510ed774e104!8m2!3d33.6894638!4d-112.0427293!16s%2Fg%2F1hhghvpq5!19sChIJ55MR9DBwK4cRBOF01w5RYS8?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Phoenix AZ",
+    "placeUrl": "https://www.google.com/maps/place/Ingl%C3%A9s+entre+panas/data=!4m7!3m6!1s0x876c7dfc4910f0c9:0x2c3851a92214b7bd!8m2!3d39.7160926!4d-104.9045956!16s%2Fg%2F11xvf8pk9f!19sChIJyfAQSfx9bIcRvbcUIqlROCw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "language schools in Denver CO",
     "emails": [
-      "info@music.arizona.edu",
-      "info@arizonaschoolofmusic.com",
-      "musicweb@cfa.arizona.edu"
+      "international@rrcc.edu",
+      "learnenglish@emilygriffith.edu",
+      "admissions@emilygriffith.edu"
     ],
-    "facebook_url": "https://www.facebook.com/UAZMusic",
-    "other_url": "https://music.arizona.edu",
+    "facebook_url": null,
+    "other_url": "https://www.mapquest.com/us/colorado/ingles-entre-panas-646089526",
     "lead_type": "no-website-school"
   },
   {
-    "name": "The Note Room Academy of Music and Arts",
+    "name": "Tutoring Colorado Springs",
     "rating": 5,
-    "reviews": 9,
-    "phone": "+1 602-571-1909",
+    "reviews": 1,
+    "phone": "+1 719-377-4185",
     "hasWebsite": false,
     "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/The+Note+Room+Academy+of+Music+and+Arts/data=!4m7!3m6!1s0x872b664c8b46cd31:0x6d35d7c083584bf4!8m2!3d33.7011972!4d-112.1624792!16s%2Fg%2F12j1lxp31!19sChIJMc1Gi0xmK4cR9EtYg8DXNW0?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Phoenix AZ",
+    "placeUrl": "https://www.google.com/maps/place/Tutoring+Colorado+Springs/data=!4m7!3m6!1s0x871347bc8495b36f:0x7e17913d98cea636!8m2!3d38.7996345!4d-104.7466579!16s%2Fg%2F11fnw_nkbn!19sChIJb7OVhLxHE4cRNqbOmD2RF34?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "tutoring centers in Colorado Springs CO",
     "emails": [
-      "rscarboro@bellsouth.net"
+      "jdorring@uccs.edu",
+      "go@uccs.edu"
     ],
-    "facebook_url": "https://www.facebook.com/jimmydavismusic/posts/-jimmy-davis-music-is-now-in-avondale-were-excited-to-officially-introduce-jimmy/1518738026918133",
-    "other_url": "http://ga68.atspace.com/emails10.html",
+    "facebook_url": null,
+    "other_url": "https://mathcenter.uccs.edu/private-tutoring",
     "lead_type": "no-website-school"
   },
   {
-    "name": "Phoenix College Department of Music",
-    "rating": 4.7,
-    "reviews": 3,
-    "phone": "+1 602-285-7876",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Phoenix+College+Department+of+Music/data=!4m7!3m6!1s0x872b1255c72348bf:0xead525a2db0f897!8m2!3d33.4831146!4d-112.0874102!16s%2Fg%2F11bv3rtmc0!19sChIJv0gjx1USK4cRl_iwLVpSrQ4?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Phoenix AZ",
-    "emails": [
-      "bakerw@iecc.edu",
-      "julia.lougheed@phoenixcollege.edu",
-      "info@pcmrocks.org"
-    ],
-    "facebook_url": "https://www.facebook.com/phxcollege/posts/phoenix-college-not-only-has-a-historic-campus-but-a-historic-music-program-arou/1163065269201306",
-    "other_url": "https://www.phoenixcollege.edu/degrees-certificates/music-performance",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Blue in Green Youth Piano Academy",
-    "rating": 5,
-    "reviews": 16,
-    "phone": "+1 602-539-8438",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Blue+in+Green+Youth+Piano+Academy/data=!4m7!3m6!1s0x872b0dacdb94b8c5:0x7d2604c57ec283!8m2!3d33.4951776!4d-112.0263287!16s%2Fg%2F11h10ztr88!19sChIJxbiU26wNK4cRg8J-xQQmfQA?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Phoenix AZ",
-    "emails": [
-      "info@blueingreenaz.com"
-    ],
-    "facebook_url": "https://www.facebook.com/blueingreenaz",
-    "other_url": "https://www.blueingreenaz.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Squaw Peak Taekwondo - ATA",
+    "name": "Colorado Springs Music School",
     "rating": 4.8,
-    "reviews": 40,
-    "phone": "+1 602-997-1535",
+    "reviews": 31,
+    "phone": "+1 719-428-1982",
     "hasWebsite": false,
     "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Squaw+Peak+Taekwondo+-+ATA/data=!4m7!3m6!1s0x872b6d5d018df8e9:0xdcd5180d5b003ba8!8m2!3d33.5509066!4d-112.057003!16s%2Fg%2F1261dg6zc!19sChIJ6fiNAV1tK4cRqDsAWw0Y1dw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "martial arts schools in Phoenix AZ",
+    "placeUrl": "https://www.google.com/maps/place/Colorado+Springs+Music+School/data=!4m7!3m6!1s0x87134f5abfa0646f:0xa5c02d55fe7612d!8m2!3d38.8077019!4d-104.8405824!16s%2Fg%2F11fcr3w5fd!19sChIJb2Sgv1pPE4cRLWHnX9UCXAo?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Colorado Springs CO",
     "emails": [
-      "mark@gilbridesata.com",
-      "info@elementata.com",
-      "atajaykang@gmail.com"
+      "office@coloradospringsmusicschool.com"
     ],
-    "facebook_url": "https://www.facebook.com/Mr.Glbde",
-    "other_url": "https://ataarizona.com/schools/squaw-peak-ata",
+    "facebook_url": "https://www.facebook.com/coloradospringslessons",
+    "other_url": "https://www.coloradospringsmusicschool.com",
     "lead_type": "no-website-school"
   },
   {
-    "name": "Be An Artist",
-    "rating": 5,
-    "reviews": 3,
-    "phone": "+1 602-369-4555",
+    "name": "Colorado Springs Conservatory",
+    "rating": 4.8,
+    "reviews": 35,
+    "phone": "+1 719-577-4556",
     "hasWebsite": false,
     "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Be+An+Artist/data=!4m7!3m6!1s0x872b0463f6aaf63f:0x1035e66df9f90df0!8m2!3d33.3039882!4d-111.9944475!16s%2Fg%2F11bttk9xzb!19sChIJP_aq9mMEK4cR8A35-W3mNRA?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "art schools in Phoenix AZ",
+    "placeUrl": "https://www.google.com/maps/place/Colorado+Springs+Conservatory/data=!4m7!3m6!1s0x871345769167ca95:0xb24f36c7d7164025!8m2!3d38.8396991!4d-104.8219711!16s%2Fg%2F1td72g0q!19sChIJlcpnkXZFE4cRJUAW18c2T7I?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Colorado Springs CO",
     "emails": [
-      "info@azarts.gov",
-      "info@arizonaartistsguild.net",
-      "crobel@azopera.org"
+      "csc@csconservatory.org",
+      "support@peakradar.com",
+      "nhalvorson@csconservatory.org"
     ],
-    "facebook_url": null,
-    "other_url": "https://phoenixcenterforthearts.org",
+    "facebook_url": "https://www.facebook.com/csconservatory",
+    "other_url": "https://coloradospringsconservatory.org",
     "lead_type": "no-website-school"
   },
   {
-    "name": "English 4U LLC",
+    "name": "232 Music Studios",
     "rating": 4.9,
-    "reviews": 58,
-    "phone": "+1 602-538-8298",
+    "reviews": 79,
+    "phone": "+1 719-220-2515",
     "hasWebsite": false,
     "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/English+4U+LLC/data=!4m7!3m6!1s0x872b13e84e698a97:0x669fb097349d3faf!8m2!3d33.5165269!4d-112.0981475!16s%2Fg%2F11mpq_xysx!19sChIJl4ppTugTK4cRrz-dNJewn2Y?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "language schools in Phoenix AZ",
+    "placeUrl": "https://www.google.com/maps/place/232+Music+Studios/data=!4m7!3m6!1s0x87134ec5443b6eaf:0xbc668f01603133f2!8m2!3d38.9434771!4d-104.7736382!16s%2Fg%2F12ml2wwl2!19sChIJr247RMVOE4cR8jMxYAGPZrw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Colorado Springs CO",
     "emails": [
-      "support@literacyphoenix.org"
+      "info@232musicstudios.com",
+      "info@lovelandacademyofmusic.com"
     ],
-    "facebook_url": null,
-    "other_url": "https://trustanalytica.org/us/az/phoenix/reviews/english-4u-llc",
+    "facebook_url": "https://www.facebook.com/232pianolessons/posts/our-back-2-school-special-is-in-full-swing-come-check-out-232-music-studios-and-/1685551743576524",
+    "other_url": "https://232musicstudios.com/programs",
     "lead_type": "no-website-school"
   },
   {
-    "name": "HA.P.I Clases de Inglés",
-    "rating": 4.9,
-    "reviews": 94,
-    "phone": "+1 480-548-3556",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/HA.P.I+Clases+de+Ingl%C3%A9s/data=!4m7!3m6!1s0x872b09f9bdb79037:0x180272439a4bc080!8m2!3d33.4247127!4d-111.9486161!16s%2Fg%2F11rcsqtx1m!19sChIJN5C3vfkJK4cRgMBLmkNyAhg?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "language schools in Phoenix AZ",
-    "emails": [
-      "hapischool@yahoo.com",
-      "hapi.arizona@yahoo.com",
-      "gpsadulted@gilbertschools.net"
-    ],
-    "facebook_url": "https://www.facebook.com/HAPIclasesdeingles",
-    "other_url": "https://hapi-clases-de-ingls.wheree.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Language Centers West",
-    "rating": 2.3,
-    "reviews": 3,
-    "phone": "+1 602-571-5040",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Language+Centers+West/data=!4m7!3m6!1s0x872b6ce33f1297bb:0xb55507bbc69c7a6d!8m2!3d33.6819515!4d-112.1017673!16s%2Fg%2F1tf65yr4!19sChIJu5cSP-NsK4cRbXqcxrsHVbU?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "language schools in Phoenix AZ",
-    "emails": [
-      "adulteducation@cochise.edu",
-      "awc.lapaz@azwestern.edu",
-      "languageculture@phxindcenter.org"
-    ],
-    "facebook_url": "https://www.facebook.com/PhoenixIndianCenter/posts/y%C3%A1%C3%A1t%C3%A9%C3%A9h-shik%C3%A9%C3%AD-d%C3%B3%C3%B3-shidin%C3%A9%C3%A9-our-language-and-culture-dept-is-seeking-dedicated-d/1385283236960718",
-    "other_url": "https://www.languageinternational.com/school/language-centers-west-64934",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Clase de Ingles Gratis",
+    "name": "All Aboard Family Music",
     "rating": 5,
-    "reviews": 2,
-    "phone": "+1 623-888-1178",
+    "reviews": 45,
+    "phone": "+1 719-413-5700",
     "hasWebsite": false,
     "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Clase+de+Ingles+Gratis/data=!4m7!3m6!1s0x872b11bca2868b8d:0x54ae9390865a660e!8m2!3d33.3926607!4d-112.0814039!16s%2Fg%2F11ryk0hsbv!19sChIJjYuGorwRK4cRDmZahpCTrlQ?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "language schools in Phoenix AZ",
+    "placeUrl": "https://www.google.com/maps/place/All+Aboard+Family+Music/data=!4m7!3m6!1s0x6de2a53f31257123:0xf5aa0d545d4f6686!8m2!3d38.8633748!4d-104.8180687!16s%2Fg%2F11q8gs8nm0!19sChIJI3ElMT-l4m0RhmZPXVQNqvU?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Colorado Springs CO",
     "emails": [
-      "ask@acyraz.org",
-      "jeff.eldot@phoenixcollege.edu",
-      "gpsadulted@gilbertschools.net"
+      "info@allaboardfamilymusic.com",
+      "support@peakradar.com"
     ],
-    "facebook_url": "https://www.facebook.com/ACYRAZ/posts/do-you-or-someone-you-know-want-to-learn-english-enroll-at-acyr%EF%B8%8F-students-must-b/1396383149270101",
-    "other_url": "https://www.phoenixcollege.edu/degrees-certificates/english-second-language",
+    "facebook_url": "https://www.facebook.com/Allaboardfamilymusic",
+    "other_url": "https://www.allaboardfamilymusic.com",
     "lead_type": "no-website-school"
   },
   {
-    "name": "Magnus Language Institute",
+    "name": "CCC MUSIC COMPANY",
     "rating": 5,
     "reviews": 7,
-    "phone": "+1 602-492-8728",
+    "phone": "+1 719-472-4484",
     "hasWebsite": false,
     "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Magnus+Language+Institute/data=!4m7!3m6!1s0x872b0b6c7e34717d:0x559c4efe169c7478!8m2!3d33.4956777!4d-111.9253434!16s%2Fg%2F11j2405577!19sChIJfXE0fmwLK4cReHScFv5OnFU?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "language schools in Phoenix AZ",
+    "placeUrl": "https://www.google.com/maps/place/CCC+MUSIC+COMPANY/data=!4m7!3m6!1s0x871345e372c64b61:0x3fe744cdf325e8c0!8m2!3d38.9346368!4d-104.8084715!16s%2Fg%2F1264qhgxr!19sChIJYUvGcuNFE4cRwOgl881E5z8?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Colorado Springs CO",
     "emails": [
-      "info@magnusspanishservices.com",
-      "rosi@magnusspanishservices.com"
+      "shazia.ali@pikespeak.edu",
+      "office@coloradospringsmusicschool.com"
     ],
-    "facebook_url": "https://www.facebook.com/magnuslanguageinstitute",
-    "other_url": "https://square.site/book/LJ8CTBZMWW01Z/magnus-language-institute-scottsdale-az",
+    "facebook_url": "https://www.facebook.com/csconservatory/posts/ready-to-spend-the-week-in-the-recording-studio-join-us-for-music-production-cam/1395799259244067",
+    "other_url": "https://cccmusiccompany.com/about",
     "lead_type": "no-website-school"
   },
   {
-    "name": "The English Academy",
-    "rating": 4.3,
-    "reviews": 3,
-    "phone": "+1 602-237-6025",
+    "name": "Pikes Peak Clay Studio (By Pikes Peak Artist Collective)",
+    "rating": 4.9,
+    "reviews": 207,
+    "phone": "+1 719-286-3609",
     "hasWebsite": false,
     "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/The+English+Academy/data=!4m7!3m6!1s0x872b14c3c6cc8b43:0xd0c09afdb7e3931d!8m2!3d33.492672!4d-112.174068!16s%2Fg%2F119tqgp3r!19sChIJQ4vMxsMUK4cRHZPjt_2awNA?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "language schools in Phoenix AZ",
+    "placeUrl": "https://www.google.com/maps/place/Pikes+Peak+Clay+Studio+%28By+Pikes+Peak+Artist+Collective%29/data=!4m7!3m6!1s0x87135b2acdb65115:0xca238e0b83b9f88a!8m2!3d38.8493876!4d-104.8657437!16s%2Fg%2F1vl5h74r!19sChIJFVG2zSpbE4cRivi5gwuOI8o?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Colorado Springs CO",
     "emails": [
-      "oelas@azed.gov",
-      "jeff.eldot@phoenixcollege.edu",
-      "info@parlayvacay.com"
+      "info@pikespeakartist.com"
     ],
     "facebook_url": null,
-    "other_url": "https://www.azed.gov",
+    "other_url": "https://www.pikespeakartist.com",
     "lead_type": "no-website-school"
   },
   {
-    "name": "Clase de Inglés Gratis - Tempe",
+    "name": "Silversound Guitar",
     "rating": 5,
-    "reviews": 5,
-    "phone": "+1 480-896-2012",
+    "reviews": 70,
+    "phone": "+1 719-351-6566",
     "hasWebsite": false,
     "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Clase+de+Ingl%C3%A9s+Gratis+-+Tempe/data=!4m7!3m6!1s0x872b092b7c8cc125:0x5d6060bb3703e131!8m2!3d33.3961395!4d-111.904831!16s%2Fg%2F11mqm122gb!19sChIJJcGMfCsJK4cRMeEDN7tgYF0?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "language schools in Phoenix AZ",
+    "placeUrl": "https://www.google.com/maps/place/Silversound+Guitar/data=!4m7!3m6!1s0x87134f8f75050ec5:0xf4a7d2c8c7151868!8m2!3d38.9308954!4d-104.8142723!16s%2Fg%2F11h6rz9xb1!19sChIJxQ4FdY9PE4cRaBgVx8jSp_Q?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Colorado Springs CO",
     "emails": [
-      "kmills@gilacountyaz.gov",
-      "jeff.eldot@phoenixcollege.edu"
+      "info@silversoundguitar.com",
+      "office@coloradospringsmusicschool.com"
     ],
-    "facebook_url": "https://www.facebook.com/AvondaleAZLibrary/posts/english-for-speakers-of-other-languages-esol-ages-16for-adult-learners-these-fre/1458973342937748",
-    "other_url": "https://www.azed.gov/adultedservices/Adult-Education-Programs",
+    "facebook_url": null,
+    "other_url": "https://silversoundguitar.com",
     "lead_type": "no-website-school"
   },
   {
-    "name": "Kids of the King Tutoring Services, LLC",
-    "rating": null,
-    "reviews": null,
-    "phone": "+1 520-396-3633",
+    "name": "Sperry S. And Ella Graber Packard Hall of Music and Art",
+    "rating": 4.9,
+    "reviews": 14,
+    "phone": "+1 719-389-6545",
     "hasWebsite": false,
     "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Kids+of+the+King+Tutoring+Services,+LLC/data=!4m7!3m6!1s0x86d6714eb06f2a8f:0xa94f9065e51b3a1d!8m2!3d32.2468055!4d-110.9910461!16s%2Fg%2F11g65fnrbb!19sChIJjypvsE5x1oYRHTob5WWQT6k?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "tutoring centers in Tucson AZ",
+    "placeUrl": "https://www.google.com/maps/place/Sperry+S.+And+Ella+Graber+Packard+Hall+of+Music+and+Art/data=!4m7!3m6!1s0x871345408da10abf:0xce565daf60b53242!8m2!3d38.846323!4d-104.8253494!16s%2Fg%2F1hd_9n_ls!19sChIJvwqhjUBFE4cRQjK1YK9dVs4?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Colorado Springs CO",
     "emails": [
-      "meghan@kingtutoringoxford.com"
+      "music.library@coloradocollege.edu"
     ],
-    "facebook_url": "https://www.facebook.com/groups/326956177382083/posts/24637535009230861",
-    "other_url": "https://local.yahoo.com/info-206070669-kids-of-the-king-tutoring-services-tucson",
+    "facebook_url": null,
+    "other_url": "https://www.coloradocollege.edu/academics/dept/music/facilities",
     "lead_type": "no-website-school"
   },
   {
-    "name": "BuffTutor - University & High School Tutors - Tucson",
+    "name": "Springs Jewelry Studio",
+    "rating": 5,
+    "reviews": 12,
+    "phone": "+1 719-332-4096",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Springs+Jewelry+Studio/data=!4m7!3m6!1s0x8713456a3ef3f317:0xaa43e7b1b9408c6c!8m2!3d38.8358236!4d-104.7889719!16s%2Fg%2F11z24y0hqg!19sChIJF_PzPmpFE4cRbIxAubHnQ6o?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Colorado Springs CO",
+    "emails": [
+      "info@springsjewelrystudio.com",
+      "office@coloradospringsmusicschool.com",
+      "info@coloradospringsmusicschool.com"
+    ],
+    "facebook_url": "https://www.facebook.com/groups/coloradomusicians/posts/6132923773384940",
+    "other_url": "https://peakradar.com/organization/springs-jewelry-studio",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Fine Arts Center",
+    "rating": 4.6,
+    "reviews": 521,
+    "phone": "+1 719-634-5581",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Fine+Arts+Center/data=!4m7!3m6!1s0x871345409a7660c7:0xb5122e33122b2892!8m2!3d38.8457835!4d-104.8261714!16zL20vMGM4NjJi!19sChIJx2B2mkBFE4cRkigrEjMuErU?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Colorado Springs CO",
+    "emails": [
+      "info@visitcos.com",
+      "support@peakradar.com",
+      "fac@coloradocollege.edu"
+    ],
+    "facebook_url": "https://www.facebook.com/CSFineArtsCenter",
+    "other_url": "https://fac.coloradocollege.edu",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "The Black Forest Academy of Music. LLC",
+    "rating": 4.6,
+    "reviews": 9,
+    "phone": "+1 719-575-9969",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/The+Black+Forest+Academy+of+Music.+LLC/data=!4m7!3m6!1s0x87134c1b8bd110cf:0x2cce60dcb8c68b7c!8m2!3d39.0128639!4d-104.7274848!16s%2Fg%2F1tfmj83r!19sChIJzxDRixtME4cRfIvGuNxgziw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Colorado Springs CO",
+    "emails": [
+      "cmsbattlecreek@yourmusiccenter.org",
+      "info@lovelandacademyofmusic.com",
+      "president@blackroseacoustic.net"
+    ],
+    "facebook_url": "https://www.facebook.com/theblackroseacousticsociety/posts/black-rose-music-school-fall-2026-classes-now-opensmall-group-music-classes-star/1672308218237491",
+    "other_url": "https://pianolabcos.com/service-area/piano-lessons-el-paso-county-co/piano-lessons-colorado-springs-north-east/piano-lessons-black-forest-co-2",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Harmonic Garden School of Music",
+    "rating": 5,
+    "reviews": 3,
+    "phone": "+1 719-210-8292",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Harmonic+Garden+School+of+Music/data=!4m7!3m6!1s0x871345247a5351f5:0x8ea3c944a7e3ed29!8m2!3d38.840885!4d-104.8673529!16s%2Fg%2F11hbl7mbnv!19sChIJ9VFTeiRFE4cRKe3jp0TJo44?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "music schools in Colorado Springs CO",
+    "emails": [
+      "josh@harmonicgarden.com",
+      "filler@godaddy.com"
+    ],
+    "facebook_url": "https://www.facebook.com/harmonicgardenstudio",
+    "other_url": "https://harmonicgarden.com",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Springs GTMA Martial Arts",
+    "rating": 4.5,
+    "reviews": 34,
+    "phone": "+1 719-659-3826",
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Springs+GTMA+Martial+Arts/data=!4m7!3m6!1s0x871347906c637f4f:0x8a4c46e8c888b7a1!8m2!3d38.8390142!4d-104.7434803!16s%2Fg%2F11f8jyd4w4!19sChIJT39jbJBHE4cRobeIyOhGTIo?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "martial arts schools in Colorado Springs CO",
+    "emails": [
+      "melodynoller@springsata.com",
+      "info@dumyonmartialarts.org"
+    ],
+    "facebook_url": "https://www.facebook.com/SpringsGTMA",
+    "other_url": "https://springstkd.com",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "Elevated Arts Academy",
+    "rating": 5,
+    "reviews": 1,
+    "phone": null,
+    "hasWebsite": false,
+    "websiteUrl": null,
+    "placeUrl": "https://www.google.com/maps/place/Elevated+Arts+Academy/data=!4m7!3m6!1s0x87134fc427930d2d:0xc4b42369272a09b5!8m2!3d38.9010861!4d-104.843798!16s%2Fg%2F11t7c2x7cj!19sChIJLQ2TJ8RPE4cRtQkqJ2kjtMQ?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "art schools in Colorado Springs CO",
+    "emails": [
+      "airacademy@asd20.org",
+      "amy.ripperger@asd20.org"
+    ],
+    "facebook_url": "https://www.facebook.com/elevatedartscs",
+    "other_url": "https://airacademy.asd20.org/arts/visual-arts",
+    "lead_type": "no-website-school"
+  },
+  {
+    "name": "ESL Classes Colorado Springs",
     "rating": null,
     "reviews": null,
     "phone": null,
     "hasWebsite": false,
     "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/BuffTutor+-+University+%26+High+School+Tutors+-+Tucson/data=!4m7!3m6!1s0x86d671f5f6527a5d:0xc06ef7a7187f5e7c!8m2!3d32.2206618!4d-110.9446561!16s%2Fg%2F11thk4xkf6!19sChIJXXpS9vVx1oYRfF5_GKf3bsA?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "tutoring centers in Tucson AZ",
+    "placeUrl": "https://www.google.com/maps/place/ESL+Classes+Colorado+Springs/data=!4m7!3m6!1s0x871337601769cf71:0xccf6caeacad43a78!8m2!3d38.9669194!4d-104.5815969!16s%2Fg%2F11v0ks97f2!19sChIJcc9pF2A3E4cReDrUyurK9sw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
+    "_query": "language schools in Colorado Springs CO",
     "emails": [
-      "gomezm@arizona.edu",
-      "contact@bufftutor.com"
-    ],
-    "facebook_url": "https://www.facebook.com/BuffTutor",
-    "other_url": "https://bufftutor.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Felicia Chew Tutoring Services",
-    "rating": null,
-    "reviews": null,
-    "phone": "+1 520-909-3888",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Felicia+Chew+Tutoring+Services/data=!4m7!3m6!1s0x86d6739f6543adb7:0xafcc8123ad096f07!8m2!3d32.2760612!4d-110.9573957!16s%2Fg%2F11h6qkg970!19sChIJt61DZZ9z1oYRB28JrSOBzK8?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "tutoring centers in Tucson AZ",
-    "emails": [
-      "pcc-tutoring@pima.edu",
-      "jluquin2@pima.edu",
-      "tutors@eac.edu"
-    ],
-    "facebook_url": "https://www.facebook.com/groups/326956177382083/posts/24637535009230861",
-    "other_url": "https://www.pima.edu/academics-programs/academic-support/tutoring/index.html",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Lehner Private Tutoring",
-    "rating": 5,
-    "reviews": 15,
-    "phone": "+1 480-269-0419",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Lehner+Private+Tutoring/data=!4m7!3m6!1s0x86d67197c490fb57:0x9067bd3c0d40e7ac!8m2!3d46.423669!4d-129.9427086!16s%2Fg%2F11nh6991c2!19sChIJV_uQxJdx1oYRrOdADTy9Z5A?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "tutoring centers in Tucson AZ",
-    "emails": [
-      "lehnerprivatetutoring@gmail.com",
-      "thinktank@arizona.edu",
-      "pcc-tutoring@pima.edu"
-    ],
-    "facebook_url": "https://www.facebook.com/lehnerprivatetutoring",
-    "other_url": "https://nextdoor.com/pages/lehner-private-tutoring-tempe-az",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Beginning School",
-    "rating": 5,
-    "reviews": 3,
-    "phone": "+1 520-299-6066",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Beginning+School/data=!4m7!3m6!1s0x86d67236c15012bd:0x489bdfb568f7915c!8m2!3d32.288359!4d-110.9432608!16s%2Fm%2F0762fr3!19sChIJvRJQwTZy1oYRXJH3aLXfm0g?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "private schools in Tucson AZ",
-    "emails": [
-      "driegert@academydelsol.com",
-      "zwickl@istucson.org",
-      "admissions@istucson.org"
+      "esl@pikespeak.edu"
     ],
     "facebook_url": null,
-    "other_url": "https://thaaz.org/stem-private-school-tucson-az",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "El Rio Daycare",
-    "rating": 4.6,
-    "reviews": 17,
-    "phone": "+1 520-623-5912",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/El+Rio+Daycare/data=!4m7!3m6!1s0x86d671346f915555:0x4974be8012df93aa!8m2!3d32.2363653!4d-110.9944343!16s%2Fg%2F11ghq_vx_y!19sChIJVVWRbzRx1oYRqpPfEoC-dEk?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "daycares in Tucson AZ",
-    "emails": [
-      "info@elriodaycare.org"
-    ],
-    "facebook_url": null,
-    "other_url": "https://elriodaycare.org/contact-us",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "First Impressions Day Care",
-    "rating": 4.3,
-    "reviews": 16,
-    "phone": "+1 520-745-6354",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/First+Impressions+Day+Care/data=!4m7!3m6!1s0x86d66f938b2b6b79:0xd749176b8cd0dc56!8m2!3d32.2123383!4d-110.8746779!16s%2Fg%2F1tcxdn5h!19sChIJeWsri5Nv1oYRVtzQjGsXSdc?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "daycares in Tucson AZ",
-    "emails": [
-      "ranch@tlechildcare.com"
-    ],
-    "facebook_url": "https://www.facebook.com/p/First-Impressions-Preschool-Daycare-Center-100072450108835",
-    "other_url": "https://www.kindercare.com/our-centers/tucson/az/000385",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Tucson Music Lessons",
-    "rating": 5,
-    "reviews": 31,
-    "phone": "+1 520-260-8745",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Tucson+Music+Lessons/data=!4m7!3m6!1s0x86d674dc86d0afa9:0xfcfed88ae4e331d5!8m2!3d32.3249447!4d-111.0368588!16s%2Fg%2F11cn5m5z76!19sChIJqa_Qhtx01oYR1THj5IrY_vw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Tucson AZ",
-    "emails": [
-      "media@schoolofrock.com"
-    ],
-    "facebook_url": null,
-    "other_url": "https://www.schoolofrock.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "School of Rock Tucson",
-    "rating": 4.9,
-    "reviews": 30,
-    "phone": "+1 833-887-7625",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/School+of+Rock+Tucson/data=!4m7!3m6!1s0x86d66f01bc1be4f7:0x14fd93bcee75c3b3!8m2!3d32.2493105!4d-110.8516132!16s%2Fg%2F11t_v17gsc!19sChIJ9-QbvAFv1oYRs8N17ryT_RQ?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Tucson AZ",
-    "emails": [
-      "tucson@schoolofrock.com"
-    ],
-    "facebook_url": "https://www.facebook.com/SORTucson",
-    "other_url": "https://www.schoolofrock.com/locations/tucson/our-school",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Tempo Music and Arts Academy",
-    "rating": 4.9,
-    "reviews": 31,
-    "phone": "+1 520-268-8590",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Tempo+Music+and+Arts+Academy/data=!4m7!3m6!1s0x86d5e10e04bdd711:0xf76e0cd6c7faf753!8m2!3d32.361758!4d-111.119105!16s%2Fg%2F11s4s4_lpb!19sChIJEde9BA7h1YYRU_f6x9YMbvc?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Tucson AZ",
-    "emails": [
-      "info@tempemusicacademy.com"
-    ],
-    "facebook_url": "https://www.facebook.com/groups/thevillagesfloridacommunityinformation/posts/1544952117275304",
-    "other_url": "https://www.tempemusicacademy.com/contact-us",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Sonoran Music Academy",
-    "rating": 5,
-    "reviews": 14,
-    "phone": "+1 480-447-2302",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Sonoran+Music+Academy/data=!4m7!3m6!1s0x86d673ee659617d1:0x45f340a8d4a05636!8m2!3d32.2791421!4d-110.962368!16s%2Fg%2F11txxvcmwn!19sChIJ0ReWZe5z1oYRNlag1KhA80U?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Tucson AZ",
-    "emails": [
-      "info@sonoranmusicacademy.com"
-    ],
-    "facebook_url": "https://www.facebook.com/SonoranMusicAcademy",
-    "other_url": "https://www.sonoranmusicacademy.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Kindermusik At Musical Steps",
-    "rating": 5,
-    "reviews": 33,
-    "phone": "+1 520-784-4344",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Kindermusik+At+Musical+Steps/data=!4m7!3m6!1s0x86d66ee15b060821:0x5f27ae9fe60925f1!8m2!3d32.2496042!4d-110.812719!16s%2Fg%2F1vl5h6qr!19sChIJIQgGW-Fu1oYR8SUJ5p-uJ18?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Tucson AZ",
-    "emails": [
-      "mary@kindermusikwithmary.com"
-    ],
-    "facebook_url": "https://www.facebook.com/musicalsteps",
-    "other_url": "https://musicalsteps.kindermusik.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Instrumental Music Center Speedway",
-    "rating": 4.8,
-    "reviews": 862,
-    "phone": "+1 520-733-7334",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Instrumental+Music+Center+Speedway/data=!4m7!3m6!1s0x86d66f1abfc5306f:0xf1fa4ff4b904c0ff!8m2!3d32.2359358!4d-110.8420971!16s%2Fg%2F1tsr3n9n!19sChIJbzDFvxpv1oYR_8AEufRP-vE?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Tucson AZ",
-    "emails": [
-      "imcstaff@imc-az.com"
-    ],
-    "facebook_url": null,
-    "other_url": "https://www.imc-az.com/?srsltid=AfmBOopOg2zJm7kgjeGGiKf63smz_3-Pcq5Rx79nH8Zmn02nXnG00fYp",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Artistry Academy Music & Art",
-    "rating": 4.9,
-    "reviews": 90,
-    "phone": "+1 520-651-9617",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Artistry+Academy+Music+%26+Art/data=!4m7!3m6!1s0x86d60c30bd921189:0xfc5d8702f18d7fe0!8m2!3d32.426083!4d-110.9592802!16s%2Fg%2F12qfqqh_1!19sChIJiRGSvTAM1oYR4H-N8QKHXfw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Tucson AZ",
-    "emails": [
-      "artistryoffice@artistryacademy.net",
-      "office@artistryacademy.com"
-    ],
-    "facebook_url": "https://www.facebook.com/artistryacademymusicandart",
-    "other_url": "https://artistryacademy.net",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "TimeHarmony Music Lessons",
-    "rating": 5,
-    "reviews": 10,
-    "phone": "+1 520-326-7559",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/TimeHarmony+Music+Lessons/data=!4m7!3m6!1s0x86d6702820784375:0xe535447ed069a0b!8m2!3d32.1557085!4d-110.8825026!16s%2Fg%2F11fy54clbv!19sChIJdUN4IChw1oYRC5oG7UdUUw4?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Tucson AZ",
-    "emails": [
-      "timeharmonymusic@gmail.com",
-      "tucson@schoolofrock.com"
-    ],
-    "facebook_url": "https://www.facebook.com/TimeHarmony",
-    "other_url": "https://timeharmony.com/lessons",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Operachi Music School",
-    "rating": 5,
-    "reviews": 2,
-    "phone": "+1 520-370-8713",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Operachi+Music+School/data=!4m7!3m6!1s0x86d671647dd2dce7:0xdc508211219639c5!8m2!3d32.2508147!4d-110.9743958!16s%2Fg%2F11w35fv59t!19sChIJ59zSfWRx1oYRxTmWIRGCUNw?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Tucson AZ",
-    "emails": [
-      "operachimusicschool@gmail.com",
-      "halverson14@gmail.com"
-    ],
-    "facebook_url": "https://www.facebook.com/groups/1526195410901616/posts/3216051608582646",
-    "other_url": "https://www.operachimusicschool.com",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Music & Arts",
-    "rating": 4.7,
-    "reviews": 28,
-    "phone": "+1 520-731-8229",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Music+%26+Arts/data=!4m7!3m6!1s0x86d667b8c5246b2d:0x98b8497010ea9299!8m2!3d32.2060148!4d-110.7868871!16s%2Fg%2F11pqc48vbd!19sChIJLWskxbhn1oYRmZLqEHBJuJg?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Tucson AZ",
-    "emails": [
-      "tiffnene@hotmail.com"
-    ],
-    "facebook_url": "https://www.facebook.com/marshillfirstfriday/posts/-mars-hill-is-the-place-to-be-this-fourth-of-july-were-lighting-up-the-town-with/657841310643995",
-    "other_url": "http://www.ohhellofriendblog.com/2011/03/collection-trade.html",
-    "lead_type": "no-website-school"
-  },
-  {
-    "name": "Tucson Jazz Institute",
-    "rating": 4.6,
-    "reviews": 11,
-    "phone": "+1 520-514-0935",
-    "hasWebsite": false,
-    "websiteUrl": null,
-    "placeUrl": "https://www.google.com/maps/place/Tucson+Jazz+Institute/data=!4m7!3m6!1s0x86d66fa24c043f6f:0x742285a6493b7b16!8m2!3d32.1873234!4d-110.9362571!16s%2Fg%2F1tr7jv1x!19sChIJbz8ETKJv1oYRFns7SaaFInQ?authuser=0&hl=zh-TW&g_ep=EgoyMDI2MDkwMi4wIJJjKgBIAVAD&rclk=1",
-    "_query": "music schools in Tucson AZ",
-    "emails": [
-      "tucsonjazzinstitute@gmail.com",
-      "treasurer@tjmfdn.org"
-    ],
-    "facebook_url": "https://www.facebook.com/tucsonjazzinstitute",
-    "other_url": "https://www.tucsonjazzinstitute.com",
+    "other_url": "https://www.englishamerica.com",
     "lead_type": "no-website-school"
   }
 ]
