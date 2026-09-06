@@ -10,11 +10,7 @@ export type AppId =
   | 'text-editor'
   | 'vps-dashboard'
   | 'about'
-  | 'tor-browser'
-  | 'tor-suite'
   | 'remote-chrome'
-  | 'onionshare'
-  | 'security-lab'
   | 'encrypted-notes'
   | 'screenshot'
   | 'camera-inject'
@@ -101,35 +97,11 @@ const APP_DEFAULTS: Record<AppId, Omit<WindowState, 'id' | 'zIndex' | 'minimized
     icon: 'ℹ️',
     x: 280, y: 160, width: 480, height: 360,
   },
-  'tor-browser': {
-    appId: 'tor-browser',
-    title: 'Tor Browser',
-    icon: '🧅',
-    x: 100, y: 80, width: 1100, height: 700,
-  },
-  'tor-suite': {
-    appId: 'tor-suite',
-    title: 'TorSuite Pro',
-    icon: '🎯',
-    x: 60, y: 50, width: 1280, height: 780,
-  },
   'remote-chrome': {
     appId: 'remote-chrome',
     title: 'Remote Chrome',
     icon: '🖥️',
     x: 200, y: 100, width: 720, height: 640,
-  },
-  onionshare: {
-    appId: 'onionshare',
-    title: 'OnionShare',
-    icon: '🧄',
-    x: 120, y: 100, width: 880, height: 640,
-  },
-  'security-lab': {
-    appId: 'security-lab',
-    title: 'Security Lab',
-    icon: '🛡️',
-    x: 80, y: 60, width: 1200, height: 760,
   },
   'encrypted-notes': {
     appId: 'encrypted-notes',
