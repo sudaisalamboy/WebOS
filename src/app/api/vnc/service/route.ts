@@ -40,12 +40,72 @@ function checkPort(port: number): Promise<boolean> {
 }
 
 function pgrep(pattern: string): boolean {
+  // Use pgrep -f to match the full command line. But pgrep -f can match
+  // the bash subprocess that's running the pgrep command itself (because
+  // the command string contains the pattern). To avoid this, we use
+  // pgrep -f with -x (exact) won't work for full command lines, so instead
+  // we filter out our own PID + parent PIDs.
   try {
-    const result = execSync(`pgrep -f "${pattern}"`, { encoding: 'utf8' })
-    return result.trim().length > 0
+    // Use pgrep -f, then verify each match is a real process (not our subprocess)
+    const result = execSync(`pgrep -f "${pattern}" 2>/dev/null`, { encoding: 'utf8' })
+    const pids = result.trim().split('\n').filter(Boolean).map(p => parseInt(p))
+    if (pids.length === 0) return false
+    // Filter out our own process + immediate parents (which may contain the
+    // pattern in their command line because they spawned us)
+    const myPid = process.pid
+    const realPids = pids.filter(pid => {
+      if (pid === myPid) return false
+      if (pid === process.ppid) return false
+      // Read /proc/<pid>/cmdline to verify it's a real match
+      try {
+        const cmdline = fs.readFileSync(`/proc/${pid}/cmdline`, 'utf8')
+        // /proc cmdline uses null bytes as separators
+        const cmd = cmdline.replace(/\0/g, ' ').trim()
+        // Check if the pattern actually appears in the real command
+        return cmd.includes(pattern.replace(/\\/g, ''))
+      } catch {
+        return false
+      }
+    })
+    return realPids.length > 0
   } catch {
     return false
   }
+}
+
+function killPattern(pattern: string, timeoutMs: number = 3000): boolean {
+  // Kill processes matching the pattern, then verify they're actually dead.
+  // Use the same /proc/<pid>/cmdline verification as pgrep to avoid
+  // killing our own subprocesses.
+  const killOnce = () => {
+    try {
+      const result = execSync(`pgrep -f "${pattern}" 2>/dev/null`, { encoding: 'utf8' })
+      const pids = result.trim().split('\n').filter(Boolean).map(p => parseInt(p))
+      const myPid = process.pid
+      const realPids = pids.filter(pid => {
+        if (pid === myPid || pid === process.ppid) return false
+        try {
+          const cmd = fs.readFileSync(`/proc/${pid}/cmdline`, 'utf8').replace(/\0/g, ' ').trim()
+          return cmd.includes(pattern.replace(/\\/g, ''))
+        } catch { return false }
+      })
+      for (const pid of realPids) {
+        try { process.kill(pid, 'SIGKILL') } catch {}
+      }
+      return realPids.length
+    } catch { return 0 }
+  }
+  killOnce()
+  // Wait + verify
+  const deadline = Date.now() + timeoutMs
+  while (Date.now() < deadline) {
+    if (!pgrep(pattern)) return true
+    killOnce()
+    // Small sleep (sync)
+    const start = Date.now()
+    while (Date.now() - start < 300) { /* busy wait */ }
+  }
+  return !pgrep(pattern)
 }
 
 function pidAlive(pidFile: string): boolean {
@@ -121,11 +181,19 @@ async function startService(service: string): Promise<{ ok: boolean; error?: str
     }
     case 'chrome': {
       if (await checkPort(CDP_PORT)) return { ok: true, error: 'already running' }
-      // Make sure Xvfb is running first
+      // Make sure Xvfb is running first — Chrome needs a display.
+      // Auto-start Xvfb if it's down, then wait for it to be ready.
       if (!pgrep(`Xvfb :${DISPLAY_NUM}`)) {
-        // Auto-start Xvfb
-        await startService('xvfb')
-        await new Promise(r => setTimeout(r, 2000))
+        const xvfbResult = await startService('xvfb')
+        if (!xvfbResult.ok) return { ok: false, error: 'failed to start Xvfb (Chrome needs it)' }
+        // Wait for Xvfb to be ready (poll pgrep up to 5s)
+        for (let i = 0; i < 10; i++) {
+          if (pgrep(`Xvfb :${DISPLAY_NUM}`)) break
+          await new Promise(r => setTimeout(r, 500))
+        }
+        if (!pgrep(`Xvfb :${DISPLAY_NUM}`)) {
+          return { ok: false, error: 'Xvfb did not start — cannot launch Chrome' }
+        }
       }
       return new Promise((resolve) => {
         const env = {
@@ -149,7 +217,18 @@ async function startService(service: string): Promise<{ ok: boolean; error?: str
         ], { env, stdio: ['ignore', fs.openSync(`${LOG_DIR}/chrome.log`, 'a'), fs.openSync(`${LOG_DIR}/chrome.log`, 'a')], detached: true })
         fs.writeFileSync(`${PID_DIR}/chrome.pid`, String(p.pid))
         p.unref()
-        setTimeout(async () => resolve({ ok: await checkPort(CDP_PORT) }), 8000)
+        // Wait up to 12s for Chrome to come up (it's slow to start)
+        let waited = 0
+        const interval = setInterval(async () => {
+          waited += 1000
+          if (await checkPort(CDP_PORT)) {
+            clearInterval(interval)
+            resolve({ ok: true })
+          } else if (waited >= 12000) {
+            clearInterval(interval)
+            resolve({ ok: false, error: 'Chrome did not start within 12s — check log' })
+          }
+        }, 1000)
       })
     }
     case 'x11vnc': {
@@ -206,23 +285,34 @@ async function startService(service: string): Promise<{ ok: boolean; error?: str
 async function stopService(service: string): Promise<{ ok: boolean; error?: string }> {
   switch (service) {
     case 'xvfb':
-      try { execSync(`pkill -9 -f "Xvfb :${DISPLAY_NUM}"`) } catch {}
+      // Kill Xvfb + verify it's actually dead. Also kill dependent services
+      // (Chrome, x11vnc, websockify) since they depend on Xvfb being up.
+      killPattern(`Xvfb :${DISPLAY_NUM}`)
+      // Give dependents a moment to die, then clean them up
+      killPattern(`remote-debugging-port=${CDP_PORT}`)
+      killPattern(`x11vnc -display`)
+      killPattern(`x11vnc-watchdog`)
       try { fs.unlinkSync(`${PID_DIR}/xvfb.pid`) } catch {}
-      return { ok: true }
-    case 'chrome':
-      try { execSync('pkill -9 -f "remote-debugging-port=9222"') } catch {}
       try { fs.unlinkSync(`${PID_DIR}/chrome.pid`) } catch {}
-      return { ok: true }
-    case 'x11vnc':
-      try { execSync('pkill -9 -f "x11vnc"') } catch {}
-      try { execSync('pkill -9 -f "x11vnc-watchdog"') } catch {}
-      try { fs.unlinkSync(`${PID_DIR}/watchdog.pid`) } catch {}
       try { fs.unlinkSync(`${PID_DIR}/x11vnc.pid`) } catch {}
-      return { ok: true }
+      try { fs.unlinkSync(`${PID_DIR}/watchdog.pid`) } catch {}
+      return { ok: !pgrep(`Xvfb :${DISPLAY_NUM}`) }
+    case 'chrome':
+      killPattern(`remote-debugging-port=${CDP_PORT}`)
+      try { fs.unlinkSync(`${PID_DIR}/chrome.pid`) } catch {}
+      // Wait briefly for the port to free up
+      await new Promise(r => setTimeout(r, 500))
+      return { ok: !pgrep(`remote-debugging-port=${CDP_PORT}`) }
+    case 'x11vnc':
+      killPattern(`x11vnc -display`)
+      killPattern(`x11vnc-watchdog`)
+      try { fs.unlinkSync(`${PID_DIR}/x11vnc.pid`) } catch {}
+      try { fs.unlinkSync(`${PID_DIR}/watchdog.pid`) } catch {}
+      return { ok: !pgrep(`x11vnc -display`) }
     case 'websockify':
-      try { execSync('pkill -9 -f "websockify"') } catch {}
+      killPattern(`websockify`)
       try { fs.unlinkSync(`${PID_DIR}/websockify.pid`) } catch {}
-      return { ok: true }
+      return { ok: !pgrep(`websockify`) }
     case 'all': {
       await stopService('websockify')
       await stopService('x11vnc')
