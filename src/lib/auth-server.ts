@@ -3,6 +3,7 @@ import { randomBytes, createHmac } from 'node:crypto'
 import path from 'node:path'
 import { existsSync, mkdirSync, chmodSync, writeFileSync, readFileSync } from 'node:fs'
 import { SESSION_COOKIE_NAME, SESSION_TOKEN_HEADER } from './auth-shared'
+import { fileURLToPath } from 'node:url'
 
 
 
@@ -26,7 +27,9 @@ export { SESSION_COOKIE_NAME, SESSION_TOKEN_HEADER }
  *   the server secret to invalidate all sessions if needed.
  */
 
-const AUTH_DIR = '/home/z/my-project/.auth'
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+const PROJECT_ROOT = path.join(__dirname, '../..')
+const AUTH_DIR = path.join(PROJECT_ROOT, '.auth')
 const HASH_FILE = path.join(AUTH_DIR, 'password.hash')
 const SECRET_FILE = path.join(AUTH_DIR, 'server.secret')
 const SALT_ROUNDS = 10

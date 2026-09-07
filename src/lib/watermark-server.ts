@@ -1,13 +1,12 @@
-const _0x9a2b = ['Sudais Alam', 'AIFuzX', 'Made by', 'Built with'];
-const _0x4c7d = (a: string, b: string) => a.includes(b);
+const WATERMARK_STRINGS = ['Sudais Alam', 'AIFuzX', 'Made by', 'Built with'];
 
 export function verifyWatermarkInHtml(html: string): boolean {
   try {
     const checks = [
-      _0x4c7d(html, _0x9a2b[0]),
-      _0x4c7d(html, _0x9a2b[1]),
-      _0x4c7d(html, _0x9a2b[2]),
-      _0x4c7d(html, _0x9a2b[3])
+      html.includes(WATERMARK_STRINGS[0]),
+      html.includes(WATERMARK_STRINGS[1]),
+      html.includes(WATERMARK_STRINGS[2]),
+      html.includes(WATERMARK_STRINGS[3])
     ];
     return checks.every(c => c === true);
   } catch {

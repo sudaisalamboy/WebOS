@@ -15,12 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VPS Dashboard · Real-time Server Monitoring",
-  description: "Real-time VPS monitoring dashboard with CPU, memory, disk, and network stats. Built with Next.js, socket.io, and shadcn/ui.",
-  keywords: ["VPS", "dashboard", "monitoring", "server stats", "Next.js", "socket.io"],
-  icons: {
-    icon: "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
-  },
+  title: "WebOS · Browser-based Desktop Environment",
+  description: "A sandboxed desktop environment running entirely in your browser. Built with Next.js, shadcn/ui, and framer-motion.",
+  keywords: ["WebOS", "desktop", "browser", "Next.js", "shadcn/ui"],
 };
 
 export default function RootLayout({

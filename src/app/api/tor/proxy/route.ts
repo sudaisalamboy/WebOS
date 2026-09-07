@@ -20,6 +20,7 @@ const BLOCKED_DOMAINS = [
   'doubleclick.net', 'adservice.google.com',
   'popads.net', 'popcash.net', 'propellerads.com',
   'exoclick.com', 'juicyads.com', 'trafficjunky.com',
+  'adsterra.com',
   'mc.yandex.ru', 'yandex.ru/metrika',
   'hotjar.com', 'mixpanel.com', 'segment.io',
   'facebook.net', 'connect.facebook.net',
@@ -27,6 +28,7 @@ const BLOCKED_DOMAINS = [
   'propeller-tracking.com', 'adspyglass.com',
   'syndication.exosrv.com', 'main.exosrv.com',
   'syndication.realsrv.com', 'a.realsrv.com',
+  'pemsrv.com', 's.pemsrv.com',
 ]
 
 function isBlockedUrl(url: string): boolean {
@@ -69,7 +71,8 @@ function fetchViaTor(
             'text/html,application/xhtml+xml,application/xml;q=0.9,application/json,image/avif,image/webp,*/*;q=0.8',
           'Accept-Language': 'en-US,en;q=0.5',
           // Ask for compressed responses — we'll decompress them before sending
-          // IGNORE the Accept-Encoding: identity header and gzip anyway, which would
+          // to the client. This is critical because some CDNs ignore the
+          // Accept-Encoding: identity header and gzip anyway, which would
           // leave us with raw gzip bytes that the browser can't parse as JS/CSS.
           'Accept-Encoding': 'gzip, deflate',
           'Referer': new URL(url).origin + '/',
@@ -78,7 +81,7 @@ function fetchViaTor(
       (res) => {
         if (
           (res.statusCode === 301 || res.statusCode === 302 || res.statusCode === 303 ||
-           res.statusCode === 307 || res.statusCode === 308) &&
+            res.statusCode === 307 || res.statusCode === 308) &&
           res.headers.location &&
           redirectCount < maxRedirects
         ) {
@@ -138,7 +141,7 @@ function fetchViaTor(
 
     req.on('error', (err) => {
       let host = url
-      try { host = new URL(url).hostname } catch {}
+      try { host = new URL(url).hostname } catch { }
       let msg = err.message || ''
       const code = (err as NodeJS.ErrnoException).code || ''
       if (code === 'ENOTFOUND') msg = `Domain not found: ${host}`
@@ -150,7 +153,7 @@ function fetchViaTor(
     })
     req.on('timeout', () => {
       let host = url
-      try { host = new URL(url).hostname } catch {}
+      try { host = new URL(url).hostname } catch { }
       req.destroy()
       reject(new Error(`Request to ${host} timed out (Tor circuits can be slow — try again)`))
     })
@@ -322,6 +325,7 @@ script[src*="googlesyndication"], script[src*="google-analytics"],
 script[src*="googletagmanager"], script[src*="popads"],
 script[src*="popcash"], script[src*="propellerads"],
 [class*="exoclick"], [class*="juicyads"], [class*="trafficjunky"],
+[class*="adsterra"],
 [class*="footer-ad"], [class*="header-ad"], [class*="sidebar-ad"],
 [class*="video-ad"], [class*="pre-roll"], [class*="mid-roll"],
 [class*="ad-overlay"], [class*="ad-popup"], [class*="ad-banner"],
