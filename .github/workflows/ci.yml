@@ -31,6 +31,9 @@ jobs:
     - name: Run lint
       run: bun run lint
     
+    - name: Type check
+      run: bunx tsc --noEmit
+    
     - name: Generate Prisma client
       run: bun run db:generate
     
@@ -38,6 +41,23 @@ jobs:
       run: bun run build
       env:
         NODE_ENV: production
+    
+    - name: Check for security issues
+      run: bunx audit
+    
+    - name: Install Playwright browsers
+      run: bunx playwright install --with-deps chromium
+    
+    - name: Run E2E tests
+      run: bunx playwright test
+    
+    - name: Upload test results
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: playwright-report
+        path: playwright-report/
+        retention-days: 7
     
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
