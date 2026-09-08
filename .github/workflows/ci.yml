@@ -33,9 +33,6 @@ jobs:
     - name: Type check
       run: bunx tsc --noEmit || echo "Type errors found but continuing"
     
-    - name: Generate Prisma client
-      run: bun run db:generate
-    
     - name: Build project
       run: bun run build
       env:
