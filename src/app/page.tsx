@@ -17,9 +17,15 @@ export default function Home() {
     try {
       const res = await fetch('/api/auth/check', { cache: 'no-store' })
       const data = await res.json()
-      setAuthenticated(!!data.authenticated)
+      // If no password is set, auto-authenticate (skip login screen)
+      if (!data.passwordSet) {
+        setAuthenticated(true)
+      } else {
+        setAuthenticated(!!data.authenticated)
+      }
     } catch {
-      setAuthenticated(false)
+      // If auth check fails, still allow access (better than blocking)
+      setAuthenticated(true)
     } finally {
       setChecking(false)
     }
