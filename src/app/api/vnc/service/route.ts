@@ -250,8 +250,21 @@ async function startService(service: string): Promise<{ ok: boolean; error?: str
     case 'websockify': {
       if (await checkPort(WS_PORT)) return { ok: true, error: 'already running' }
       if (!(await checkPort(VNC_PORT))) return { ok: false, error: 'x11vnc not running — start x11vnc first' }
+
+      // Auto-install websockify if missing (venv gets wiped on container reset)
+      try {
+        execSync('/home/z/.venv/bin/python3 -c "import websockify" 2>/dev/null', { timeout: 5000 })
+      } catch {
+        try {
+          execSync('/home/z/.venv/bin/python3 -m pip install websockify', { timeout: 120000 })
+        } catch {
+          return { ok: false, error: 'websockify not installed and auto-install failed' }
+        }
+      }
+
       return new Promise((resolve) => {
-        const p = spawn(WEBSOCKIFY_BIN, [
+        // Use the websockify binary directly (not the runner script)
+        const p = spawn('/home/z/.venv/bin/websockify', [
           '--web', NOVNC_DIR, String(WS_PORT), `127.0.0.1:${VNC_PORT}`,
         ], {
           cwd: '/home/z/my-project',
@@ -261,7 +274,17 @@ async function startService(service: string): Promise<{ ok: boolean; error?: str
         })
         fs.writeFileSync(`${PID_DIR}/websockify.pid`, String(p.pid))
         p.unref()
-        setTimeout(async () => resolve({ ok: await checkPort(WS_PORT) }), 3000)
+        let waited = 0
+        const interval = setInterval(async () => {
+          waited += 1000
+          if (await checkPort(WS_PORT)) {
+            clearInterval(interval)
+            resolve({ ok: true })
+          } else if (waited >= 8000) {
+            clearInterval(interval)
+            resolve({ ok: false, error: 'websockify did not start within 8s' })
+          }
+        }, 1000)
       })
     }
     case 'all': {
