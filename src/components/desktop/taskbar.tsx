@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useDesktopStore, AppId } from '@/lib/desktop-store'
 import { cn } from '@/lib/utils'
-import { Terminal, Globe, StickyNote, FolderOpen, Activity, Info, Search, Lock, Monitor, Video, Bug } from 'lucide-react'
+import { Terminal, Globe, StickyNote, FolderOpen, Activity, Info, Search, Lock, Monitor, Video, Bug, BookOpen } from 'lucide-react'
 
 const APPS: { id: AppId; name: string; icon: React.ReactNode; color: string }[] = [
   { id: 'terminal', name: 'Terminal', icon: <Terminal className="h-5 w-5" />, color: 'text-slate-300' },
@@ -15,6 +15,7 @@ const APPS: { id: AppId; name: string; icon: React.ReactNode; color: string }[] 
   { id: 'notes', name: 'Notes', icon: <StickyNote className="h-5 w-5" />, color: 'text-amber-400' },
   { id: 'file-explorer', name: 'File Explorer', icon: <FolderOpen className="h-5 w-5" />, color: 'text-orange-400' },
   { id: 'vps-dashboard', name: 'VPS Dashboard', icon: <Activity className="h-5 w-5" />, color: 'text-violet-400' },
+  { id: 'guide', name: 'Security Guide', icon: <BookOpen className="h-5 w-5" />, color: 'text-cyan-400' },
   { id: 'about', name: 'About WebOS', icon: <Info className="h-5 w-5" />, color: 'text-foreground/70' },
 ]
 

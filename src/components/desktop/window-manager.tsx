@@ -13,6 +13,7 @@ import { EncryptedNotesApp } from '@/components/apps/encrypted-notes-app'
 import { CameraInjectApp } from '@/components/apps/camera-inject-app'
 import { ChromeDebuggerApp } from '@/components/apps/chrome-debugger-app'
 import { AboutApp } from '@/components/apps/about-app'
+import { GuideApp } from '@/components/apps/guide-app'
 
 export function WindowManager() {
   const windows = useDesktopStore((s) => s.windows)
@@ -52,6 +53,8 @@ function renderApp(appId: string, payload?: Record<string, unknown>) {
       return <EncryptedNotesApp />
     case 'about':
       return <AboutApp />
+    case 'guide':
+      return <GuideApp />
     default:
       return <div className="p-4 text-sm text-muted-foreground">Unknown app: {appId}</div>
   }

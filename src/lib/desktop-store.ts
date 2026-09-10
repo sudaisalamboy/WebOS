@@ -14,6 +14,7 @@ export type AppId =
   | 'encrypted-notes'
   | 'camera-inject'
   | 'chrome-debugger'
+  | 'guide'
 
 export interface WindowState {
   id: string // unique instance id
@@ -120,6 +121,12 @@ const APP_DEFAULTS: Record<AppId, Omit<WindowState, 'id' | 'zIndex' | 'minimized
     title: 'Chrome Debugger',
     icon: '🔧',
     x: 80, y: 60, width: 1100, height: 740,
+  },
+  guide: {
+    appId: 'guide',
+    title: 'Security Guide',
+    icon: '📘',
+    x: 100, y: 70, width: 1040, height: 680,
   },
 }
 
