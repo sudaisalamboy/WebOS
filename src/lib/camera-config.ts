@@ -1,6 +1,9 @@
 import fs from 'node:fs'
 import { buildCameraScript, type CameraConfig, DEFAULT_CONFIG } from '@/lib/camera-inject'
 
+// Re-export DEFAULT_CONFIG for convenience
+export { DEFAULT_CONFIG }
+
 const CONFIG_FILE = './.camera-config.json'
 const ENABLED_FILE = './.camera-enabled'
 

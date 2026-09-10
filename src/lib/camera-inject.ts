@@ -8,6 +8,7 @@ export interface CameraConfig {
   resolution: string
   fps: number
   audioEnabled: boolean
+  sourceUrl?: string
 }
 
 export const DEFAULT_CONFIG: CameraConfig = {
