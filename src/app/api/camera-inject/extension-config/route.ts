@@ -6,7 +6,7 @@ import { loadCameraConfig, isCameraEnabled, DEFAULT_CONFIG } from '@/lib/camera-
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
 
-const UPLOAD_DIR = '/home/z/my-project/upload/vnc-uploads'
+const UPLOAD_DIR = './upload/vnc-uploads'
 
 const MIME: Record<string, string> = {
   '.mp4': 'video/mp4', '.webm': 'video/webm', '.ogg': 'video/ogg', '.mov': 'video/quicktime',
@@ -30,7 +30,7 @@ export async function GET() {
         const base64 = data.toString('base64')
         sourceUrl = `data:${mime};base64,${base64}`
       }
-    } catch (e) {}
+    } catch (e) { }
   }
 
   return NextResponse.json({
