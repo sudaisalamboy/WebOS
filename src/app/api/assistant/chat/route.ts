@@ -281,7 +281,7 @@ export async function POST(req: NextRequest) {
           }
 
           // 4. Execute the action
-          const execResult = await executeAction(action, params)
+          const execResult = await executeAction(action, params, goal)
           actionsTaken.push(`step ${step}: ${action} ${JSON.stringify(params).slice(0, 80)} -> ${execResult.slice(0, 80)}`)
           // NO post-action screenshot — wasteful. The next step's getPageSummary
           // will read the updated page text. Only take a screenshot on the NEXT
@@ -519,7 +519,7 @@ function parseActionJson(raw: string): ActionDecision {
   }
 }
 
-async function executeAction(action: string, params: Record<string, unknown>): Promise<string> {
+async function executeAction(action: string, params: Record<string, unknown>, goal: string = ''): Promise<string> {
   try {
     switch (action) {
       case 'click': {
@@ -564,8 +564,26 @@ async function executeAction(action: string, params: Record<string, unknown>): P
         return `scrolled ${dir} ${amount}px`
       }
       case 'navigate': {
-        const url = String(params.url ?? '')
-        if (!url) return 'no url'
+        let url = String(params.url ?? '')
+        // If the AI forgot the URL (returns params:{}), ask the LLM to
+        // figure out the URL from the user's original goal text.
+        if (!url && goal) {
+          try {
+            const zai2 = await ZAI.create()
+            const r = await zai2.chat.completions.create({
+              messages: [
+                { role: 'assistant', content: 'Extract the URL from the user request. Reply with ONLY the full URL (https://...), nothing else. If it is a GitHub profile like "github per sudaisalamboy", the URL is https://github.com/sudaisalamboy. If "google map", it is https://www.google.com/maps. Think and reply.' },
+                { role: 'user', content: goal },
+              ],
+              thinking: { type: 'disabled' },
+            })
+            const extracted = (r.choices?.[0]?.message?.content ?? '').trim()
+            // Extract just the URL from the response
+            const urlMatch = extracted.match(/https?:\/\/[^\s"'<>]+/)
+            if (urlMatch) url = urlMatch[0]
+          } catch {}
+        }
+        if (!url) return 'no url — could not figure out the destination'
         await navigate(url)
         return `navigated to ${url}`
       }
