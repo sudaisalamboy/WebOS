@@ -1,0 +1,55 @@
+'use client'
+
+import { useDesktopStore } from '@/lib/desktop-store'
+import { OsWindow } from './os-window'
+import { TerminalApp } from '@/components/apps/terminal-app'
+import { FileExplorerApp } from '@/components/apps/file-explorer-app'
+import { TextEditorApp } from '@/components/apps/text-editor-app'
+import { VpsDashboardApp } from '@/components/apps/vps-dashboard-app'
+import { RemoteChromeApp } from '@/components/apps/remote-chrome-app'
+import { CameraInjectApp } from '@/components/apps/camera-inject-app'
+import { ChromeDebuggerApp } from '@/components/apps/chrome-debugger-app'
+import { AboutApp } from '@/components/apps/about-app'
+import { GuideApp } from '@/components/apps/guide-app'
+import { NotesApp } from '@/components/apps/notes-app'
+
+export function WindowManager() {
+  const windows = useDesktopStore((s) => s.windows)
+
+  return (
+    <>
+      {windows.map((w) => (
+        <OsWindow key={w.id} win={w}>
+          {renderApp(w.appId, w.payload)}
+        </OsWindow>
+      ))}
+    </>
+  )
+}
+
+function renderApp(appId: string, payload?: Record<string, unknown>) {
+  switch (appId) {
+    case 'terminal':
+      return <TerminalApp />
+    case 'file-explorer':
+      return <FileExplorerApp initialPath={(payload?.path as string) ?? '/'} />
+    case 'text-editor':
+      return <TextEditorApp path={payload?.path as string | undefined} />
+    case 'vps-dashboard':
+      return <VpsDashboardApp />
+    case 'remote-chrome':
+      return <RemoteChromeApp />
+    case 'camera-inject':
+      return <CameraInjectApp />
+    case 'chrome-debugger':
+      return <ChromeDebuggerApp />
+    case 'about':
+      return <AboutApp />
+    case 'guide':
+      return <GuideApp />
+    case 'notes':
+      return <NotesApp />
+    default:
+      return <div className="p-4 text-sm text-muted-foreground">Unknown app: {appId}</div>
+  }
+}
