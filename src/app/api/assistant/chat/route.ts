@@ -203,17 +203,6 @@ export async function POST(req: NextRequest) {
           // wants actions on the CURRENT page (e.g. "click the video" should
           // NOT send Chrome off to youtube.com). Convert the navigate into a
           // no-op "done" with a message telling the user we're staying put.
-          // If the AI said navigate but forgot the URL, figure it out from the
-          // user's goal (e.g. "go to google map" → https://www.google.com/maps).
-          // The LLM sometimes returns {"action":"navigate","params":{}} — silly.
-          if ((action === 'navigate' || action === 'new_tab') && !params.url) {
-            const inferredUrl = inferUrlFromGoal(goal)
-            if (inferredUrl) {
-              params.url = inferredUrl
-              thought = `inferred URL ${inferredUrl} from goal`
-            }
-          }
-
           // Navigation guard: only allow if the user explicitly asked to go
           // somewhere (not when the AI decides to wander off on its own).
           if ((action === 'navigate' || action === 'new_tab') && !goalWantsNavigation(goal)) {
@@ -370,7 +359,7 @@ async function decideAction(
 RULES:
 1. PLAN first in your "thought" field, then act. Example: "Plan: 1) navigate 2) fill search 3) click. Starting step 1."
 2. Don't scroll — use eval_js "document.body.innerText.slice(0,8000)" to read the full page.
-3. When user says "go to X" or "open X" — DO navigate there. "go on google map" = navigate to https://www.google.com/maps. "go to youtube" = navigate to https://www.youtube.com. Figure out the URL from the site name.
+3. When user says "go to X" or "open X" — navigate there. YOU figure out the URL yourself from the site name. "go on google map" = https://www.google.com/maps. "go to youtube" = https://www.youtube.com. Think: what is the URL for that site? Then put it in params.url.
 4. When you need to click, find coordinates via eval_js (getBoundingClientRect), then use "click".
 5. Answer with action "done" + HTML message (use <h1>, <b>, <ul><li>, <p>). Max 200 words.
 6. Use eval_js to find elements: "Array.from(document.querySelectorAll('a,button,input,video')).map(e=>({tag:e.tagName,text:(e.textContent||'').trim().slice(0,50),rect:JSON.stringify(e.getBoundingClientRect().toJSON()),href:e.href||''}))"
@@ -483,50 +472,6 @@ function goalWantsNavigation(goal: string): boolean {
   if (/\b(go to|go on|open|navigate to|visit|browse to|take me to|show me|check out)\b/.test(g)) return true
   if (/\b(google|youtube|facebook|twitter|instagram|reddit|wikipedia|amazon|github|duckduckgo|gmail|maps|google maps)\b/.test(g)) return true
   return false
-}
-
-/**
- * When the AI says "navigate" but forgets to fill in the URL (returns
- * params: {}), figure out the URL from the user's goal text. Maps common
- * site names to their URLs so "go to google map" → https://www.google.com/maps.
- */
-function inferUrlFromGoal(goal: string): string | null {
-  const g = goal.toLowerCase()
-  // Direct URL in the goal
-  const urlMatch = g.match(/https?:\/\/[^\s]+/)
-  if (urlMatch) return urlMatch[0]
-  // Site name → URL mapping (order matters: check longer names first)
-  const siteMap: Array<[RegExp, string]> = [
-    [/google\s*map/, 'https://www.google.com/maps'],
-    [/google\s*search/, 'https://www.google.com'],
-    [/\bgoogle\b/, 'https://www.google.com'],
-    [/youtube/, 'https://www.youtube.com'],
-    [/facebook/, 'https://www.facebook.com'],
-    [/twitter|\bx\b/, 'https://www.x.com'],
-    [/instagram/, 'https://www.instagram.com'],
-    [/reddit/, 'https://www.reddit.com'],
-    [/wikipedia/, 'https://www.wikipedia.org'],
-    [/amazon/, 'https://www.amazon.com'],
-    [/github/, 'https://github.com'],
-    [/duckduckgo/, 'https://duckduckgo.com'],
-    [/gmail/, 'https://mail.google.com'],
-    [/temp.?mail/, 'https://temp-mail.org'],
-    [/chatgpt|openai/, 'https://chat.openai.com'],
-    [/netflix/, 'https://www.netflix.com'],
-    [/spotify/, 'https://open.spotify.com'],
-    [/twitch/, 'https://www.twitch.tv'],
-  ]
-  for (const [pattern, url] of siteMap) {
-    if (pattern.test(g)) return url
-  }
-  // "go to X.com" pattern
-  const domainMatch = g.match(/\b(go to|go on|open|visit)\s+([a-z0-9-]+\.[a-z]{2,})\b/)
-  if (domainMatch) {
-    let domain = domainMatch[2]
-    if (!domain.startsWith('www.')) domain = 'www.' + domain
-    return 'https://' + domain
-  }
-  return null
 }
 
 function parseActionJson(raw: string): ActionDecision {
