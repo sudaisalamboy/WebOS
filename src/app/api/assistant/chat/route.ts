@@ -352,43 +352,19 @@ async function decideAction(
       ).join('\n')
     : 'no <video> elements on the page'
 
-  const systemPrompt = `You are a resourceful web browsing assistant. The user gives you a GOAL. You decide ONE action per turn, then see the updated state.
+  const systemPrompt = `You are a web browsing assistant. The user gives you a GOAL. You do ONE action per turn.
 
-CRITICAL RULES:
-1. PLAN FIRST: Before acting, think about what steps are needed. In your "thought" field, write the full plan: "Step 1: find X. Step 2: click Y. Step 3: fill Z. Step 4: submit." Then do ONE step at a time. Don't rush — understand the whole task first, break it into steps, then execute them one by one.
-2. DO NOT SCROLL the user's page. Use eval_js: "document.body.innerText.slice(0,8000)" to read the ENTIRE page without scrolling. Or eval_js to find elements: "Array.from(document.querySelectorAll('a,button,video')).map(e=>({tag:e.tagName,text:(e.textContent||'').trim().slice(0,50),rect:JSON.stringify(e.getBoundingClientRect().toJSON())}))".
-3. STAY ON THE CURRENT PAGE. Don't navigate away unless the user explicitly gave a URL.
-4. When the user says "go and see" or "look at" — DON'T scroll or navigate. Read the page text (already provided above) + eval_js for details, then REPORT what you found.
-5. When you need to click, first find coordinates via eval_js (getBoundingClientRect), then use "click".
-6. Answer questions from the page text — don't guess from the screenshot.
+RULES:
+1. PLAN first in your "thought" field, then act. Example: "Plan: 1) navigate 2) fill search 3) click. Starting step 1."
+2. Don't scroll — use eval_js "document.body.innerText.slice(0,8000)" to read the full page.
+3. When user says "go to X" or "open X" — DO navigate there. "go on google map" = navigate to https://www.google.com/maps. "go to youtube" = navigate to https://www.youtube.com. Figure out the URL from the site name.
+4. When you need to click, find coordinates via eval_js (getBoundingClientRect), then use "click".
+5. Answer with action "done" + HTML message (use <h1>, <b>, <ul><li>, <p>). Max 200 words.
+6. Use eval_js to find elements: "Array.from(document.querySelectorAll('a,button,input,video')).map(e=>({tag:e.tagName,text:(e.textContent||'').trim().slice(0,50),rect:JSON.stringify(e.getBoundingClientRect().toJSON()),href:e.href||''}))"
 
-WORKFLOW (FOLLOW THIS ORDER):
-1. STEP 1 — ANALYZE EVERYTHING: Read the page text, form fields, buttons, tabs (all provided above). Look at the screenshot. Understand what the page is and what the user wants. Make a plan.
-2. PLAN: In your thought, list ALL the steps needed. Example: "Plan: 1) find search box 2) fill 'cats' 3) press Enter 4) read results 5) report. Starting step 1."
-3. EXECUTE: Do ONE step per turn. Don't take more screenshots — use eval_js to read page state if needed. Follow your plan.
-4. ANSWER: When done, respond with action "done" + HTML message explaining what you did.
+Actions: click, fill (selector or x,y + text), type, press_key, scroll, navigate, eval_js, close_tab, new_tab, switch_tab, set_cookies, done.
 
-COMMON FLOWS (use these patterns):
-
-"see the page / what is on this page":
-  Plan: 1) read page text (already provided above) 2) if need more, eval_js "document.body.innerText.slice(0,8000)" 3) report what the page is about with HTML.
-  → Usually 1-2 steps. Answer directly from the page text provided.
-
-"which video has the most views / find the most popular video":
-  Plan: 1) read page text for view counts 2) if not visible, eval_js to find video titles + view counts: "Array.from(document.querySelectorAll('[data-views],[aria-label*=view]')).map(e=>({text:e.textContent.trim().slice(0,80)}))" OR scrape from page text 3) identify the one with highest views 4) click it to open 5) report with HTML: <h1>Most Viewed Video</h1><p>Title: <b>X</b></p><p>Views: <b>Y</b></p>
-  → Look for patterns like "1.2M views", "45K views" in the page text. Compare numbers. Report the winner.
-
-"give me detail about X on this page":
-  Plan: 1) read page text for X 2) eval_js to find X element + its details 3) report with HTML (h1/h2/b/ul).
-
-"find the login/signup button":
-  Plan: 1) eval_js "Array.from(document.querySelectorAll('a,button,input')).filter(e=>{var t=(e.textContent||e.value||'').toLowerCase();return t.includes('login')||t.includes('sign in')||t.includes('signup')||t.includes('sign up')||t.includes('register');}).map(e=>({tag:e.tagName,text:(e.textContent||e.value||'').trim(),href:e.href||'',rect:JSON.stringify(e.getBoundingClientRect().toJSON())}))" 2) report found buttons with coordinates 3) if user wants, click it.
-
-"fill the form / signup / login":
-  Plan: 1) eval_js to find all form fields 2) fill email field 3) fill password field 4) click submit 5) report result.
-
-"download this video / find download link":
-  Plan: 1) eval_js "Array.from(document.querySelectorAll('a')).filter(a=>{var t=(a.textContent||a.href||'').toLowerCase();return t.includes('download')||t.includes('.mp4')||t.includes('.mp3')||t.includes('save');}).map(a=>({text:a.textContent.trim(),href:a.href}))" 2) report found links 3) if user wants, click it.
+Reply with ONE JSON object only.
 
 Current page:
 - URL: ${page.url}
@@ -398,48 +374,11 @@ Current page:
 ${videosText}
 - Scroll position: ${page.scrollY}px (page height ${page.scrollHeight}px)
 
-Full visible page text (read this to answer questions about what's on the page — e.g. "which video has more views", "what does this say", "find the link to X"):
+Full visible page text:
 ${page.pageText || '(no visible text)'}
 
-Visible interactive elements (centered coordinates, viewport-relative):
-${elementsText}
-
-Pick the next action. Reply with a SINGLE JSON object (no markdown fences, no prose before/after):
-
-{"action": "click",      "params": {"x": <number>, "y": <number>},            "thought": "..."}
-{"action": "fill",       "params": {"selector": "<css>", "text": "<string>"}, "thought": "..."}
-{"action": "fill",       "params": {"x": <number>, "y": <number>, "text": "<string>"}, "thought": "..."}
-{"action": "type",       "params": {"text": "<string>"},                      "thought": "..."}
-{"action": "press_key",  "params": {"key": "Enter|Tab|Escape|F12|Space|Backspace|F5|ArrowUp|ArrowDown|ArrowLeft|ArrowRight"}, "thought": "..."}
-{"action": "scroll",     "params": {"direction": "up|down", "amount": <pixels 200-800>}, "thought": "..."}
-{"action": "navigate",   "params": {"url": "<full https url>"},                "thought": "..."}
-{"action": "eval_js",    "params": {"expr": "<javascript expression>"},        "thought": "..."}
-{"action": "close_tab",  "params": {"targetId": "<id>"},                       "thought": "..."}
-{"action": "new_tab",    "params": {"url": "<full https url>"},               "thought": "..."}
-{"action": "done",       "params": {"message": "<summarize for the user>"},   "thought": "..."}
-
-Action guidance:
-- "click" taps an element at the given viewport pixel coordinates (0,0 is top-left). Use the element or video list above to find targets.
-- "fill" fills a form field (signup/login/search). PREFER the "selector" form (e.g. {"selector":"#email","text":"john@test.com"}) — it targets the field by CSS selector so it's accurate regardless of coordinate offset. Use the element list above which includes each input's id/name/type/placeholder to build the selector (e.g. "#email", "input[name=password]", "input[type=email]"). If no selector is available, fall back to {"x":N,"y":N,"text":"..."} which clicks then types. After filling all fields, click the submit button (or press Enter) to submit the form.
-- "eval_js" runs a JavaScript expression on the page and returns its value. Use it to read page details, FIND elements (e.g. locate videos/iframes), or control media (play: "document.querySelector('video')?.play()", pause: "document.querySelector('video')?.pause()", check state: "document.querySelector('video') && {paused:document.querySelector('video').paused, time:document.querySelector('video').currentTime, duration:document.querySelector('video').duration}").
-- "scroll" moves the page up or down. Use it when the target element is not currently visible.
-- "navigate" opens a full https URL in the current tab. ONLY use this when the user explicitly asked to go to a specific URL, OR when the current page is genuinely blank (about:blank) and the user's goal clearly requires a website.
-- "new_tab" opens a full https URL in a new tab. Same rule — only when the user asked for it.
-- "close_tab" closes the tab with the given targetId.
-- "press_key" sends a single key (use F12 to toggle the browser's built-in developer panel, Enter to submit a form, Space to toggle a focused video's play/pause, etc.).
-- FORMATTING YOUR RESPONSES: ALWAYS format your "done" message as HTML so the user can read it easily. Use <h1> for the main title, <h2> for sub-sections, <b> or <strong> for bold key terms, <ul><li> for bullet lists, <p> for paragraphs. Example: <h1>DuckDuckGo</h1><p><b>DuckDuckGo</b> is a privacy search engine.</p><h2>How to use</h2><ul><li>Type in the <b>search box</b></li><li>Press Enter</li></ul>. NEVER use markdown (## or **) — always use HTML tags. You have up to 200 words.
-- You have BUILT-IN KNOWLEDGE about popular sites (YouTube, Google, Facebook, Wikipedia, Amazon, Twitter/X, Instagram, Reddit, DuckDuckGo, GitHub). When asked "what is YouTube?" etc., explain from your knowledge even if you can't see the site.
-- BE RESOURCEFUL AND PROACTIVE: you are a power-user assistant. When the user asks you to find something, do it thoroughly:
-    * To find login/signup buttons: use eval_js with expr "Array.from(document.querySelectorAll('a,button,input')).filter(e=>{var t=(e.textContent||e.value||'').toLowerCase();return t.includes('login')||t.includes('sign in')||t.includes('signup')||t.includes('sign up')||t.includes('register');}).map(e=>({tag:e.tagName,text:(e.textContent||e.value||'').trim().slice(0,50),href:e.href||'',rect:JSON.stringify(e.getBoundingClientRect().toJSON())}))"
-    * To find download links: use eval_js with expr "Array.from(document.querySelectorAll('a')).filter(a=>{var t=(a.textContent||a.href||'').toLowerCase();return t.includes('download')||t.includes('.mp4')||t.includes('.mp3')||t.includes('.pdf')||t.includes('save');}).map(a=>({text:a.textContent.trim().slice(0,50),href:a.href}))"
-    * To find videos/media: use eval_js with expr "Array.from(document.querySelectorAll('video,source,iframe')).map(e=>({tag:e.tagName,src:e.src||e.currentSrc||e.href||'',type:e.type||''}))"
-    * To extract page content: use eval_js with expr "document.body.innerText.slice(0,5000)"
-    * To find form fields: use eval_js with expr "Array.from(document.querySelectorAll('input,textarea,select')).map(e=>({tag:e.tagName,type:e.type,name:e.name,id:e.id,placeholder:e.placeholder,value:e.value?(e.type==='password'?'***':e.value.slice(0,30)):''}))"
-    * After finding what the user asked for, CLICK it or report the findings with action "done".
-    * Don't be lazy — if the first eval_js doesn't find it, try different selectors. Scroll down and try again. The user wants results.
-- If the goal is already achieved, respond with action "done" and a message to the user.
-- Keep thoughts short (one sentence) but mention what site it is and what you located.
-- Output ONLY the JSON object.`
+Visible interactive elements:
+${elementsText}`
 
   const priorActions = actionsTaken.length
     ? `Actions you have already taken this turn (do NOT repeat the same one unless clearly needed):
@@ -526,11 +465,13 @@ ${actionsTaken.map((a) => '  - ' + a).join('\n')}`
  */
 function goalWantsNavigation(goal: string): boolean {
   const g = goal.toLowerCase()
-  // explicit URL mention (http://, https://, or a domain.tld pattern)
+  // explicit URL mention
   if (/\bhttps?:\/\//i.test(goal)) return true
   if (/\b[a-z0-9-]+\.(com|org|net|io|dev|ai|co|edu|gov|info|xyz|tv)\b/i.test(goal)) return true
-  // explicit intent phrases
-  if (/\b(go to|open|navigate to|visit|browse to|take me to)\b/.test(g)) return true
+  // explicit intent phrases (broad — "go on", "go to", "open", etc.)
+  if (/\b(go to|go on|open|navigate to|visit|browse to|take me to|show me|check out|look at .*\.com)\b/.test(g)) return true
+  // site name mentions (common sites the user might ask to go to)
+  if (/\b(google|youtube|facebook|twitter|instagram|reddit|wikipedia|amazon|github|duckduckgo|gmail|maps|google maps)\b/.test(g)) return true
   return false
 }
 
