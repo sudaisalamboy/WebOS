@@ -362,14 +362,14 @@ export async function getPageSummary(): Promise<PageSummary> {
       const b = r.getBoundingClientRect();
       return { x: Math.round(b.x + b.width/2), y: Math.round(b.y + b.height/2), w: Math.round(b.width), h: Math.round(b.height) };
     }
-    const sels = 'a, button, input, textarea, select, [role=button], [onclick], video';
+    const sels = 'a, button, input, textarea, select, [role=button], [onclick], video, img, .thumb, .video-thumb, .thumb-block, [data-video], [href*=video]';
     const els = Array.from(document.querySelectorAll(sels)).filter(e=>{
       const r = e.getBoundingClientRect();
       const visible = r.width > 0 && r.height > 0 && r.x >= 0 && r.y >= 0 && r.x < window.innerWidth && r.y < window.innerHeight;
       const style = window.getComputedStyle(e);
       return visible && style.visibility !== 'hidden' && style.display !== 'none' && style.opacity !== '0';
     });
-    const out = els.slice(0, 30).map(e=>{
+    const out = els.slice(0, 40).map(e=>{
       const r = rect(e.getBoundingClientRect());
       const id = e.id || '';
       const name = e.getAttribute('name') || '';

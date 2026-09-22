@@ -413,6 +413,7 @@ Rules:
     Step 2: ACTION: press_key, PARAMS: key=Enter
     Step 3: ACTION: done, PARAMS: message=<result>
 - To CLICK something: look at the CLICKABLE ELEMENTS list above for coordinates. ACTION: click, PARAMS: x=XCOORD y=YCOORD
+- To CLICK A VIDEO: don't click <video> elements directly (they're often hidden/0x0). Click the video THUMBNAIL — look for <a> tags with video titles or <img> in the CLICKABLE ELEMENTS list. Click those links to open the video page.
 - To READ page: use eval_js expr=document.body.innerText.slice(0,5000)
 - If a cookie popup is blocking, click "Accept" or "OK" or "Got it" button first (look in CLICKABLE ELEMENTS).
 - DON'T run eval_js to find elements when they're already listed above. Wastes steps.`
