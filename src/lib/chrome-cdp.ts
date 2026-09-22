@@ -183,19 +183,32 @@ export async function typeInto(x: number, y: number, text: string): Promise<void
  */
 export async function fillBySelector(selector: string, text: string): Promise<string> {
   const result = await evalJs(`(function(){
-    var el = document.querySelector(${JSON.stringify(selector)});
-    if (!el) return 'not found: ' + ${JSON.stringify(selector)};
-    if (el.tagName !== 'INPUT' && el.tagName !== 'TEXTAREA') {
-      // try focusing + setting value anyway (contenteditable etc)
-      try { el.focus(); } catch(e) {}
-      return 'not an input/textarea';
+    // Try the given selector first, then fall back to common search box selectors
+    var selectors = [
+      ${JSON.stringify(selector)},
+      'input[name="q"]',
+      'input[type="search"]',
+      'input[placeholder*="Search" i]',
+      'input[placeholder*="search" i]',
+      'input[type="text"]',
+      '#search',
+      '#searchbox',
+      '.search-input',
+      'input'
+    ];
+    var el = null;
+    for (var i = 0; i < selectors.length; i++) {
+      try { el = document.querySelector(selectors[i]); } catch(e) {}
+      if (el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA')) break;
+      el = null;
     }
+    if (!el) return 'not found: tried ' + selectors.join(', ');
     try {
       el.focus();
       el.value = ${JSON.stringify(text)};
       el.dispatchEvent(new Event('input', {bubbles:true}));
       el.dispatchEvent(new Event('change', {bubbles:true}));
-      return 'ok ' + el.id;
+      return 'ok ' + (el.id || el.name || el.type);
     } catch(e) { return 'error: ' + e.message; }
   })()`)
   return result.value || result.error || 'unknown'

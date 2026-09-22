@@ -406,12 +406,16 @@ THOUGHT: task complete
 
 Rules:
 - DON'T navigate away unless user explicitly asked to go to a different site.
-- DON'T say done until task is complete. Execute step by step.
-- DON'T waste steps — if you found what to click, CLICK it next step.
-- To SEARCH: look at the INPUT BOXES list above. Find the search box (type=search or name=q or placeholder=Search). ACTION: fill, PARAMS: selector=#search text=QUERY. Then ACTION: press_key, PARAMS: key=Enter.
-- To CLICK: look at the CLICKABLE ELEMENTS list above for coordinates. ACTION: click, PARAMS: x=XCOORD y=YCOORD.
-- To READ: use eval_js expr=document.body.innerText.slice(0,5000)
-- To FIND elements: use eval_js expr=JSON.stringify(Array.from(document.querySelectorAll('a,button,input')).map((e,i)=>({i,tag:e.tagName,text:(e.textContent||'').trim().slice(0,40),x:Math.round(e.getBoundingClientRect().x+e.getBoundingClientRect().width/2),y:Math.round(e.getBoundingClientRect().y+e.getBoundingClientRect().height/2)})).filter(e=>e.x>0&&e.y>0).slice(0,15))`
+- DON'T say done until task is COMPLETE — you must have DONE the action, not just described it. "I will search" is NOT done. Actually filling the search box and pressing Enter IS done.
+- DON'T waste steps on eval_js when the INPUT BOXES and CLICKABLE ELEMENTS lists already have what you need. USE THE LISTS.
+- To SEARCH: look at the INPUT BOXES list above. Find the search box (placeholder contains "Search" or type=search or name=q). Then:
+    Step 1: ACTION: fill, PARAMS: selector=<selector_from_list> text=<what_user_wants_to_search>
+    Step 2: ACTION: press_key, PARAMS: key=Enter
+    Step 3: ACTION: done, PARAMS: message=<result>
+- To CLICK something: look at the CLICKABLE ELEMENTS list above for coordinates. ACTION: click, PARAMS: x=XCOORD y=YCOORD
+- To READ page: use eval_js expr=document.body.innerText.slice(0,5000)
+- If a cookie popup is blocking, click "Accept" or "OK" or "Got it" button first (look in CLICKABLE ELEMENTS).
+- DON'T run eval_js to find elements when they're already listed above. Wastes steps.`
 
   let raw = ''
   try {
