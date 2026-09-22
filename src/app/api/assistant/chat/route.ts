@@ -434,25 +434,25 @@ ${actionsTaken.map((a) => '  - ' + a).join('\n')}`
   }
 
   let decision = parseActionJson(raw)
-  // If the model's output didn't parse into a real action (it fell back to
-  // 'done' with the raw text as the message), retry once asking for valid JSON.
-  if (decision.action === 'done' && raw.trim().startsWith('{')) {
+  // If the model returned plain text (not JSON) or broken JSON, retry with
+  // a stronger instruction. Don't just say "done" — the AI didn't do anything yet.
+  if (decision.action === 'done' && decision.thought === 'unparseable response') {
     try {
       const repair = await callLlmWithRetry(
         () => zai.chat.completions.create({
           messages: [
             { role: 'assistant', content: systemPrompt },
-            { role: 'user', content: 'Output a single valid JSON action object.' },
+            { role: 'user', content: `The user wants: ${goal}. Look at the page info and decide the FIRST action.` },
             { role: 'assistant', content: raw },
-            { role: 'user', content: 'That was not valid JSON. Fix it and output ONLY the corrected JSON object, nothing else. Make sure params like {"x": N, "y": N} have both keys.' },
+            { role: 'user', content: 'That was not a valid JSON action. You MUST reply with ONLY a JSON object like {"action":"click","params":{"x":100,"y":200},"thought":"..."}. No prose. What is the first action to do?' },
           ],
           thinking: { type: 'disabled' },
         }),
-        (attempt, ms) => onStatus(`Rate limited, retrying in ${Math.round(ms / 1000)}s (attempt ${attempt})…`),
+        (attempt, ms) => onStatus(`Retrying — AI gave invalid response…`),
       )
       const repaired = (repair.choices?.[0]?.message?.content ?? '').trim()
       const repairedDecision = parseActionJson(repaired)
-      if (repairedDecision.action !== 'done' || !repaired.trim().startsWith('{')) {
+      if (repairedDecision.action !== 'done' || repairedDecision.thought !== 'unparseable response') {
         decision = repairedDecision
       }
     } catch {}
