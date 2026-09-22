@@ -327,6 +327,9 @@ export interface PageSummary {
    *  the 25 interactive elements. This lets the assistant answer "which
    *  video has more views" etc. by reading the actual page text. */
   pageText: string
+  formFields: Array<{
+    tag: string; type: string; name: string; id: string; placeholder: string; label: string; value: string; required: boolean; selector: string; x: number; y: number
+  }>
   videos: number
   videoDetails: PageVideo[]
   scrollY: number
@@ -391,12 +394,27 @@ export async function getPageSummary(): Promise<PageSummary> {
     // Full visible text of the page — the assistant reads this to answer
     // questions like "which video has more views" by reading the actual page.
     var pageText = (document.body ? document.body.innerText : '').slice(0, 8000);
+    // Collect ALL form fields (input/textarea/select) with coordinates + selectors
+    var fieldEls = Array.from(document.querySelectorAll('input, textarea, select'));
+    var formFields = fieldEls.map(e => {
+      var r = e.getBoundingClientRect();
+      var id = e.id || ''; var name = e.getAttribute('name') || '';
+      var type = e.tagName.toLowerCase() === 'select' ? 'select' : (e.getAttribute('type') || 'text');
+      var placeholder = e.getAttribute('placeholder') || '';
+      var label = e.getAttribute('aria-label') || '';
+      if (!label && id) { var lbl = document.querySelector('label[for="' + id + '"]'); if (lbl) label = (lbl.innerText || '').trim(); }
+      if (!label) { var lbl2 = e.closest('label'); if (lbl2) label = (lbl2.innerText || '').trim(); }
+      var selector = id ? '#' + id : (name ? e.tagName.toLowerCase() + '[name="' + name + '"]' : e.tagName.toLowerCase() + '[type="' + type + '"]');
+      var value = ''; try { value = type === 'password' ? (e.value ? '***' : '') : (e.value || '').slice(0, 30); } catch(e2) {}
+      return { tag: e.tagName.toLowerCase(), type, name, id, placeholder, label: label.slice(0, 60), value, required: e.hasAttribute('required'), selector, x: Math.round(r.x + r.width/2), y: Math.round(r.y + r.height/2) };
+    });
     return {
       url: location.href,
       title: document.title,
       viewport: { width: window.innerWidth, height: window.innerHeight },
       interactiveElements: out,
       pageText: pageText,
+      formFields: formFields,
       videos: document.querySelectorAll('video').length,
       videoDetails: vids,
       scrollY: Math.round(window.scrollY),
@@ -409,7 +427,7 @@ export async function getPageSummary(): Promise<PageSummary> {
     return {
       url: '', title: '(unable to read page)',
       viewport: { width: 1280, height: 800 },
-      interactiveElements: [], pageText: '', videos: 0, videoDetails: [], scrollY: 0, scrollHeight: 0,
+      interactiveElements: [], pageText: '', formFields: [], videos: 0, videoDetails: [], scrollY: 0, scrollHeight: 0,
     }
   }
   try {
@@ -418,7 +436,7 @@ export async function getPageSummary(): Promise<PageSummary> {
     return {
       url: '', title: '(parse error)',
       viewport: { width: 1280, height: 800 },
-      interactiveElements: [], pageText: '', videos: 0, videoDetails: [], scrollY: 0, scrollHeight: 0,
+      interactiveElements: [], pageText: '', formFields: [], videos: 0, videoDetails: [], scrollY: 0, scrollHeight: 0,
     }
   }
 }
