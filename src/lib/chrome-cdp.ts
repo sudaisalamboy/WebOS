@@ -356,22 +356,23 @@ export async function getPageSummary(): Promise<PageSummary> {
       const style = window.getComputedStyle(e);
       return visible && style.visibility !== 'hidden' && style.display !== 'none' && style.opacity !== '0';
     });
-    const out = els.slice(0, 25).map(e=>{
+    const out = els.slice(0, 30).map(e=>{
       const r = rect(e.getBoundingClientRect());
       const id = e.id || '';
       const name = e.getAttribute('name') || '';
       const type = e.getAttribute('type') || '';
-      // Build a usable CSS selector for this element (for the "fill" action)
       let selector = '';
       if (id) selector = '#' + id;
       else if (name) selector = e.tagName.toLowerCase() + '[name="' + name + '"]';
       else if (type) selector = e.tagName.toLowerCase() + '[type="' + type + '"]';
+      const placeholder = e.getAttribute('placeholder') || '';
+      const text = (e.innerText || e.value || e.getAttribute('aria-label') || e.getAttribute('alt') || placeholder || '').trim().slice(0, 60);
       return {
         tag: e.tagName.toLowerCase(),
-        text: (e.innerText || e.value || e.getAttribute('aria-label') || e.getAttribute('alt') || e.getAttribute('placeholder') || '').trim().slice(0, 60),
+        text: text,
         x: r.x, y: r.y,
         role: e.getAttribute('role') || '',
-        placeholder: e.getAttribute('placeholder') || '',
+        placeholder: placeholder,
         id, name, type, selector,
       };
     });

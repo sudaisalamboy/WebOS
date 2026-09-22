@@ -339,16 +339,30 @@ async function decideAction(
   onStatus: (msg: string) => void = () => {},
   noteContext: string = '',
 ): Promise<ActionDecision> {
-  const elements = page.interactiveElements.slice(0, 15).map((e, i) =>
-    `${i + 1}. ${e.text || '(no text)'} @ (${e.x},${e.y})${e.selector ? ` sel=${e.selector}` : ''}`
-  ).join('\n')
+  const elements = page.interactiveElements.slice(0, 20).map((e, i) => {
+    let info = `${i + 1}. <${e.tag}>`
+    if (e.type) info += ` type="${e.type}"`
+    if (e.id) info += ` id="${e.id}"`
+    if (e.name) info += ` name="${e.name}"`
+    if (e.placeholder) info += ` placeholder="${e.placeholder}"`
+    if (e.text) info += ` text="${e.text}"`
+    info += ` @ (${e.x},${e.y})`
+    if (e.selector) info += ` selector=${e.selector}`
+    return info
+  }).join('\n')
 
-  // List ALL form fields (input boxes) with their selectors and coordinates
-  // so the AI knows EXACTLY where to find search boxes, login fields, etc.
+  // List ALL form fields (input boxes) with their selectors, placeholders, and coordinates
   const formFields = page.formFields.length
-    ? page.formFields.map((f, i) =>
-        `${i + 1}. <${f.tag} type="${f.type}"${f.id ? ` id="${f.id}"` : ''}${f.name ? ` name="${f.name}"` : ''}${f.placeholder ? ` placeholder="${f.placeholder}"` : ''}${f.label ? ` label="${f.label}"` : ''} selector="${f.selector}" @ (${f.x},${f.y})>`
-      ).join('\n')
+    ? page.formFields.map((f, i) => {
+        let info = `${i + 1}. <${f.tag} type="${f.type}">`
+        if (f.id) info += ` id="${f.id}"`
+        if (f.name) info += ` name="${f.name}"`
+        if (f.placeholder) info += ` placeholder="${f.placeholder}"`
+        if (f.label) info += ` label="${f.label}"`
+        if (f.value) info += ` value="${f.value}"`
+        info += ` @ (${f.x},${f.y}) selector=${f.selector}`
+        return info
+      }).join('\n')
     : '(no input boxes found)'
 
   const pageState = `URL: ${page.url}
