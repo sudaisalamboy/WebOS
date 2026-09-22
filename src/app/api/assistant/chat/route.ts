@@ -25,7 +25,7 @@ interface SSEEvent {
   data: unknown
 }
 
-const MAX_STEPS = 30
+const MAX_STEPS = 100
 
 // Server-side memo of the last note content the assistant saw, so we can
 // diff against it each turn and surface only what changed (new bug reports,
