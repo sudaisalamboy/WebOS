@@ -200,16 +200,20 @@ export async function POST(req: NextRequest) {
           let params = actionResp.params ?? {}
           let thought = actionResp.thought ?? ''
 
-          // Navigation guard
+          // Navigation guard — only block if AI tries to navigate to a
+          // completely different site that the user never mentioned.
+          // Allow clicking links that happen to navigate (that's normal browsing).
           if ((action === 'navigate' || action === 'new_tab') && !goalWantsNavigation(goal)) {
-            const blockMsg = `I'm staying on the current page. If you want me to open a specific site, say "go to example.com".`
-            history.push({ role: 'assistant', content: blockMsg })
+            // Instead of blocking + stopping, just skip this action and
+            // tell the AI to work on the current page instead.
+            const blockMsg = `Stay on the current page (${pageSummary.url.slice(0, 50)}). Work with what's already open — don't navigate away.`
+            actionsTaken.push(`step ${step}: navigate BLOCKED — stay on current page`)
+            // Don't break — continue to next step so AI can try a different action
             send({
               type: 'step',
-              data: { step, thought: 'blocked navigation', action: 'done', params: { message: blockMsg }, result: blockMsg } as AssistantStep,
+              data: { step, thought: 'blocked navigation — staying on current page', action: 'skip', params, result: blockMsg } as AssistantStep,
             })
-            send({ type: 'done', data: { message: blockMsg, steps: step } })
-            break
+            continue
           }
 
           // Loop guard: if the model keeps emitting the SAME action+params,
@@ -374,7 +378,11 @@ ACTION: done
 PARAMS: message=<h1>Result</h1><p>Found it</p>
 THOUGHT: task complete
 
-Rules: Don\'t say done until task is complete. Execute step by step.`
+Rules:
+- DON'T navigate away from the current page unless the user explicitly asked to go to a different site.
+- Work with what's on the current page — use eval_js to find elements, click them, read text.
+- Don't say done until task is complete. Execute step by step.
+- To click something: use eval_js to find its x,y coordinates first, then click.`
 
   let raw = ''
   try {
