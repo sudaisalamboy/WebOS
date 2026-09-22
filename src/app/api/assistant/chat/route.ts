@@ -25,7 +25,7 @@ interface SSEEvent {
   data: unknown
 }
 
-const MAX_STEPS = 15
+const MAX_STEPS = 20
 
 // Server-side memo of the last note content the assistant saw, so we can
 // diff against it each turn and surface only what changed (new bug reports,
@@ -382,7 +382,10 @@ Rules:
 - DON'T navigate away from the current page unless the user explicitly asked to go to a different site.
 - Work with what's on the current page — use eval_js to find elements, click them, read text.
 - Don't say done until task is complete. Execute step by step.
-- To click something: use eval_js to find its x,y coordinates first, then click.`
+- To click something: use eval_js to find its x,y coordinates first, then click.
+- DON'T waste steps — if you found what to click, CLICK it next step. Don't keep running eval_js.
+- To find clickable elements with coordinates: eval_js expr=JSON.stringify(Array.from(document.querySelectorAll('a,button,[onclick],.video-thumb,.thumb-block')).map((e,i)=>({i,text:(e.textContent||'').trim().slice(0,40),x:Math.round(e.getBoundingClientRect().x+e.getBoundingClientRect().width/2),y:Math.round(e.getBoundingClientRect().y+e.getBoundingClientRect().height/2)})).filter(e=>e.x>0&&e.y>0).slice(0,10))
+- Then click the one you want: ACTION: click, PARAMS: x=XCOORD y=YCOORD`
 
   let raw = ''
   try {
