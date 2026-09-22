@@ -192,26 +192,21 @@ export async function POST(req: NextRequest) {
             send({ type: 'screenshot', data: { step, image: `data:image/png;base64,${shot}` } })
           }
 
-          // 3. Ask the VLM for the next action
+          // 3. Ask the LLM what to do next — NATURAL LANGUAGE approach.
+          // Instead of forcing JSON output (which the LLM keeps breaking),
+          // we ask in plain text and parse the response.
           const actionResp = await decideAction(zai, goal, history, step, pageSummary, shot, actionsTaken, (msg) => send({ type: 'status', data: msg }), noteContext)
           let action = actionResp.action
           let params = actionResp.params ?? {}
           let thought = actionResp.thought ?? ''
 
-          // Hard guard: if the model tries to navigate to a different site
-          // but the user never asked for a specific URL, block it. The user
-          // wants actions on the CURRENT page (e.g. "click the video" should
-          // NOT send Chrome off to youtube.com). Convert the navigate into a
-          // no-op "done" with a message telling the user we're staying put.
-          // Navigation guard: only allow if the user explicitly asked to go
-          // somewhere (not when the AI decides to wander off on its own).
+          // Navigation guard
           if ((action === 'navigate' || action === 'new_tab') && !goalWantsNavigation(goal)) {
-            const targetUrl = String(params.url ?? '')
             const blockMsg = `I'm staying on the current page. If you want me to open a specific site, say "go to example.com".`
             history.push({ role: 'assistant', content: blockMsg })
             send({
               type: 'step',
-              data: { step, thought: 'blocked unauthorized navigation', action: 'done', params: { message: blockMsg }, result: blockMsg } as AssistantStep,
+              data: { step, thought: 'blocked navigation', action: 'done', params: { message: blockMsg }, result: blockMsg } as AssistantStep,
             })
             send({ type: 'done', data: { message: blockMsg, steps: step } })
             break
@@ -340,125 +335,109 @@ async function decideAction(
   onStatus: (msg: string) => void = () => {},
   noteContext: string = '',
 ): Promise<ActionDecision> {
-  const elementsText = page.interactiveElements.length
-    ? page.interactiveElements.map((e, i) => {
-        const sel = e.selector ? ` selector="${e.selector}"` : ''
-        const ph = e.placeholder ? ` placeholder="${e.placeholder}"` : ''
-        return `${i + 1}. <${e.tag}${e.role ? ' role=' + e.role : ''}${ph}${sel}> "${e.text}" @ (${e.x}, ${e.y})`
-      }).join('\n')
-    : '(no interactive elements visible — you may need to scroll or navigate)'
+  const elements = page.interactiveElements.slice(0, 15).map((e, i) =>
+    `${i + 1}. ${e.text || '(no text)'} @ (${e.x},${e.y})${e.selector ? ` sel=${e.selector}` : ''}`
+  ).join('\n')
 
-  const videosText = page.videoDetails.length
-    ? page.videoDetails.map((v, i) =>
-        `video #${i + 1}: center (${v.x}, ${v.y}), ${v.width}x${v.height}px, ${v.playing ? 'PLAYING' : 'PAUSED'} (${v.currentTime}s/${v.duration}s)${v.src ? ', src=' + v.src.slice(0, 50) : ''}`
-      ).join('\n')
-    : 'no <video> elements on the page'
+  const pageState = `URL: ${page.url}
+Title: ${page.title}
+Page text (first 2000 chars): ${page.pageText.slice(0, 2000)}
+Clickable elements:
+${elements || '(none found)'}`
 
-  const systemPrompt = `You are a generalist AI web browsing assistant. The user gives you a GOAL. You do ONE action per turn.
-
-TOOLS: click, fill (selector or x,y + text), type, press_key, scroll, navigate, eval_js, close_tab, new_tab, switch_tab, set_cookies, done.
-
-CRITICAL RULES:
-1. NEVER say "done" until the task is ACTUALLY COMPLETE. If you haven't done the work yet, DON'T use done. Do the work first, then say done.
-2. EXECUTE — don't describe. If user says "search X", you must: click search box → fill "X" → press Enter. Do each in separate turns. Don't just click and say done.
-3. After clicking a field, the NEXT step MUST be to type/fill into it. Don't click the same thing again.
-4. Use eval_js to find elements: "Array.from(document.querySelectorAll('input,textarea,button,a')).map(e=>({tag:e.tagName,type:e.type,name:e.name,id:e.id,placeholder:e.placeholder,text:(e.textContent||'').trim().slice(0,50),rect:JSON.stringify(e.getBoundingClientRect().toJSON())}))"
-5. Answer with HTML (h1, b, ul, p). Max 200 words. But ONLY when task is done.
-6. Plan in your thought field. Example: "Plan: 1) click search 2) type 'cats' 3) Enter. Step 1 now."
-
-Don't scroll — use eval_js "document.body.innerText.slice(0,8000)" to read the full page.
-
-Reply with ONE JSON object only.
+  const prompt = `You are browsing a website. The user wants: ${goal}
 
 Current page:
-- URL: ${page.url}
-- Title: ${page.title}
-- Viewport: ${page.viewport.width}x${page.viewport.height}
-- Videos on page: ${page.videos}
-${videosText}
-- Scroll position: ${page.scrollY}px (page height ${page.scrollHeight}px)
+${pageState}
 
-Full visible page text:
-${page.pageText || '(no visible text)'}
+Previous actions: ${actionsTaken.length ? actionsTaken.join('; ') : 'none'}
 
-Visible interactive elements:
-${elementsText}`
+What ONE thing should you do next? Reply in this EXACT format (one line each):
+ACTION: <click|fill|type|press_key|scroll|navigate|eval_js|done>
+PARAMS: <key=value pairs, or the expression/url/text>
+THOUGHT: <why>
 
-  const priorActions = actionsTaken.length
-    ? `Actions you have already taken this turn (do NOT repeat the same one unless clearly needed):
-${actionsTaken.map((a) => '  - ' + a).join('\n')}`
-    : '(no actions taken yet this turn)'
+Examples:
+ACTION: click
+PARAMS: x=640 y=360
+THOUGHT: clicking the search box
 
-  const userContent: any[] = [
-    { type: 'text', text: `GOAL: ${goal}${noteContext}\n\n${priorActions}\n\nStep ${step}. Look at the screenshot, the video list, and the element list, then choose the NEXT action. IMPORTANT: after you click a video, use eval_js to check if it's now playing (expr: "document.querySelector('video') && {paused:document.querySelector('video').paused}") before clicking again — if it's playing, the goal is done.\n\nIf the user reported a bug or made a request in the Notes pad (shown above), address it directly — e.g. "bug: terminal disconnects" means investigate the terminal, "make the search box bigger" means use eval_js to resize it. If the note says the previous content matches the current state (no bug reported), just continue with the goal.` },
-  ]
-  if (shotB64) {
-    userContent.push({
-      type: 'image_url',
-      image_url: { url: `data:image/png;base64,${shotB64}` },
-    })
-  }
+ACTION: fill
+PARAMS: selector=#search text=hello world
+THOUGHT: typing the search query
+
+ACTION: eval_js
+PARAMS: expr=document.title
+THOUGHT: getting the page title
+
+ACTION: done
+PARAMS: message=<h1>Result</h1><p>Found it</p>
+THOUGHT: task complete
+
+Rules: Don\'t say done until task is complete. Execute step by step.`
 
   let raw = ''
   try {
     const completion = await callLlmWithRetry(
-      () => zai.chat.completions.createVision({
-        messages: [
-          { role: 'assistant', content: systemPrompt },
-          ...history.slice(-4),
-          { role: 'user', content: userContent },
-        ],
-        thinking: { type: 'disabled' },
-      }),
-      (attempt, ms) => onStatus(`Rate limited, retrying in ${Math.round(ms / 1000)}s (attempt ${attempt})…`),
-    )
-    raw = (completion.choices?.[0]?.message?.content ?? '').trim()
-  } catch (visionErr) {
-    // Vision API can reject screenshots via its content filter (status 400) or
-    // persistently rate-limit. Fall back to a text-only LLM call using just
-    // the page summary (no image) so the assistant keeps working on ANY page.
-    onStatus('Screenshot unavailable this turn — using page summary instead…')
-    const textOnlyPrompt = `${systemPrompt}\n\nNOTE: the screenshot could not be processed this turn, so rely on the element list and page summary text above.`
-    const fallback = await callLlmWithRetry(
       () => zai.chat.completions.create({
         messages: [
-          { role: 'assistant', content: textOnlyPrompt },
-          ...history.slice(-4),
-          { role: 'user', content: `GOAL: ${goal}\n\nStep ${step}. Choose the next action based on the page summary (no screenshot available this turn).` },
+          { role: 'assistant', content: prompt },
+          { role: 'user', content: `Step ${step}. What do you do next?` },
         ],
         thinking: { type: 'disabled' },
       }),
-      (attempt, ms) => onStatus(`Rate limited, retrying in ${Math.round(ms / 1000)}s (attempt ${attempt})…`),
+      (attempt, ms) => onStatus(`Retrying in ${Math.round(ms / 1000)}s...`),
     )
-    raw = (fallback.choices?.[0]?.message?.content ?? '').trim()
+    raw = (completion.choices?.[0]?.message?.content ?? '').trim()
+  } catch {
+    return { action: 'done', params: { message: 'AI service unavailable. Please try again.' }, thought: 'LLM error' }
   }
 
-  let decision = parseActionJson(raw)
-  // If the model returned plain text (not JSON) or broken JSON, retry with
-  // a stronger instruction. Don't just say "done" — the AI didn't do anything yet.
-  if (decision.action === 'done' && decision.thought === 'unparseable response') {
-    try {
-      const repair = await callLlmWithRetry(
-        () => zai.chat.completions.create({
-          messages: [
-            { role: 'assistant', content: systemPrompt },
-            { role: 'user', content: `The user wants: ${goal}. Look at the page info and decide the FIRST action.` },
-            { role: 'assistant', content: raw },
-            { role: 'user', content: 'That was not a valid JSON action. You MUST reply with ONLY a JSON object like {"action":"click","params":{"x":100,"y":200},"thought":"..."}. No prose. What is the first action to do?' },
-          ],
-          thinking: { type: 'disabled' },
-        }),
-        (attempt, ms) => onStatus(`Retrying — AI gave invalid response…`),
-      )
-      const repaired = (repair.choices?.[0]?.message?.content ?? '').trim()
-      const repairedDecision = parseActionJson(repaired)
-      if (repairedDecision.action !== 'done' || repairedDecision.thought !== 'unparseable response') {
-        decision = repairedDecision
-      }
-    } catch {}
+  return parseNlAction(raw)
+}
+
+function parseNlAction(raw: string): ActionDecision {
+  const lines = raw.split('\n')
+  let action = 'done'
+  let paramsStr = ''
+  let thought = ''
+
+  for (const line of lines) {
+    const lower = line.toLowerCase().trim()
+    if (lower.startsWith('action:')) action = line.slice(7).trim().toLowerCase().split(/\s/)[0]
+    else if (lower.startsWith('params:')) paramsStr = line.slice(7).trim()
+    else if (lower.startsWith('thought:')) thought = line.slice(9).trim()
   }
 
-  return decision
+  const params: Record<string, unknown> = {}
+
+  if (action === 'eval_js') {
+    if (paramsStr.startsWith('expr=')) params.expr = paramsStr.slice(5)
+    else if (paramsStr && !paramsStr.includes('=')) params.expr = paramsStr
+    else { const m = raw.match(/expr\s*=\s*(.+)/i); if (m) params.expr = m[1].trim() }
+  } else if (action === 'done') {
+    params.message = paramsStr.startsWith('message=') ? paramsStr.slice(8) : (paramsStr || 'Done.')
+  } else if (action === 'navigate' || action === 'new_tab') {
+    params.url = paramsStr.startsWith('url=') ? paramsStr.slice(4).split(/\s/)[0] : (paramsStr.startsWith('http') ? paramsStr.split(/\s/)[0] : paramsStr)
+  } else if (action === 'fill') {
+    const s = paramsStr.match(/selector\s*=\s*(\S+)/); if (s) params.selector = s[1]
+    const t = paramsStr.match(/text\s*=\s*(.+?)(?:\s+\w+=|$)/); if (t) params.text = t[1].trim()
+    const x = paramsStr.match(/x\s*=\s*(\d+)/i); if (x) params.x = Number(x[1])
+    const y = paramsStr.match(/y\s*=\s*(\d+)/i); if (y) params.y = Number(y[1])
+  } else if (action === 'click') {
+    const x = paramsStr.match(/x\s*=\s*(\d+)/i); if (x) params.x = Number(x[1])
+    const y = paramsStr.match(/y\s*=\s*(\d+)/i); if (y) params.y = Number(y[1])
+    if (!params.x || !params.y) { const c = paramsStr.match(/(\d+)\s*,\s*(\d+)/); if (c) { params.x = Number(c[1]); params.y = Number(c[2]) } }
+  } else if (action === 'type') {
+    params.text = paramsStr.startsWith('text=') ? paramsStr.slice(5) : paramsStr
+  } else if (action === 'press_key') {
+    params.key = paramsStr.startsWith('key=') ? paramsStr.slice(4) : paramsStr
+  } else if (action === 'scroll') {
+    const d = paramsStr.match(/direction\s*=\s*(up|down)/i); params.direction = d ? d[1].toLowerCase() : 'down'
+    const a = paramsStr.match(/amount\s*=\s*(\d+)/i); params.amount = a ? Number(a[1]) : 400
+  }
+
+  return { action, params, thought }
 }
 
 /**
@@ -476,55 +455,7 @@ function goalWantsNavigation(goal: string): boolean {
   return false
 }
 
-function parseActionJson(raw: string): ActionDecision {
-  // strip markdown fences if present
-  let s = raw
-  const fence = s.match(/```(?:json)?\s*([\s\S]*?)```/i)
-  if (fence) s = fence[1].trim()
-  // extract the first {...} block
-  const start = s.indexOf('{')
-  const end = s.lastIndexOf('}')
-  if (start !== -1 && end !== -1 && end > start) {
-    s = s.slice(start, end + 1)
-  }
-  try {
-    const obj = JSON.parse(s)
-    let action = String(obj.action ?? 'done')
-    let params = (obj.params ?? {}) as Record<string, unknown>
-    // FIX: LLM sometimes returns params as a STRING instead of an object.
-    // e.g. {"action":"eval_js","params":"document.title"} instead of
-    // {"action":"eval_js","params":{"expr":"document.title"}}.
-    // Convert string params to the correct object shape based on the action.
-    if (typeof params === 'string') {
-      const strParam = params
-      if (action === 'eval_js') params = { expr: strParam }
-      else if (action === 'navigate' || action === 'new_tab') params = { url: strParam }
-      else if (action === 'type') params = { text: strParam }
-      else if (action === 'fill') params = { text: strParam }
-      else if (action === 'press_key') params = { key: strParam }
-      else params = { value: strParam }
-    }
-    let thought = String(obj.thought ?? '')
-    let message: string | undefined = obj.message ? String(obj.message) : (params.message ? String(params.message) : undefined)
-    // Unwrap a nested done: sometimes the model wraps the whole action JSON
-    // inside params.message (e.g. {"action":"done","params":{"message":"{\"action\":\"done\",...}"}}).
-    if (message && message.trim().startsWith('{')) {
-      try {
-        const inner = JSON.parse(message)
-        if (inner.action === 'done' && inner.params?.message) {
-          message = String(inner.params.message)
-          thought = String(inner.thought ?? thought)
-        }
-      } catch {
-        // not valid nested JSON — keep original message
-      }
-    }
-    return { action, params, thought, message }
-  } catch {
-    // if the model didn't produce parseable JSON, treat as done with the raw text
-    return { action: 'done', params: { message: raw.slice(0, 400) }, thought: 'unparseable response' }
-  }
-}
+
 
 async function executeAction(action: string, params: Record<string, unknown>, goal: string = ''): Promise<string> {
   try {
