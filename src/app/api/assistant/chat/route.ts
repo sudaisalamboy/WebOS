@@ -343,10 +343,22 @@ async function decideAction(
     `${i + 1}. ${e.text || '(no text)'} @ (${e.x},${e.y})${e.selector ? ` sel=${e.selector}` : ''}`
   ).join('\n')
 
+  // List ALL form fields (input boxes) with their selectors and coordinates
+  // so the AI knows EXACTLY where to find search boxes, login fields, etc.
+  const formFields = page.formFields.length
+    ? page.formFields.map((f, i) =>
+        `${i + 1}. <${f.tag} type="${f.type}"${f.id ? ` id="${f.id}"` : ''}${f.name ? ` name="${f.name}"` : ''}${f.placeholder ? ` placeholder="${f.placeholder}"` : ''}${f.label ? ` label="${f.label}"` : ''} selector="${f.selector}" @ (${f.x},${f.y})>`
+      ).join('\n')
+    : '(no input boxes found)'
+
   const pageState = `URL: ${page.url}
 Title: ${page.title}
 Page text (first 2000 chars): ${page.pageText.slice(0, 2000)}
-Clickable elements:
+
+INPUT BOXES (search boxes, login fields, etc — use these to type/search):
+${formFields}
+
+CLICKABLE ELEMENTS (buttons, links, videos — use these coordinates to click):
 ${elements || '(none found)'}`
 
   const prompt = `You are browsing a website. The user wants: ${goal}
@@ -379,13 +391,13 @@ PARAMS: message=<h1>Result</h1><p>Found it</p>
 THOUGHT: task complete
 
 Rules:
-- DON'T navigate away from the current page unless the user explicitly asked to go to a different site.
-- Work with what's on the current page — use eval_js to find elements, click them, read text.
-- Don't say done until task is complete. Execute step by step.
-- To click something: use eval_js to find its x,y coordinates first, then click.
-- DON'T waste steps — if you found what to click, CLICK it next step. Don't keep running eval_js.
-- To find clickable elements with coordinates: eval_js expr=JSON.stringify(Array.from(document.querySelectorAll('a,button,[onclick],.video-thumb,.thumb-block')).map((e,i)=>({i,text:(e.textContent||'').trim().slice(0,40),x:Math.round(e.getBoundingClientRect().x+e.getBoundingClientRect().width/2),y:Math.round(e.getBoundingClientRect().y+e.getBoundingClientRect().height/2)})).filter(e=>e.x>0&&e.y>0).slice(0,10))
-- Then click the one you want: ACTION: click, PARAMS: x=XCOORD y=YCOORD`
+- DON'T navigate away unless user explicitly asked to go to a different site.
+- DON'T say done until task is complete. Execute step by step.
+- DON'T waste steps — if you found what to click, CLICK it next step.
+- To SEARCH: look at the INPUT BOXES list above. Find the search box (type=search or name=q or placeholder=Search). ACTION: fill, PARAMS: selector=#search text=QUERY. Then ACTION: press_key, PARAMS: key=Enter.
+- To CLICK: look at the CLICKABLE ELEMENTS list above for coordinates. ACTION: click, PARAMS: x=XCOORD y=YCOORD.
+- To READ: use eval_js expr=document.body.innerText.slice(0,5000)
+- To FIND elements: use eval_js expr=JSON.stringify(Array.from(document.querySelectorAll('a,button,input')).map((e,i)=>({i,tag:e.tagName,text:(e.textContent||'').trim().slice(0,40),x:Math.round(e.getBoundingClientRect().x+e.getBoundingClientRect().width/2),y:Math.round(e.getBoundingClientRect().y+e.getBoundingClientRect().height/2)})).filter(e=>e.x>0&&e.y>0).slice(0,15))`
 
   let raw = ''
   try {
