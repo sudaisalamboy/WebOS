@@ -9,7 +9,7 @@ import ZAI from 'z-ai-web-dev-sdk'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
-export const maxDuration = 300
+export const maxDuration = 600
 
 interface AssistantStep {
   step: number
@@ -25,7 +25,7 @@ interface SSEEvent {
   data: unknown
 }
 
-const MAX_STEPS = 20
+const MAX_STEPS = 30
 
 // Server-side memo of the last note content the assistant saw, so we can
 // diff against it each turn and surface only what changed (new bug reports,
@@ -57,7 +57,7 @@ function computeNoteDiff(prev: string, curr: string): string {
 async function callLlmWithRetry<T>(
   fn: () => Promise<T>,
   onWait?: (attempt: number, ms: number) => void,
-  maxAttempts = 3,
+  maxAttempts = 5,
 ): Promise<T> {
   let lastErr: unknown
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
@@ -339,7 +339,7 @@ async function decideAction(
   onStatus: (msg: string) => void = () => {},
   noteContext: string = '',
 ): Promise<ActionDecision> {
-  const elements = page.interactiveElements.slice(0, 20).map((e, i) => {
+  const elements = page.interactiveElements.slice(0, 30).map((e, i) => {
     let info = `${i + 1}. <${e.tag}>`
     if (e.type) info += ` type="${e.type}"`
     if (e.id) info += ` id="${e.id}"`
@@ -367,7 +367,7 @@ async function decideAction(
 
   const pageState = `URL: ${page.url}
 Title: ${page.title}
-Page text (first 2000 chars): ${page.pageText.slice(0, 2000)}
+Page text (first 4000 chars): ${page.pageText.slice(0, 4000)}
 
 INPUT BOXES (search boxes, login fields, etc — use these to type/search):
 ${formFields}

@@ -369,7 +369,7 @@ export async function getPageSummary(): Promise<PageSummary> {
       const style = window.getComputedStyle(e);
       return visible && style.visibility !== 'hidden' && style.display !== 'none' && style.opacity !== '0';
     });
-    const out = els.slice(0, 40).map(e=>{
+    const out = els.slice(0, 50).map(e=>{
       const r = rect(e.getBoundingClientRect());
       const id = e.id || '';
       const name = e.getAttribute('name') || '';
@@ -407,7 +407,7 @@ export async function getPageSummary(): Promise<PageSummary> {
     }).filter(v => v.width > 10 && v.height > 10);
     // Full visible text of the page — the assistant reads this to answer
     // questions like "which video has more views" by reading the actual page.
-    var pageText = (document.body ? document.body.innerText : '').slice(0, 8000);
+    var pageText = (document.body ? document.body.innerText : '').slice(0, 10000);
     // Collect ALL form fields (input/textarea/select) with coordinates + selectors
     var fieldEls = Array.from(document.querySelectorAll('input, textarea, select'));
     var formFields = fieldEls.map(e => {
