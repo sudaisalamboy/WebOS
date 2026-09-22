@@ -491,6 +491,19 @@ function parseActionJson(raw: string): ActionDecision {
     const obj = JSON.parse(s)
     let action = String(obj.action ?? 'done')
     let params = (obj.params ?? {}) as Record<string, unknown>
+    // FIX: LLM sometimes returns params as a STRING instead of an object.
+    // e.g. {"action":"eval_js","params":"document.title"} instead of
+    // {"action":"eval_js","params":{"expr":"document.title"}}.
+    // Convert string params to the correct object shape based on the action.
+    if (typeof params === 'string') {
+      const strParam = params
+      if (action === 'eval_js') params = { expr: strParam }
+      else if (action === 'navigate' || action === 'new_tab') params = { url: strParam }
+      else if (action === 'type') params = { text: strParam }
+      else if (action === 'fill') params = { text: strParam }
+      else if (action === 'press_key') params = { key: strParam }
+      else params = { value: strParam }
+    }
     let thought = String(obj.thought ?? '')
     let message: string | undefined = obj.message ? String(obj.message) : (params.message ? String(params.message) : undefined)
     // Unwrap a nested done: sometimes the model wraps the whole action JSON
@@ -582,7 +595,21 @@ async function executeAction(action: string, params: Record<string, unknown>, go
         return `navigated to ${url}`
       }
       case 'eval_js': {
-        const expr = String(params.expr ?? '')
+        let expr = String(params.expr ?? params.expression ?? '')
+        // If no expr but the goal mentions "title", "url", "buttons" etc,
+        // auto-generate the right eval_js expression.
+        if (!expr && goal) {
+          const g = goal.toLowerCase()
+          if (g.includes('title')) expr = 'document.title'
+          else if (g.includes('url') || g.includes('link')) expr = 'location.href'
+          else if (g.includes('button') || g.includes('buttons')) expr = "Array.from(document.querySelectorAll('button')).map(e=>e.textContent.trim().slice(0,50))"
+          else if (g.includes('input') || g.includes('form')) expr = "Array.from(document.querySelectorAll('input,textarea,select')).map(e=>({type:e.type,name:e.name,id:e.id,placeholder:e.placeholder}))"
+          else if (g.includes('link') || g.includes('links')) expr = "Array.from(document.querySelectorAll('a')).map(e=>({text:e.textContent.trim().slice(0,50),href:e.href}))"
+          else if (g.includes('video')) expr = "Array.from(document.querySelectorAll('video')).map(e=>({src:e.src,paused:e.paused}))"
+          else if (g.includes('image') || g.includes('images')) expr = "Array.from(document.querySelectorAll('img')).map(e=>({src:e.src.slice(0,80),alt:e.alt}))"
+          else if (g.includes('text') || g.includes('read')) expr = 'document.body.innerText.slice(0,5000)'
+          else if (g.includes('search box') || g.includes('search')) expr = "document.querySelector('input[type=search],input[name=q],input[placeholder*=search]')?'yes':'no'"
+        }
         if (!expr) return 'no expr'
         const r = await evalJs(expr)
         return r.error ? `JS error: ${r.error}` : `=> ${r.value.slice(0, 300)}`
