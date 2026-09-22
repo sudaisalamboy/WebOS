@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils'
 import {
   Folder, FileText, FileCode, FileJson, FileImage, FileMusic, File,
   ChevronRight, ArrowLeft, ArrowRight, ArrowUp, RefreshCw, Plus, FolderPlus,
-  Trash2, Pencil, Scissors, Copy, ClipboardPaste, Edit3, Home,
+  Trash2, Pencil, Scissors, Copy, ClipboardPaste, Edit3, Home, Download,
 } from 'lucide-react'
 
 const QUICK_LINKS = [
@@ -440,7 +440,7 @@ export function FileExplorerApp({ initialPath = '/' }: Props) {
                     onClick={() => setSelected(entry.path)}
                     onDoubleClick={() => openEntry(entry)}
                     className={cn(
-                      'group flex flex-col items-center gap-1 rounded-lg p-2 cursor-pointer transition',
+                      'group relative flex flex-col items-center gap-1 rounded-lg p-2 cursor-pointer transition',
                       isSelected ? 'bg-emerald-500/15 ring-1 ring-emerald-500/40' : 'hover:bg-foreground/5',
                       isDragTarget && 'bg-emerald-500/25 ring-2 ring-emerald-500 scale-105'
                     )}
@@ -480,6 +480,25 @@ export function FileExplorerApp({ initialPath = '/' }: Props) {
                           {entry.isDir ? 'Folder' : formatBytes(entry.size)}
                         </div>
                       </div>
+                    )}
+                    {/* Download button — only for files (not folders), appears on hover */}
+                    {!entry.isDir && renaming !== entry.path && editingExt !== entry.path && (
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          // Trigger download via the /api/fs/download endpoint
+                          const a = document.createElement('a')
+                          a.href = `/api/fs/download?path=${encodeURIComponent(entry.path)}`
+                          a.download = entry.name
+                          document.body.appendChild(a)
+                          a.click()
+                          document.body.removeChild(a)
+                        }}
+                        title={`Download ${entry.name} to your PC`}
+                        className="absolute top-1 right-1 opacity-0 group-hover:opacity-100 transition rounded p-1 bg-emerald-500 hover:bg-emerald-400 text-white shadow-lg"
+                      >
+                        <Download className="h-3 w-3" />
+                      </button>
                     )}
                   </div>
                 )
