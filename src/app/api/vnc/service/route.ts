@@ -11,13 +11,13 @@ export const maxDuration = 30
 
 const PID_DIR = '/home/z/my-project/.vnc-pids'
 const LOG_DIR = '/home/z/my-project/.vnc-logs'
-const CHROME_BIN = (() => { const fs = require('fs'); const dirs = fs.readdirSync('/home/z/.cache/ms-playwright').filter(d => d.startsWith('chromium-') && !d.includes('headless')).sort().reverse(); for (const d of dirs) { const p = '/home/z/.cache/ms-playwright/' + d + '/chrome-linux64/chrome'; if (fs.existsSync(p)) return p; } return '/home/z/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome'; })()
+const CHROME_BIN = '/home/z/my-project/tools/brave/extracted/opt/brave.com/brave/brave-browser'
 const XVFB_BIN = '/usr/bin/Xvfb'
 const X11VNC_BIN = '/home/z/my-project/tools/x11vnc/bin/x11vnc'
 const X11VNC_LIB = '/home/z/my-project/tools/x11vnc/lib'
 const NOVNC_DIR = '/home/z/my-project/tools/novnc'
 const WEBSOCKIFY_BIN = '/home/z/.venv/bin/websockify'
-const CHROME_PROFILE = '/home/z/.config/google-chrome-for-testing'
+const CHROME_PROFILE = '/home/z/.config/brave-browser'
 
 const DISPLAY_NUM = 99
 const VNC_PORT = 5900

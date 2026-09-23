@@ -34,7 +34,7 @@ interface ServiceInfo {
 
 const SERVICES: ServiceInfo[] = [
   { id: 'xvfb', name: 'Xvfb', desc: 'Virtual display :99 (1280×800)', port: 'display', icon: <Monitor className="h-4 w-4" />, color: 'text-sky-400' },
-  { id: 'chrome', name: 'Chrome', desc: 'Playwright Chromium (CDP :9222)', port: '9222', icon: <Globe className="h-4 w-4" />, color: 'text-emerald-400', dependsOn: 'xvfb' },
+  { id: 'chrome', name: 'Brave', desc: 'Brave Browser (CDP :9222)', port: '9222', icon: <Globe className="h-4 w-4" />, color: 'text-emerald-400', dependsOn: 'xvfb' },
   { id: 'x11vnc', name: 'x11vnc', desc: 'VNC server (RFB :5900)', port: '5900', icon: <Radio className="h-4 w-4" />, color: 'text-violet-400', dependsOn: 'xvfb' },
   { id: 'websockify', name: 'websockify', desc: 'WebSocket bridge (HTTP :6080)', port: '6080', icon: <Wifi className="h-4 w-4" />, color: 'text-amber-400', dependsOn: 'x11vnc' },
 ]
@@ -51,7 +51,7 @@ export function ChromeDebuggerApp() {
   const [serviceLogs, setServiceLogs] = useState<Record<string, string>>({})
   const [expandedLog, setExpandedLog] = useState<string | null>(null)
   const [copiedLog, setCopiedLog] = useState<string | null>(null)
-  const [chromeTabs, setChromeTabs] = useState<any[]>([])
+  const [braveTabs, setBraveTabs] = useState<any[]>([])
   const [lastActionResult, setLastActionResult] = useState<Record<string, { ok: boolean; error?: string }>>({})
   const logEndRef = useRef<HTMLDivElement>(null)
   const autoExpandRef = useRef<string | null>(null)
@@ -101,12 +101,12 @@ export function ChromeDebuggerApp() {
         const tabsResp = await fetch('/api/vnc/tabs', { cache: 'no-store' })
         if (tabsResp.ok) {
           const data = await tabsResp.json()
-          setChromeTabs(data.tabs || [])
+          setBraveTabs(data.tabs || [])
         } else {
-          setChromeTabs([])
+          setBraveTabs([])
         }
       } catch {
-        setChromeTabs([])
+        setBraveTabs([])
       }
     }
     fetchTabs()
@@ -221,7 +221,7 @@ export function ChromeDebuggerApp() {
       <div className="flex items-center gap-2 px-4 py-3 border-b border-zinc-800 bg-gradient-to-r from-amber-900/20 to-emerald-900/20 shrink-0">
         <Cpu className="h-5 w-5 text-amber-400" />
         <h1 className="text-base font-bold">Browser Debugger</h1>
-        <span className="text-[10px] text-zinc-500 ml-1">Remote Chrome Service Monitor</span>
+        <span className="text-[10px] text-zinc-500 ml-1">Remote Browser Service Monitor</span>
         <div className={cn(
           'ml-auto flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[10px] font-bold',
           allRunning ? 'bg-emerald-500/15 text-emerald-400 ring-1 ring-emerald-500/30'
@@ -403,13 +403,13 @@ export function ChromeDebuggerApp() {
         </div>
 
         {/* Chrome CDP tabs */}
-        {chromeTabs.length > 0 && (
+        {braveTabs.length > 0 && (
           <div className="px-4 pb-2 shrink-0">
             <div className="text-[10px] font-bold uppercase text-zinc-500 mb-1.5 flex items-center gap-1">
-              <Globe className="h-3 w-3" /> Chrome Tabs (CDP :9222)
+              <Globe className="h-3 w-3" /> Brave Tabs (CDP :9222)
             </div>
             <div className="flex gap-2 overflow-x-auto pb-1">
-              {chromeTabs.map((tab, i) => (
+              {braveTabs.map((tab, i) => (
                 <div key={i} className="flex-none rounded-md border border-zinc-800 bg-zinc-900/50 px-3 py-1.5 max-w-56">
                   <div className="text-[10px] font-bold text-zinc-300 truncate">{tab.title || '(no title)'}</div>
                   <div className="text-[9px] text-zinc-600 truncate">{tab.url}</div>
