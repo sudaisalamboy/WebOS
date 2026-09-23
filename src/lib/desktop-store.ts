@@ -93,7 +93,7 @@ const APP_DEFAULTS: Record<AppId, Omit<WindowState, 'id' | 'zIndex' | 'minimized
   },
   'remote-chrome': {
     appId: 'remote-chrome',
-    title: 'Remote Chrome',
+    title: 'Remote Browser',
     icon: '🖥️',
     x: 200, y: 100, width: 720, height: 640,
   },
@@ -105,7 +105,7 @@ const APP_DEFAULTS: Record<AppId, Omit<WindowState, 'id' | 'zIndex' | 'minimized
   },
   'chrome-debugger': {
     appId: 'chrome-debugger',
-    title: 'Chrome Debugger',
+    title: 'Browser Debugger',
     icon: '🔧',
     x: 80, y: 60, width: 1100, height: 740,
   },
