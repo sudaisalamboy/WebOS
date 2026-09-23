@@ -102,14 +102,14 @@ export function RemoteChromeApp() {
 
   async function start() {
     setActionLoading(true)
-    setMessage('Starting Remote Chrome…')
-    addLog('info', 'Starting Remote Chrome (Xvfb + Chrome + x11vnc + websockify)...')
+    setMessage('Starting Remote Browser…')
+    addLog('info', 'Starting Remote Browser (Xvfb + Chrome + x11vnc + websockify)...')
     try {
       const r = await fetch('/api/vnc/start', { method: 'POST' })
       const d = await r.json()
       if (d.ok) {
         setMessage(d.alreadyRunning ? 'Already running.' : 'Started!')
-        addLog('success', d.alreadyRunning ? 'Remote Chrome already running' : 'Remote Chrome started')
+        addLog('success', d.alreadyRunning ? 'Remote Browser already running' : 'Remote Browser started')
         await refresh()
         setShowVnc(true)
         // Auto-inject anti-detect + camera
@@ -137,7 +137,7 @@ export function RemoteChromeApp() {
   async function stop() {
     setActionLoading(true)
     setMessage('Stopping…')
-    addLog('info', 'Stopping Remote Chrome...')
+    addLog('info', 'Stopping Remote Browser...')
     try {
       const r = await fetch('/api/vnc/stop', { method: 'POST' })
       const d = await r.json()
@@ -213,7 +213,7 @@ export function RemoteChromeApp() {
         // Most common cause: browser denied clipboard permission or context is
         // not secure (not HTTPS / not localhost). Fall back to a prompt.
         addLog('warn', `Clipboard API blocked (${clipErr?.message || clipErr}); falling back to prompt`)
-        text = window.prompt('Paste — type or Ctrl+V the text to send to Remote Chrome:') || ''
+        text = window.prompt('Paste — type or Ctrl+V the text to send to Remote Browser:') || ''
       }
       if (!text) {
         setNavMessage('Clipboard is empty.')
@@ -396,7 +396,7 @@ export function RemoteChromeApp() {
             {!contentFocused && blurEnabled && <div className="absolute inset-0 z-50 pointer-events-none" style={{ backdropFilter: 'blur(40px)', background: 'rgba(9,9,11,0.7)' }} />}
             {blurEnabled && <button onClick={() => setBlurEnabled(v => !v)} className={cn('absolute top-2 right-2 z-50 flex items-center gap-1 px-2 py-1 rounded-md text-[9px] font-bold transition', contentFocused ? 'bg-emerald-500/20 text-emerald-400' : 'bg-zinc-800 text-zinc-500')}>{contentFocused ? '🔓 Blur ON' : '🔒 Blur ON'}</button>}
             {!blurEnabled && <button onClick={() => setBlurEnabled(true)} className="absolute top-2 right-2 z-50 flex items-center gap-1 px-2 py-1 rounded-md text-[9px] font-bold bg-zinc-800 text-zinc-500">🔒 Blur OFF</button>}
-            <iframe src={vncUrl} title="Remote Chrome" className="h-full w-full border-0" style={{ background: '#000', filter: blurEnabled ? (contentFocused ? 'none' : 'blur(60px) brightness(0.6)') : 'none', transition: 'filter 0.3s ease' }} allow="camera; microphone; fullscreen" />
+            <iframe src={vncUrl} title="Remote Browser" className="h-full w-full border-0" style={{ background: '#000', filter: blurEnabled ? (contentFocused ? 'none' : 'blur(60px) brightness(0.6)') : 'none', transition: 'filter 0.3s ease' }} allow="camera; microphone; fullscreen" />
           </div>
 
           {/* Camera Log Panel (right side) */}
@@ -484,7 +484,7 @@ export function RemoteChromeApp() {
     <div className="flex h-full w-full flex-col bg-zinc-950 text-zinc-100 overflow-hidden">
       <div className="flex items-center gap-2 px-4 py-3 border-b border-zinc-800 bg-gradient-to-r from-violet-900/30 to-cyan-900/30">
         <Monitor className="h-5 w-5 text-cyan-400" />
-        <h1 className="text-base font-bold">Remote Chrome</h1>
+        <h1 className="text-base font-bold">Remote Browser</h1>
         <span className="text-[10px] text-zinc-500 ml-1">noVNC + Tor</span>
         <div className={cn('ml-auto flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[10px] font-bold', running ? 'bg-emerald-500/15 text-emerald-400 ring-1 ring-emerald-500/30' : 'bg-zinc-800 text-zinc-500')}>
           <span className={cn('h-1.5 w-1.5 rounded-full', running ? 'bg-emerald-500 animate-pulse' : 'bg-zinc-600')} />

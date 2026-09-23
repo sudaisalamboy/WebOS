@@ -220,7 +220,7 @@ export function ChromeDebuggerApp() {
       {/* Header */}
       <div className="flex items-center gap-2 px-4 py-3 border-b border-zinc-800 bg-gradient-to-r from-amber-900/20 to-emerald-900/20 shrink-0">
         <Cpu className="h-5 w-5 text-amber-400" />
-        <h1 className="text-base font-bold">Chrome Debugger</h1>
+        <h1 className="text-base font-bold">Browser Debugger</h1>
         <span className="text-[10px] text-zinc-500 ml-1">Remote Chrome Service Monitor</span>
         <div className={cn(
           'ml-auto flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[10px] font-bold',

@@ -8,8 +8,8 @@ import { Terminal, FolderOpen, Activity, Info, Search, Monitor, Video, Bug, Book
 const APPS: { id: AppId; name: string; icon: React.ReactNode; color: string }[] = [
   { id: 'terminal', name: 'Terminal', icon: <Terminal className="h-5 w-5" />, color: 'text-slate-300' },
   { id: 'notes', name: 'Notes', icon: <StickyNote className="h-5 w-5" />, color: 'text-amber-400' },
-  { id: 'remote-chrome', name: 'Remote Chrome', icon: <Monitor className="h-5 w-5" />, color: 'text-emerald-400' },
-  { id: 'chrome-debugger', name: 'Chrome Debugger', icon: <Bug className="h-5 w-5" />, color: 'text-amber-400' },
+  { id: 'remote-chrome', name: 'Remote Browser', icon: <Monitor className="h-5 w-5" />, color: 'text-emerald-400' },
+  { id: 'chrome-debugger', name: 'Browser Debugger', icon: <Bug className="h-5 w-5" />, color: 'text-amber-400' },
   { id: 'camera-inject', name: 'Camera Inject', icon: <Video className="h-5 w-5" />, color: 'text-fuchsia-400' },
   { id: 'file-explorer', name: 'File Explorer', icon: <FolderOpen className="h-5 w-5" />, color: 'text-orange-400' },
   { id: 'vps-dashboard', name: 'VPS Dashboard', icon: <Activity className="h-5 w-5" />, color: 'text-violet-400' },
