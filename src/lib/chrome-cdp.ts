@@ -407,6 +407,16 @@ export async function getPageSummary(): Promise<PageSummary> {
     }).filter(v => v.width > 10 && v.height > 10);
     // Full visible text of the page — the assistant reads this to answer
     // questions like "which video has more views" by reading the actual page.
+    // Auto-dismiss cookie consent popups — they block the page content
+    // and the AI only sees cookie text instead of video/page info.
+    var cookieBtns = document.querySelectorAll('button, a, input[type=button], [role=button]');
+    for (var cb of cookieBtns) {
+      var t = (cb.textContent || cb.value || '').toLowerCase().trim();
+      if (t === 'accept' || t === 'ok' || t === 'got it' || t === 'i agree' || t === 'agree' || t === 'accept all' || t === 'allow all' || t === 'consent' || t === 'accept cookies' || t.includes('accept') || t.includes('agree') || t.includes('got it') || t.includes('ok, ')) {
+        try { cb.click(); } catch(e) {}
+        break;
+      }
+    }
     var pageText = (document.body ? document.body.innerText : '').slice(0, 10000);
     // Collect ALL form fields (input/textarea/select) with coordinates + selectors
     var fieldEls = Array.from(document.querySelectorAll('input, textarea, select'));
