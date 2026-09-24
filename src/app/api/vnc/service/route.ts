@@ -168,8 +168,8 @@ async function startService(service: string): Promise<{ ok: boolean; error?: str
       if (pgrep(`Xvfb :${DISPLAY_NUM}`)) return { ok: true, error: 'already running' }
       return new Promise((resolve) => {
         const p = spawn(XVFB_BIN, [
-          `:${DISPLAY_NUM}`, '-screen', '0', '1280x800x24',
-          '-ac', '-nolisten', 'tcp',
+          `:${DISPLAY_NUM}`, '-screen', '0', '1920x1080x24',
+          '-ac', '-nolisten', 'tcp', '+extension', 'RANDR',
         ], {
           stdio: ['ignore', fs.openSync(`${LOG_DIR}/xvfb.log`, 'a'), fs.openSync(`${LOG_DIR}/xvfb.log`, 'a')],
           detached: true,
