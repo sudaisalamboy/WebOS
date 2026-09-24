@@ -366,3 +366,48 @@ Stage Summary:
 - Adaptive wait replaces hardcoded sleeps.
 - Per-session state prevents cross-user contamination.
 - Git committed: 1f73d15.
+
+---
+Task ID: 15
+Agent: main (Z.ai Code)
+Task: User reported "again chrome not brave" — Chrome (Playwright Chromium) was running instead of Brave
+
+Work Log:
+- Root cause: I manually ran `bash scripts/chrome-watchdog-start.sh` for testing earlier, which launched Playwright Chromium (Chrome for Testing, version 153). This overwrote the Brave process on port 9222.
+- Killed chrome-watchdog process (pid from .vnc-pids/chrome-watchdog.pid) to stop auto-restart.
+- Killed all Chromium processes (pkill -9 -f "ms-playwright/chromium" and "google-chrome-for-testing").
+- Started Brave via `bash scripts/brave-watchdog-start.sh` — auto-downloaded Brave 1.73.91 (Chromium 131.0.6778.85) and launched it on port 9222.
+- Verified Brave binary running: /home/z/my-project/tools/brave/extracted/opt/brave.com/brave/brave
+- Updated anti-detect UA from Chrome/151 → Chrome/131 to match Brave's actual Chromium version:
+  * src/app/api/vnc/anti-detect/route.ts: Network.setUserAgentOverride now uses Chrome/131.0.0.0 + fullVersion 131.0.6778.85
+  * src/lib/anti-detect.ts: navigator.userAgentData.brands now uses Chrome/131 instead of 151
+- Re-injected anti-detect via POST /api/vnc/anti-detect.
+- Verified via CDP: navigator.userAgent = Chrome/131.0.0.0, brands = [Google Chrome 131, Chromium 131, Not_A Brand 24], platform = Linux, webdriver = undefined.
+- Tested assistant with Brave: "what is the page title" → "DuckDuckGo - Protection. Privacy. Peace of mind." in 2 steps. ✓
+
+Stage Summary:
+- Brave browser is now running on CDP port 9222 (not Playwright Chromium).
+- Anti-detect UA/Client-Hints aligned to Chrome 131 (Brave's actual version) — was 151 (Playwright Chromium version) which caused UA/version mismatch.
+- Assistant works correctly with Brave.
+- Git committed: f1b40ab.
+
+---
+Task ID: 16
+Agent: main (Z.ai Code)
+Task: Backup project and push to web (project API) for download/share
+
+Work Log:
+- Created project.zip backup (11 MB, 551 files) excluding: node_modules, .next, .git, download, skills, tool-results, .vnc-logs, .vnc-pids, dev.log, *.png, *.deb, novnc.tar.gz, tools/novnc/tests, tools/novnc/vendor, tools/brave, tools/x11vnc/bin, test-shots.
+- Kept all essential app code: src/, prisma/, public/, mini-services/, scripts/ (watchdogs), tools/ (x11vnc binary + lib + novnc core), package.json, bun.lock, tsconfig, next.config.ts, tailwind/postcss configs, components.json, .env, Caddyfile, worklog.md.
+- Pushed via POST https://3000-ib7yhhr4gz0107qs3qpdu-de59bda9.sandbox.novita.ai/api/push/ze58ijzg (multipart file=project.zip, X-Push-Note: "Backup v6 — all 20+ assistant fixes + Brave browser switch").
+- Response: push complete → v31 (removed v21), file_size 11080469, checksum f653f8eea33d2f0e612ea2cda92ef8f2.
+- Verified GET /api/projects/ze58ijzg: has_file true, current_version_id 81, push_count 31.
+- Verified GET /api/pull/ze58ijzg: HTTP 200, content-length 11080469 (matches).
+- Version history: 10 versions kept (retention policy), newest is 10.8 MB (this backup), older ones ~2.5 MB each.
+
+Stage Summary:
+- Project "webos-desktop" (id: ze58ijzg) backed up as v31 (10.57 MB, 551 files).
+- Includes ALL recent work: 20+ assistant limitations fixed (vision, shadow DOM, dialogs, error recovery, file upload, special chars, adaptive wait, per-session state, tag-swap fallback) + Brave browser switch (Chrome 131 UA alignment).
+- Download URL: https://3000-ib7yhhr4gz0107qs3qpdu-de59bda9.sandbox.novita.ai/api/pull/ze58ijzg
+- Meta URL: https://3000-ib7yhhr4gz0107qs3qpdu-de59bda9.sandbox.novita.ai/api/projects/ze58ijzg
+- Push URL: https://3000-ib7yhhr4gz0107qs3qpdu-de59bda9.sandbox.novita.ai/api/push/ze58ijzg
