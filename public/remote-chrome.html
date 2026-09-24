@@ -9,6 +9,16 @@
         html, body { height: 100%; width: 100%; background: #000; overflow: hidden; font-family: -apple-system, system-ui, sans-serif; }
         #top_bar { display: none; }
         #screen { width: 100%; height: 100%; }
+        /* Force the noVNC canvas to fill the full width AND height of the
+           container. noVNC's scaleViewport keeps the aspect ratio and
+           letterboxes (black bars) when the aspect ratios don't match.
+           This override makes the canvas stretch to fill the entire
+           viewport so the browser width fits the canvas width. */
+        #screen canvas {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: fill !important;
+        }
         #status {
             position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
             color: #67c5d4; font-size: 18px; text-align: center; z-index: 100;
@@ -45,6 +55,10 @@
         const wsPath = readQueryVariable('path', 'websockify?XTransformPort=6080');
         const password = readQueryVariable('password');
         const scale = readQueryVariable('scale', 'true') === 'true';
+        // resizeSession: ask the VNC server to resize its display to match
+        // the local viewport size. This eliminates black bars / distortion
+        // because the remote desktop matches the canvas exactly.
+        const resize = readQueryVariable('resize', 'true') === 'true';
 
         // Build WebSocket URL — goes through Caddy proxy with XTransformPort=6080
         let url = window.location.protocol === 'https:' ? 'wss' : 'ws';
@@ -59,6 +73,8 @@
         // Attach all event handlers to an RFB instance. Used both for the
         // initial connection and for auto-reconnects so we don't duplicate code.
         function attachHandlers(instance) {
+            instance.scaleViewport = scale;
+            instance.resizeSession = resize;
             instance.addEventListener('connect', (e) => {
                 status('');
                 reconnectAttempts = 0;  // reset on successful connect
@@ -82,7 +98,6 @@
                         try {
                             rfb = new RFB(document.getElementById('screen'), url,
                                 { credentials: { password: password } });
-                            rfb.scaleViewport = scale;
                             attachHandlers(rfb);
                         } catch (e) {
                             status('Reconnect failed: ' + e.message + ' — retrying…');
@@ -105,7 +120,6 @@
         status('Connecting to Remote Chrome…');
         rfb = new RFB(document.getElementById('screen'), url,
             { credentials: { password: password } });
-        rfb.scaleViewport = scale;
         attachHandlers(rfb);
     </script>
 </body>
