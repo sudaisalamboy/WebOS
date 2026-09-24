@@ -411,3 +411,38 @@ Stage Summary:
 - Download URL: https://3000-ib7yhhr4gz0107qs3qpdu-de59bda9.sandbox.novita.ai/api/pull/ze58ijzg
 - Meta URL: https://3000-ib7yhhr4gz0107qs3qpdu-de59bda9.sandbox.novita.ai/api/projects/ze58ijzg
 - Push URL: https://3000-ib7yhhr4gz0107qs3qpdu-de59bda9.sandbox.novita.ai/api/push/ze58ijzg
+
+---
+Task ID: 17
+Agent: main (Z.ai Code)
+Task: "just fit the browser width in canvas" — browser not filling the canvas
+
+Work Log:
+- Root cause analysis: The core problem was a RESOLUTION + RANDR mismatch.
+  * Xvfb was running at 1280x800 (started by old chrome-watchdog-start.sh which used 1280x800)
+  * Brave wanted 1920x1080 (--window-size=1920,1080) but was clipped to 1280x800
+  * x11vnc log showed "Sending rfbEncodingExtDesktopSize for size (1280x800) resize prohibited"
+  * Xvfb had NO RandR extension support → noVNC's resizeSession requests were rejected
+  * Result: noVNC showed a 1280x800 desktop with black bars / wrong aspect ratio in the canvas
+
+- Fix 1: Updated scripts/brave-watchdog-start.sh — Xvfb now starts with `+extension RANDR` flag
+- Fix 2: Updated scripts/chrome-watchdog-start.sh — Xvfb resolution 1280x800 → 1920x1080 + RANDR
+- Fix 3: Updated src/app/api/vnc/service/route.ts — Xvfb spawn uses 1920x1080 + RANDR
+- Fix 4: Updated public/remote-chrome.html:
+  * Added `resizeSession = true` to RFB config (asks VNC server to resize to match client viewport)
+  * Added `resize` query param (default true)
+  * Added CSS: `#screen canvas { width:100% !important; height:100% !important; object-fit:fill !important; }`
+- Fix 5: scripts/x11vnc-watchdog.py already had -xrandr flag (added in previous commit)
+- Killed old Xvfb (1280x800, no RANDR), started new one: `Xvfb :99 -screen 0 1920x1080x24 -ac -nolisten tcp +extension RANDR`
+- Restarted x11vnc watchdog (with -xrandr flag) and Brave watchdog (with new RANDR Xvfb)
+- Verified all services: Xvfb (1920x1080+RANDR), x11vnc (-xrandr), Brave (1920x1080), ports 9222/5900/6080 all listening
+- Re-injected anti-detect: {"ok":true,"tabsInjected":1}
+- Tested assistant: "what is the page title" → "DuckDuckGo - Protection..." in 2 steps ✓
+
+Stage Summary:
+- Xvfb now runs at 1920x1080 with RANDR extension support
+- x11vnc has -xrandr flag to accept resize requests
+- noVNC has resizeSession=true so it sends resize requests to match client viewport
+- CSS forces canvas to fill 100% width/height as a fallback
+- Browser should now fill the canvas without black bars
+- Git committed
