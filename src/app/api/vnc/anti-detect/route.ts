@@ -47,27 +47,27 @@ export async function POST(req: NextRequest) {
   for (const wsUrl of wsUrls) {
     try {
       await sendCdp(wsUrl, 'Page.enable', {}).catch(() => {})
-      // NETWORK-LEVEL UA + Client Hints override — this is the key fix for
-      // Cloudflare Turnstile. Set at the Network domain so even the HTTP
-      // request headers (Sec-CH-UA, User-Agent) match a normal Chrome 151.
-      // The JS-level anti-detect alone isn't enough because Cloudflare reads
-      // the headers before the page's JS runs.
+      // NETWORK-LEVEL UA + Client Hints override — aligned to the browser
+      // actually running. Brave is based on Chromium 131.0.6778.85, so we
+      // override to Chrome/131 to match the real browser version (was 151
+      // which was for Playwright Chromium — caused UA/version mismatch with
+      // Brave). The network-level override is what Cloudflare reads first.
       await sendCdp(wsUrl, 'Network.enable', {}).catch(() => {})
       await sendCdp(wsUrl, 'Network.setUserAgentOverride', {
-        userAgent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36',
+        userAgent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
         platform: 'Linux x86_64',
         userAgentMetadata: {
           brands: [
-            { brand: 'Google Chrome', version: '151' },
-            { brand: 'Chromium', version: '151' },
+            { brand: 'Google Chrome', version: '131' },
+            { brand: 'Chromium', version: '131' },
             { brand: 'Not_A Brand', version: '24' },
           ],
           fullVersionList: [
-            { brand: 'Google Chrome', version: '151.0.0.0' },
-            { brand: 'Chromium', version: '151.0.0.0' },
+            { brand: 'Google Chrome', version: '131.0.0.0' },
+            { brand: 'Chromium', version: '131.0.0.0' },
             { brand: 'Not_A Brand', version: '24.0.0.0' },
           ],
-          fullVersion: '151.0.7922.34',
+          fullVersion: '131.0.6778.85',
           platform: 'Linux',
           platformVersion: '6.5.0',
           architecture: 'x86',

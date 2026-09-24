@@ -67,15 +67,15 @@ export const ANTI_DETECT_JS = `
   } catch (e) {}
   // Cloudflare Turnstile checks navigator.userAgentData.brands — Chrome for
   // Testing reports a brand like "Google Chrome for Testing" / "HeadlessChrome"
-  // which is an instant bot flag. Spoof it to a normal Chrome 151 brands list
-  // that matches the UA we set via --user-agent.
+  // which is an instant bot flag. Spoof it to a normal Chrome 131 brands list
+  // that matches Brave's actual version (Brave 1.73.91 = Chromium 131.0.6778.85).
   try {
     if (navigator.userAgentData) {
       Object.defineProperty(navigator, 'userAgentData', {
         get: () => ({
           brands: [
-            { brand: 'Google Chrome', version: '151' },
-            { brand: 'Chromium', version: '151' },
+            { brand: 'Google Chrome', version: '131' },
+            { brand: 'Chromium', version: '131' },
             { brand: 'Not_A Brand', version: '24' },
           ],
           mobile: false,
@@ -84,13 +84,13 @@ export const ANTI_DETECT_JS = `
         configurable: true,
       });
     } else {
-      // Some Chrome builds don't expose userAgentData; create it so Sec-CH-UA
+      // Some builds don't expose userAgentData; create it so Sec-CH-UA
       // client-hints checks (Cloudflare, Datadome) pass.
       Object.defineProperty(navigator, 'userAgentData', {
         get: () => ({
           brands: [
-            { brand: 'Google Chrome', version: '151' },
-            { brand: 'Chromium', version: '151' },
+            { brand: 'Google Chrome', version: '131' },
+            { brand: 'Chromium', version: '131' },
             { brand: 'Not_A Brand', version: '24' },
           ],
           mobile: false,
@@ -108,6 +108,6 @@ export const ANTI_DETECT_JS = `
       Object.defineProperty(navigator, 'userAgent', { get: () => ua2.replace(/for Testing/g, '').replace(/\s+/g, ' ').trim(), configurable: true });
     }
   } catch (e) {}
-  console.log('[AntiDetect] All fingerprints masked — UA/Client-Hints aligned to Chrome 151');
+  console.log('[AntiDetect] All fingerprints masked — UA/Client-Hints aligned to Chrome 131 (Brave)');
 })();
 `;
