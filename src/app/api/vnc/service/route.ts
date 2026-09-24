@@ -209,26 +209,18 @@ async function startService(service: string): Promise<{ ok: boolean; error?: str
           '--disable-session-crashed-bubble', '--ignore-certificate-errors',
           '--disable-blink-features=AutomationControlled',
           '--autoplay-policy=no-user-gesture-required',
-          // UA MUST match the real Chrome version (151). Claiming Chrome/131
-          // while the binary is 151 triggers Cloudflare/bot-detection failures
-          // (UA vs Client Hints mismatch). Keep major version aligned.
-          '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36',
-          // Hide automation / testing markers that Cloudflare Turnstile flags.
-          '--disable-features=AutomationControlled,IsolateOrigins,site-per-process',
+          '--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+          '--disable-features=AutomationControlled',
           '--disable-infobars',
-          '--disable-dev-shm-usage',
-          '--disable-background-networking',
           '--disable-default-apps',
-          '--disable-extensions',
           '--disable-popup-blocking',
           '--disable-prompt-on-repost',
           '--metrics-recording-only',
           '--password-store=basic',
           '--use-mock-keychain',
-          // Realistic window + language so the Sec-CH-UA Client Hints line up.
           '--lang=en-US',
           `--remote-debugging-port=${CDP_PORT}`, '--remote-allow-origins=*',
-          '--window-size=1280,800', '--window-position=0,0',
+          '--window-size=1920,1080', '--window-position=0,0',
           `--user-data-dir=${CHROME_PROFILE}`,
           'https://duckduckgo.com',
         ], { env, stdio: ['ignore', fs.openSync(`${LOG_DIR}/chrome.log`, 'a'), fs.openSync(`${LOG_DIR}/chrome.log`, 'a')], detached: true })
