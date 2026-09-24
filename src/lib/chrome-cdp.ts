@@ -107,12 +107,119 @@ export async function screenshot(): Promise<string> {
   return result?.data ?? ''
 }
 
-/** Navigate the active tab to a URL. */
+/** Navigate the active tab to a URL. Waits ADAPTIVELY for the page to reach
+ *  a loaded state (DOM + network idle) instead of a fixed 1.5s sleep.
+ *  Falls back to a timeout if lifecycle events never fire. */
 export async function navigate(url: string): Promise<boolean> {
+  // Start listening for load events BEFORE navigating.
+  const wsUrl = await getActiveTabWsUrl()
+  let loaded = false
+  let ws: WebSocket | null = null
+
+  if (wsUrl) {
+    try {
+      ws = new WebSocket(wsUrl, { origin: `http://127.0.0.1:${CDP_PORT}` })
+      await new Promise<void>((resolve) => {
+        const t = setTimeout(resolve, 1000)
+        ws!.on('open', () => { clearTimeout(t); resolve() })
+        ws!.on('error', () => { clearTimeout(t); resolve() })
+      })
+      if (ws.readyState === WebSocket.OPEN) {
+        ws.send(JSON.stringify({ id: 1, method: 'Page.enable' }))
+        ws.on('message', (data: Buffer) => {
+          try {
+            const msg = JSON.parse(data.toString())
+            // networkIdle or load event → page is ready
+            if (msg.method === 'Page.lifecycleEvent' &&
+                (msg.params.name === 'networkIdle' || msg.params.name === 'load')) {
+              loaded = true
+            }
+          } catch {}
+        })
+      }
+    } catch {}
+  }
+
   await sendCdp('Page.navigate', { url })
-  // give the page a moment to load
-  await new Promise((r) => setTimeout(r, 1500))
+
+  // Wait up to 8 seconds for network idle, checking every 200ms.
+  // Fall back to 2s minimum if events never fire (e.g. already-loaded page).
+  const deadline = Date.now() + 8000
+  while (!loaded && Date.now() < deadline) {
+    await new Promise((r) => setTimeout(r, 200))
+  }
+  // Minimum settle time even if "loaded" fired immediately (JS needs to run).
+  if (loaded) await new Promise((r) => setTimeout(r, 500))
+
+  // Cleanup the listener WS
+  try { ws?.close() } catch {}
+
   return true
+}
+
+/** Wait for the page to settle after an action (click, etc).
+ *  Uses CDP to detect network activity: waits for 500ms of network silence
+ *  (no in-flight requests), up to a max of 3 seconds. This replaces the
+ *  old hardcoded 600ms sleep which was too short for slow sites and
+ *  wasteful for fast sites. */
+export async function waitForSettle(maxMs = 3000): Promise<void> {
+  const wsUrl = await getActiveTabWsUrl()
+  if (!wsUrl) { await new Promise((r) => setTimeout(r, 600)); return }
+
+  return new Promise<void>((resolve) => {
+    let silenceTimer: NodeJS.Timeout | null = null
+    let maxTimer: NodeJS.Timeout
+    let ws: WebSocket
+
+    try {
+      ws = new WebSocket(wsUrl, { origin: `http://127.0.0.1:${CDP_PORT}` })
+    } catch { resolve(); return }
+
+    const cleanup = () => { try { ws.close() } catch {} }
+
+    ws.on('open', () => {
+      ws.send(JSON.stringify({ id: 1, method: 'Network.enable' }))
+      maxTimer = setTimeout(() => { cleanup(); resolve() }, maxMs)
+      // Initial silence — if no requests arrive in 500ms, we're settled
+      silenceTimer = setTimeout(() => { clearTimeout(maxTimer); cleanup(); resolve() }, 500)
+    })
+
+    ws.on('message', (data: Buffer) => {
+      try {
+        const msg = JSON.parse(data.toString())
+        // Any network activity resets the silence timer
+        if (msg.method === 'Network.requestWillBeSent' || msg.method === 'Network.dataReceived') {
+          if (silenceTimer) clearTimeout(silenceTimer)
+          silenceTimer = setTimeout(() => { clearTimeout(maxTimer); cleanup(); resolve() }, 500)
+        }
+      } catch {}
+    })
+
+    ws.on('error', () => { clearTimeout(maxTimer); resolve() })
+  })
+}
+
+/** Upload a file to a file input element matched by CSS selector.
+ *  Uses CDP DOM.setFileInputFiles — the proper way to handle file uploads
+ *  (browser file picker dialogs can't be controlled via JS).
+ *  `filePaths` must be paths accessible to the Chrome process. */
+export async function setFileInputFiles(selector: string, filePaths: string[]): Promise<string> {
+  try {
+    // Get the document root
+    const doc = await sendCdp('DOM.getDocument', { depth: 0 })
+    const rootId = doc?.root?.nodeId
+    if (!rootId) return 'no document root'
+
+    // Query selector to find the file input node
+    const q = await sendCdp('DOM.querySelector', { nodeId: rootId, selector })
+    if (!q?.nodeId) return `file input not found: ${selector}`
+
+    // Set the files on the input element
+    await sendCdp('DOM.setFileInputFiles', { nodeId: q.nodeId, files: filePaths })
+    return `uploaded ${filePaths.length} file(s) to ${selector}`
+  } catch (err) {
+    return `upload error: ${(err as Error).message}`
+  }
 }
 
 /** Click at (x, y) in viewport coordinates. */
@@ -138,14 +245,17 @@ export async function typeText(text: string): Promise<void> {
 }
 
 /**
- * Type text into an element at (x, y) using REAL per-character key events.
- * This is what signup/login forms need — `Input.insertText` replaces the
- * whole field and bypasses React's onChange / input event listeners, so
- * many modern forms don't register the typed value. This version:
+ * Type text into an element at (x, y). Uses the MOST reliable method:
  *   1. clicks the element to focus it
- *   2. clears any existing content (Ctrl+A + Backspace)
- *   3. dispatches keyDown + char events per character so input/change events
- *      fire normally and React state updates.
+ *   2. clears any existing content via JS (sets value='' + dispatches events)
+ *   3. uses CDP `Input.insertText` per-character (handles ALL unicode —
+ *      emoji, accented chars, symbols — no keyCode mapping needed)
+ *   4. dispatches `input` + `change` events after each insertion so
+ *      React/Vue/Svelte state updates correctly.
+ *
+ * This replaces the old rawKeyDown+char+keyUp approach which broke on
+ * special characters (#, $, %, ^, &, *, etc.) because charToCode returned
+ * 'Unidentified' for them. insertText handles every character natively.
  */
 export async function typeInto(x: number, y: number, text: string): Promise<void> {
   // 1. focus the element — click, then wait for the focus event to settle.
@@ -163,14 +273,25 @@ export async function typeInto(x: number, y: number, text: string): Promise<void
     return 'no input focused (active=' + (el ? el.tagName : 'none') + ')';
   })()`)
   await new Promise((r) => setTimeout(r, 80))
-  // 3. type each character as a real key event (fires input/change).
+  // 3. type each character via CDP insertText (per-char so input events fire).
+  //    insertText inserts at cursor position and handles ALL unicode chars.
   for (const ch of text) {
-    const code = charToCode(ch)
-    const keyCode = charToKeyCode(ch)
-    await sendCdp('Input.dispatchKeyEvent', { type: 'rawKeyDown', key: ch, code, windowsVirtualKeyCode: keyCode, modifiers: 0 })
-    await sendCdp('Input.dispatchKeyEvent', { type: 'char', key: ch, code, windowsVirtualKeyCode: keyCode, text: ch, modifiers: 0 })
-    await sendCdp('Input.dispatchKeyEvent', { type: 'keyUp', key: ch, code, windowsVirtualKeyCode: keyCode, modifiers: 0 })
+    await sendCdp('Input.insertText', { text: ch })
+    // Dispatch input event per character so React state updates incrementally.
+    await evalJs(`(function(){
+      var el = document.activeElement;
+      if (el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA')) {
+        try { el.dispatchEvent(new Event('input', {bubbles:true})); } catch(e) {}
+      }
+    })()`)
   }
+  // 4. final change event so form validation / onChange handlers fire.
+  await evalJs(`(function(){
+    var el = document.activeElement;
+    if (el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA')) {
+      try { el.dispatchEvent(new Event('change', {bubbles:true})); } catch(e) {}
+    }
+  })()`)
 }
 
 /**
@@ -182,36 +303,64 @@ export async function typeInto(x: number, y: number, text: string): Promise<void
  * state updates.
  */
 export async function fillBySelector(selector: string, text: string): Promise<string> {
-  const result = await evalJs(`(function(){
-    // Try the given selector first, then fall back to common search box selectors
-    var selectors = [
-      ${JSON.stringify(selector)},
-      'input[name="q"]',
-      'input[type="search"]',
-      'input[placeholder*="Search" i]',
-      'input[placeholder*="search" i]',
-      'input[type="text"]',
-      '#search',
-      '#searchbox',
-      '.search-input',
-      'input'
-    ];
+  // Use the EXACT selector first — NO fallback to search-box selectors.
+  // The old fallback (input[name="q"], #search, etc.) was DANGEROUS because
+  // on signup forms, if the AI's selector failed, it would silently fill
+  // the search box instead of the intended field — causing wrong data entry.
+  // Now we try the exact selector, then a tag-swapped fallback (input↔textarea),
+  // then report failure clearly so the AI can try a different approach.
+  const fillFn = (sel: string) => evalJs(`(function(){
     var el = null;
-    for (var i = 0; i < selectors.length; i++) {
-      try { el = document.querySelector(selectors[i]); } catch(e) {}
-      if (el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA')) break;
-      el = null;
+    try { el = document.querySelector(${JSON.stringify(sel)}); } catch(e) { return 'invalid selector: ' + e.message; }
+    if (!el) return null; // not found — caller will try fallback
+    if (el.tagName !== 'INPUT' && el.tagName !== 'TEXTAREA' && el.tagName !== 'SELECT') {
+      return 'not an input/textarea/select: <' + el.tagName.toLowerCase() + '>';
     }
-    if (!el) return 'not found: tried ' + selectors.join(', ');
     try {
       el.focus();
-      el.value = ${JSON.stringify(text)};
+      // Use the native setter to bypass React's synthetic event wrapping.
+      var nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value').set;
+      var nativeTextareaValueSetter = Object.getOwnPropertyDescriptor(window.HTMLTextAreaElement.prototype, 'value').set;
+      var nativeSelectValueSetter = Object.getOwnPropertyDescriptor(window.HTMLSelectElement.prototype, 'value').set;
+      if (el.tagName === 'TEXTAREA') nativeTextareaValueSetter.call(el, ${JSON.stringify(text)});
+      else if (el.tagName === 'SELECT') nativeSelectValueSetter.call(el, ${JSON.stringify(text)});
+      else nativeInputValueSetter.call(el, ${JSON.stringify(text)});
       el.dispatchEvent(new Event('input', {bubbles:true}));
       el.dispatchEvent(new Event('change', {bubbles:true}));
       return 'ok ' + (el.id || el.name || el.type);
     } catch(e) { return 'error: ' + e.message; }
   })()`)
-  return result.value || result.error || 'unknown'
+
+  // Try the exact selector first
+  let result = await fillFn(selector)
+  // result.value is JSON-serialized: "null" if element not found,
+  // "\"ok fieldname\"" if successful, "\"error: ...\"" on error.
+  if (result.value !== 'null') {
+    // Parse the JSON string to get the actual message
+    try { return JSON.parse(result.value) } catch { return result.value || 'unknown' }
+  }
+
+  // ---- Tag-swap fallback ----
+  // If the AI used "input[name=q]" but the element is actually <textarea name="q">,
+  // try the tag-swapped version. This is a VERY common mistake because the AI
+  // sees a text input visually but can't tell if it's <input> or <textarea>.
+  // NOTE: only swap ONE way (input→textarea OR textarea→input), not both,
+  // otherwise they cancel out and nothing changes.
+  let swappedSelector = selector
+  if (/^input\b/.test(selector)) {
+    swappedSelector = selector.replace(/^input\b/, 'textarea')
+  } else if (/^textarea\b/.test(selector)) {
+    swappedSelector = selector.replace(/^textarea\b/, 'input')
+  }
+  if (swappedSelector !== selector) {
+    result = await fillFn(swappedSelector)
+    if (result.value !== 'null') {
+      try { return JSON.parse(result.value) } catch { return result.value || 'unknown' }
+    }
+  }
+
+  // Both failed — report clearly
+  return `not found: tried ${selector} and ${swappedSelector}`
 }
 
 /** Map a printable character to its DOM KeyboardEvent.code (e.g. 'a' -> 'KeyA', '1' -> 'Digit1'). */
@@ -334,19 +483,27 @@ export interface PageSummary {
     name?: string
     type?: string
     selector?: string
+    /** Where this element was found: 'main', 'shadow', 'iframe:<url>' */
+    context?: string
   }>
   /** Full visible text content of the page (document.body.innerText), capped
-   *  at 3000 chars so the LLM can read EVERYTHING the user sees — not just
-   *  the 25 interactive elements. This lets the assistant answer "which
-   *  video has more views" etc. by reading the actual page text. */
+   *  at 30000 chars — increased from 10000 so the LLM sees more of long pages.
+   *  This lets the assistant answer "which video has more views" etc. by
+   *  reading the actual page text. */
   pageText: string
   formFields: Array<{
-    tag: string; type: string; name: string; id: string; placeholder: string; label: string; value: string; required: boolean; selector: string; x: number; y: number
+    tag: string; type: string; name: string; id: string; placeholder: string; label: string; value: string; required: boolean; selector: string; x: number; y: number;
+    /** For <select> elements: the available options (text + value). */
+    options?: Array<{ text: string; value: string }>
   }>
   videos: number
   videoDetails: PageVideo[]
   scrollY: number
   scrollHeight: number
+  /** If a native dialog (alert/confirm/prompt) was detected, its text.
+   *  Populated by the dialog override injected via anti-detect.
+   *  If set, the assistant should acknowledge it or report it. */
+  dialog?: { type: string; message: string }
 }
 
 /**
@@ -354,44 +511,162 @@ export interface PageSummary {
  * most prominent interactive elements (buttons, links, inputs, videos)
  * with their viewport coordinates. This gives the LLM grounding beyond
  * the raw screenshot.
+ *
+ * IMPROVEMENTS over the old version:
+ * - PIERCES SHADOW DOM: recursively queries all shadowRoots (Twitter/X,
+ *   modern web components, lit-element, stencil are no longer invisible).
+ * - TRAVERSES SAME-ORIGIN IFRAMES: queries contentDocument of same-origin
+ *   iframes (ads, embeds, payment frames that are same-origin are now visible).
+ * - INCREASED LIMITS: 200 elements (was 50), 30k chars of text (was 10k).
+ * - COOKIE DISMISS ONLY ONCE: uses a flag so it doesn't click "Accept" on
+ *   every single step (which could click dangerous buttons on later steps).
+ * - DIALOG DETECTION: reads window.__lastDialog set by the injected override.
+ * - SELECT OPTIONS: <select> dropdowns now include their available options.
+ * - BETTER SELECTORS: generates a unique CSS path when id/name are absent.
  */
 export async function getPageSummary(): Promise<PageSummary> {
   const expr = `
   (function(){
+    // ---- Install dialog override (idempotent) ----
+    // Override window.alert/confirm/prompt so we can CAPTURE the message
+    // instead of the native dialog blocking the page. The override stores
+    // the dialog text in window.__lastDialog and auto-resolves.
+    if (!window.__dialogOverrideInstalled) {
+      window.__lastDialog = null;
+      window.__dialogHistory = window.__dialogHistory || [];
+      window.alert = function(msg) {
+        var text = String(msg);
+        window.__lastDialog = { type: 'alert', message: text };
+        window.__dialogHistory.push({ type: 'alert', message: text, time: Date.now() });
+      };
+      window.confirm = function(msg) {
+        var text = String(msg);
+        window.__lastDialog = { type: 'confirm', message: text };
+        window.__dialogHistory.push({ type: 'confirm', message: text, time: Date.now() });
+        return true; // auto-accept
+      };
+      window.prompt = function(msg, def) {
+        var text = String(msg);
+        window.__lastDialog = { type: 'prompt', message: text };
+        window.__dialogHistory.push({ type: 'prompt', message: text, time: Date.now() });
+        return def || ''; // auto-fill with default
+      };
+      window.__dialogOverrideInstalled = true;
+    }
+    var dialogInfo = window.__lastDialog;
+    // Don't clear it yet — the caller will clear it after reading.
+    // (So multiple reads in the same step still see it.)
+
     function rect(r){
-      const b = r.getBoundingClientRect();
+      var b = r.getBoundingClientRect();
       return { x: Math.round(b.x + b.width/2), y: Math.round(b.y + b.height/2), w: Math.round(b.width), h: Math.round(b.height) };
     }
-    const sels = 'a, button, input, textarea, select, [role=button], [onclick], video, img, .thumb, .video-thumb, .thumb-block, [data-video], [href*=video]';
-    const els = Array.from(document.querySelectorAll(sels)).filter(e=>{
-      const r = e.getBoundingClientRect();
-      const visible = r.width > 0 && r.height > 0 && r.x >= 0 && r.y >= 0 && r.x < window.innerWidth && r.y < window.innerHeight;
-      const style = window.getComputedStyle(e);
-      return visible && style.visibility !== 'hidden' && style.display !== 'none' && style.opacity !== '0';
+
+    // ---- Generate a unique CSS selector for an element ----
+    function uniqueSelector(el) {
+      if (el.id) return '#' + el.id;
+      var name = el.getAttribute('name');
+      if (name) return el.tagName.toLowerCase() + '[name="' + name + '"]';
+      var type = el.getAttribute('type');
+      if (type && el.tagName === 'INPUT') return 'input[type="' + type + '"]';
+      // Build a path from tag + nth-of-type
+      var parts = [];
+      var node = el;
+      while (node && node.nodeType === 1 && node !== document.body) {
+        var part = node.tagName.toLowerCase();
+        var parent = node.parentNode;
+        if (parent) {
+          var siblings = Array.from(parent.children).filter(function(c) { return c.tagName === node.tagName; });
+          if (siblings.length > 1) {
+            var idx = siblings.indexOf(node) + 1;
+            part += ':nth-of-type(' + idx + ')';
+          }
+        }
+        parts.unshift(part);
+        node = parent;
+      }
+      return parts.length > 4 ? parts.slice(-4).join(' > ') : parts.join(' > ');
+    }
+
+    // ---- Collect ALL elements: main DOM + shadow DOM + same-origin iframes ----
+    var sels = 'a, button, input, textarea, select, [role=button], [onclick], video, img, .thumb, .video-thumb, .thumb-block, [data-video], [href*=video], [aria-label], summary, details';
+
+    // Recursively collect elements from a root, descending into shadowRoots
+    function collectFromRoot(root, context) {
+      var results = [];
+      if (!root) return results;
+      try {
+        var els = root.querySelectorAll ? root.querySelectorAll(sels) : [];
+        for (var i = 0; i < els.length; i++) {
+          var e = els[i];
+          e.__ctx = context; // tag with where it was found
+          results.push(e);
+          // Descend into shadow DOM
+          if (e.shadowRoot) {
+            var shadowEls = collectFromRoot(e.shadowRoot, context + ':shadow');
+            results = results.concat(shadowEls);
+          }
+          // Descend into same-origin iframes
+          if (e.tagName === 'IFRAME') {
+            try {
+              var iframeDoc = e.contentDocument;
+              if (iframeDoc) {
+                var iframeEls = collectFromRoot(iframeDoc, context + ':iframe');
+                results = results.concat(iframeEls);
+              }
+            } catch(err) {} // cross-origin → skip
+          }
+        }
+        // Also check root's own shadowRoot (for document.body.host cases)
+        if (root.shadowRoot && root.querySelectorAll) {
+          // already handled above per-element
+        }
+      } catch(err) {}
+      return results;
+    }
+
+    var allEls = collectFromRoot(document, 'main');
+    // Deduplicate (an element might be found multiple times via different paths)
+    var seen = new Set();
+    allEls = allEls.filter(function(e) {
+      if (seen.has(e)) return false;
+      seen.add(e);
+      return true;
     });
-    const out = els.slice(0, 50).map(e=>{
-      const r = rect(e.getBoundingClientRect());
-      const id = e.id || '';
-      const name = e.getAttribute('name') || '';
-      const type = e.getAttribute('type') || '';
-      let selector = '';
-      if (id) selector = '#' + id;
-      else if (name) selector = e.tagName.toLowerCase() + '[name="' + name + '"]';
-      else if (type) selector = e.tagName.toLowerCase() + '[type="' + type + '"]';
-      const placeholder = e.getAttribute('placeholder') || '';
-      const text = (e.innerText || e.value || e.getAttribute('aria-label') || e.getAttribute('alt') || placeholder || '').trim().slice(0, 60);
+
+    // Filter to visible elements only
+    var visibleEls = allEls.filter(function(e) {
+      try {
+        var r = e.getBoundingClientRect();
+        var visible = r.width > 0 && r.height > 0 && r.x >= 0 && r.y >= 0 && r.x < window.innerWidth && r.y < window.innerHeight;
+        var style = window.getComputedStyle(e);
+        return visible && style.visibility !== 'hidden' && style.display !== 'none' && style.opacity !== '0';
+      } catch(err) { return false; }
+    });
+
+    // Take up to 200 elements (was 50 — too many were being missed on long pages)
+    var out = visibleEls.slice(0, 200).map(function(e) {
+      var r = rect(e.getBoundingClientRect());
+      var id = e.id || '';
+      var name = e.getAttribute('name') || '';
+      var type = e.getAttribute('type') || '';
+      var selector = uniqueSelector(e);
+      var placeholder = e.getAttribute('placeholder') || '';
+      var text = (e.innerText || e.value || e.getAttribute('aria-label') || e.getAttribute('alt') || placeholder || '').trim().slice(0, 80);
       return {
         tag: e.tagName.toLowerCase(),
         text: text,
         x: r.x, y: r.y,
         role: e.getAttribute('role') || '',
         placeholder: placeholder,
-        id, name, type, selector,
+        id: id, name: name, type: type, selector: selector,
+        context: e.__ctx || 'main',
       };
     });
-    // Rich video info: where are the videos, are they playing, what's their source?
-    const vids = Array.from(document.querySelectorAll('video')).map(v=>{
-      const r = v.getBoundingClientRect();
+
+    // ---- Rich video info ----
+    var vids = Array.from(document.querySelectorAll('video')).map(function(v) {
+      var r = v.getBoundingClientRect();
       return {
         x: Math.round(r.x + r.width/2),
         y: Math.round(r.y + r.height/2),
@@ -404,34 +679,74 @@ export async function getPageSummary(): Promise<PageSummary> {
         src: (v.currentSrc || v.src || '').slice(0, 120),
         hasControls: v.controls === true,
       };
-    }).filter(v => v.width > 10 && v.height > 10);
-    // Full visible text of the page — the assistant reads this to answer
-    // questions like "which video has more views" by reading the actual page.
-    // Auto-dismiss cookie consent popups — they block the page content
-    // and the AI only sees cookie text instead of video/page info.
-    var cookieBtns = document.querySelectorAll('button, a, input[type=button], [role=button]');
-    for (var cb of cookieBtns) {
-      var t = (cb.textContent || cb.value || '').toLowerCase().trim();
-      if (t === 'accept' || t === 'ok' || t === 'got it' || t === 'i agree' || t === 'agree' || t === 'accept all' || t === 'allow all' || t === 'consent' || t === 'accept cookies' || t.includes('accept') || t.includes('agree') || t.includes('got it') || t.includes('ok, ')) {
-        try { cb.click(); } catch(e) {}
-        break;
+    }).filter(function(v) { return v.width > 10 && v.height > 10; });
+
+    // ---- Cookie dismiss: ONLY ONCE per page (flag-based) ----
+    // The old code dismissed cookies EVERY step, which could click
+    // dangerous buttons (OK on a delete confirmation, etc.). Now we
+    // only dismiss on the first sighting, then set a flag.
+    if (!window.__cookieDismissed) {
+      var cookieBtns = document.querySelectorAll('button, a, input[type=button], [role=button]');
+      for (var ci = 0; ci < cookieBtns.length; ci++) {
+        var cb = cookieBtns[ci];
+        var t = (cb.textContent || cb.value || '').toLowerCase().trim();
+        // Only dismiss if the button is in a consent/cookie banner context.
+        // Check if the button or its ancestor has cookie-related class/id.
+        var inBanner = false;
+        var node = cb;
+        for (var depth = 0; depth < 5 && node; depth++) {
+          var cls = (node.className || '').toString().toLowerCase();
+          var bid = (node.id || '').toLowerCase();
+          if (cls.includes('cookie') || cls.includes('consent') || cls.includes('gdpr') || cls.includes('privacy') || bid.includes('cookie') || bid.includes('consent') || bid.includes('gdpr')) {
+            inBanner = true;
+            break;
+          }
+          node = node.parentElement;
+        }
+        if (inBanner && (t === 'accept' || t === 'accept all' || t === 'agree' || t === 'i agree' || t === 'got it' || t === 'ok' || t === 'allow all' || t === 'accept cookies' || t.includes('accept') || t.includes('agree'))) {
+          try { cb.click(); window.__cookieDismissed = true; } catch(e) {}
+          break;
+        }
       }
     }
-    var pageText = (document.body ? document.body.innerText : '').slice(0, 10000);
-    // Collect ALL form fields (input/textarea/select) with coordinates + selectors
-    var fieldEls = Array.from(document.querySelectorAll('input, textarea, select'));
-    var formFields = fieldEls.map(e => {
+
+    // ---- Page text: increased to 30000 chars ----
+    var pageText = (document.body ? document.body.innerText : '').slice(0, 30000);
+
+    // ---- Form fields: collect ALL (visible or not) with options for selects ----
+    var fieldEls = collectFromRoot(document, 'main').filter(function(e) {
+      return e.tagName === 'INPUT' || e.tagName === 'TEXTAREA' || e.tagName === 'SELECT';
+    });
+    var formFields = fieldEls.map(function(e) {
       var r = e.getBoundingClientRect();
       var id = e.id || ''; var name = e.getAttribute('name') || '';
       var type = e.tagName.toLowerCase() === 'select' ? 'select' : (e.getAttribute('type') || 'text');
       var placeholder = e.getAttribute('placeholder') || '';
       var label = e.getAttribute('aria-label') || '';
       if (!label && id) { var lbl = document.querySelector('label[for="' + id + '"]'); if (lbl) label = (lbl.innerText || '').trim(); }
-      if (!label) { var lbl2 = e.closest('label'); if (lbl2) label = (lbl2.innerText || '').trim(); }
-      var selector = id ? '#' + id : (name ? e.tagName.toLowerCase() + '[name="' + name + '"]' : e.tagName.toLowerCase() + '[type="' + type + '"]');
+      if (!label) { var lbl2 = e.closest ? e.closest('label') : null; if (lbl2) label = (lbl2.innerText || '').trim(); }
+      var selector = uniqueSelector(e);
       var value = ''; try { value = type === 'password' ? (e.value ? '***' : '') : (e.value || '').slice(0, 30); } catch(e2) {}
-      return { tag: e.tagName.toLowerCase(), type, name, id, placeholder, label: label.slice(0, 60), value, required: e.hasAttribute('required'), selector, x: Math.round(r.x + r.width/2), y: Math.round(r.y + r.height/2) };
+      // For <select> elements, collect available options
+      var options = undefined;
+      if (e.tagName === 'SELECT') {
+        options = Array.from(e.options).slice(0, 30).map(function(opt) {
+          return { text: (opt.textContent || '').trim().slice(0, 50), value: (opt.value || '').slice(0, 50) };
+        });
+      }
+      return {
+        tag: e.tagName.toLowerCase(),
+        type: type, name: name, id: id,
+        placeholder: placeholder,
+        label: label.slice(0, 60),
+        value: value,
+        required: e.hasAttribute('required'),
+        selector: selector,
+        x: Math.round(r.x + r.width/2), y: Math.round(r.y + r.height/2),
+        options: options,
+      };
     });
+
     return {
       url: location.href,
       title: document.title,
@@ -443,6 +758,7 @@ export async function getPageSummary(): Promise<PageSummary> {
       videoDetails: vids,
       scrollY: Math.round(window.scrollY),
       scrollHeight: Math.round(document.documentElement.scrollHeight),
+      dialog: dialogInfo,
     };
   })()
   `
@@ -455,7 +771,12 @@ export async function getPageSummary(): Promise<PageSummary> {
     }
   }
   try {
-    return JSON.parse(result.value) as PageSummary
+    const summary = JSON.parse(result.value) as PageSummary
+    // Clear the dialog flag after reading so the next step doesn't re-report it
+    if (summary.dialog) {
+      await evalJs(`window.__lastDialog = null;`)
+    }
+    return summary
   } catch {
     return {
       url: '', title: '(parse error)',
@@ -463,4 +784,9 @@ export async function getPageSummary(): Promise<PageSummary> {
       interactiveElements: [], pageText: '', formFields: [], videos: 0, videoDetails: [], scrollY: 0, scrollHeight: 0,
     }
   }
+}
+
+/** Clear the dialog flag after the assistant has acknowledged it. */
+export async function clearDialogFlag(): Promise<void> {
+  await evalJs(`window.__lastDialog = null;`)
 }

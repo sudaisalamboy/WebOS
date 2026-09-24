@@ -286,3 +286,39 @@ Work Log:
 
 Stage Summary:
 - Assistant can now reliably fill signup/login forms: uses CSS selectors (from the page summary) to target the exact field, sets the value via JS, and dispatches input/change events so React/Vue forms register it. Coordinate-offset problem solved by not relying on coordinates for forms.
+
+---
+Task ID: TEST-1
+Agent: agent-browser-tester
+Task: Test AI Assistant FAB end-to-end
+
+Work Log:
+- Read worklog.md for context on the AI Assistant feature (FAB was added in Task 5, blur-on-hover in Task 6, content-filter/rate-limit fallback in Task 7, navigation guard in Task 8, stop/kill + notes-reading in Task 9).
+- Pre-flight: confirmed dev server up (GET / -> 200, GET /api/assistant/chat -> 405 method-not-allowed since it's POST-only).
+- Launched agent-browser, opened http://127.0.0.1:3000/. Waited for networkidle. Page title: "VPS Dashboard · Real-time Server Monitoring".
+- Located the AI Assistant FAB via DOM query: `div.fixed.bottom-5.right-5` — class `flex h-12 w-12 rounded-full shadow-2xl bg-gradient-to-br from-emerald-500 to-cyan-500 hover:scale-110 active:scale-95`, aria-label="AI Assistant", title="AI Assistant", bounding box at (1212, 509) bottom-right of 1280x577 viewport. Matches the spec (emerald→cyan gradient circle, Bot icon).
+- Clicked the FAB. Compact chat panel (360x460px, `fixed bottom-20 right-5 z-[10000]`) expanded above it with a slide-in-from-bottom animation. Header: emerald Bot icon + "AI Assistant" title. Body contained a welcome bubble: "Hi! I can see and control the Remote Chrome browser. Tell me what to do — click, type, scroll, run console commands, play videos, etc."
+- Filled the input textarea (placeholder "Ask the assistant…") with the test message "what is the page title". Verified Send button (lucide `Send` icon, bg-emerald-500) transitioned from disabled to enabled after typing.
+- Clicked Send. User bubble (right-aligned, emerald-500 bg) appeared with the message. The "…" streaming indicator appeared immediately afterward.
+- Polled the chat panel every ~8-12 seconds. Progression:
+  * t≈0s: streaming starts ("…" indicator + spinner)
+  * t≈8s: 1st screenshot thumbnail rendered (data:image/png;base64…, natural 1279x712, displayed at h-12 w-auto) with `filter: blur(6px)` inline style. Title: "Screenshot 1 — hover to reveal, click to view full page". Alt: "AI view 1".
+  * t≈18s: still streaming; first step row appeared: `#1  eval_js  => "hello world at DuckDuckGo"` (action name styled in sky-400, step number in font-mono).
+  * t≈30s: 2nd screenshot thumbnail rendered (AI view 2, also blurred).
+  * t≈38s: streaming complete — spinner gone, "…" indicator gone, Send button reset to disabled (input cleared).
+- Verified hover-to-reveal behavior: hovered on thumbnail #1, its inline style changed from `filter: blur(6px)` to `filter: none;` (smooth `transition-[filter] duration-300` per worklog Task 6). Thumbnail #2 remained blurred (6px). Confirmed privacy blur pattern works.
+- Clicked "View All" button: a full-screen modal (`fixed inset-0 z-[10001] bg-black/90 flex flex-col`) opened showing a carousel labeled "AI Canvas — what the AI sees · 1 / 2" with prev (ChevronRight) and close (X) buttons. Closed via the X button.
+- Captured 13 progressive screenshots in /home/z/my-project/test-shots/ (01-initial.png through 13-final-panel-view.png).
+- Checked console: no errors / no warnings (only the standard React DevTools download tip + "[HMR] connected").
+- Checked network requests: 1 POST to http://127.0.0.1:3000/api/assistant/chat returned HTTP 200 (SSE stream completed cleanly).
+- Closed browser session cleanly.
+
+Stage Summary:
+- Chat panel opened: YES — FAB click expands a 360x460 compact chat panel above the bottom-right floating button.
+- Assistant responded: YES — POST /api/assistant/chat returned 200, SSE stream delivered ~2 steps in ~38s with no spinner afterwards (loop ended on its own).
+- Screenshot thumbnails seen: YES — 2 thumbnails ("AI view 1", "AI view 2"), each blurred by default (`filter: blur(6px)`) with "hover to reveal" hint badge. Hover correctly unblurs (`filter: none`).
+- Action steps seen: YES — 1 action step row: `#1 eval_js => "hello world at DuckDuckGo"` (action label `eval_js` in sky-400, step number `#1` in font-mono).
+- Final answer: "hello world at DuckDuckGo" — the title of the page currently open in the Remote Chrome browser (DuckDuckGo search-results page for query "hello world"). Returned both as a status message during streaming AND as the final assistant message bubble (left-aligned, zinc-800 bg).
+- Errors/issues: NONE. No console errors, no JS exceptions, no fetch failures, no rate-limit retries needed, no content-filter fallback triggered. Send button correctly disabled when input empty; correctly re-enabled when text present. Modal carousel open/close works via the X button (Escape did not close it — minor UX note, may want to add Escape key handler). "View All" carousel shows screenshots at full size in a black/90 backdrop modal.
+
+PASS — AI Assistant FAB end-to-end flow works as designed: FAB click → panel → user message → SSE streaming with live screenshots (blurred, hover-to-reveal) + action-step rows → final answer bubble → modal viewer for full screenshots. All 13 screenshots saved to /home/z/my-project/test-shots/.
