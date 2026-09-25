@@ -71,3 +71,9 @@ tools/novnc.tar.gz
 *.ttf
 *.eot
 test-shots/
+
+# Runtime state and local tooling — never commit
+.vnc-pids/
+.kilo/
+upload/
+.zscripts/
