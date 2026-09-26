@@ -30,11 +30,7 @@ interface SSEEvent {
 
 const MAX_STEPS = 100
 
-// Per-session memo of the last note content the assistant saw.
-// Keyed by the authenticated user/session so multi-user setups don't
-// cross-contaminate. Each entry holds the previous note content so we
-// can diff against it each turn and surface only what changed (new bug
-// reports, requests, etc.). Lives for the lifetime of the server process.
+
 const lastNoteSeenBySession = new Map<string, string | null>()
 
 /** Page history memory: tracks the last N page states (URL + pageText hash)
@@ -298,7 +294,7 @@ export async function POST(req: NextRequest) {
                 return JSON.stringify(info);
               })()`)
               stateInfo = state.value ? String(state.value).slice(0, 1500) : ''
-            } catch {}
+            } catch { }
             let answerMsg = `I repeated ${action} a few times with no page change. Based on what I found: ${stateInfo.slice(0, 300)}`
             try {
               const answerResp = await callLlmWithRetry(
@@ -312,7 +308,7 @@ export async function POST(req: NextRequest) {
               )
               const llmAnswer = (answerResp.choices?.[0]?.message?.content ?? '').trim()
               if (llmAnswer) answerMsg = llmAnswer
-            } catch {}
+            } catch { }
 
             history.push({ role: 'assistant', content: answerMsg })
             send({
@@ -384,7 +380,7 @@ export async function POST(req: NextRequest) {
         controller.close()
       } catch (err) {
         send({ type: 'error', data: `Assistant error: ${(err as Error).message}` })
-        try { controller.close() } catch {}
+        try { controller.close() } catch { }
       }
     },
   })
@@ -414,7 +410,7 @@ async function decideAction(
   page: PageSummary,
   shotB64: string,
   actionsTaken: string[],
-  onStatus: (msg: string) => void = () => {},
+  onStatus: (msg: string) => void = () => { },
   noteContext: string = '',
 ): Promise<ActionDecision> {
   // List up to 60 interactive elements (was 30 — too few for complex pages)
@@ -434,21 +430,21 @@ async function decideAction(
   // List ALL form fields with selectors, placeholders, labels, and SELECT OPTIONS
   const formFields = page.formFields.length
     ? page.formFields.map((f, i) => {
-        let info = `${i + 1}. <${f.tag} type="${f.type}">`
-        if (f.id) info += ` id="${f.id}"`
-        if (f.name) info += ` name="${f.name}"`
-        if (f.placeholder) info += ` placeholder="${f.placeholder}"`
-        if (f.label) info += ` label="${f.label}"`
-        if (f.value) info += ` value="${f.value}"`
-        if (f.required) info += ` required`
-        info += ` @ (${f.x},${f.y}) selector=${f.selector}`
-        // For <select> dropdowns, list available options so the AI can
-        // choose the right one without guessing.
-        if (f.options && f.options.length > 0) {
-          info += `\n   options: ${f.options.slice(0, 10).map(o => `"${o.text}"`).join(', ')}`
-        }
-        return info
-      }).join('\n')
+      let info = `${i + 1}. <${f.tag} type="${f.type}">`
+      if (f.id) info += ` id="${f.id}"`
+      if (f.name) info += ` name="${f.name}"`
+      if (f.placeholder) info += ` placeholder="${f.placeholder}"`
+      if (f.label) info += ` label="${f.label}"`
+      if (f.value) info += ` value="${f.value}"`
+      if (f.required) info += ` required`
+      info += ` @ (${f.x},${f.y}) selector=${f.selector}`
+      // For <select> dropdowns, list available options so the AI can
+      // choose the right one without guessing.
+      if (f.options && f.options.length > 0) {
+        info += `\n   options: ${f.options.slice(0, 10).map(o => `"${o.text}"`).join(', ')}`
+      }
+      return info
+    }).join('\n')
     : '(no input boxes found)'
 
   const pageState = `URL: ${page.url}
@@ -539,13 +535,14 @@ Rules:
 - If a native dialog (alert/confirm) was detected, it has been auto-dismissed. Report it to the user if relevant.`
 
   let raw = ''
+  let cacheKey = ''
   try {
     // ---- DECISION CACHE: reuse last decision if page+goal unchanged ----
     // This stretches the 300/day quota. If the user asks the same thing on
     // the same page (e.g. "click search" twice in a row on the same Google
     // page), we skip the LLM call entirely and reuse the cached decision.
     const ph = pageHashForCache(page.pageText)
-    const cacheKey = decisionCacheKey(goal, page.url, ph)
+    cacheKey = decisionCacheKey(goal, page.url, ph)
     const cached = getCachedDecision(cacheKey)
     if (cached && !noteContext) {  // don't cache when notes changed (context differs)
       return { action: cached.action, params: cached.params, thought: cached.thought + ' [cached]', message: cached.message }
@@ -781,7 +778,7 @@ async function executeAction(action: string, params: Record<string, unknown>, go
             // Extract just the URL from the response
             const urlMatch = extracted.match(/https?:\/\/[^\s"'<>]+/)
             if (urlMatch) url = urlMatch[0]
-          } catch {}
+          } catch { }
         }
         if (!url) return 'no url — could not figure out the destination'
         await navigate(url)

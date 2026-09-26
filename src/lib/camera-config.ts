@@ -1,6 +1,8 @@
 import fs from 'node:fs'
 import { buildCameraScript, type CameraConfig, DEFAULT_CONFIG } from '@/lib/camera-inject'
 
+export { DEFAULT_CONFIG }
+
 const CONFIG_FILE = '/home/z/my-project/.camera-config.json'
 const ENABLED_FILE = '/home/z/my-project/.camera-enabled'
 
@@ -8,8 +10,8 @@ export function saveCameraConfig(config: CameraConfig, enabled: boolean): void {
   try {
     fs.writeFileSync(CONFIG_FILE, JSON.stringify(config, null, 2))
     if (enabled) fs.writeFileSync(ENABLED_FILE, '1')
-    else { try { fs.unlinkSync(ENABLED_FILE) } catch {} }
-  } catch (e) {}
+    else { try { fs.unlinkSync(ENABLED_FILE) } catch { } }
+  } catch (e) { }
 }
 
 export function loadCameraConfig(): CameraConfig | null {
@@ -28,8 +30,8 @@ export function isCameraEnabled(): boolean {
 export function setCameraEnabled(enabled: boolean): void {
   try {
     if (enabled) fs.writeFileSync(ENABLED_FILE, '1')
-    else { try { fs.unlinkSync(ENABLED_FILE) } catch {} }
-  } catch (e) {}
+    else { try { fs.unlinkSync(ENABLED_FILE) } catch { } }
+  } catch (e) { }
 }
 
 export function getCameraInjectScript(): string | null {
