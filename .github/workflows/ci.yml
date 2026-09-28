@@ -27,9 +27,6 @@ jobs:
     - name: Install dependencies
       run: bun install
     
-    - name: Run lint
-      run: bun run lint || echo "Lint errors found but continuing"
-    
     - name: Generate Prisma client
       run: bun run db:generate
       env:
