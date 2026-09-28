@@ -56,7 +56,7 @@ jobs:
         path: .next
         retention-days: 7
 
-  deploy:
+  deploy-vercel:
     needs: build-and-test
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
@@ -65,32 +65,19 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     
-    - name: Download build artifacts
-      uses: actions/download-artifact@v4
-      with:
-        name: build-output
-        path: .next
-    
     - name: Setup Bun
       uses: oven-sh/setup-bun@v1
       with:
         bun-version: latest
     
-    - name: Install dependencies
-      run: bun install --production
+    - name: Install Vercel CLI
+      run: bun install -g vercel
     
-    - name: Deploy to server
-      env:
-        DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
-        DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
-        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
-        DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
-      run: |
-        echo "Deployment step - configure your deployment target"
-        echo "Add DEPLOY_HOST, DEPLOY_USER, DEPLOY_KEY, DEPLOY_PATH secrets to GitHub"
-        # Example deployment script:
-        # mkdir -p ~/.ssh
-        # echo "$DEPLOY_KEY" > ~/.ssh/deploy_key
-        # chmod 600 ~/.ssh/deploy_key
-        # rsync -avz -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" .next/ $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH/
-        # ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $DEPLOY_USER@$DEPLOY_HOST "cd $DEPLOY_PATH && pm2 restart webos || pm2 start .next/standalone/server.js --name webos"
+    - name: Pull Vercel Environment Information
+      run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+    
+    - name: Build Project Artifacts
+      run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+    
+    - name: Deploy to Vercel
+      run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
