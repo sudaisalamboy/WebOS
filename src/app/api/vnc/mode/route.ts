@@ -64,9 +64,6 @@ function FindProxyForURL(url, host) {
   }
   // Known media CDNs → DIRECT
   var mediaDomains = [
-    "xvideos-cdn.com", "thumb-cdn77.xvideos-cdn.com", "thumbs-gcore.xvideos-cdn.com",
-    "static-okxxx.xvideos-cdn.com", "cdn-static.xvideos-cdn.com",
-    "okxxx1.com", "static.okxxx1.com", "ok.porn", "static.ok.porn",
     "hw-cdn2.ang-content.com", "ang-content.com",
     "bkcdn.net", "privatehost.com", "nvms12.cdn.privatehost.com",
     "project1content.com", "images-assets.project1content.com",
