@@ -4,6 +4,14 @@
 
 A comprehensive, secure, and high-performance web-based operating system featuring remote browser control, virtual camera injection, terminal access, security tools, and advanced file management. Built with cutting-edge web technologies for maximum speed and security.
 
+## Preview
+
+<p align="center">
+  <img src="preview/preview.png" alt="WebOS Preview" width="100%" />
+</p>
+
+> 📖 **Full setup instructions:** see [SETUP.md](SETUP.md) for detailed installation, configuration, and deployment guide.
+
 ## Overview
 
 WebOS transforms your browser into a full-featured operating system with 18+ integrated applications. From AI-powered browser automation to security reconnaissance tools, WebOS provides a complete desktop experience entirely in the browser with enterprise-grade security and lightning-fast performance.
