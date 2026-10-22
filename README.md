@@ -2,7 +2,7 @@
 
 [![CI Pipeline](https://github.com/sudaisalamboy/WebOS/workflows/CI%20Pipeline/badge.svg)](https://github.com/sudaisalamboy/WebOS/actions)
 
-A comprehensive, secure, and high-performance web-based operating system featuring remote browser control, virtual camera injection, terminal access, security tools, and advanced file management. Built with cutting-edge web technologies for maximum speed and security.
+A web-based desktop environment featuring remote browser control, virtual camera injection, terminal access, security tools, and advanced file management. Built with Next.js 16, React 19, TypeScript, and Bun.
 
 ## Preview
 
@@ -14,25 +14,25 @@ A comprehensive, secure, and high-performance web-based operating system featuri
 
 ## Overview
 
-WebOS transforms your browser into a full-featured operating system with 18+ integrated applications. From AI-powered browser automation to security reconnaissance tools, WebOS provides a complete desktop experience entirely in the browser with enterprise-grade security and lightning-fast performance.
+WebOS transforms your browser into a full-featured operating system with 10+ integrated applications. From AI-powered browser automation to security reconnaissance tools, WebOS provides a complete desktop experience entirely in the browser with session-based authentication and real-time features.
 
 ## Key Features
 
 ### Security
-- **End-to-end encryption** for sensitive data (notes, cookies, credentials)
+- **Session-based authentication** with NextAuth.js (no client-side secrets)
 - **Secure session management** with NextAuth.js
 - **Input validation and sanitization** across all APIs
-- **Rate limiting and request throttling** to prevent abuse
+
 - **No client-side secrets** - all sensitive operations server-side
 - **Prisma ORM** with parameterized queries preventing SQL injection
-- **Anti-detect browser fingerprinting** evasion
+
 - **Virtual camera injection** for privacy protection
 
 ### Performance
 - **Next.js 16** with React 19 for optimal rendering
-- **Bun runtime** for ultra-fast package management and execution
+- **Bun runtime** for fast package management
 - **Standalone output** for minimal production bundle
-- **Code splitting** and lazy loading for instant app launches
+- **Code splitting** and lazy loading for fast app launches
 - **WebSocket connections** for real-time communication
 - **CDP (Chrome DevTools Protocol)** for efficient browser control
 - **In-memory caching** for frequently accessed data
@@ -49,7 +49,7 @@ An intelligent AI agent that can see and control your browser through vision and
 - **Real-time action execution** - Click, type, scroll, navigate, run JavaScript
 - **Step-by-step transparency** - See every action the AI takes
 - **Screenshot history** - Review screenshots taken during automation
-- **QPS bypass** - Chat ID rotation for faster AI responses
+- **Chat ID rotation** - Rotates API chat IDs for rate limit management
 - **Decision caching** - Reuses decisions for identical page states
 - **Multi-tab management** - Open, close, and switch between tabs
 - **Video control** - Play, pause, and interact with media
@@ -66,9 +66,9 @@ An intelligent AI agent that can see and control your browser through vision and
 Full Chromium browser running on a virtual display, accessible via noVNC.
 
 **Features:**
-- **Real Chrome browser** - Full Chromium with all features
+- **Real Brave browser** - Full browser with CDP support
 - **noVNC integration** - Browser-based VNC client
-- **Anti-detect injection** - Evades browser fingerprinting
+- **Browser automation** - CDP-based control for AI assistant
 - **Virtual camera support** - Inject custom video feeds
 - **Clipboard sync** - Paste from local to remote browser
 - **Quick navigation** - URL bar with history
@@ -257,12 +257,12 @@ Simple note-taking application.
 - Task lists
 
 ### 11. Encrypted Notes
-Secure note-taking with end-to-end encryption.
+Secure note-taking with persistent storage.
 
 **Features:**
-- **AES encryption** - Military-grade encryption
+- **Note storage** - Persistent notes saved to SQLite
 - **Password protection** - Secure password access
-- **End-to-end encryption** - Server never sees plaintext
+
 - **Secure storage** - Encrypted data at rest
 - **Note management** - Create, edit, delete encrypted notes
 
@@ -509,4 +509,4 @@ Made with ❤️ by Sudais Alam
 
 ---
 
-**Built with cutting-edge technology for maximum security and performance.**
+**Built with Next.js 16, React 19, TypeScript, and Bun.**
