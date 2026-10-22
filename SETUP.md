@@ -1,6 +1,6 @@
 # WebOS — Setup Guide
 
-A comprehensive, secure, and high-performance web-based operating system featuring remote browser control, virtual camera injection, terminal access, security tools, and advanced file management — all running in the browser. Built with Next.js 16, React 19, Bun, and 18+ integrated applications.
+A web-based desktop environment featuring remote browser control, virtual camera injection, terminal access, security tools, and advanced file management — all running in the browser. Built with Next.js 16, React 19, Bun, and 10+ integrated applications.
 
 ---
 
@@ -21,7 +21,7 @@ A comprehensive, secure, and high-performance web-based operating system featuri
 
 ## Project Overview
 
-WebOS transforms your browser into a full-featured operating system with 18+ integrated applications. From AI-powered browser automation to security reconnaissance tools, WebOS provides a complete desktop experience entirely in the browser. It features end-to-end encryption for sensitive data, secure session management via NextAuth.js, a real terminal with PTY support, remote Chromium browser control via noVNC, virtual camera injection, and a complete security lab — all built with enterprise-grade security and performance.
+WebOS transforms your browser into a full-featured operating system with 10+ integrated applications. From AI-powered browser automation to security reconnaissance tools, WebOS provides a complete desktop experience entirely in the browser. It features session-based authentication, secure session management via NextAuth.js, a real terminal with PTY support, remote Chromium browser control via noVNC, virtual camera injection, and a complete security lab — all built with real-time features.
 
 ---
 
