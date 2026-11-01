@@ -1,3 +1,13 @@
+
+---
+
+## 👨‍💻 Hire Me
+
+**Custom eCommerce website developer in Gaya, Bihar, India.** 5+ years experience building scalable web apps, custom eCommerce solutions, and security tools. Available for remote + on-site work.
+
+- 🔗 **Portfolio**: [sudaisalamboy.github.io/portfolio](https://sudaisalamboy.github.io/portfolio/) — hire me for custom web development
+- 💼 **LinkedIn**: [linkedin.com/in/sudais-alam-65035138b](https://www.linkedin.com/in/sudais-alam-65035138b)
+
 <div align="center">
 
 # 🖥️ WebOS
